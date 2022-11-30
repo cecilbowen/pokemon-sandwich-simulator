@@ -1,0 +1,133 @@
+a lot of this comes from personal trial-and-error, but I also usedothers' findings in this thread:
+https://old.reddit.com/r/pokemon/comments/z0k5p2/anyone_know_how_sandwich_ingredients_work/ix94rdf/
+so credit to the users in it (New_Log7685, ItzYoboiGuzma, PeddledP)
+
+general rules
+================
+just a sum of all fillings and condiments
+fillings are multiplied by how many on sandwich PHYSICALLY (eg, ham 3, basil 4, rice 1, etc)
++100 to a stat based on flavor bonus table below when comparing top 2 flavors
+types are just sorted by sum first, then in-game type sorting (check an herba or in-game pc box type search to see this order)
+	then listed with effects in 1, 3, 2 order
+	-
+	however, if it has 1 herba (custom recipe)
+		::assuming [grass, fighting, ghost]::
+		main type <= 280: 1, 3, 2 (grass 2, ghost 2, fighting 1)
+		main type > 280: 1, 1, 3 (grass 2, grass 2, fighting 2)
+	-
+	however, if it has 2 herba (custom recipe)
+		::assuming [grass, fighting, ghost]::
+		grass 3, grass 3, grass 3
+	-
+	however, if preset MASTER recipe
+		::assuming [grass, fighting, ghost]::
+		1, 3, 2 (grass, ghost, fighting)
+		or 1, 2, first (grass, fighting, normal) 'first' meaning first from priority list
+		unsure of reason why (see 'priorities.txt')
+	the one exception to the types is preset recipe #39 - Master Dessert Sandwich
+		it calculates the type to [flying, ice, steel], but it's actually [flying, poison, fighting]
+		for some reason, it's treating the type levels from both apples as if it's just 1 apple,
+		  which results in the [flying, poison, fighting] for slots 1 - 3 instead
+		i'm gonna call it a bug for now and just hard-code to match the recipe
+levels are determined by the amount of herba you have in sandwich
+	1 herba defaults to 2, 2, 1 but can be 2, 2, 2 with enough type points
+	2 herba defaults to 3, 3, 3 (this is 3, 3 minimum with no fillings)
+	preset sandwich recipes have hard-coded levels
+	if you start with a preset sandwich and drop off ingredients, the levels will remain based
+	  on preset sandwich, regardless.  this is not shown in the tool.
+
+flavor bonus table
+====================
+sweet, salty - egg
+sweet, sour - catch
+sweet, bitter - egg
+sweet, hot - raid
+salty, sweet - encounter
+salty, sour - encounter
+salty, bitter - exp
+salty, hot - encounter
+sour, sweet - catch
+sour, salty - teensy
+sour, bitter - teensy
+sour, hot - teensy
+bitter, sweet - item
+bitter, salty - exp
+bitter, sour - item
+bitter, hot - item
+hot, sweet - raid
+hot, salty - humungo
+hot, sour - humungo
+hot, bitter - humungo
+
+flavor priority table
+(deprecated by flavor priority list below)
+=====================
+sweet, salty - sweet
+sweet, sour - sweet
+sweet, bitter - sweet
+sweet, hot - sweet
+salty, sour - salty
+salty, bitter - salty
+salty, hot - salty
+sour, bitter - sour
+sour, hot - sour
+bitter, hot - bitter
+
+type priority
+=================
+Normal
+Fighting
+Flying
+Poison
+Ground
+Rock
+Bug
+Ghost
+Steel
+Fire
+Water
+Grass
+Electric
+Psychic
+Ice
+Dragon
+Dark
+Fairy
+
+flavor priority
+=================
+sweet
+salty
+sour
+bitter
+hot
+
+power priority (in-game)
+========================
+egg
+catch
+exp
+item
+raid
+title
+sparkling
+humungo
+teensy
+encounter
+
+
+1 herba mystica
+=================
+some combos of [lettuce, pickle, basil, bitter, olive oil]* to modify GRASS
+------------------------------------------------------
+268 - 280 only 1 of first typing (lv2, lv2, lv1)
+	grass, fighting, ghost = grass, ghost, fighting (1, 3, 2)
+281+ double first typing (lv2, lv2, lv2)
+	fighting, grass, ghost = fighting, fighting, ghost (1, 1, 3)
+
+2 herba mystica
+=================
+500 - 674 gave 3 of first time (lv3, lv3, lv3)
+just 2 herba (no fillings)
+	sparkling, title, item (lv3, lv3, lv3)
+

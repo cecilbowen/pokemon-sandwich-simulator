@@ -1,0 +1,8 @@
+the most obvious next step would be to let users enter criteria such as:
+	'normal encounter, dark catch' and then list a few dozen different ingredient combinations to
+	achieve the desired sandwich.  I could do this soon, or who knows, someone else could use the data
+	from this tool and do it before me
+	
+distinguish between a custom 'from scratch' sandwich and a modified preset recipe sandwich
+	the levels differ between these two, is why
+	

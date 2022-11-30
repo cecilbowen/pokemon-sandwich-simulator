@@ -1,0 +1,2286 @@
+[
+  {
+    "number": "1",
+    "name": "Zesty Sandwich",
+    "description": "The spicy sauce serves as a nice contrast to the sweetness of the vegetables in this sandwich.",
+    "cost": "1750",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "shop": "Every Wich Way",
+    "towns": [
+      "Alfornada",
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Montenevera",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/1.png"
+  },
+  {
+    "number": "2",
+    "name": "Jam Sandwich",
+    "description": "A sandwich made with only jam and slices of strawberry. The simplicity of this dish is what makes it so appetizing.",
+    "cost": "850",
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Every Wich Way",
+    "towns": [
+      "Alfornada",
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Montenevera",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/2.png"
+  },
+  {
+    "number": "3",
+    "name": "Tropical Sandwich",
+    "description": "The balance of acidity and umami is key. A touch of extra marmalade is the trick to making it special.",
+    "cost": "1450",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "shop": "Every Wich Way",
+    "towns": [
+      "Alfornada",
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Montenevera",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/3.png"
+  },
+  {
+    "number": "4",
+    "name": "Marmalade Sandwich",
+    "description": "A simple, economical, and tasty sandwich. Toasting it for extra flavor is also good.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Every Wich Way",
+    "towns": [
+      "Alfornada",
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Montenevera",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/4.png"
+  },
+  {
+    "number": "5",
+    "name": "Avocado Sandwich",
+    "description": "The flavor of this sandwich changes depending on the ripeness of the avocado. One never tires of eating this.",
+    "cost": "1200",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "shop": "Every Wich Way",
+    "towns": [
+      "Alfornada",
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Montenevera",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/5.png"
+  },
+  {
+    "number": "6",
+    "name": "Paella de Paldea",
+    "description": "The various ingredients form a harmony of flavors. This dish truly deserves to bear the name of the region.",
+    "cost": "1800",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "shop": "Go-For-Broke Grill",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/6.png"
+  },
+  {
+    "number": "7",
+    "name": "Fruit Punch",
+    "description": "A variety of fruits weave a deep, rich flavor not found in any other juice.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "shop": "Go-For-Broke Grill",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/7.png"
+  },
+  {
+    "number": "8",
+    "name": "Escalivada",
+    "description": "The roasted vegetables have a pronounced umami flavor. They are great as a side dish—or even as hors d'oeuvres.",
+    "cost": "1500",
+    "effects": [
+      {
+        "name": "Raid Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Psychic",
+        "level": "1"
+      }
+    ],
+    "shop": "Go-For-Broke Grill",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/8.png"
+  },
+  {
+    "number": "9",
+    "name": "Potato Tortilla",
+    "description": "Its unpretentious taste is soothing to the heart and palate. One can't go wrong with this classic Paldean tapa.",
+    "cost": "1600",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Go-For-Broke Grill",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/9.png"
+  },
+  {
+    "number": "10",
+    "name": "Klawf al Ajillo",
+    "description": "A dish for enjoying rare ingredients in a simple way. The leftover oil is good on pasta, too.",
+    "cost": "1500",
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fairy",
+        "level": "1"
+      }
+    ],
+    "shop": "Go-For-Broke Grill",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/10.png"
+  },
+  {
+    "number": "11",
+    "name": "Seafood Pinchos",
+    "description": "The seafood is so fresh you can almost hear the ocean. It is served up in a beautiful arrangement as well.",
+    "cost": "1500",
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "shop": "Seafood Fresco",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/11.png"
+  },
+  {
+    "number": "12",
+    "name": "Arroz con Leche",
+    "description": "The simple, gentle sweetness of this dish is comforting. It's good served chilled or warm.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "shop": "Seafood Fresco",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/12.png"
+  },
+  {
+    "number": "13",
+    "name": "Ceviche",
+    "description": "The acidity of this dish serves to whet one's appetite. Its exceedingly fresh ingredients also add to the flavor.",
+    "cost": "1300",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "shop": "Seafood Fresco",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/13.png"
+  },
+  {
+    "number": "14",
+    "name": "Smoked Fillet with Herbs",
+    "description": "This dish blends the scents of both smoke and herbs. It's almost as if you are eating the aroma itself.",
+    "cost": "1400",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fairy",
+        "level": "1"
+      }
+    ],
+    "shop": "Seafood Fresco",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/14.png"
+  },
+  {
+    "number": "15",
+    "name": "Seafood Pasta",
+    "description": "The toppings change with the market's catch of the day. In a sense, the sea decides what this pasta will taste like.",
+    "cost": "1600",
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Flying",
+        "level": "1"
+      }
+    ],
+    "shop": "Seafood Fresco",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/15.png"
+  },
+  {
+    "number": "16",
+    "name": "Four-Piece Sushi (Flower Set)",
+    "description": "Four pieces of nigiri sushi inspired by beautiful flowers. They're all quite spicy for some reason.",
+    "cost": "2000",
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller",
+    "towns": [
+      "Levincia",
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/16.png"
+  },
+  {
+    "number": "17",
+    "name": "Four-Piece Sushi (Bird Set)",
+    "description": "Four pieces of nigiri sushi inspired by playful birds. They're all quite sweet for some reason.",
+    "cost": "2000",
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller",
+    "towns": [
+      "Levincia",
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/17.png"
+  },
+  {
+    "number": "18",
+    "name": "Four-Piece Sushi (Wind Set)",
+    "description": "Four pieces of nigiri sushi inspired by the blowing wind. They're all quite tart for some reason.",
+    "cost": "2000",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller",
+    "towns": [
+      "Levincia",
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/18.png"
+  },
+  {
+    "number": "19",
+    "name": "Four-Piece Sushi (Moon Set)",
+    "description": "Four pieces of nigiri sushi inspired by the radiant moon. They're all quite bitter for some reason.",
+    "cost": "2000",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller",
+    "towns": [
+      "Levincia",
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/19.png"
+  },
+  {
+    "number": "20",
+    "name": "Miso Soup",
+    "description": "This bowl of soup uses well-aged miso. Even the stock is something special.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Flying",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller",
+    "towns": [
+      "Levincia",
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/20.png"
+  },
+  {
+    "number": "21",
+    "name": "Exclusive Four-Piece Sushi (Frost Set)",
+    "description": "Four pieces of nigiri sushi inspired by crisp frost. This store-exclusive set was carefully selected by the chef.",
+    "cost": "4000",
+    "effects": [
+      {
+        "name": "Raid Power",
+        "type": "Water",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller Sp",
+    "towns": [
+      "Montenevera"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/21.png"
+  },
+  {
+    "number": "22",
+    "name": "Exclusive Four-Piece Sushi (Graupel Set)",
+    "description": "Four pieces of nigiri sushi inspired by soft graupel. This store-exclusive set was made with all the skills of the chef.",
+    "cost": "4000",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Electric",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller Sp",
+    "towns": [
+      "Montenevera"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/22.png"
+  },
+  {
+    "number": "23",
+    "name": "Exclusive Four-Piece Sushi (Hail Set)",
+    "description": "Four pieces of nigiri sushi inspired by stinging hail. This store-exclusive set is highly recommended by the chef.",
+    "cost": "4000",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Electric",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller Sp",
+    "towns": [
+      "Montenevera"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/23.png"
+  },
+  {
+    "number": "24",
+    "name": "Exclusive Four-Piece Sushi (Sleet Set)",
+    "description": "Four pieces of nigiri sushi inspired by thick sleet. This store-exclusive set was made with all the chef's might.",
+    "cost": "4000",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Poison",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller Sp",
+    "towns": [
+      "Montenevera"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/24.png"
+  },
+  {
+    "number": "25",
+    "name": "Consommé",
+    "description": "The clear broth is chock-full of umami. This store- exclusive dish is a work of passion.",
+    "cost": "3500",
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      }
+    ],
+    "shop": "Sushi High Roller Sp",
+    "towns": [
+      "Montenevera"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/25.png"
+  },
+  {
+    "number": "26",
+    "name": "Mapo Tofu",
+    "description": "Though affordable, this dish is the real deal. The spicy, tingly taste is as authentic as can be.",
+    "cost": "1700",
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Flying",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Psychic",
+        "level": "1"
+      }
+    ],
+    "shop": "Jade Palace Garden",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/26.png"
+  },
+  {
+    "number": "27",
+    "name": "Annin Tofu",
+    "description": "The elegant, refreshing sweetness is gentle on the tongue. This dessert is a staple at many tables.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "shop": "Jade Palace Garden",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/27.png"
+  },
+  {
+    "number": "28",
+    "name": "Pickled Toedscool and Cucumber",
+    "description": "This dish is perfect as a palate cleanser. The unobtrusive acidity is very comforting.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "shop": "Jade Palace Garden",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/28.png"
+  },
+  {
+    "number": "29",
+    "name": "Pepper Steak",
+    "description": "The heavy seasoning of this dish makes it perfect as a side dish or a snack. It is a very popular menu item.",
+    "cost": "1700",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Jade Palace Garden",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/29.png"
+  },
+  {
+    "number": "30",
+    "name": "Ramen",
+    "description": "The owner says he recreated this soy sauce-based ramen from a dish he had while traveling the Kanto region.",
+    "cost": "1600",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "shop": "Jade Palace Garden",
+    "towns": [
+      "Levincia",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/30.png"
+  },
+  {
+    "number": "31",
+    "name": "Galette de la Maman",
+    "description": "This galette is made from the finest ingredients, refining the dish to its highest possible quality.",
+    "cost": "3000",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fire",
+        "level": "1"
+      }
+    ],
+    "shop": "Gastronome En Famille",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Medali",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/31.png"
+  },
+  {
+    "number": "32",
+    "name": "Compote du Fils",
+    "description": "This compote is the height of decadence—a dish truly refined to outstanding quality.",
+    "cost": "2800",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Flying",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "1"
+      }
+    ],
+    "shop": "Gastronome En Famille",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Medali",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/32.png"
+  },
+  {
+    "number": "33",
+    "name": "Ratatouille du Grand-père",
+    "description": "A ratatouille made from carefully-selected ingredients, refining the dish beyond measure.",
+    "cost": "3600",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "shop": "Gastronome En Famille",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Medali",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/33.png"
+  },
+  {
+    "number": "34",
+    "name": "Quiche de la Grand-mère",
+    "description": "This quiche is made from first-rate ingredients—a dish that is refined to reach the pinnacle of quiches.",
+    "cost": "3400",
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Gastronome En Famille",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Medali",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/34.png"
+  },
+  {
+    "number": "35",
+    "name": "Pot-au-Feu de la Fille",
+    "description": "Cost was not considered when making this pot-au-feu, refining it into the ultimate dish.",
+    "cost": "3800",
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Flying",
+        "level": "1"
+      }
+    ],
+    "shop": "Gastronome En Famille",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Medali",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/35.png"
+  },
+  {
+    "number": "36",
+    "name": "Dry Curry",
+    "description": "This dish is notable for its poignant spiciness. Its reasonable price is also part of the appeal.",
+    "cost": "1800",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "shop": "Barato's",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/36.png"
+  },
+  {
+    "number": "37",
+    "name": "Chocolate-Vanilla Fruit Parfait",
+    "description": "This has enough calories to keep a person going for a day. It is cost-effective for one's stomach.",
+    "cost": "1400",
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "shop": "Barato's",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/37.png"
+  },
+  {
+    "number": "38",
+    "name": "Lemon Gelato",
+    "description": "The acidity is stimulating despite its artificial nature. This dessert is perfect after an oily meal.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Normal",
+        "level": "1"
+      }
+    ],
+    "shop": "Barato's",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/38.png"
+  },
+  {
+    "number": "39",
+    "name": "Caesar Salad",
+    "description": "The mix of greens, veggies, and salad dressing in this dish makes it quite popular.",
+    "cost": "1300",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Flying",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Fire",
+        "level": "1"
+      }
+    ],
+    "shop": "Barato's",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/39.png"
+  },
+  {
+    "number": "40",
+    "name": "Salisbury Steak with Fried Fixings",
+    "description": "One can't go wrong with this signature dish. The generous portions make it popular among youths.",
+    "cost": "1900",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Flying",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fairy",
+        "level": "1"
+      }
+    ],
+    "shop": "Barato's",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Mesagoza"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/40.png"
+  },
+  {
+    "number": "41",
+    "name": "Spicy Potatoes",
+    "description": "The Scovillain sauce goes perfectly with the crispy fried potatoes.",
+    "cost": "1450",
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "shop": "Seabreeze Café",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/41.png"
+  },
+  {
+    "number": "42",
+    "name": "Alfajores",
+    "description": "The light, crunchy texture is very enjoyable. These treats go well with slightly bitter coffee.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Raid Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "shop": "Seabreeze Café",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/42.png"
+  },
+  {
+    "number": "43",
+    "name": "Lemon Soda",
+    "description": "It has freshly squeezed lemon juice and strong carbonation. It's a drink one wants to gulp down.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "shop": "Seabreeze Café",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/43.png"
+  },
+  {
+    "number": "44",
+    "name": "Coffee",
+    "description": "A blend of coffee that's slightly on the bitter end. Its fragrant aroma makes it easy to keep drinking.",
+    "cost": "850",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "shop": "Seabreeze Café",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/44.png"
+  },
+  {
+    "number": "45",
+    "name": "Quesadilla",
+    "description": "A simple dish with only cheese and ham as fillings. It has a crispy texture and is easy to eat.",
+    "cost": "1600",
+    "effects": [
+      {
+        "name": "Raid Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Psychic",
+        "level": "1"
+      }
+    ],
+    "shop": "Seabreeze Café",
+    "towns": [
+      "Alfornada",
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/45.png"
+  },
+  {
+    "number": "46",
+    "name": "Five-Alarm Sandwich",
+    "description": "A veggie-heavy stuffing and a piquant sauce make this sandwich a very refreshing meal.",
+    "cost": "1700",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Psychic",
+        "level": "1"
+      }
+    ],
+    "shop": "Cafeteria",
+    "towns": [
+      "Naranja Academy",
+      "Uva Academy"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/46.png"
+  },
+  {
+    "number": "47",
+    "name": "Peanut Butter Sandwich",
+    "description": "The thick sweetness lingers in the mouth—a treat for the taste buds.",
+    "cost": "1020",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "shop": "Cafeteria",
+    "towns": [
+      "Naranja Academy",
+      "Uva Academy"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/47.png"
+  },
+  {
+    "number": "48",
+    "name": "Potato Salad Sandwich",
+    "description": "The potato salad makes this sandwich nicely filling. This is a perfect lunchtime meal.",
+    "cost": "1200",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "shop": "Cafeteria",
+    "towns": [
+      "Naranja Academy",
+      "Uva Academy"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/48.png"
+  },
+  {
+    "number": "49",
+    "name": "Pickle Sandwich",
+    "description": "Pickles are the only filling in this single-minded sandwich. It's an exceedingly simple meal.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "shop": "Cafeteria",
+    "towns": [
+      "Naranja Academy",
+      "Uva Academy"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/49.png"
+  },
+  {
+    "number": "50",
+    "name": "Egg Sandwich",
+    "description": "The key is that the eggs aren't scrambled—rather, they are thinly-sliced boiled eggs.",
+    "cost": "980",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "shop": "Cafeteria",
+    "towns": [
+      "Naranja Academy",
+      "Uva Academy"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/50.png"
+  },
+  {
+    "number": "51",
+    "name": "Mustard Rice Ball",
+    "description": "The subtle spiciness makes the rice taste sweet. The key to this dish is a light touch—it should not be dense or heavy!",
+    "cost": "750",
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Electric",
+        "level": "1"
+      }
+    ],
+    "shop": "Treasure Eatery",
+    "towns": [
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/51.png"
+  },
+  {
+    "number": "52",
+    "name": "Sweet Adzuki Bean Soup",
+    "description": "This dish is good for a snack or as a dessert to wrap up a meal. Its gentle sweetness doesn't overstay its welcome.",
+    "cost": "800",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "shop": "Treasure Eatery",
+    "towns": [
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/52.png"
+  },
+  {
+    "number": "53",
+    "name": "Homemade Umeboshi",
+    "description": "This pickled plum dish is so sour it'll numb your tongue. It has a nice kick of saltiness and a hint of umami.",
+    "cost": "500",
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Treasure Eatery",
+    "towns": [
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/53.png"
+  },
+  {
+    "number": "54",
+    "name": "Bitter Melon Stir-Fry",
+    "description": "This is a recreation of a dish that the head chef encountered during her travels in the Hoenn region.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "shop": "Treasure Eatery",
+    "towns": [
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/54.png"
+  },
+  {
+    "number": "55",
+    "name": "Soba Noodle Soup",
+    "description": "This dish comes with a simple garnish of green onions, so one can enjoy the noodles and broth without distraction.",
+    "cost": "920",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "shop": "Treasure Eatery",
+    "towns": [
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/55.png"
+  },
+  {
+    "number": "56",
+    "name": "Dandan Noodles",
+    "description": "The spicy flavoring is irresistible. This dish not only has a bite, but plenty of umami as well.",
+    "cost": "3600",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Fire",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Kofu Lounge",
+    "towns": [
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/56.png"
+  },
+  {
+    "number": "57",
+    "name": "Tofu Pudding",
+    "description": "This dish is good freshly made and piping hot, but it's also delicious served cold and drenched in syrup.",
+    "cost": "3000",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "shop": "Kofu Lounge",
+    "towns": [
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/57.png"
+  },
+  {
+    "number": "58",
+    "name": "Hot and Sour Soup",
+    "description": "This soup's thickness keeps it warm longer. The sourness of the seasonings is delicious.",
+    "cost": "3200",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Fighting",
+        "level": "1"
+      }
+    ],
+    "shop": "Kofu Lounge",
+    "towns": [
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/58.png"
+  },
+  {
+    "number": "59",
+    "name": "Oolong Tea",
+    "description": "With its refreshing bitterness and full-bodied aroma, this tea goes well with oily dishes.",
+    "cost": "2800",
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "shop": "Kofu Lounge",
+    "towns": [
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/59.png"
+  },
+  {
+    "number": "60",
+    "name": "House Special Hot Pot",
+    "description": "This soup has an exceedingly rich flavor. It is said that the ingredients are a house secret.",
+    "cost": "3800",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "shop": "Kofu Lounge",
+    "towns": [
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/60.png"
+  },
+  {
+    "number": "61",
+    "name": "Churro",
+    "description": "Standard churro. Nothing fancy, but it's tasty all the same.",
+    "cost": "850",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Fire",
+        "level": "1"
+      }
+    ],
+    "shop": "Smoochurro",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/61.png"
+  },
+  {
+    "number": "62",
+    "name": "Chocolate Churro",
+    "description": "A churro covered in chocolate. Nothing fancy, but it's tasty all the same.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Normal",
+        "level": "1"
+      }
+    ],
+    "shop": "Smoochurro",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/62.png"
+  },
+  {
+    "number": "63",
+    "name": "Cinnamon Churro",
+    "description": "This churro is covered in cinnamon. Nothing fancy, but it's tasty all the same.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "shop": "Smoochurro",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/63.png"
+  },
+  {
+    "number": "64",
+    "name": "Pinchitos",
+    "description": "This dish is at its absolute best when freshly made. Its rich aroma whets the appetite.",
+    "cost": "1200",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "shop": "Chic Kebab",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Montenevera",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/64.png"
+  },
+  {
+    "number": "65",
+    "name": "Grilled Rice Balls",
+    "description": "These rice balls have been grilled to perfection. The soy sauce-based marinade is very fragrant.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Chic Kebab",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Medali",
+      "Mesagoza",
+      "Montenevera",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/65.png"
+  },
+  {
+    "number": "66",
+    "name": "Strawberry Chocolate Crepe",
+    "description": "Made using the Kantonian shop owner's prized recipe, this crepe is topped with strawberries and chocolate.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Raid Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Kanto Crepes",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Mesagoza",
+      "Porto Marinada"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/66.png"
+  },
+  {
+    "number": "67",
+    "name": "Strawberry Whipped Cream Crepe",
+    "description": "Made using the Kantonian shop owner's prized recipe, this crepe is topped with strawberries and whipped cream.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Electric",
+        "level": "1"
+      }
+    ],
+    "shop": "Kanto Crepes",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Mesagoza",
+      "Porto Marinada"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/67.png"
+  },
+  {
+    "number": "68",
+    "name": "Chocolate Banana Crepe",
+    "description": "Made using the Kantonian shop owner's prized recipe, this crepe is topped with bananas and chocolate.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "shop": "Kanto Crepes",
+    "towns": [
+      "Levincia",
+      "Artazon",
+      "Mesagoza",
+      "Porto Marinada"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/68.png"
+  },
+  {
+    "number": "69",
+    "name": "Mint Chocolate Ice Cream",
+    "description": "The mint flavor is strong and the chocolate is bitter—a distinct contrast that keeps you coming back for more.",
+    "cost": "950",
+    "effects": [
+      {
+        "name": "Raid Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Sugar-N-Ice",
+    "towns": [
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Los Platos",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/69.png"
+  },
+  {
+    "number": "70",
+    "name": "Fizzy-Pop Ice Cream",
+    "description": "The texture of this icy treat is delightful—and its light sweetness is, too. You'll never get tired of eating this.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Fire",
+        "level": "1"
+      }
+    ],
+    "shop": "Sugar-N-Ice",
+    "towns": [
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Los Platos",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/70.png"
+  },
+  {
+    "number": "71",
+    "name": "Strawberry Ice Cream",
+    "description": "Fresh strawberries are folded into the ice cream, so you can taste their natural sweetness.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "shop": "Sugar-N-Ice",
+    "towns": [
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Los Platos",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/71.png"
+  },
+  {
+    "number": "72",
+    "name": "Mango Ice Cream",
+    "description": "Well-ripened mangoes are carefully selected for this ice cream. Its stunning sweetness may not be for everyone.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Electric",
+        "level": "1"
+      }
+    ],
+    "shop": "Sugar-N-Ice",
+    "towns": [
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Los Platos",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/72.png"
+  },
+  {
+    "number": "73",
+    "name": "Nacli Salt Ice Cream",
+    "description": "This is the shop's signature ice cream, using Nacli's salt for its gentler flavor.",
+    "cost": "900",
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "shop": "Sugar-N-Ice",
+    "towns": [
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Los Platos",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/73.png"
+  },
+  {
+    "number": "74",
+    "name": "Teriyaki Ice Cream",
+    "description": "This dish is secretly very popular, with the sweet-and-salty sauce bringing many repeat customers.",
+    "cost": "1150",
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "shop": "Sugar-N-Ice",
+    "towns": [
+      "Cortondo",
+      "Levincia",
+      "Artazon",
+      "Los Platos",
+      "Medali",
+      "Mesagoza",
+      "Porto Marinada",
+      "Cascarrafa"
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/meals/74.png"
+  }
+]

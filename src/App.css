@@ -2,9 +2,148 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.expand-button {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 8px;
+  height: 12px;
+  border-style: groove;
+  border-radius: 10px;
+  cursor: nw-resize;
+}
+
+.expand-help {
+  position: absolute;
+  top: 22px;
+  left: 48px;
+  height: fit-content;
+  /*width: 52px;*/
+  /*cursor: nw-resize;*/
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 1;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.expand-help:hover {
+  opacity: 1;
+}
+
+.filling-bkg {
+  background-color: rgba(255, 0, 0, 0.13);
+}
+
+.condiment-bkg {
+  background-color: rgba(0, 0, 255, 0.14);
+}
+
+.filling-portrait {
+  border: 2px solid #d92525;
+  border-radius: 10px;
+  margin: 0px 2px 0px 2px;
+}
+
+.condiment-portrait {
+  border: 2px solid #1818be;
+  border-radius: 10px;
+  margin: 0px 2px 0px 2px;
+}
+
+.search-panel {
+  margin-top: 10px;
+}
+
+.search-bar {
+  width: 250px;
+  margin: 0px 10px 0px 10px;
+}
+
+.search-results-div {
+  margin-top: 10px;
+}
+
+.settings-bar {
+  margin: 10px 0px 10px 0px;
+}
+
+.button-spacing {
+  cursor: pointer;
+  margin: 0px 10px 0px 10px;
+}
+
+.ingredient {
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid black;
+  text-align: left;
+  border-radius: 10px;
+  margin: 2px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.page-break {
+  width: 100vw;
+}
+
+.pieces {
+  display: flex;
+  padding-left: 4px;
+  margin: 4px;
+  margin-top: -10px;
+}
+
+.piece-button {
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.bubble-row {
+  display: flex;
+}
+
+.bubble-header {
+  font-weight: bold;
+}
+
+.bubble {
+  display: flex;
+  /*border: 1px solid black;*/
+  border-radius: 25px;
+  padding: 4px;
+  width: fit-content;
+  height: fit-content;
+  font-family: monospace;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.chain-a {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-right: 0px;
+}
+.chain-b {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.chain-c {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-left: 0px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

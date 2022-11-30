@@ -1,0 +1,1723 @@
+[
+  {
+    "name": "Apple",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 3
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 4
+      },
+      {
+        "type": "Catching",
+        "amount": -1
+      },
+      {
+        "type": "Item Drop",
+        "amount": 7
+      },
+      {
+        "type": "Humungo",
+        "amount": -5
+      }
+    ],
+    "types": [
+      {
+        "type": "Flying",
+        "amount": 7
+      },
+      {
+        "type": "Steel",
+        "amount": 7
+      },
+      {
+        "type": "Ice",
+        "amount": 7
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/apple.png",
+    "pieces": 3
+  },
+  {
+    "name": "Avocado",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 3
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Dragon",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/avocado.png",
+    "pieces": 3
+  },
+  {
+    "name": "Bacon",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Salty",
+        "amount": 5
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Rock",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/bacon.png",
+    "pieces": 3
+  },
+  {
+    "name": "Banana",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 4
+      },
+      {
+        "type": "Catching",
+        "amount": -1
+      },
+      {
+        "type": "Item Drop",
+        "amount": 7
+      },
+      {
+        "type": "Humungo",
+        "amount": -5
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 7
+      },
+      {
+        "type": "Bug",
+        "amount": 7
+      },
+      {
+        "type": "Electric",
+        "amount": 7
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/banana.png",
+    "pieces": 3
+  },
+  {
+    "name": "Basil",
+    "tastes": [
+      {
+        "flavor": "Salty",
+        "amount": 1
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 2
+      },
+      {
+        "type": "Raid",
+        "amount": 2
+      },
+      {
+        "type": "Encounter",
+        "amount": -2
+      }
+    ],
+    "types": [
+      {
+        "type": "Fire",
+        "amount": 1
+      },
+      {
+        "type": "Water",
+        "amount": 1
+      },
+      {
+        "type": "Grass",
+        "amount": 1
+      },
+      {
+        "type": "Electric",
+        "amount": 1
+      },
+      {
+        "type": "Psychic",
+        "amount": 1
+      },
+      {
+        "type": "Ice",
+        "amount": 1
+      },
+      {
+        "type": "Dragon",
+        "amount": 1
+      },
+      {
+        "type": "Dark",
+        "amount": 1
+      },
+      {
+        "type": "Fairy",
+        "amount": 1
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/basil.png",
+    "pieces": 4
+  },
+  {
+    "name": "Cheese",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Salty",
+        "amount": 3
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 2
+      },
+      {
+        "type": "Exp.",
+        "amount": 2
+      },
+      {
+        "type": "Item Drop",
+        "amount": 2
+      },
+      {
+        "type": "Encounter",
+        "amount": -2
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 5
+      },
+      {
+        "type": "Fighting",
+        "amount": 5
+      },
+      {
+        "type": "Flying",
+        "amount": 5
+      },
+      {
+        "type": "Poison",
+        "amount": 5
+      },
+      {
+        "type": "Ground",
+        "amount": 5
+      },
+      {
+        "type": "Rock",
+        "amount": 5
+      },
+      {
+        "type": "Bug",
+        "amount": 5
+      },
+      {
+        "type": "Ghost",
+        "amount": 5
+      },
+      {
+        "type": "Steel",
+        "amount": 5
+      },
+      {
+        "type": "Fire",
+        "amount": 5
+      },
+      {
+        "type": "Water",
+        "amount": 5
+      },
+      {
+        "type": "Grass",
+        "amount": 5
+      },
+      {
+        "type": "Electric",
+        "amount": 5
+      },
+      {
+        "type": "Psychic",
+        "amount": 5
+      },
+      {
+        "type": "Ice",
+        "amount": 5
+      },
+      {
+        "type": "Dragon",
+        "amount": 5
+      },
+      {
+        "type": "Dark",
+        "amount": 5
+      },
+      {
+        "type": "Fairy",
+        "amount": 5
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/cheese.png",
+    "pieces": 3
+  },
+  {
+    "name": "Cherry Tomatoes",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 3
+      },
+      {
+        "flavor": "Sour",
+        "amount": 5
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Bug",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/cherrytomatoes.png",
+    "pieces": 3
+  },
+  {
+    "name": "Chorizo",
+    "tastes": [
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 2
+      },
+      {
+        "flavor": "Hot",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Exp.",
+        "amount": 7
+      },
+      {
+        "type": "Item Drop",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 4
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 12
+      },
+      {
+        "type": "Poison",
+        "amount": 12
+      },
+      {
+        "type": "Bug",
+        "amount": 12
+      },
+      {
+        "type": "Fire",
+        "amount": 12
+      },
+      {
+        "type": "Electric",
+        "amount": 12
+      },
+      {
+        "type": "Dragon",
+        "amount": 12
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/chorizo.png",
+    "pieces": 3
+  },
+  {
+    "name": "Cucumber",
+    "tastes": [
+      {
+        "flavor": "Sour",
+        "amount": 1
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Water",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/cucumber.png",
+    "pieces": 3
+  },
+  {
+    "name": "Egg",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Salty",
+        "amount": 2
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Exp.",
+        "amount": 7
+      },
+      {
+        "type": "Item Drop",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 4
+      }
+    ],
+    "types": [
+      {
+        "type": "Flying",
+        "amount": 12
+      },
+      {
+        "type": "Rock",
+        "amount": 12
+      },
+      {
+        "type": "Steel",
+        "amount": 12
+      },
+      {
+        "type": "Grass",
+        "amount": 12
+      },
+      {
+        "type": "Ice",
+        "amount": 12
+      },
+      {
+        "type": "Fairy",
+        "amount": 12
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/egg.png",
+    "pieces": 3
+  },
+  {
+    "name": "Fried Fillet",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 2
+      },
+      {
+        "flavor": "Salty",
+        "amount": 3
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 3
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 21
+      },
+      {
+        "type": "Raid",
+        "amount": 12
+      },
+      {
+        "type": "Encounter",
+        "amount": -3
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 20
+      },
+      {
+        "type": "Flying",
+        "amount": 20
+      },
+      {
+        "type": "Ground",
+        "amount": 20
+      },
+      {
+        "type": "Bug",
+        "amount": 20
+      },
+      {
+        "type": "Steel",
+        "amount": 20
+      },
+      {
+        "type": "Water",
+        "amount": 20
+      },
+      {
+        "type": "Electric",
+        "amount": 20
+      },
+      {
+        "type": "Ice",
+        "amount": 20
+      },
+      {
+        "type": "Dark",
+        "amount": 20
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/friedfillet.png",
+    "pieces": 1
+  },
+  {
+    "name": "Green Bell Pepper",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 5
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Poison",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/greenbellpepper.png",
+    "pieces": 3
+  },
+  {
+    "name": "Ham",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Salty",
+        "amount": 5
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Ground",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/ham.png",
+    "pieces": 3
+  },
+  {
+    "name": "Hamburger",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 6
+      },
+      {
+        "flavor": "Salty",
+        "amount": 12
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 9
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": -3
+      },
+      {
+        "type": "Encounter",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Steel",
+        "amount": 18
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/hamburger.png",
+    "pieces": 1
+  },
+  {
+    "name": "Herbed Sausage",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Exp.",
+        "amount": 7
+      },
+      {
+        "type": "Item Drop",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 4
+      }
+    ],
+    "types": [
+      {
+        "type": "Fighting",
+        "amount": 12
+      },
+      {
+        "type": "Ground",
+        "amount": 12
+      },
+      {
+        "type": "Ghost",
+        "amount": 12
+      },
+      {
+        "type": "Water",
+        "amount": 12
+      },
+      {
+        "type": "Psychic",
+        "amount": 12
+      },
+      {
+        "type": "Dark",
+        "amount": 12
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/herbedsausage.png",
+    "pieces": 3
+  },
+  {
+    "name": "Jalapeno",
+    "tastes": [
+      {
+        "flavor": "Sour",
+        "amount": 2
+      },
+      {
+        "flavor": "Hot",
+        "amount": 5
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 4
+      },
+      {
+        "type": "Catching",
+        "amount": -1
+      },
+      {
+        "type": "Item Drop",
+        "amount": 7
+      },
+      {
+        "type": "Humungo",
+        "amount": -5
+      }
+    ],
+    "types": [
+      {
+        "type": "Rock",
+        "amount": 7
+      },
+      {
+        "type": "Grass",
+        "amount": 7
+      },
+      {
+        "type": "Fairy",
+        "amount": 7
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/jalapeno.png",
+    "pieces": 3
+  },
+  {
+    "name": "Kiwi",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 2
+      },
+      {
+        "flavor": "Sour",
+        "amount": 5
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 4
+      },
+      {
+        "type": "Catching",
+        "amount": -1
+      },
+      {
+        "type": "Item Drop",
+        "amount": 7
+      },
+      {
+        "type": "Humungo",
+        "amount": -5
+      }
+    ],
+    "types": [
+      {
+        "type": "Poison",
+        "amount": 7
+      },
+      {
+        "type": "Fire",
+        "amount": 7
+      },
+      {
+        "type": "Dragon",
+        "amount": 7
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/kiwi.png",
+    "pieces": 3
+  },
+  {
+    "name": "Klawf Stick",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Salty",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Ice",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/klawfstick.png",
+    "pieces": 3
+  },
+  {
+    "name": "Lettuce",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 2
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Grass",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/lettuce.png",
+    "pieces": 3
+  },
+  {
+    "name": "Noodles",
+    "tastes": [
+      {
+        "flavor": "Salty",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Humungo",
+        "amount": 21
+      },
+      {
+        "type": "Teensy",
+        "amount": -3
+      },
+      {
+        "type": "Encounter",
+        "amount": 12
+      }
+    ],
+    "types": [
+      {
+        "type": "Poison",
+        "amount": 30
+      },
+      {
+        "type": "Ground",
+        "amount": 30
+      },
+      {
+        "type": "Rock",
+        "amount": 30
+      },
+      {
+        "type": "Electric",
+        "amount": 30
+      },
+      {
+        "type": "Psychic",
+        "amount": 30
+      },
+      {
+        "type": "Ice",
+        "amount": 30
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/noodles.png",
+    "pieces": 1
+  },
+  {
+    "name": "Onion",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 2
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      },
+      {
+        "flavor": "Hot",
+        "amount": 3
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Psychic",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/onion.png",
+    "pieces": 3
+  },
+  {
+    "name": "Pickle",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Sour",
+        "amount": 4
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 2
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Fighting",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/pickle.png",
+    "pieces": 3
+  },
+  {
+    "name": "Pineapple",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 3
+      },
+      {
+        "flavor": "Sour",
+        "amount": 5
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 4
+      },
+      {
+        "type": "Catching",
+        "amount": -1
+      },
+      {
+        "type": "Item Drop",
+        "amount": 7
+      },
+      {
+        "type": "Humungo",
+        "amount": -5
+      }
+    ],
+    "types": [
+      {
+        "type": "Ground",
+        "amount": 7
+      },
+      {
+        "type": "Water",
+        "amount": 7
+      },
+      {
+        "type": "Dark",
+        "amount": 7
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/pineapple.png",
+    "pieces": 3
+  },
+  {
+    "name": "Potato Salad",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 2
+      },
+      {
+        "flavor": "Salty",
+        "amount": 3
+      },
+      {
+        "flavor": "Sour",
+        "amount": 4
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Humungo",
+        "amount": 21
+      },
+      {
+        "type": "Teensy",
+        "amount": -3
+      },
+      {
+        "type": "Encounter",
+        "amount": 12
+      }
+    ],
+    "types": [
+      {
+        "type": "Bug",
+        "amount": 30
+      },
+      {
+        "type": "Ghost",
+        "amount": 30
+      },
+      {
+        "type": "Steel",
+        "amount": 30
+      },
+      {
+        "type": "Dragon",
+        "amount": 30
+      },
+      {
+        "type": "Dark",
+        "amount": 30
+      },
+      {
+        "type": "Fairy",
+        "amount": 30
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/potatosalad.png",
+    "pieces": 1
+  },
+  {
+    "name": "Potato Tortilla",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 3
+      },
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 3
+      },
+      {
+        "flavor": "Hot",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 21
+      },
+      {
+        "type": "Raid",
+        "amount": 12
+      },
+      {
+        "type": "Encounter",
+        "amount": -3
+      }
+    ],
+    "types": [
+      {
+        "type": "Fighting",
+        "amount": 20
+      },
+      {
+        "type": "Poison",
+        "amount": 20
+      },
+      {
+        "type": "Rock",
+        "amount": 20
+      },
+      {
+        "type": "Ghost",
+        "amount": 20
+      },
+      {
+        "type": "Fire",
+        "amount": 20
+      },
+      {
+        "type": "Grass",
+        "amount": 20
+      },
+      {
+        "type": "Psychic",
+        "amount": 20
+      },
+      {
+        "type": "Dragon",
+        "amount": 20
+      },
+      {
+        "type": "Fairy",
+        "amount": 20
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/potatotortilla.png",
+    "pieces": 1
+  },
+  {
+    "name": "Prosciutto",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 2
+      },
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Flying",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/prosciutto.png",
+    "pieces": 3
+  },
+  {
+    "name": "Red Bell Pepper",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 3
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Fire",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/redbellpepper.png",
+    "pieces": 3
+  },
+  {
+    "name": "Red Onion",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 3
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Ghost",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/redonion.png",
+    "pieces": 3
+  },
+  {
+    "name": "Rice",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 3
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Humungo",
+        "amount": 21
+      },
+      {
+        "type": "Teensy",
+        "amount": -3
+      },
+      {
+        "type": "Encounter",
+        "amount": 12
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 30
+      },
+      {
+        "type": "Fighting",
+        "amount": 30
+      },
+      {
+        "type": "Flying",
+        "amount": 30
+      },
+      {
+        "type": "Fire",
+        "amount": 30
+      },
+      {
+        "type": "Water",
+        "amount": 30
+      },
+      {
+        "type": "Grass",
+        "amount": 30
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/rice.png",
+    "pieces": 1
+  },
+  {
+    "name": "Smoked Fillet",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Salty",
+        "amount": 3
+      },
+      {
+        "flavor": "Sour",
+        "amount": 2
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 3
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Dark",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/smokedfillet.png",
+    "pieces": 3
+  },
+  {
+    "name": "Strawberry",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 4
+      },
+      {
+        "type": "Catching",
+        "amount": -1
+      },
+      {
+        "type": "Item Drop",
+        "amount": 7
+      },
+      {
+        "type": "Humungo",
+        "amount": -5
+      }
+    ],
+    "types": [
+      {
+        "type": "Fighting",
+        "amount": 7
+      },
+      {
+        "type": "Ghost",
+        "amount": 7
+      },
+      {
+        "type": "Psychic",
+        "amount": 7
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/strawberry.png",
+    "pieces": 3
+  },
+  {
+    "name": "Tofu",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 3
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/tofu.png",
+    "pieces": 3
+  },
+  {
+    "name": "Tomato",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 2
+      },
+      {
+        "flavor": "Sour",
+        "amount": 4
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Fairy",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/tomato.png",
+    "pieces": 3
+  },
+  {
+    "name": "Watercress",
+    "tastes": [
+      {
+        "flavor": "Salty",
+        "amount": 1
+      },
+      {
+        "flavor": "Sour",
+        "amount": 2
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 5
+      },
+      {
+        "flavor": "Hot",
+        "amount": 1
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 2
+      },
+      {
+        "type": "Raid",
+        "amount": 2
+      },
+      {
+        "type": "Encounter",
+        "amount": -2
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 1
+      },
+      {
+        "type": "Fighting",
+        "amount": 1
+      },
+      {
+        "type": "Flying",
+        "amount": 1
+      },
+      {
+        "type": "Poison",
+        "amount": 1
+      },
+      {
+        "type": "Ground",
+        "amount": 1
+      },
+      {
+        "type": "Rock",
+        "amount": 1
+      },
+      {
+        "type": "Bug",
+        "amount": 1
+      },
+      {
+        "type": "Ghost",
+        "amount": 1
+      },
+      {
+        "type": "Steel",
+        "amount": 1
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/watercress.png",
+    "pieces": 3
+  },
+  {
+    "name": "Yellow Bell Pepper",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 1
+      },
+      {
+        "flavor": "Sour",
+        "amount": 1
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 3
+      }
+    ],
+    "powers": [
+      {
+        "type": "Catching",
+        "amount": 4
+      },
+      {
+        "type": "Raid",
+        "amount": -1
+      },
+      {
+        "type": "Encounter",
+        "amount": 7
+      }
+    ],
+    "types": [
+      {
+        "type": "Electric",
+        "amount": 6
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/yellowbellpepper.png",
+    "pieces": 3
+  }
+]

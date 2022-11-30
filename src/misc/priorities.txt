@@ -1,0 +1,59 @@
+MASTER recipe weirdness
+--------------------------
+so some of the MASTER level preset recipes go the standard 1, 3, 2 for types
+while others go 1, 2, first-in-priority
+I haven't figured out any pattern as to why, so for now I've just labeled the ones that
+do this, and hard-coded them toward [1, 2, first] instead of [1, 3, 2] (see '1, 2, first sandwiches' list below)
+
+random attemps at finding some sort of pattern
+========================
+hot-sweet 1, 3, 2
+sour-bitter 1, 3, 2
+sour-sweet 1, 3, 2 (111?)
+salty-bitter 1, 3, 2
+bitter-salty 1, 2, first
+sweet-sour 1, 2, first (15, _39_, 99, 127?)
+sour-hot 1, 2, first
+salty-sour 1, 3, 2
+bitter-hot 1, 2, first
+hot-sour 1, 2, first
+sweet-hot 1, 3, 2
+hot-salty 1, 3, 2
+sour-salty 1, 2, first
+hot-bitter 1, 2, first (135?)
+bitter-sweet 1, 2, first
+salty-sweet 1, 2, first (27?)
+sweet-bitter 1, 2, first
+
+1, 3, 2
+catch-item
+teensy-egg
+encounter-item
+exp-encounter
+
+1, 2, first
+raid-item
+exp-raid
+humungo-encounter
+
+1, 2, first sandwiches
+-----------------------
+31
+35
+51
+55
+59
+63
+67
+71
+75
+79
+103
+111
+119
+123
+131
+139
+143
+147
+151

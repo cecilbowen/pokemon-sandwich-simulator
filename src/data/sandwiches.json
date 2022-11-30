@@ -1,0 +1,5105 @@
+[
+  {
+    "number": "1",
+    "name": "Jambon-Beurre",
+    "description": "A sandwich with just ham and butter in it. So simple that there's no way to fake it.",
+    "fillings": [
+      "Ham"
+    ],
+    "condiments": [
+      "Butter"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/1.jpg",
+    "location": "Start"
+  },
+  {
+    "number": "2",
+    "name": "Bitter Jambon-Beurre",
+    "description": "A Jambon-Beurre with a bitter twist. If you love a touch of bitterness, you'll want to eat this.",
+    "fillings": [
+      "Ham"
+    ],
+    "condiments": [
+      "Butter",
+      "Bitter Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Bug",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/2.jpg",
+    "location": "From man in Sandwich Shop if you have Bitter Herba Mystica"
+  },
+  {
+    "number": "3",
+    "name": "Sweet Jambon-Beurre",
+    "description": "A Jambon-Beurre with a sweet twist. Seeking the finest sweetness around? Look no further.",
+    "fillings": [
+      "Ham"
+    ],
+    "condiments": [
+      "Butter",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Bug",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/3.jpg",
+    "location": "From man in Sandwich Shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "4",
+    "name": "Salty Jambon-Beurre",
+    "description": "A Jambon-Beurre with a salty twist. Packs a delicious salty punch.",
+    "fillings": [
+      "Ham"
+    ],
+    "condiments": [
+      "Butter",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Bug",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/4.jpg",
+    "location": "From man in Sandwich Shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "5",
+    "name": "Sour Jambon-Beurre",
+    "description": "A Jambon-Beurre with a sour twist. Its vivid acidic notes will leave you wanting another.",
+    "fillings": [
+      "Ham"
+    ],
+    "condiments": [
+      "Butter",
+      "Sour Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Bug",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/5.jpg",
+    "location": "From man in Sandwich Shop if you have Sour Herba Mystica"
+  },
+  {
+    "number": "6",
+    "name": "Spicy Jambon-Beurre",
+    "description": "A Jambon-Beurre with a spicy twist. If you like a sandwich with some kick to it, don't miss this.",
+    "fillings": [
+      "Ham"
+    ],
+    "condiments": [
+      "Butter",
+      "Spicy Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Bug",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/6.jpg",
+    "location": "From man in Sandwich Shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "7",
+    "name": "Legendary Bitter Sandwich",
+    "description": "A sandwich known as the ultimate in bitter taste. The herbs should be laid on thick.",
+    "fillings": [
+      "Lettuce",
+      "Bacon"
+    ],
+    "condiments": [
+      "Bitter Herba Mystica",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/7.jpg",
+    "location": "From man in Sandwich Shop if you have Bitter Herba Mystica"
+  },
+  {
+    "number": "8",
+    "name": "Legendary Salty Sandwich",
+    "description": "A sandwich for the true salt aficionado. When eating this, make absolutely certain to have a drink at hand.",
+    "fillings": [
+      "Lettuce",
+      "Bacon"
+    ],
+    "condiments": [
+      "Salty Herba Mystica",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/8.jpg",
+    "location": "From man in Sandwich Shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "9",
+    "name": "Legendary Sweet Sandwich",
+    "description": "A sandwich so sweet it's downright frightening. The trick is to really pile on the herbs.",
+    "fillings": [
+      "Lettuce",
+      "Bacon"
+    ],
+    "condiments": [
+      "Sweet Herba Mystica",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/9.jpg",
+    "location": "From man in Sandwich Shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "10",
+    "name": "Legendary Sour Sandwich",
+    "description": "A sandwich devoted to true fans of sour flavors. The fresher the herbs, the more potent the sourness.",
+    "fillings": [
+      "Lettuce",
+      "Bacon"
+    ],
+    "condiments": [
+      "Sour Herba Mystica",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/10.jpg",
+    "location": "From man in Sandwich Shop if you have Sour Herba Mystica"
+  },
+  {
+    "number": "11",
+    "name": "Legendary Spicy Sandwich",
+    "description": "A sandwich so spicy it practically assaults the tongue. Dislikers of spicy food, beware.",
+    "fillings": [
+      "Lettuce",
+      "Bacon"
+    ],
+    "condiments": [
+      "Spicy Herba Mystica",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/11.jpg",
+    "location": "From man in Sandwich Shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "12",
+    "name": "Jam Sandwich",
+    "description": "A sandwich made with only jam and slices of strawberry. The simplicity of this dish is what makes it so appetizing.",
+    "fillings": [
+      "Strawberry"
+    ],
+    "condiments": [
+      "Jam"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/12.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "13",
+    "name": "Great Jam Sandwich",
+    "description": "The addition of yogurt has heightened the sweetness and deepened the richness of this sandwich.",
+    "fillings": [
+      "Strawberry"
+    ],
+    "condiments": [
+      "Jam",
+      "Yogurt"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/13.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "14",
+    "name": "Ultra Jam Sandwich",
+    "description": "Filling enough to be a meal, tasty enough to be a snack. It's best when you choose the sweetest pineapples.",
+    "fillings": [
+      "Strawberry",
+      "Pineapple"
+    ],
+    "condiments": [
+      "Jam",
+      "Yogurt"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/14.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "15",
+    "name": "Master Jam Sandwich",
+    "description": "A truly perfected sandwich, with the addition of the herbs elevating all the other fillings.",
+    "fillings": [
+      "Strawberry",
+      "Pineapple"
+    ],
+    "condiments": [
+      "Jam",
+      "Yogurt",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Fighting",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/15.jpg",
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "16",
+    "name": "Peanut Butter Sandwich",
+    "description": "Peanut butter and bananas make a surprisingly nice pair. They leave you feeling full and satisfied.",
+    "fillings": [
+      "Banana"
+    ],
+    "condiments": [
+      "Peanut Butter"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/16.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "17",
+    "name": "Great Peanut Butter Sandwich",
+    "description": "Adding butter into the mix has contributed yet more substance, making this one robust sandwich.",
+    "fillings": [
+      "Banana"
+    ],
+    "condiments": [
+      "Peanut Butter",
+      "Butter"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Normal",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/17.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "18",
+    "name": "Ultra Peanut Butter Sandwich",
+    "description": "The jam adds a new note of sweetness, making this sandwich yet more filling.",
+    "fillings": [
+      "Banana"
+    ],
+    "condiments": [
+      "Peanut Butter",
+      "Butter",
+      "Jam"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/18.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "19",
+    "name": "Master Peanut Butter Sandwich",
+    "description": "The daring addition of bold spice has made this sandwich strangely addicting.",
+    "fillings": [
+      "Banana"
+    ],
+    "condiments": [
+      "Peanut Butter",
+      "Butter",
+      "Jam",
+      "Spicy Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Electric",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Bug",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/19.jpg",
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "20",
+    "name": "Pickle Sandwich",
+    "description": "This sandwich keeps it profoundly simple. It's best when you don't skimp on the olive oil.",
+    "fillings": [
+      "Pickle"
+    ],
+    "condiments": [
+      "Olive Oil"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/20.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "21",
+    "name": "Great Pickle Sandwich",
+    "description": "The sourness of the pickles pairs with the fresh taste of the watercress for a sandwich as refreshing as a light breeze.",
+    "fillings": [
+      "Pickle",
+      "Watercress"
+    ],
+    "condiments": [
+      "Olive Oil"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/21.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "22",
+    "name": "Ultra Pickle Sandwich",
+    "description": "The fragrant basil draws out new depths of flavor from this sandwich's fillings.",
+    "fillings": [
+      "Pickle",
+      "Watercress",
+      "Basil"
+    ],
+    "condiments": [
+      "Olive Oil"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fire",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/22.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "23",
+    "name": "Master Pickle Sandwich",
+    "description": "The hit of sourness from the added herbs will leave you wanting more of this simple yet satisfying sandwich.",
+    "fillings": [
+      "Pickle",
+      "Watercress",
+      "Basil"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Sour Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/23.jpg",
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+  },
+  {
+    "number": "24",
+    "name": "Marmalade Sandwich",
+    "description": "A simple, economical, and tasty sandwich. Toasting it for extra flavor is also good.",
+    "fillings": [
+      "Cheese"
+    ],
+    "condiments": [
+      "Marmalade"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/24.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "25",
+    "name": "Great Marmalade Sandwich",
+    "description": "The sweetness of the butter highlights the sourness. But add too much butter, and you'll spoil the overall flavor.",
+    "fillings": [
+      "Cheese"
+    ],
+    "condiments": [
+      "Marmalade",
+      "Butter"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/25.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "26",
+    "name": "Ultra Marmalade Sandwich",
+    "description": "The stronger the marmalade's sourness, the better. This sandwich is particularly appealing.",
+    "fillings": [
+      "Cheese"
+    ],
+    "condiments": [
+      "Marmalade",
+      "Butter",
+      "Cream Cheese"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fighting",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/26.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "27",
+    "name": "Master Marmalade Sandwich",
+    "description": "The finishing touch of saltiness is the clincher. This sandwich's exquisite balance of flavor brings it to life.",
+    "fillings": [
+      "Cheese"
+    ],
+    "condiments": [
+      "Marmalade",
+      "Butter",
+      "Cream Cheese",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Fighting",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/27.jpg",
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "28",
+    "name": "Herbed-Sausage Sandwich",
+    "description": "Sausage with fragrant herbs meets ketchup in this sandwich.",
+    "fillings": [
+      "Herbed Sausage"
+    ],
+    "condiments": [
+      "Ketchup"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/28.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "29",
+    "name": "Great Herbed-Sausage Sandwich",
+    "description": "The sour bite and spiciness of the mustard takes this sandwich to the next level.",
+    "fillings": [
+      "Herbed Sausage"
+    ],
+    "condiments": [
+      "Ketchup",
+      "Mustard"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fighting",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/29.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "30",
+    "name": "Ultra Herbed-Sausage Sandwich",
+    "description": "This sandwich boasts fresh vegetables and sausage— a faultless combo.",
+    "fillings": [
+      "Herbed Sausage",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Ketchup",
+      "Mustard"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/30.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "31",
+    "name": "Master Herbed-Sausage Sandwich",
+    "description": "A sandwich with a tried-and-true type of tastiness. The bitter flavor really ties all the fillings together.",
+    "fillings": [
+      "Herbed Sausage",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Ketchup",
+      "Mustard",
+      "Bitter Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/31.jpg",
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+  },
+  {
+    "number": "32",
+    "name": "Curry-and-Rice-Style Sandwich",
+    "description": "A tricky proposition of a sandwich. You might try lightly toasting the curry powder.",
+    "fillings": [
+      "Rice"
+    ],
+    "condiments": [
+      "Curry Powder",
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fighting",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/32.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "33",
+    "name": "Great Curry-and-Rice-Style Sandwich",
+    "description": "The spicy addition has made this sandwich a bit more palatable, but still, it's not necessarily for everyone.",
+    "fillings": [
+      "Rice",
+      "Jalapeno"
+    ],
+    "condiments": [
+      "Curry Powder",
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Normal",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/33.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "34",
+    "name": "Ultra Curry-and-Rice-Style Sandwich",
+    "description": "With tasty tomatoes, this sandwich is more approachable than ever—and yet it remains an acquired taste.",
+    "fillings": [
+      "Rice",
+      "Jalapeno",
+      "Tomato"
+    ],
+    "condiments": [
+      "Curry Powder",
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Fairy",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/34.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "35",
+    "name": "Master Curry-and-Rice-Style Sandwich",
+    "description": "A sandwich of intense, provocative spiciness. For all the added ingredients, it remains an adventurous choice.",
+    "fillings": [
+      "Rice",
+      "Jalapeno",
+      "Tomato"
+    ],
+    "condiments": [
+      "Curry Powder",
+      "Mayonnaise",
+      "Spicy Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Fairy",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/35.jpg",
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "36",
+    "name": "Dessert Sandwich",
+    "description": "This sandwich is just the thing for dessert time. The yogurt is on the sweeter side.",
+    "fillings": [
+      "Apple",
+      "Apple"
+    ],
+    "condiments": [
+      "Yogurt",
+      "Whipped Cream"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Flying",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/36.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "37",
+    "name": "Great Dessert Sandwich",
+    "description": "The addition of vibrant green kiwi makes this sandwich as pleasing to the eye as to the palate.",
+    "fillings": [
+      "Apple",
+      "Apple",
+      "Kiwi"
+    ],
+    "condiments": [
+      "Yogurt",
+      "Whipped Cream"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Flying",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/37.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "38",
+    "name": "Ultra Dessert Sandwich",
+    "description": "A sandwich with a lovely trio of fruits. It's a winner when served slightly chilled.",
+    "fillings": [
+      "Apple",
+      "Apple",
+      "Kiwi",
+      "Strawberry"
+    ],
+    "condiments": [
+      "Yogurt",
+      "Whipped Cream"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Flying",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/38.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "39",
+    "name": "Master Dessert Sandwich",
+    "description": "The Dessert Sandwich's ultimate form. Just a hint of herbs will do the trick.",
+    "fillings": [
+      "Apple",
+      "Apple",
+      "Kiwi",
+      "Strawberry"
+    ],
+    "condiments": [
+      "Yogurt",
+      "Whipped Cream",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Flying",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fighting",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/39.jpg",
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "40",
+    "name": "Tropical Sandwich",
+    "description": "The balance of acidity and umami is key. A touch of extra marmalade is the trick to making it special.",
+    "fillings": [
+      "Klawf Stick",
+      "Avocado"
+    ],
+    "condiments": [
+      "Marmalade"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/40.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "41",
+    "name": "Great Tropical Sandwich",
+    "description": "The pineapple unlocks the tropical atmosphere. The more the sourness comes through, the tastier the sandwich.",
+    "fillings": [
+      "Klawf Stick",
+      "Avocado",
+      "Pineapple"
+    ],
+    "condiments": [
+      "Marmalade"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/41.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "42",
+    "name": "Ultra Tropical Sandwich",
+    "description": "A sandwich with an unfamiliar twist. The added spiciness brings depth to the flavors.",
+    "fillings": [
+      "Klawf Stick",
+      "Avocado",
+      "Pineapple",
+      "Jalapeno"
+    ],
+    "condiments": [
+      "Marmalade"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Water",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/42.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "43",
+    "name": "Master Tropical Sandwich",
+    "description": "A sandwich befitting the “tropical” label. The herbs bring the flavors into tight unison.",
+    "fillings": [
+      "Klawf Stick",
+      "Avocado",
+      "Pineapple",
+      "Jalapeno"
+    ],
+    "condiments": [
+      "Marmalade",
+      "Sour Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Water",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ground",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/43.jpg",
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+  },
+  {
+    "number": "44",
+    "name": "Avocado Sandwich",
+    "description": "The flavor of this sandwich changes depending on the ripeness of the avocado. One never tires of eating this one.",
+    "fillings": [
+      "Avocado",
+      "Smoked Fillet"
+    ],
+    "condiments": [
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/44.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "45",
+    "name": "Great Avocado Sandwich",
+    "description": "A sandwich with a firm flavor profile. With fillings so widely beloved, it's a sure hit.",
+    "fillings": [
+      "Avocado",
+      "Smoked Fillet",
+      "Tomato"
+    ],
+    "condiments": [
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/45.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "46",
+    "name": "Ultra Avocado Sandwich",
+    "description": "A solidly delicious sandwich. It's impossible to go wrong with these fillings—this is flavor you can depend on.",
+    "fillings": [
+      "Avocado",
+      "Smoked Fillet",
+      "Tomato",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/46.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "47",
+    "name": "Master Avocado Sandwich",
+    "description": "The steadfast sandwich in its ultimate form. The salt works its magic, making for a profoundly tasty sandwich.",
+    "fillings": [
+      "Avocado",
+      "Smoked Fillet",
+      "Tomato",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Salt",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/47.jpg",
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "48",
+    "name": "Noodle Sandwich",
+    "description": "When exactly did this sandwich rise to fame? Where did the recipe even come from? Mysteries abound.",
+    "fillings": [
+      "Noodles"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Ketchup"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Poison",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/48.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "49",
+    "name": "Great Noodle Sandwich",
+    "description": "A nice, filling sandwich. The addition of lettuce makes it more approachable.",
+    "fillings": [
+      "Noodles",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Ketchup"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/49.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "50",
+    "name": "Ultra Noodle Sandwich",
+    "description": "This sandwich will fill you up like few others do. The richness of the chorizo works wonders.",
+    "fillings": [
+      "Noodles",
+      "Lettuce",
+      "Chorizo"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Ketchup"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fire",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Electric",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/50.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "51",
+    "name": "Master Noodle Sandwich",
+    "description": "The touch of bitterness tugs at the appetite. This is one solid, substantial sandwich.",
+    "fillings": [
+      "Noodles",
+      "Lettuce",
+      "Chorizo"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Ketchup",
+      "Bitter Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Electric",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/51.jpg",
+    "location": "From man in Sandwich shop if you have Bitty Herba Mystica"
+  },
+  {
+    "number": "52",
+    "name": "Potato Salad Sandwich",
+    "description": "A veggie-forward, filling sandwich. How tasty it ends up being depends entirely on the quality of the potato salad.",
+    "fillings": [
+      "Potato Salad",
+      "Cucumber",
+      "Red Bell Pepper"
+    ],
+    "condiments": [
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/52.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "53",
+    "name": "Great Potato Salad Sandwich",
+    "description": "The veggies are the star players of this satisfying sandwich. Tasty even if the avocado is still a tad firm.",
+    "fillings": [
+      "Potato Salad",
+      "Cucumber",
+      "Red Bell Pepper",
+      "Avocado"
+    ],
+    "condiments": [
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/53.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "54",
+    "name": "Ultra Potato Salad Sandwich",
+    "description": "A sandwich boasting a plethora of different vegetables. Connoisseurs prefer generous amounts of seasoning.",
+    "fillings": [
+      "Potato Salad",
+      "Cucumber",
+      "Red Bell Pepper",
+      "Avocado",
+      "Red Onion"
+    ],
+    "condiments": [
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/54.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "55",
+    "name": "Master Potato Salad Sandwich",
+    "description": "The ultimate form of the Potato Salad Sandwich. The sweetness of the herbs is what will decide its success.",
+    "fillings": [
+      "Potato Salad",
+      "Cucumber",
+      "Red Bell Pepper",
+      "Avocado",
+      "Red Onion"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/55.jpg",
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "56",
+    "name": "Zesty Sandwich",
+    "description": "The spiciness of the sauce brings the sweetness of the veggies to life in this sandwich.",
+    "fillings": [
+      "Jalapeno",
+      "Onion",
+      "Herbed Sausage"
+    ],
+    "condiments": [
+      "Chili Sauce"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/56.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "57",
+    "name": "Great Zesty Sandwich",
+    "description": "The bitterness of this sandwich's green bell peppers goes perfectly with the spicy sauce.",
+    "fillings": [
+      "Jalapeno",
+      "Onion",
+      "Herbed Sausage",
+      "Green Bell Pepper"
+    ],
+    "condiments": [
+      "Chili Sauce"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/57.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "58",
+    "name": "Ultra Zesty Sandwich",
+    "description": "A sandwich packing a nice dose of veggies, whose savory sides are brought out by the spicy sauce.",
+    "fillings": [
+      "Jalapeno",
+      "Onion",
+      "Herbed Sausage",
+      "Green Bell Pepper",
+      "Watercress"
+    ],
+    "condiments": [
+      "Chili Sauce"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fighting",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/58.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "59",
+    "name": "Master Zesty Sandwich",
+    "description": "A sandwich with such a fine ratio of spiciness to sourness that you'll just keep reaching for more.",
+    "fillings": [
+      "Jalapeno",
+      "Onion",
+      "Herbed Sausage",
+      "Green Bell Pepper",
+      "Watercress"
+    ],
+    "condiments": [
+      "Chili Sauce",
+      "Sour Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/59.jpg",
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+  },
+  {
+    "number": "60",
+    "name": "Egg Sandwich",
+    "description": "A sandwich with pleasingly straightforward flavors. The fundamental taste of the egg gets to shine.",
+    "fillings": [
+      "Egg",
+      "Cucumber"
+    ],
+    "condiments": [
+      "Salt",
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Flying",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/60.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "61",
+    "name": "Great Egg Sandwich",
+    "description": "The crunch and sweetness of the onion brings out the richness of the egg.",
+    "fillings": [
+      "Egg",
+      "Cucumber",
+      "Red Onion"
+    ],
+    "condiments": [
+      "Salt",
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Flying",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/61.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "62",
+    "name": "Ultra Egg Sandwich",
+    "description": "For those who've gotten tired of the plain and simple Egg Sandwich. The egg and the cheese pair beautifully.",
+    "fillings": [
+      "Egg",
+      "Cucumber",
+      "Red Onion",
+      "Cheese"
+    ],
+    "condiments": [
+      "Salt",
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Flying",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/62.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "63",
+    "name": "Master Egg Sandwich",
+    "description": "The fully realized Egg Sandwich. Robust saltiness is its standout feature.",
+    "fillings": [
+      "Egg",
+      "Cucumber",
+      "Red Onion",
+      "Cheese"
+    ],
+    "condiments": [
+      "Salt",
+      "Mayonnaise",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Flying",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/63.jpg",
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "64",
+    "name": "Classic Bocadillo",
+    "description": "A sandwich with potent fillings. Young people in particular appreciate how substantial it is.",
+    "fillings": [
+      "Prosciutto",
+      "Cheese",
+      "Potato Tortilla"
+    ],
+    "condiments": [
+      "Olive Oil"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Fire",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/64.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "65",
+    "name": "Great Classic Bocadillo",
+    "description": "The spicy flavor gives this sandwich a comforting feel. Especially tasty when the potato tortilla is piping hot.",
+    "fillings": [
+      "Prosciutto",
+      "Cheese",
+      "Potato Tortilla"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Curry Powder"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/65.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "66",
+    "name": "Ultra Classic Bocadillo",
+    "description": "A sandwich that won't leave you hungry. Well-ripened avocados are better for this one.",
+    "fillings": [
+      "Prosciutto",
+      "Cheese",
+      "Potato Tortilla",
+      "Avocado"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Curry Powder"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fire",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/66.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "67",
+    "name": "Master Classic Bocadillo",
+    "description": "A deeply substantial sandwich. The bitterness brings harmony to the flavors.",
+    "fillings": [
+      "Prosciutto",
+      "Cheese",
+      "Potato Tortilla",
+      "Avocado"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Curry Powder",
+      "Bitter Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/67.jpg",
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+  },
+  {
+    "number": "68",
+    "name": "Refreshing Sandwich",
+    "description": "This sandwich feels like a cousin to a salad. The more tomatoes, the better.",
+    "fillings": [
+      "Cherry Tomatoes",
+      "Avocado"
+    ],
+    "condiments": [
+      "Marmalade",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/68.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "69",
+    "name": "Great Refreshing Sandwich",
+    "description": "A fruit-forward sandwich. The kiwi's sourness does it plenty of favors.",
+    "fillings": [
+      "Cherry Tomatoes",
+      "Avocado",
+      "Kiwi"
+    ],
+    "condiments": [
+      "Marmalade",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/69.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "70",
+    "name": "Ultra Refreshing Sandwich",
+    "description": "This sandwich may only have fruits and veggies in it, but it's tasty no matter how into veggies you are—or aren't.",
+    "fillings": [
+      "Cherry Tomatoes",
+      "Avocado",
+      "Kiwi",
+      "Pickle"
+    ],
+    "condiments": [
+      "Marmalade",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/70.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "71",
+    "name": "Master Refreshing Sandwich",
+    "description": "The spicy addition to the sandwich's mostly sour fillings and condiments creates a tantalizing flavor.",
+    "fillings": [
+      "Cherry Tomatoes",
+      "Avocado",
+      "Kiwi",
+      "Pickle"
+    ],
+    "condiments": [
+      "Marmalade",
+      "Salt",
+      "Spicy Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/71.jpg",
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "72",
+    "name": "BLT Sandwich",
+    "description": "A tried and true sandwich. You can't go wrong with these classic, ordinary flavors.",
+    "fillings": [
+      "Bacon",
+      "Lettuce",
+      "Tomato"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Mustard"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/72.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "73",
+    "name": "Great BLT Sandwich",
+    "description": "Adding basil lends a bit of a rich air to this BLT Sandwich.",
+    "fillings": [
+      "Bacon",
+      "Lettuce",
+      "Tomato",
+      "Basil"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Mustard"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Rock",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fairy",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/73.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "74",
+    "name": "Ultra BLT Sandwich",
+    "description": "The cheese makes for a more filling experience. The flavors of this sandwich are in perfect balance.",
+    "fillings": [
+      "Bacon",
+      "Lettuce",
+      "Tomato",
+      "Basil",
+      "Cheese"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Mustard"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fairy",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/74.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "75",
+    "name": "Master BLT Sandwich",
+    "description": "The hint of sweetness manages to preserve the harmony between all the fillings of this miraculous sandwich.",
+    "fillings": [
+      "Bacon",
+      "Lettuce",
+      "Tomato",
+      "Basil",
+      "Cheese"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Mustard",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fairy",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/75.jpg",
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "76",
+    "name": "Fried Fillet Sandwich",
+    "description": "The potato salad plays an important part in counteracting the oiliness of the fried fillet.",
+    "fillings": [
+      "Fried Fillet",
+      "Potato Salad"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Ketchup"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/76.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "77",
+    "name": "Great Fried Fillet Sandwich",
+    "description": "The fresh crunch of the lettuce matches exceptionally well with this sandwich's fried fillet.",
+    "fillings": [
+      "Fried Fillet",
+      "Potato Salad",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Ketchup"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/77.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "78",
+    "name": "Ultra Fried Fillet Sandwich",
+    "description": "The horseradish's invigorating spiciness helps make this a very inviting sandwich.",
+    "fillings": [
+      "Fried Fillet",
+      "Potato Salad",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Ketchup",
+      "Horseradish"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/78.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "79",
+    "name": "Master Fried Fillet Sandwich",
+    "description": "This is the ultimate expression of the Fried Fillet Sandwich. The spicy kick makes it an absolute pleasure.",
+    "fillings": [
+      "Fried Fillet",
+      "Potato Salad",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Ketchup",
+      "Horseradish",
+      "Spicy Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/79.jpg",
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "80",
+    "name": "Ham Sandwich",
+    "description": "This sandwich is the embodiment of cheap and tasty. It tastes best when mayonnaise is applied generously.",
+    "fillings": [
+      "Pickle",
+      "Ham"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Mustard"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/80.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "81",
+    "name": "Great Ham Sandwich",
+    "description": "A sandwich boasting two different types of ham. A little rich, perhaps, but plenty tasty.",
+    "fillings": [
+      "Pickle",
+      "Ham",
+      "Prosciutto"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Mustard"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Flying",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/81.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "82",
+    "name": "Ultra Ham Sandwich",
+    "description": "The stimulating spiciness of the jalapeño draws out the savoriness of the ham.",
+    "fillings": [
+      "Pickle",
+      "Ham",
+      "Prosciutto",
+      "Jalapeno"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Mustard"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/82.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "83",
+    "name": "Master Ham Sandwich",
+    "description": "The ultimate Ham Sandwich, with a saltiness that caresses the taste buds. More ham, more happy.",
+    "fillings": [
+      "Pickle",
+      "Ham",
+      "Prosciutto",
+      "Jalapeno"
+    ],
+    "condiments": [
+      "Mayonnaise",
+      "Mustard",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/83.jpg",
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "84",
+    "name": "Cheese Sandwich",
+    "description": "A sandwich for the cheese lover. The simple seasonings make this a welcoming bite.",
+    "fillings": [
+      "Cheese"
+    ],
+    "condiments": [
+      "Cream Cheese",
+      "Pepper",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/84.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "85",
+    "name": "Great Cheese Sandwich",
+    "description": "A sandwich that will certainly fill you up. It's tastiest when the avocado is just a tad firm.",
+    "fillings": [
+      "Cheese",
+      "Avocado"
+    ],
+    "condiments": [
+      "Cream Cheese",
+      "Pepper",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/85.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "86",
+    "name": "Ultra Cheese Sandwich",
+    "description": "The fragrance of the basil in this sandwich activates the appetite. Using plenty of pepper balances the flavors well.",
+    "fillings": [
+      "Cheese",
+      "Avocado",
+      "Basil"
+    ],
+    "condiments": [
+      "Cream Cheese",
+      "Pepper",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Electric",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Water",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/86.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "87",
+    "name": "Master Cheese Sandwich",
+    "description": "The strong note of salt in this sandwich makes the richness and savoriness of the cheese shine through.",
+    "fillings": [
+      "Cheese",
+      "Avocado",
+      "Basil"
+    ],
+    "condiments": [
+      "Cream Cheese",
+      "Pepper",
+      "Salt",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Electric",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Water",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/87.jpg",
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "88",
+    "name": "Hamburger Patty Sandwich",
+    "description": "The hamburger patty is the heart and soul of this sandwich, but the vinegar's acidic note is what sets it apart.",
+    "fillings": [
+      "Hamburger",
+      "Onion"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/88.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "89",
+    "name": "Great Hamburger Patty Sandwich",
+    "description": "The hamburger patty is the heart and soul of this sandwich, but the horseradish's spicy kick is what sets it apart.",
+    "fillings": [
+      "Hamburger",
+      "Onion"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Pepper",
+      "Horseradish"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/89.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "90",
+    "name": "Ultra Hamburger Patty Sandwich",
+    "description": "The hamburger patty is the heart and soul of this sandwich, but the watercress's bitter taste is what sets it apart.",
+    "fillings": [
+      "Hamburger",
+      "Onion",
+      "Watercress"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Pepper",
+      "Horseradish"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/90.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "91",
+    "name": "Master Hamburger Patty Sandwich",
+    "description": "The hamburger patty is the heart and soul of this sandwich, but the herbs' sweetness is what sets it apart.",
+    "fillings": [
+      "Hamburger",
+      "Onion",
+      "Watercress"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Pepper",
+      "Horseradish",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Steel",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/91.jpg",
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "92",
+    "name": "Smoky Sandwich",
+    "description": "A sandwich with a sophisticated flavor. Nailing the balance between the condiments is crucial.",
+    "fillings": [
+      "Smoked Fillet",
+      "Watercress"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Pepper",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Psychic",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/92.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "93",
+    "name": "Great Smoky Sandwich",
+    "description": "A sandwich with a refreshing flavor. It's tastier if you don't go overboard on the vegetables.",
+    "fillings": [
+      "Smoked Fillet",
+      "Watercress",
+      "Red Onion"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Pepper",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/93.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "94",
+    "name": "Ultra Smoky Sandwich",
+    "description": "A sandwich with a refined flavor. The fragrant basil goes well with the smoked fillet.",
+    "fillings": [
+      "Smoked Fillet",
+      "Watercress",
+      "Red Onion",
+      "Basil"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Pepper",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/94.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "95",
+    "name": "Master Smoky Sandwich",
+    "description": "This sandwich is rumored in some circles to unequivocally be the best way to eat smoked fillet.",
+    "fillings": [
+      "Smoked Fillet",
+      "Watercress",
+      "Red Onion",
+      "Basil"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Pepper",
+      "Salt",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Psychic",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ghost",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/95.jpg",
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "96",
+    "name": "Fruit Sandwich",
+    "description": "Full of fruit. The sophisticated approach is to go easy on the cream and let the ingredients speak for themselves.",
+    "fillings": [
+      "Banana",
+      "Apple",
+      "Pineapple",
+      "Kiwi"
+    ],
+    "condiments": [
+      "Whipped Cream"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/96.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "97",
+    "name": "Great Fruit Sandwich",
+    "description": "This sandwich feels akin to a treat. Just a hint of marmalade is ideal.",
+    "fillings": [
+      "Banana",
+      "Apple",
+      "Pineapple",
+      "Kiwi"
+    ],
+    "condiments": [
+      "Whipped Cream",
+      "Marmalade"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Poison",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/97.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "98",
+    "name": "Ultra Fruit Sandwich",
+    "description": "This sandwich feels quite dessert-like. It's best when you don't go overboard on the yogurt.",
+    "fillings": [
+      "Banana",
+      "Apple",
+      "Pineapple",
+      "Kiwi"
+    ],
+    "condiments": [
+      "Whipped Cream",
+      "Marmalade",
+      "Yogurt"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/98.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "99",
+    "name": "Master Fruit Sandwich",
+    "description": "A sandwich whose flavors positively sing. It's best when you don't go overboard on the herbs.",
+    "fillings": [
+      "Banana",
+      "Apple",
+      "Pineapple",
+      "Kiwi"
+    ],
+    "condiments": [
+      "Whipped Cream",
+      "Marmalade",
+      "Yogurt",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Flying",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/99.jpg",
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "100",
+    "name": "Variety Sandwich",
+    "description": "A sandwich with a range of flavors to enjoy. The fillings can be in whatever proportions you like.",
+    "fillings": [
+      "Prosciutto",
+      "Cherry Tomatoes",
+      "Smoked Fillet"
+    ],
+    "condiments": [
+      "Salt",
+      "Vinegar"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/100.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "101",
+    "name": "Great Variety Sandwich",
+    "description": "A sandwich popular with younger folks. The potato salad leaves you pleasantly full.",
+    "fillings": [
+      "Prosciutto",
+      "Cherry Tomatoes",
+      "Smoked Fillet",
+      "Potato Salad"
+    ],
+    "condiments": [
+      "Salt",
+      "Vinegar"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dragon",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/101.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "102",
+    "name": "Ultra Variety Sandwich",
+    "description": "The addition of hamburger brings more heft. Younger folks tend to like this with plenty of condiments.",
+    "fillings": [
+      "Prosciutto",
+      "Cherry Tomatoes",
+      "Smoked Fillet",
+      "Potato Salad",
+      "Hamburger"
+    ],
+    "condiments": [
+      "Salt",
+      "Vinegar"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Steel",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/102.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "103",
+    "name": "Master Variety Sandwich",
+    "description": "A connoisseur's sandwich, with the fillings tied together by a supreme note of bitterness.",
+    "fillings": [
+      "Prosciutto",
+      "Cherry Tomatoes",
+      "Smoked Fillet",
+      "Potato Salad",
+      "Hamburger"
+    ],
+    "condiments": [
+      "Salt",
+      "Vinegar",
+      "Bitter Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/103.jpg",
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+  },
+  {
+    "number": "104",
+    "name": "Klawf Claw Sandwich",
+    "description": "A sandwich that fills you up well without being too heavy. Ideal for those in search of a light meal.",
+    "fillings": [
+      "Klawf Stick",
+      "Tomato",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Salt",
+      "Olive Oil"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/104.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "105",
+    "name": "Great Klawf Claw Sandwich",
+    "description": "A sandwich for the somewhat mature palate, with an addictively spicy note from the sauce.",
+    "fillings": [
+      "Klawf Stick",
+      "Tomato",
+      "Lettuce"
+    ],
+    "condiments": [
+      "Salt",
+      "Olive Oil",
+      "Wasabi"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/105.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "106",
+    "name": "Ultra Klawf Claw Sandwich",
+    "description": "A sandwich that spares no detail. The crunch of the bell pepper provides a lovely accent.",
+    "fillings": [
+      "Klawf Stick",
+      "Tomato",
+      "Lettuce",
+      "Yellow Bell Pepper"
+    ],
+    "condiments": [
+      "Salt",
+      "Olive Oil",
+      "Wasabi"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Electric",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/106.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "107",
+    "name": "Master Klawf Claw Sandwich",
+    "description": "This sandwich's savory flavors stand out even more boldly thanks to the boost of spiciness.",
+    "fillings": [
+      "Klawf Stick",
+      "Tomato",
+      "Lettuce",
+      "Yellow Bell Pepper"
+    ],
+    "condiments": [
+      "Salt",
+      "Olive Oil",
+      "Wasabi",
+      "Spicy Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Electric",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/107.jpg",
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "108",
+    "name": "Sweet Sandwich",
+    "description": "It's a close cousin to the Fruit Sandwich, but the butter sets this one apart.",
+    "fillings": [
+      "Banana",
+      "Apple",
+      "Cheese"
+    ],
+    "condiments": [
+      "Whipped Cream",
+      "Butter"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Flying",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/108.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "109",
+    "name": "Great Sweet Sandwich",
+    "description": "The pinch of salt serves to tease out the sweetness of this sandwich's fillings.",
+    "fillings": [
+      "Banana",
+      "Apple",
+      "Cheese"
+    ],
+    "condiments": [
+      "Whipped Cream",
+      "Butter",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Flying",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/109.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "110",
+    "name": "Ultra Sweet Sandwich",
+    "description": "The basil's light touch of bitter flavor helps bring this sandwich's other fillings to life.",
+    "fillings": [
+      "Banana",
+      "Apple",
+      "Cheese",
+      "Basil"
+    ],
+    "condiments": [
+      "Whipped Cream",
+      "Butter",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Flying",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Normal",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/110.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "111",
+    "name": "Master Sweet Sandwich",
+    "description": "A sandwich with a subtle note of sourness. The slightest amount of herbs is all that's needed.",
+    "fillings": [
+      "Banana",
+      "Apple",
+      "Cheese",
+      "Basil"
+    ],
+    "condiments": [
+      "Whipped Cream",
+      "Butter",
+      "Salt",
+      "Sour Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Electric",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Fighting",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/111.jpg",
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+  },
+  {
+    "number": "112",
+    "name": "Vegetable Sandwich",
+    "description": "A juicy, vegetable-laden sandwich. The fresher the veggies, the tastier the dish.",
+    "fillings": [
+      "Green Bell Pepper",
+      "Cherry Tomatoes",
+      "Cucumber"
+    ],
+    "condiments": [
+      "Salt",
+      "Olive Oil",
+      "Vinegar"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Poison",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Water",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/112.jpg",
+    "location": "From your mother in Cabo Poco"
+  },
+  {
+    "number": "113",
+    "name": "Great Vegetable Sandwich",
+    "description": "A sandwich featuring an all-veggie lineup of fillings. The condiments play a major role in the overall flavor.",
+    "fillings": [
+      "Green Bell Pepper",
+      "Cherry Tomatoes",
+      "Cucumber",
+      "Red Onion"
+    ],
+    "condiments": [
+      "Salt",
+      "Olive Oil",
+      "Vinegar"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Bug",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/113.jpg",
+    "location": "From your mother in Cabo Poco"
+  },
+  {
+    "number": "114",
+    "name": "Ultra Vegetable Sandwich",
+    "description": "Veggies are this sandwich's bread and butter, so to speak. Adding plenty of watercress firms up the flavor.",
+    "fillings": [
+      "Green Bell Pepper",
+      "Cherry Tomatoes",
+      "Cucumber",
+      "Red Onion",
+      "Watercress"
+    ],
+    "condiments": [
+      "Salt",
+      "Olive Oil",
+      "Vinegar"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/114.jpg",
+    "location": "From your mother in Cabo Poco"
+  },
+  {
+    "number": "115",
+    "name": "Master Vegetable Sandwich",
+    "description": "The fully realized all-veggie sandwich. The overall quality depends hugely on how thickly you lay on the herbs.",
+    "fillings": [
+      "Green Bell Pepper",
+      "Cherry Tomatoes",
+      "Cucumber",
+      "Red Onion",
+      "Watercress"
+    ],
+    "condiments": [
+      "Salt",
+      "Olive Oil",
+      "Vinegar",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Bug",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Poison",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/115.jpg",
+    "location": "From your mother in Cabo Poco if you have Salty Herba Mystica"
+  },
+  {
+    "number": "116",
+    "name": "Hefty Sandwich",
+    "description": "A sandwich that only has time for the ingredients that'll fill you up the best.",
+    "fillings": [
+      "Potato Tortilla",
+      "Fried Fillet",
+      "Prosciutto",
+      "Potato Salad"
+    ],
+    "condiments": [
+      "Salt",
+      "Peanut Butter"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Bug",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/116.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "117",
+    "name": "Great Hefty Sandwich",
+    "description": "A sandwich whose main goal is filling up the tummy. Flavor is nice, but quantity is the main concern.",
+    "fillings": [
+      "Potato Tortilla",
+      "Fried Fillet",
+      "Prosciutto",
+      "Potato Salad",
+      "Herbed Sausage"
+    ],
+    "condiments": [
+      "Salt",
+      "Peanut Butter"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/117.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "118",
+    "name": "Ultra Hefty Sandwich",
+    "description": "A sandwich devoted to the cause of filling up the tummy. Eaters should know what they're getting into.",
+    "fillings": [
+      "Potato Tortilla",
+      "Fried Fillet",
+      "Prosciutto",
+      "Potato Salad",
+      "Herbed Sausage",
+      "Hamburger"
+    ],
+    "condiments": [
+      "Salt",
+      "Peanut Butter"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/118.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "119",
+    "name": "Master Hefty Sandwich",
+    "description": "A bright acidic note makes this sandwich a pleasure to eat, though it doesn't change the impact of the sheer volume.",
+    "fillings": [
+      "Potato Tortilla",
+      "Fried Fillet",
+      "Prosciutto",
+      "Potato Salad",
+      "Herbed Sausage",
+      "Hamburger"
+    ],
+    "condiments": [
+      "Salt",
+      "Peanut Butter",
+      "Sour Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/119.jpg",
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+  },
+  {
+    "number": "120",
+    "name": "Five-Alarm Sandwich",
+    "description": "As the name suggests, this sandwich packs a bit of heat. Enjoying these veggies is a mark of grown-up taste.",
+    "fillings": [
+      "Chorizo",
+      "Onion",
+      "Green Bell Pepper"
+    ],
+    "condiments": [
+      "Mustard",
+      "Chili Sauce",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Poison",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/120.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "121",
+    "name": "Great Five-Alarm Sandwich",
+    "description": "Achieving proper balance between the condiments is delicate work. The fragrance of basil whets the appetite.",
+    "fillings": [
+      "Chorizo",
+      "Onion",
+      "Green Bell Pepper",
+      "Basil"
+    ],
+    "condiments": [
+      "Mustard",
+      "Chili Sauce",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/121.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "122",
+    "name": "Ultra Five-Alarm Sandwich",
+    "description": "This sandwich has become yet spicier and more appealing to grown-up tastes. It's not necessarily for everyone.",
+    "fillings": [
+      "Chorizo",
+      "Onion",
+      "Green Bell Pepper",
+      "Basil",
+      "Jalapeno"
+    ],
+    "condiments": [
+      "Mustard",
+      "Chili Sauce",
+      "Pepper"
+    ],
+    "effects": [
+      {
+        "name": "Humungo Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fire",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Dragon",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/122.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "123",
+    "name": "Master Five-Alarm Sandwich",
+    "description": "This sandwich is spicy to the core. If you're not seeking such stimulation, it may not be for you.",
+    "fillings": [
+      "Chorizo",
+      "Onion",
+      "Green Bell Pepper",
+      "Basil",
+      "Jalapeno"
+    ],
+    "condiments": [
+      "Mustard",
+      "Chili Sauce",
+      "Pepper",
+      "Spicy Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/123.jpg",
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "124",
+    "name": "Nouveau Veggie Sandwich",
+    "description": "A vegetable-centric sandwich whose sauce delivers a particular shocking kick.",
+    "fillings": [
+      "Watercress",
+      "Yellow Bell Pepper",
+      "Onion",
+      "Tomato"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Wasabi"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Psychic",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/124.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "125",
+    "name": "Great Nouveau Veggie Sandwich",
+    "description": "This sandwich boasts an all-star vegetable cast. It's best to eat it immediately after the cucumber has been added.",
+    "fillings": [
+      "Watercress",
+      "Yellow Bell Pepper",
+      "Onion",
+      "Tomato",
+      "Cucumber"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Wasabi"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Electric",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Psychic",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/125.jpg",
+    "location": "From your mother in Cabo Poco"
+  },
+  {
+    "number": "126",
+    "name": "Ultra Nouveau Veggie Sandwich",
+    "description": "A sandwich one can proudly offer to a veggie lover. Use just enough mayonnaise to provide a little flavor accent.",
+    "fillings": [
+      "Watercress",
+      "Yellow Bell Pepper",
+      "Onion",
+      "Tomato",
+      "Cucumber"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Wasabi",
+      "Mayonnaise"
+    ],
+    "effects": [
+      {
+        "name": "Teensy Power",
+        "type": "Electric",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fairy",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Psychic",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/126.jpg",
+    "location": "From your mother in Cabo Poco"
+  },
+  {
+    "number": "127",
+    "name": "Master Nouveau Veggie Sandwich",
+    "description": "Veggies are this sandwich's sole purpose. Adding a touch of sweet makes the veggies' natural savoriness stand out.",
+    "fillings": [
+      "Watercress",
+      "Yellow Bell Pepper",
+      "Onion",
+      "Tomato",
+      "Cucumber"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Wasabi",
+      "Mayonnaise",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Electric",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fairy",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Psychic",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/127.jpg",
+    "location": "From your mother in Cabo Poco if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "128",
+    "name": "Spicy-Sweet Sandwich",
+    "description": "A sandwich that pairs the sweetness of butter with the spicy kick of horseradish.",
+    "fillings": [
+      "Hamburger",
+      "Tomato",
+      "Kiwi",
+      "Pineapple"
+    ],
+    "condiments": [
+      "Butter",
+      "Horseradish"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Poison",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Ground",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/128.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "129",
+    "name": "Great Spicy-Sweet Sandwich",
+    "description": "The richness of the avocado shines in this sandwich. The balance between the fruits is key to making it tasty.",
+    "fillings": [
+      "Hamburger",
+      "Tomato",
+      "Kiwi",
+      "Pineapple",
+      "Avocado"
+    ],
+    "condiments": [
+      "Butter",
+      "Horseradish"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ground",
+        "level": "1"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/129.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "130",
+    "name": "Ultra Spicy-Sweet Sandwich",
+    "description": "This sandwich walks a tightrope between sweet and spicy. Tastiest when the cheese is abundant.",
+    "fillings": [
+      "Hamburger",
+      "Tomato",
+      "Kiwi",
+      "Pineapple",
+      "Avocado",
+      "Cheese"
+    ],
+    "condiments": [
+      "Butter",
+      "Horseradish"
+    ],
+    "effects": [
+      {
+        "name": "Catching Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ground",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/130.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "131",
+    "name": "Master Spicy-Sweet Sandwich",
+    "description": "The hint of bitterness in this sandwich creates a new harmony between the spicy and sweet flavors.",
+    "fillings": [
+      "Hamburger",
+      "Tomato",
+      "Kiwi",
+      "Pineapple",
+      "Avocado",
+      "Cheese"
+    ],
+    "condiments": [
+      "Butter",
+      "Horseradish",
+      "Bitter Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Dragon",
+        "level": "2"
+      },
+      {
+        "name": "Item Drop Power",
+        "type": "Poison",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/131.jpg",
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+  },
+  {
+    "number": "132",
+    "name": "Decadent Sandwich",
+    "description": "This sandwich's fillings speak for themselves—loudly— so it's tastiest when you go light on the condiments.",
+    "fillings": [
+      "Smoked Fillet",
+      "Klawf Stick",
+      "Watercress",
+      "Basil"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Olive Oil",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Ice",
+        "level": "1"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/132.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "133",
+    "name": "Great Decadent Sandwich",
+    "description": "This sandwich uses truly precious and fine ingredients. The tofu lends it more substance.",
+    "fillings": [
+      "Smoked Fillet",
+      "Klawf Stick",
+      "Watercress",
+      "Basil",
+      "Tofu"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Olive Oil",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/133.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "134",
+    "name": "Ultra Decadent Sandwich",
+    "description": "Achieving balance between these ingredients is no easy feat. Tastiest when the seasonings are piled on a bit.",
+    "fillings": [
+      "Smoked Fillet",
+      "Klawf Stick",
+      "Watercress",
+      "Basil",
+      "Tofu",
+      "Red Onion"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Olive Oil",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/134.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "135",
+    "name": "Master Decadent Sandwich",
+    "description": "Adding the ultimate in spiciness makes this sandwich of distinct, vibrant ingredients into a unified masterpiece.",
+    "fillings": [
+      "Smoked Fillet",
+      "Klawf Stick",
+      "Watercress",
+      "Basil",
+      "Tofu",
+      "Red Onion"
+    ],
+    "condiments": [
+      "Vinegar",
+      "Olive Oil",
+      "Salt",
+      "Spicy Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ghost",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ice",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/135.jpg",
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+  },
+  {
+    "number": "136",
+    "name": "Tofu Sandwich",
+    "description": "A sandwich designed by and for tofu lovers. It will never leave you hungry.",
+    "fillings": [
+      "Tofu",
+      "Tofu",
+      "Rice",
+      "Lettuce",
+      "Avocado"
+    ],
+    "condiments": [
+      "Wasabi",
+      "Salt"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "1"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/136.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "137",
+    "name": "Great Tofu Sandwich",
+    "description": "This sandwich is not the easiest to pull off. Be sure to drain the tofu thoroughly.",
+    "fillings": [
+      "Tofu",
+      "Tofu",
+      "Rice",
+      "Lettuce",
+      "Avocado"
+    ],
+    "condiments": [
+      "Wasabi",
+      "Salt",
+      "Horseradish"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Raid Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/137.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "138",
+    "name": "Ultra Tofu Sandwich",
+    "description": "The simple flavor of the tofu and the bitterness of the watercress make for a strangely appealing match.",
+    "fillings": [
+      "Tofu",
+      "Tofu",
+      "Rice",
+      "Lettuce",
+      "Avocado",
+      "Watercress"
+    ],
+    "condiments": [
+      "Wasabi",
+      "Salt",
+      "Horseradish"
+    ],
+    "effects": [
+      {
+        "name": "Raid Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Grass",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/138.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "139",
+    "name": "Master Tofu Sandwich",
+    "description": "The precious herbs' saltiness makes the tofu's savory notes shine through.",
+    "fillings": [
+      "Tofu",
+      "Tofu",
+      "Rice",
+      "Lettuce",
+      "Avocado",
+      "Watercress"
+    ],
+    "condiments": [
+      "Wasabi",
+      "Salt",
+      "Horseradish",
+      "Salty Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fighting",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/139.jpg",
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+  },
+  {
+    "number": "140",
+    "name": "Curry-and-Noodle Sandwich",
+    "description": "While others ask “why?,” this sandwich asks, “why not?” It's best when the curry powder is lightly toasted.",
+    "fillings": [
+      "Noodles",
+      "Red Bell Pepper",
+      "Bacon",
+      "Yellow Bell Pepper"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Salt",
+      "Curry Powder"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Electric",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Rock",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/140.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "141",
+    "name": "Great Curry-and-Noodle Sandwich",
+    "description": "The eye-widening spiciness of the jalapeño heightens the curry flavor.",
+    "fillings": [
+      "Noodles",
+      "Red Bell Pepper",
+      "Bacon",
+      "Yellow Bell Pepper",
+      "Jalapeno"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Salt",
+      "Curry Powder"
+    ],
+    "effects": [
+      {
+        "name": "Item Drop Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Psychic",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Electric",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/141.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "142",
+    "name": "Ultra Curry-and-Noodle Sandwich",
+    "description": "The eggs provide a mellow coating over the spicy flavors beneath.",
+    "fillings": [
+      "Noodles",
+      "Red Bell Pepper",
+      "Bacon",
+      "Yellow Bell Pepper",
+      "Jalapeno",
+      "Egg"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Salt",
+      "Curry Powder"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Grass",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/142.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "143",
+    "name": "Master Curry-and-Noodle Sandwich",
+    "description": "The faint sweetness perfects the taste, bringing new depth and richness to the sandwich.",
+    "fillings": [
+      "Noodles",
+      "Red Bell Pepper",
+      "Bacon",
+      "Yellow Bell Pepper",
+      "Jalapeno",
+      "Egg"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Salt",
+      "Curry Powder",
+      "Sweet Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Rock",
+        "level": "2"
+      },
+      {
+        "name": "Egg Power",
+        "type": "",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/143.jpg",
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+  },
+  {
+    "number": "144",
+    "name": "Tower Sandwich",
+    "description": "To this sandwich, the righteous path lies in sheer quantity. It's downright aggressive in its effort to fill you up.",
+    "fillings": [
+      "Hamburger",
+      "Noodles",
+      "Potato Salad",
+      "Rice"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Salt",
+      "Curry Powder"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Steel",
+        "level": "1"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fire",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ghost",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/144.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "145",
+    "name": "Great Tower Sandwich",
+    "description": "This sandwich prioritizes filling you up first and foremost. It's not particularly concerned with flavor.",
+    "fillings": [
+      "Hamburger",
+      "Noodles",
+      "Potato Salad",
+      "Rice",
+      "Klawf Stick"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Salt",
+      "Curry Powder"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Ghost",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ice",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/145.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "146",
+    "name": "Ultra Tower Sandwich",
+    "description": "A sandwich concerned only with volume. It can be tasty, too, depending on the seasonings.",
+    "fillings": [
+      "Hamburger",
+      "Noodles",
+      "Potato Salad",
+      "Rice",
+      "Klawf Stick",
+      "Tofu"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Salt",
+      "Curry Powder"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/146.jpg",
+    "location": "From man in Sandwich shop"
+  },
+  {
+    "number": "147",
+    "name": "Master Tower Sandwich",
+    "description": "Thanks to the magic of spice, this ultra-voluminous sandwich even manages to taste rather good.",
+    "fillings": [
+      "Hamburger",
+      "Noodles",
+      "Potato Salad",
+      "Rice",
+      "Klawf Stick",
+      "Tofu"
+    ],
+    "condiments": [
+      "Olive Oil",
+      "Salt",
+      "Curry Powder",
+      "Bitter Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Steel",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Exp. Point Power",
+        "type": "Fighting",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/147.jpg",
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+  },
+  {
+    "number": "148",
+    "name": "Sushi Sandwich",
+    "description": "A sandwich that aspires to be sushi. Are you surprised at how tasty it is? Good—that's the idea.",
+    "fillings": [
+      "Rice",
+      "Smoked Fillet",
+      "Smoked Fillet",
+      "Klawf Stick"
+    ],
+    "condiments": [
+      "Salt",
+      "Vinegar",
+      "Wasabi"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Dark",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Normal",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/148.jpg",
+    "location": "From Sushi Oficianado in Casseroya Lake"
+  },
+  {
+    "number": "149",
+    "name": "Great Sushi Sandwich",
+    "description": "A sandwich made with a love of sushi foremost in the mind. The bitterness of the watercress works well here.",
+    "fillings": [
+      "Rice",
+      "Smoked Fillet",
+      "Smoked Fillet",
+      "Klawf Stick",
+      "Watercress"
+    ],
+    "condiments": [
+      "Salt",
+      "Vinegar",
+      "Wasabi"
+    ],
+    "effects": [
+      {
+        "name": "Exp. Point Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Fighting",
+        "level": "1"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Normal",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/149.jpg",
+    "location": "From Sushi Oficianado in Casseroya Lake"
+  },
+  {
+    "number": "150",
+    "name": "Ultra Sushi Sandwich",
+    "description": "A sandwich dreamed up by a sushi aficionado. The sheer amount of sandwich going on here is part of the appeal.",
+    "fillings": [
+      "Rice",
+      "Smoked Fillet",
+      "Smoked Fillet",
+      "Klawf Stick",
+      "Watercress",
+      "Klawf Stick"
+    ],
+    "condiments": [
+      "Salt",
+      "Vinegar",
+      "Wasabi"
+    ],
+    "effects": [
+      {
+        "name": "Encounter Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Catching Power",
+        "type": "Normal",
+        "level": "2"
+      },
+      {
+        "name": "Humungo Power",
+        "type": "Dark",
+        "level": "1"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/150.jpg",
+    "location": "From Sushi Oficianado in Casseroya Lake"
+  },
+  {
+    "number": "151",
+    "name": "Master Sushi Sandwich",
+    "description": "The ultimate form of the Sushi Sandwich. The refreshing sourness elevates this sandwich to masterpiece level.",
+    "fillings": [
+      "Rice",
+      "Smoked Fillet",
+      "Smoked Fillet",
+      "Klawf Stick",
+      "Watercress",
+      "Klawf Stick"
+    ],
+    "condiments": [
+      "Salt",
+      "Vinegar",
+      "Wasabi",
+      "Sour Herba Mystica"
+    ],
+    "effects": [
+      {
+        "name": "Title Power",
+        "type": "Ice",
+        "level": "2"
+      },
+      {
+        "name": "Teensy Power",
+        "type": "Dark",
+        "level": "2"
+      },
+      {
+        "name": "Encounter Power",
+        "type": "Normal",
+        "level": "2"
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/151.jpg",
+    "location": "From Sushi Oficianado in Casseroya Lake"
+  }
+]

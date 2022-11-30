@@ -1,0 +1,1312 @@
+[
+  {
+    "name": "Butter",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 12
+      },
+      {
+        "flavor": "Salty",
+        "amount": 12
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Bug",
+        "amount": 2
+      },
+      {
+        "type": "Ghost",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/butter.png"
+  },
+  {
+    "name": "Chili Sauce",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 8
+      },
+      {
+        "flavor": "Salty",
+        "amount": 12
+      },
+      {
+        "flavor": "Sour",
+        "amount": 8
+      },
+      {
+        "flavor": "Hot",
+        "amount": 20
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Water",
+        "amount": 2
+      },
+      {
+        "type": "Grass",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/chilisauce.png"
+  },
+  {
+    "name": "Cream Cheese",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 12
+      },
+      {
+        "flavor": "Salty",
+        "amount": 12
+      },
+      {
+        "flavor": "Sour",
+        "amount": 12
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 5
+      },
+      {
+        "type": "Exp.",
+        "amount": -3
+      },
+      {
+        "type": "Item Drop",
+        "amount": 12
+      },
+      {
+        "type": "Teensy",
+        "amount": -15
+      }
+    ],
+    "types": [
+      {
+        "type": "Bug",
+        "amount": 4
+      },
+      {
+        "type": "Steel",
+        "amount": 4
+      },
+      {
+        "type": "Water",
+        "amount": 4
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/creamcheese.png"
+  },
+  {
+    "name": "Curry Powder",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 4
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 12
+      },
+      {
+        "flavor": "Hot",
+        "amount": 30
+      }
+    ],
+    "powers": [
+      {
+        "type": "Humungo",
+        "amount": -3
+      },
+      {
+        "type": "Teensy",
+        "amount": 21
+      },
+      {
+        "type": "Encounter",
+        "amount": 12
+      }
+    ],
+    "types": [
+      {
+        "type": "Bug",
+        "amount": 2
+      },
+      {
+        "type": "Ghost",
+        "amount": 2
+      },
+      {
+        "type": "Steel",
+        "amount": 2
+      },
+      {
+        "type": "Fire",
+        "amount": 2
+      },
+      {
+        "type": "Water",
+        "amount": 2
+      },
+      {
+        "type": "Grass",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/currypowder.png"
+  },
+  {
+    "name": "Horseradish",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Hot",
+        "amount": 16
+      }
+    ],
+    "powers": [
+      {
+        "type": "Humungo",
+        "amount": -3
+      },
+      {
+        "type": "Teensy",
+        "amount": 21
+      },
+      {
+        "type": "Encounter",
+        "amount": 12
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 2
+      },
+      {
+        "type": "Fighting",
+        "amount": 2
+      },
+      {
+        "type": "Flying",
+        "amount": 2
+      },
+      {
+        "type": "Poison",
+        "amount": 2
+      },
+      {
+        "type": "Ground",
+        "amount": 2
+      },
+      {
+        "type": "Rock",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/horseradish.png"
+  },
+  {
+    "name": "Jam",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 16
+      },
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 16
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 5
+      },
+      {
+        "type": "Exp.",
+        "amount": -3
+      },
+      {
+        "type": "Item Drop",
+        "amount": 12
+      },
+      {
+        "type": "Teensy",
+        "amount": -15
+      }
+    ],
+    "types": [
+      {
+        "type": "Electric",
+        "amount": 4
+      },
+      {
+        "type": "Ice",
+        "amount": 4
+      },
+      {
+        "type": "Dark",
+        "amount": 4
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/jam.png"
+  },
+  {
+    "name": "Ketchup",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 8
+      },
+      {
+        "flavor": "Salty",
+        "amount": 16
+      },
+      {
+        "flavor": "Sour",
+        "amount": 16
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Flying",
+        "amount": 2
+      },
+      {
+        "type": "Poison",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/ketchup.png"
+  },
+  {
+    "name": "Marmalade",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 12
+      },
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 16
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 20
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 5
+      },
+      {
+        "type": "Exp.",
+        "amount": -3
+      },
+      {
+        "type": "Item Drop",
+        "amount": 12
+      },
+      {
+        "type": "Teensy",
+        "amount": -15
+      }
+    ],
+    "types": [
+      {
+        "type": "Fighting",
+        "amount": 4
+      },
+      {
+        "type": "Poison",
+        "amount": 4
+      },
+      {
+        "type": "Rock",
+        "amount": 4
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/marmalade.png"
+  },
+  {
+    "name": "Mayonnaise",
+    "tastes": [
+      {
+        "flavor": "Salty",
+        "amount": 8
+      },
+      {
+        "flavor": "Sour",
+        "amount": 20
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 2
+      },
+      {
+        "type": "Fighting",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/mayonnaise.png"
+  },
+  {
+    "name": "Mustard",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Salty",
+        "amount": 8
+      },
+      {
+        "flavor": "Sour",
+        "amount": 8
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 8
+      },
+      {
+        "flavor": "Hot",
+        "amount": 16
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Ground",
+        "amount": 2
+      },
+      {
+        "type": "Rock",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/mustard.png"
+  },
+  {
+    "name": "Olive Oil",
+    "tastes": [
+      {
+        "flavor": "Sour",
+        "amount": 4
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 5
+      },
+      {
+        "type": "Exp.",
+        "amount": -3
+      },
+      {
+        "type": "Item Drop",
+        "amount": 12
+      },
+      {
+        "type": "Teensy",
+        "amount": -15
+      }
+    ],
+    "types": [
+      {
+        "type": "Ghost",
+        "amount": 4
+      },
+      {
+        "type": "Fire",
+        "amount": 4
+      },
+      {
+        "type": "Grass",
+        "amount": 4
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/oliveoil.png"
+  },
+  {
+    "name": "Peanut Butter",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 16
+      },
+      {
+        "flavor": "Salty",
+        "amount": 12
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Steel",
+        "amount": 2
+      },
+      {
+        "type": "Fire",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/peanutbutter.png"
+  },
+  {
+    "name": "Pepper",
+    "tastes": [
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 8
+      },
+      {
+        "flavor": "Hot",
+        "amount": 16
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Ice",
+        "amount": 2
+      },
+      {
+        "type": "Dragon",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/pepper.png"
+  },
+  {
+    "name": "Salt",
+    "tastes": [
+      {
+        "flavor": "Salty",
+        "amount": 20
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Electric",
+        "amount": 2
+      },
+      {
+        "type": "Psychic",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/salt.png"
+  },
+  {
+    "name": "Vinegar",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Sour",
+        "amount": 20
+      },
+      {
+        "flavor": "Bitter",
+        "amount": 4
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 5
+      },
+      {
+        "type": "Exp.",
+        "amount": -3
+      },
+      {
+        "type": "Item Drop",
+        "amount": 12
+      },
+      {
+        "type": "Teensy",
+        "amount": -15
+      }
+    ],
+    "types": [
+      {
+        "type": "Psychic",
+        "amount": 4
+      },
+      {
+        "type": "Dragon",
+        "amount": 4
+      },
+      {
+        "type": "Fairy",
+        "amount": 4
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/vinegar.png"
+  },
+  {
+    "name": "Wasabi",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 4
+      },
+      {
+        "flavor": "Salty",
+        "amount": 4
+      },
+      {
+        "flavor": "Hot",
+        "amount": 20
+      }
+    ],
+    "powers": [
+      {
+        "type": "Humungo",
+        "amount": -3
+      },
+      {
+        "type": "Teensy",
+        "amount": 21
+      },
+      {
+        "type": "Encounter",
+        "amount": 12
+      }
+    ],
+    "types": [
+      {
+        "type": "Electric",
+        "amount": 2
+      },
+      {
+        "type": "Psychic",
+        "amount": 2
+      },
+      {
+        "type": "Ice",
+        "amount": 2
+      },
+      {
+        "type": "Dragon",
+        "amount": 2
+      },
+      {
+        "type": "Dark",
+        "amount": 2
+      },
+      {
+        "type": "Fairy",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/wasabi.png"
+  },
+  {
+    "name": "Whipped Cream",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 20
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": 5
+      },
+      {
+        "type": "Exp.",
+        "amount": -3
+      },
+      {
+        "type": "Item Drop",
+        "amount": 12
+      },
+      {
+        "type": "Teensy",
+        "amount": -15
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 4
+      },
+      {
+        "type": "Flying",
+        "amount": 4
+      },
+      {
+        "type": "Ground",
+        "amount": 4
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/whippedcream.png"
+  },
+  {
+    "name": "Yogurt",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 16
+      },
+      {
+        "flavor": "Sour",
+        "amount": 16
+      }
+    ],
+    "powers": [
+      {
+        "type": "Egg",
+        "amount": -3
+      },
+      {
+        "type": "Exp.",
+        "amount": 12
+      },
+      {
+        "type": "Raid",
+        "amount": 21
+      }
+    ],
+    "types": [
+      {
+        "type": "Dark",
+        "amount": 2
+      },
+      {
+        "type": "Fairy",
+        "amount": 2
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/yogurt.png"
+  },
+  {
+    "name": "Bitter Herba Mystica",
+    "tastes": [
+      {
+        "flavor": "Bitter",
+        "amount": 500
+      }
+    ],
+    "powers": [
+      {
+        "type": "Title",
+        "amount": 1000
+      },
+      {
+        "type": "Sparkling",
+        "amount": 1000
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 250
+      },
+      {
+        "type": "Fighting",
+        "amount": 250
+      },
+      {
+        "type": "Flying",
+        "amount": 250
+      },
+      {
+        "type": "Poison",
+        "amount": 250
+      },
+      {
+        "type": "Ground",
+        "amount": 250
+      },
+      {
+        "type": "Rock",
+        "amount": 250
+      },
+      {
+        "type": "Bug",
+        "amount": 250
+      },
+      {
+        "type": "Ghost",
+        "amount": 250
+      },
+      {
+        "type": "Steel",
+        "amount": 250
+      },
+      {
+        "type": "Fire",
+        "amount": 250
+      },
+      {
+        "type": "Water",
+        "amount": 250
+      },
+      {
+        "type": "Grass",
+        "amount": 250
+      },
+      {
+        "type": "Electric",
+        "amount": 250
+      },
+      {
+        "type": "Psychic",
+        "amount": 250
+      },
+      {
+        "type": "Ice",
+        "amount": 250
+      },
+      {
+        "type": "Dragon",
+        "amount": 250
+      },
+      {
+        "type": "Dark",
+        "amount": 250
+      },
+      {
+        "type": "Fairy",
+        "amount": 250
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/bitterherbamystica.png"
+  },
+  {
+    "name": "Spicy Herba Mystica",
+    "tastes": [
+      {
+        "flavor": "Hot",
+        "amount": 500
+      }
+    ],
+    "powers": [
+      {
+        "type": "Title",
+        "amount": 1000
+      },
+      {
+        "type": "Sparkling",
+        "amount": 1000
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 250
+      },
+      {
+        "type": "Fighting",
+        "amount": 250
+      },
+      {
+        "type": "Flying",
+        "amount": 250
+      },
+      {
+        "type": "Poison",
+        "amount": 250
+      },
+      {
+        "type": "Ground",
+        "amount": 250
+      },
+      {
+        "type": "Rock",
+        "amount": 250
+      },
+      {
+        "type": "Bug",
+        "amount": 250
+      },
+      {
+        "type": "Ghost",
+        "amount": 250
+      },
+      {
+        "type": "Steel",
+        "amount": 250
+      },
+      {
+        "type": "Fire",
+        "amount": 250
+      },
+      {
+        "type": "Water",
+        "amount": 250
+      },
+      {
+        "type": "Grass",
+        "amount": 250
+      },
+      {
+        "type": "Electric",
+        "amount": 250
+      },
+      {
+        "type": "Psychic",
+        "amount": 250
+      },
+      {
+        "type": "Ice",
+        "amount": 250
+      },
+      {
+        "type": "Dragon",
+        "amount": 250
+      },
+      {
+        "type": "Dark",
+        "amount": 250
+      },
+      {
+        "type": "Fairy",
+        "amount": 250
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/spicyherbamystica.png"
+  },
+  {
+    "name": "Salty Herba Mystica",
+    "tastes": [
+      {
+        "flavor": "Salty",
+        "amount": 500
+      }
+    ],
+    "powers": [
+      {
+        "type": "Title",
+        "amount": 1000
+      },
+      {
+        "type": "Sparkling",
+        "amount": 1000
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 250
+      },
+      {
+        "type": "Fighting",
+        "amount": 250
+      },
+      {
+        "type": "Flying",
+        "amount": 250
+      },
+      {
+        "type": "Poison",
+        "amount": 250
+      },
+      {
+        "type": "Ground",
+        "amount": 250
+      },
+      {
+        "type": "Rock",
+        "amount": 250
+      },
+      {
+        "type": "Bug",
+        "amount": 250
+      },
+      {
+        "type": "Ghost",
+        "amount": 250
+      },
+      {
+        "type": "Steel",
+        "amount": 250
+      },
+      {
+        "type": "Fire",
+        "amount": 250
+      },
+      {
+        "type": "Water",
+        "amount": 250
+      },
+      {
+        "type": "Grass",
+        "amount": 250
+      },
+      {
+        "type": "Electric",
+        "amount": 250
+      },
+      {
+        "type": "Psychic",
+        "amount": 250
+      },
+      {
+        "type": "Ice",
+        "amount": 250
+      },
+      {
+        "type": "Dragon",
+        "amount": 250
+      },
+      {
+        "type": "Dark",
+        "amount": 250
+      },
+      {
+        "type": "Fairy",
+        "amount": 250
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/saltyherbamystica.png"
+  },
+  {
+    "name": "Sour Herba Mystica",
+    "tastes": [
+      {
+        "flavor": "Sour",
+        "amount": 500
+      }
+    ],
+    "powers": [
+      {
+        "type": "Title",
+        "amount": 1000
+      },
+      {
+        "type": "Sparkling",
+        "amount": 1000
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 250
+      },
+      {
+        "type": "Fighting",
+        "amount": 250
+      },
+      {
+        "type": "Flying",
+        "amount": 250
+      },
+      {
+        "type": "Poison",
+        "amount": 250
+      },
+      {
+        "type": "Ground",
+        "amount": 250
+      },
+      {
+        "type": "Rock",
+        "amount": 250
+      },
+      {
+        "type": "Bug",
+        "amount": 250
+      },
+      {
+        "type": "Ghost",
+        "amount": 250
+      },
+      {
+        "type": "Steel",
+        "amount": 250
+      },
+      {
+        "type": "Fire",
+        "amount": 250
+      },
+      {
+        "type": "Water",
+        "amount": 250
+      },
+      {
+        "type": "Grass",
+        "amount": 250
+      },
+      {
+        "type": "Electric",
+        "amount": 250
+      },
+      {
+        "type": "Psychic",
+        "amount": 250
+      },
+      {
+        "type": "Ice",
+        "amount": 250
+      },
+      {
+        "type": "Dragon",
+        "amount": 250
+      },
+      {
+        "type": "Dark",
+        "amount": 250
+      },
+      {
+        "type": "Fairy",
+        "amount": 250
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/sourherbamystica.png"
+  },
+  {
+    "name": "Sweet Herba Mystica",
+    "tastes": [
+      {
+        "flavor": "Sweet",
+        "amount": 500
+      }
+    ],
+    "powers": [
+      {
+        "type": "Title",
+        "amount": 1000
+      },
+      {
+        "type": "Sparkling",
+        "amount": 1000
+      }
+    ],
+    "types": [
+      {
+        "type": "Normal",
+        "amount": 250
+      },
+      {
+        "type": "Fighting",
+        "amount": 250
+      },
+      {
+        "type": "Flying",
+        "amount": 250
+      },
+      {
+        "type": "Poison",
+        "amount": 250
+      },
+      {
+        "type": "Ground",
+        "amount": 250
+      },
+      {
+        "type": "Rock",
+        "amount": 250
+      },
+      {
+        "type": "Bug",
+        "amount": 250
+      },
+      {
+        "type": "Ghost",
+        "amount": 250
+      },
+      {
+        "type": "Steel",
+        "amount": 250
+      },
+      {
+        "type": "Fire",
+        "amount": 250
+      },
+      {
+        "type": "Water",
+        "amount": 250
+      },
+      {
+        "type": "Grass",
+        "amount": 250
+      },
+      {
+        "type": "Electric",
+        "amount": 250
+      },
+      {
+        "type": "Psychic",
+        "amount": 250
+      },
+      {
+        "type": "Ice",
+        "amount": 250
+      },
+      {
+        "type": "Dragon",
+        "amount": 250
+      },
+      {
+        "type": "Dark",
+        "amount": 250
+      },
+      {
+        "type": "Fairy",
+        "amount": 250
+      }
+    ],
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/sweetherbamystica.png"
+  }
+]
