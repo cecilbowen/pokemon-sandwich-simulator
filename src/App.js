@@ -679,7 +679,7 @@ function App() {
 
     const fArr = [];
     for (const f of activeFillings) {
-      fArr.push(`${f.name} ${f.pieces}`);
+      fArr.push(`${f.name}-${f.pieces}`);
     }
 
     const copyStr = `${fArr.join(",")}_${activeCondiments.map(x => x.name).join(",")}`;
@@ -705,8 +705,8 @@ function App() {
       const cNames = condimentStr.split(",");
 
       for (const str of fNames) {
-        const name = str.split(" ")[0];
-        let pieces = str.split(" ")[1];
+        const name = str.split("-")[0];
+        let pieces = str.split("-")[1];
         if (pieces) { pieces = parseInt(pieces); }
         const filling = FILLINGS.filter(x => x.name === name)[0];
         if (filling) {
