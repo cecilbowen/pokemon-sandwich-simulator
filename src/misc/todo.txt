@@ -6,3 +6,4 @@ the most obvious next step would be to let users enter criteria such as:
 distinguish between a custom 'from scratch' sandwich and a modified preset recipe sandwich
 	the levels differ between these two, is why
 	
+add a text-based loading system, so other users can give each other text strings and load up their custom recipes

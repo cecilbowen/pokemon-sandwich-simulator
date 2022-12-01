@@ -33,22 +33,40 @@
 
 .filling-bkg {
   background-color: rgba(255, 0, 0, 0.13);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .condiment-bkg {
   background-color: rgba(0, 0, 255, 0.14);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.active-ingredients-bkg {
+  background-color: lightgray;
+  padding-top: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filling-portrait {
   border: 2px solid #d92525;
   border-radius: 10px;
   margin: 0px 2px 0px 2px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .condiment-portrait {
   border: 2px solid #1818be;
   border-radius: 10px;
   margin: 0px 2px 0px 2px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .search-panel {
@@ -104,6 +122,19 @@
 
 .bubble-row {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.numbering {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 10px;
+}
+
+.numbering-icon {
+  left: 6px;
+  top: 1.5px;
 }
 
 .bubble-header {

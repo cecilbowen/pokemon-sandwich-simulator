@@ -8,18 +8,22 @@ import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
 import { areEqual, calculatePowerAmount, getCondiments, getFillings, getPowerAliasByValue,
   ALIAS, ALIAS_FULL, COLORS, FLAVOR_TABLE, oneTwoFirst, hasOneHerba, hasTwoHerba,
-  isOneTwoSandwich, TYPE_EXCEPTIONS } from './util';
+  isOneTwoSandwich, TYPE_EXCEPTIONS, copyTextToClipboard } from './util';
 import Card from './components/Card';
 import './App.css';
 
+// per player
 const MAX_FILLINGS = 6;
 const MAX_CONDIMENTS = 4;
+const DISABLE_ALERTS = false;
+let NUM_PLAYERS = 1;
 
 function App() {
   const [advancedIngredients, setAdvancedIngredients] = useState(false);
   const [alwaysShowCustomSandwich, setAlwaysShowCustomSandwich] = useState(false);
   const [simpleMode, setSimpleMode] = useState(true);
   const [showSearchPanel, setShowSearchPanel] = useState(true);
+  const [megaSandwichMode, setMegaSandwichMode] = useState(false);
 
   const [activeFillings, setActiveFillings] = useState([]);
   const [activeCondiments, setActiveCondiments] = useState([]);
@@ -30,6 +34,22 @@ function App() {
   const [results, setResults] = useState([]);
   const [heartbeat, setHeartbeat] = useState(0);
   let activeSandwich = undefined;
+
+  useEffect(() => {
+    if (!megaSandwichMode) {
+      const tempFillings = activeFillings.slice(0, Math.min(activeFillings.length, MAX_FILLINGS));
+      const tempCondiments = activeCondiments.slice(0, Math.min(activeCondiments.length, MAX_CONDIMENTS));
+      setActiveFillings(tempFillings);
+      setActiveCondiments(tempCondiments);
+      NUM_PLAYERS = 1;
+    } else {
+      NUM_PLAYERS = 4;
+    }
+  }, [megaSandwichMode]);
+
+  useEffect(() => {
+    setAlwaysShowCustomSandwich(!simpleMode);
+  }, [simpleMode]);
 
   useEffect(() => {
     const tempResults = [];
@@ -116,30 +136,34 @@ function App() {
       className += ' filling-portrait';
     }
 
-    return <img
-      key={`filling-${index}`}
-      alt={filling.name}
-      title={filling.name}
-      src={filling.imageUrl}
-      className={className}
-      onClick={() => {
-        const tempActiveFillings = activeFillings.slice(0);
+    return (
+    <div style={{ width: "fit-content", height: "fit-content", position: "relative" }}>
+      <img
+        key={`filling-${index}`}
+        alt={filling.name}
+        title={filling.name}
+        src={filling.imageUrl}
+        className={className}
+        onClick={() => {
+          const tempActiveFillings = activeFillings.slice(0);
 
-        if (active) {
-          var indexToRemove = tempActiveFillings.indexOf(filling);
-          if (indexToRemove !== -1) {
-            tempActiveFillings.splice(indexToRemove, 1);
+          if (active) {
+            var indexToRemove = tempActiveFillings.indexOf(filling);
+            if (indexToRemove !== -1) {
+              tempActiveFillings.splice(indexToRemove, 1);
+            }
+          } else {
+            if (tempActiveFillings.length >= MAX_FILLINGS * NUM_PLAYERS) { return; }
+            tempActiveFillings.push({ // done this way to avoid modifying base array
+              ...filling
+            });
           }
-        } else {
-          if (tempActiveFillings.length >= MAX_FILLINGS) { return; }
-          tempActiveFillings.push({ // done this way to avoid modifying base array
-            ...filling
-          });
-        }
 
-        setActiveFillings(tempActiveFillings);
-      }}
-    />;
+          setActiveFillings(tempActiveFillings);
+        }}
+      />
+      {active && <div className='numbering numbering-icon'>{index + 1}</div>}
+    </div>);
   };
 
   const renderCondiments = () => {
@@ -157,31 +181,36 @@ function App() {
       className += ' condiment-portrait';
     }
     
-    return <img
-      key={`condiment-${index}`}
-      alt={condiment.name}
-      title={condiment.name}
-      src={condiment.imageUrl}
-      className={className}
-      onClick={() => {
-        const tempActiveCondiments = activeCondiments.slice(0);
-        if (active) {
-          var indexToRemove = tempActiveCondiments.indexOf(condiment);
-          if (indexToRemove !== -1) {
-            tempActiveCondiments.splice(indexToRemove, 1);
+    return (
+    <div style={{ width: "fit-content", height: "fit-content", position: "relative" }}>
+      <img
+        key={`condiment-${index}`}
+        alt={condiment.name}
+        title={condiment.name}
+        src={condiment.imageUrl}
+        className={className}
+        onClick={() => {
+          const tempActiveCondiments = activeCondiments.slice(0);
+          if (active) {
+            var indexToRemove = tempActiveCondiments.indexOf(condiment);
+            if (indexToRemove !== -1) {
+              tempActiveCondiments.splice(indexToRemove, 1);
+            }
+          } else {
+            if (tempActiveCondiments.length >= MAX_CONDIMENTS * NUM_PLAYERS) { return; }
+            tempActiveCondiments.push(condiment);
           }
-        } else {
-          if (tempActiveCondiments.length >= MAX_CONDIMENTS) { return; }
-          tempActiveCondiments.push(condiment);
-        }
-        setActiveCondiments(tempActiveCondiments);
-      }}
-    />;
+          setActiveCondiments(tempActiveCondiments);
+        }}
+      />
+      {active && <div className='numbering numbering-icon'>{index + activeFillings.length + 1}</div>}
+    </div>
+    );
   };
 
   const renderActive = () => {
     return (
-      <div style={{ backgroundColor: "lightgray", paddingTop: "4px" }}>
+      <div className='active-ingredients-bkg'>
         {activeFillings.map((x, i) => renderFilling(x, i, true))}
         {activeCondiments.map((x, i) => renderCondiment(x, i, true))}
       </div>
@@ -227,11 +256,68 @@ function App() {
     );
   };
 
+  /*
+  const getSharedTypes = allTypes => {
+    const ingredients = [...activeFillings, ...activeCondiments];
+    const ret = [];
+    const valueMap = {};
+    for (const type of allTypes) {
+      for (const ingredient of ingredients) {
+        for (const iType of ingredient.types) {
+          if (iType.type === type.type) {
+            valueMap[type.type] = (valueMap[type.type] || 0) + 1;
+            break;
+          }
+        }
+      }
+    }
+
+    for (const [k, v] of Object.entries(valueMap)) {
+      if (v > 2) {
+        ret.push(allTypes.filter(x => x.type === k)[0]);
+      }
+    }
+
+    return ret;
+  };
+
+  const getSharedPowers = allPowers => {
+    const ingredients = [...activeFillings, ...activeCondiments];
+    const ret = [];
+    const valueMap = {};
+    for (const type of allPowers) {
+      for (const ingredient of ingredients) {
+        for (const iPower of ingredient.powers) {
+          if (iPower.type === type.type) {
+            valueMap[type.type] = (valueMap[type.type] || 0) + 1;
+            break;
+          }
+        }
+      }
+    }
+
+    for (const [k, v] of Object.entries(valueMap)) {
+      if (v > 2) {
+        ret.push(allPowers.filter(x => x.type === k)[0]);
+      }
+    }
+
+    return ret;
+  };
+  */
+
   const craftSandwich = (sums, presetSandwich) => {
     if (sums.tastes.length + sums.powers.length + sums.types.length === 0) {
       return;
     }
 
+    const formattedTypes = sums.types.slice(0);
+    if (formattedTypes.length < 3) {
+      formattedTypes.push({
+        type: TYPES.filter(x => sums.types.map(y => y.type).indexOf(x) === -1)[0],
+        amount: 0,
+      });
+    }
     const formattedPowers = sums.powers.slice(0).filter(x => (x.type === "Sparkling" ? x.amount >= 2000 : x));
     const myTypes = [];
 
@@ -243,12 +329,23 @@ function App() {
       fillings: activeFillings,
       condiments: activeCondiments,
       effects: formattedPowers.map((x, i) => {
-        let type = sums.types[Math.min(i, sums.types.length - 1)].type;
+        const safeIndex = Math.min(i, formattedTypes.length - 1);
+        let fullType = formattedTypes[safeIndex];
+        let type = fullType.type;
         if (i === 1) {
-          type = sums.types[2]?.type || TYPES.filter(x => myTypes.indexOf(x) === -1)[0];
+          fullType = formattedTypes[2];
+          type = fullType?.type || TYPES.filter(x => myTypes.indexOf(x) === -1)[0];
         }
         if (i === 2) {
-          type = sums.types[1]?.type || TYPES.filter(x => myTypes.indexOf(x) === -1)[0];
+          fullType = formattedTypes[1];
+          type = fullType?.type || TYPES.filter(x => myTypes.indexOf(x) === -1)[0];
+        }
+
+        if (!fullType) {
+          fullType = {
+            type,
+            amount: 0,
+          }
         }
 
         const name = ALIAS_FULL[ALIAS[x.type]];
@@ -256,6 +353,8 @@ function App() {
 
         return {
           name,
+          fullType,
+          fullPower: x,
           type,
           level: "1",
         }
@@ -263,9 +362,9 @@ function App() {
       imageUrl: SANDWICHES[0].imageUrl,
     };
 
-    const firstType = sums.types[0];
-    const secondType = sums.types[1];
-    const thirdType = sums.types[2]; // null check if only 2 types
+    const firstType = formattedTypes[0];
+    const secondType = formattedTypes[1];
+    const thirdType = formattedTypes[2]; // null check if only 2 types
     const mainTypeAmount = firstType.amount;
 
     // types and levels handling
@@ -293,7 +392,30 @@ function App() {
           generatedSandwich.effects[i].level = newLevels[i];
         }
       }
+
+      // handle levels
+      let level3 = false;
+      for (const effect of generatedSandwich.effects) {
+        const typeAmount = effect.fullType.amount;
+        let effectAmount = effect.fullPower.amount;
+        if (effect.fullPower?.boosted) {
+          effectAmount -= 100;
+        }
+        if (typeAmount >= 180 && effectAmount >= 100) {
+          effect.level = "2";
+        }
+
+        if (typeAmount >= 380 && effectAmount >= 1000) { // 70% sure
+          level3 = true;
+          break;
+        }
+      }
+      
+      if (level3) {
+        for (const effect of generatedSandwich.effects) { effect.level = "3"; }
+      }
     } else {
+
       // copy over levels if it's a preset sandwich recipe
       for (let i = 0; i < generatedSandwich.effects.length; i++) {
         const presetEffect = presetSandwich.effects[i];
@@ -301,7 +423,7 @@ function App() {
       }
 
       if (isOneTwoSandwich(presetSandwich)) {
-        const rawTypes = sums.types.map(x => x.type).filter((x, i) => i < 2);
+        const rawTypes = formattedTypes.map(x => x.type).filter((x, i) => i < 2);
         const newTypes = [firstType, secondType, { type: TYPES.filter(x => rawTypes.indexOf(x) === -1)[0], amount: 0 }];
         for (let i = 0; i < generatedSandwich.effects.length; i++) {
           generatedSandwich.effects[i].type = newTypes[i].type;
@@ -327,7 +449,10 @@ function App() {
   };
 
   const renderMath = () => {
-    const ingredients = [...activeFillings, ...activeCondiments];
+    const ingredients = [
+      ...activeFillings.sort((a, b) => a.name.localeCompare(b.name)),
+      ...activeCondiments.sort((a, b) => a.name.localeCompare(b.name))
+    ];
     const sums = {
       tastes: [],
       powers: [],
@@ -405,10 +530,12 @@ function App() {
       if (!existingStat) {
         sums.powers.push({
           type: varName,
-          amount: 100
+          amount: 100,
+          boosted: true, // boosted 'from zero' stats don't count in determining level
         });
       } else {
         existingStat.amount += 100;
+        //existingStat.boosted = true;
       }
       sums.powers.sort((a, b) => {
         const aType = ALIAS_FULL[ALIAS[a.type]]; // these alias are getting old..
@@ -452,7 +579,7 @@ function App() {
     return (
       <div style={{ backgroundColor: pass ? "" : "red" }}>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-          {ingredients.map(x => <Card ingredient={x} fillings={activeFillings}
+          {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
             simpleMode={simpleMode}
             updatePieces={() => pulse()}
             onClick={() => {
@@ -538,7 +665,7 @@ function App() {
           />
         </div>
         <div className='search-results-div'>
-          <div className="bubble-row" style={{ overflow: "auto" }}>
+          <div className="bubble-row" style={{ overflow: "auto", flexWrap: "nowrap" }}>
             {results.map((x, i) => renderSearchBubble(x, i))}
           </div>
         </div>
@@ -546,11 +673,60 @@ function App() {
     );
   };
 
+  const saveRecipe = () => {
+    if (activeCondiments.length === 0) { return; }
+
+    const fArr = [];
+    for (const f of activeFillings) {
+      fArr.push(`${f.name} ${f.pieces}`);
+    }
+
+    const copyStr = `${fArr.join(",")}_${activeCondiments.map(x => x.name).join(",")}`;
+    console.log("Saving recipe", copyStr);
+    copyTextToClipboard(copyStr);
+
+    if (!DISABLE_ALERTS) {
+      alert("Copied recipe to clipboard!\n" + copyStr);
+    }
+  };
+
+  const loadRecipe = () => {
+    const recipeStr = window.prompt("Enter/paste recipe:", "");
+    if (recipeStr && recipeStr.length > 0) {
+      const tempF = [];
+      let tempC = [];
+      const spl = recipeStr.split("_");
+      if (spl.length !== 2) { return; } // should probably regex check string but whatever
+      const fillingStr = spl[0];
+      const condimentStr = spl[1];
+      
+      const fNames = fillingStr.split(",");
+      const cNames = condimentStr.split(",");
+
+      for (const str of fNames) {
+        const name = str.split(" ")[0];
+        let pieces = str.split(" ")[1];
+        if (pieces) { pieces = parseInt(pieces); }
+        const filling = FILLINGS.filter(x => x.name === name)[0];
+        if (filling) {
+          tempF.push({ ...filling, pieces });
+        }
+      }
+
+      tempC = getCondiments(cNames);
+      setActiveFillings(tempF);
+      setActiveCondiments(tempC);
+    }
+  }
+
   const renderSettings = () => {
     return (
       <div className='settings-bar'>
         <button className='button-spacing' onClick={() => setSimpleMode(!simpleMode)}>Toggle Simple Mode: {simpleMode ? "On" : "Off"}</button>
         <button className='button-spacing' onClick={() => setShowSearchPanel(!showSearchPanel)}>Toggle Search Panel</button>
+        <button className='button-spacing' onClick={() => setMegaSandwichMode(!megaSandwichMode)}>Toggle Multiplayer Mode: {megaSandwichMode ? "On" : "Off"}</button>
+        <button className='button-spacing' onClick={() => loadRecipe()}>Load Recipe</button>
+        <button className='button-spacing' onClick={() => saveRecipe()}>Save Recipe</button>
       </div>
     );
   };

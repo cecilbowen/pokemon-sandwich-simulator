@@ -12,7 +12,6 @@ const Card = props => {
     const isSum = props.sums !== undefined;
     const sums = props.sums || {};
 
-    //const tastes = (sums.tastes || ingredient.tastes).sort((a, b) => b.amount - a.amount);
     const tastes = (sums.tastes || ingredient.tastes).sort((a, b) => {
       return b.amount - a.amount || FLAVORS.indexOf(a.flavor) - FLAVORS.indexOf(b.flavor);
     });
@@ -131,6 +130,7 @@ const Card = props => {
             {defaultRender && types.map((x, i) => renderKeyValue(x, i))}
         </div>}
         {/*!isSum && <button className='expand-button' onClick={props?.onClick}></button>*/}
+        {props.number !== undefined && <div className='numbering'>{props.number + 1}</div>}
         {!isSum && !props.simpleMode && <div className='expand-help' onClick={props?.onClick}>{showStats ? "Click to minimize" : "expand"}</div>}
       </div>
     );

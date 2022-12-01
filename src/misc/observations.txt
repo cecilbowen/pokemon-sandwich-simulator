@@ -1,0 +1,106 @@
+herba
+==============================
+rice x5, bitter x1
+520, 2250, 5400
+title 1000
+humungo 105
+item 100
+bitter 500
+sweet 15
+lv3, lv3, lv3
+
+rice x4, cheese x1-2pieces bitter x1
+524, 2228, 5400
+title 1000
+item 104
+humungo 84
+bitter 500
+sweet 14
+normal 380
+lv3, lv3, lv3
+
+rice x4, cheese x1-1pieces bitter x1
+520, 2224, 5310
+title 1000
+item 102
+humungo 84
+bitter 500
+sweet 13
+normal 375
+lv2, lv2, lv2
+
+diff between above two: 477 - 484
+
+rice x4, bitter x1
+516, 2220, 5220
+title 1000
+item 100
+humungo 84
+bitter 500
+sweet 12
+lv2, lv2, lv2
+
+non-herba
+==============================
+rice x6, wasabi x2, curry powder x2
+188, 400, 1128
+encounter 120
+humungo 114
+raid 100
+hot 100
+sweet 34
+bitter 24
+lv2, lv2, lv1
+
+chorizo x4, rice x2, curry powder x1, pepper x1, wasabi x2
+266, 400, 1264
+hot 134, salty 64, bitter 44
+humungo 133
+encounter 108
+exp 96
+fire 206
+normal 204
+dragon 150
+lv2 lv1 lv1
+
+chorizo x4, rice x2, curry powder x2, wasabi x2
+292, 400, 1272
+hot 148, salty 64, bitter 48
+humungo 130
+encounter 120
+exp 84
+fire 208
+normal 204
+bug 148
+lv2 lv1 lv1
+
+chorizo x4, rice x1, potato salad x1, curry powder x2, wasabi x2
+298, 400, 1272
+hot 148, salty 67, bitter 49
+humungo 130
+encounter 120
+exp 84
+bug 178
+fire 178
+dragon 178
+lv1 lv1 lv1
+
+rice x2, fillet x4, wasabi x2, curry powder x2
+215, 385, 1011
+humungo 130
+catch 84
+teensy 78
+hot 100
+sweet 39
+bitter 36
+lv1, lv1, lv1
+
+rice x4, tortilla x2, wasabi x2, curry powder x2
+204, 400, 1128
+hot 102
+sweet 34
+bitter 30
+raid 124
+encounter 90
+humungo 72
+lv1, lv1, lv1
