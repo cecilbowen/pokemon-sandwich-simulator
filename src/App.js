@@ -395,10 +395,11 @@ function App() {
 
       // handle levels
       let level3 = false;
-      for (const effect of generatedSandwich.effects) {
+      for (let i = 0; i < generatedSandwich.effects.length; i++) {
+        const effect = generatedSandwich.effects[i];
         const typeAmount = effect.fullType.amount;
         let effectAmount = effect.fullPower.amount;
-        if (effect.fullPower?.boosted) {
+        if (i !== 0 && effect.fullPower?.boosted) {
           effectAmount -= 100;
         }
         if (typeAmount >= 180 && effectAmount >= 100) {
@@ -714,6 +715,11 @@ function App() {
       }
 
       tempC = getCondiments(cNames);
+
+      if (tempF.length > MAX_FILLINGS || tempC.length > MAX_CONDIMENTS) {
+        setMegaSandwichMode(true);
+      }
+
       setActiveFillings(tempF);
       setActiveCondiments(tempC);
     }
