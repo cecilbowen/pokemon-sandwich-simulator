@@ -2,4 +2,6 @@
 
 This tool lets you simulate making sandwiches for Pokemon Scarlet and Violet.
 
-Live demo here: 
+## Screenshots: https://imgur.com/a/WJXqJ5p
+
+Live demo here: https://utci0i.csb.app/
