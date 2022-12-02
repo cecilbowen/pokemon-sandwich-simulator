@@ -745,6 +745,7 @@ function App() {
       {renderMath()}
       {renderSearch()}
       {renderSettings()}
+      <small><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">Source Code</a></small>
     </div>
   );
 }

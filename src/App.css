@@ -206,3 +206,7 @@
     transform: rotate(360deg);
   }
 }
+
+small {
+  font-size: 0.7em;
+}
