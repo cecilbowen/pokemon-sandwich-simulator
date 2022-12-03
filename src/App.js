@@ -7,7 +7,7 @@ import POWERS from './data/powers.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
 import { areEqual, calculatePowerAmount, getCondiments, getFillings,
-  ALIAS_FULL, COLORS, FLAVOR_TABLE, oneTwoFirst, hasOneHerba, hasTwoHerba,
+  ALIAS_FULL, COLORS, FLAVOR_TABLE, oneTwoFirst,
   isOneTwoSandwich, TYPE_EXCEPTIONS, copyTextToClipboard, hasRelevance, getCategory } from './util';
 import Card from './components/Card';
 import './App.css';
@@ -55,12 +55,6 @@ function App() {
       setActiveKey({});
     }
   }, [simpleMode]);
-
-  useEffect(() => {
-    if (!advancedIngredients) {
-      setActiveKey({});
-    }
-  }, [advancedIngredients]);
 
   useEffect(() => {
     const tempResults = [];
@@ -156,15 +150,14 @@ function App() {
       className += ' filling-portrait';
     }
 
-    let divClass = "";
+    let divClass = "ingredient-div";
     if (!active && !hasRelevance(filling, activeKey)) {
-      divClass = 'ingredient-blur';
+      divClass = 'ingredient-div ingredient-blur';
     }
 
     return (
-    <div className={divClass} style={{ width: "fit-content", height: "fit-content", position: "relative" }}>
+    <div className={divClass} key={`filling-${index}`}>
       <img
-        key={`filling-${index}`}
         alt={filling.name}
         title={filling.name}
         src={filling.imageUrl}
@@ -213,9 +206,8 @@ function App() {
 
     
     return (
-    <div className={divClass}>
+    <div className={divClass} key={`condiment-${index}`}>
       <img
-        key={`condiment-${index}`}
         alt={condiment.name}
         title={condiment.name}
         src={condiment.imageUrl}
@@ -303,9 +295,9 @@ function App() {
     }
 
     const formattedTypes = sums.types.slice(0);
-    if (formattedTypes.length < 3) {
+    while (formattedTypes.length < 3) {
       formattedTypes.push({
-        type: TYPES.filter(x => sums.types.map(y => y.type).indexOf(x) === -1)[0],
+        type: TYPES.filter(x => formattedTypes.map(y => y.type).indexOf(x) === -1)[0],
         amount: 0,
       });
     }
@@ -360,57 +352,54 @@ function App() {
 
     // types and levels handling
     if (!presetSandwich) {
-      // types determined by herba amount
-      if (hasOneHerba(generatedSandwich.condiments)) {
-        if (mainTypeAmount > 280) {
-          const newTypes = [firstType, firstType, thirdType];
-          const newLevels = ["2", "2", "2"];
-          for (let i = 0; i < generatedSandwich.effects.length; i++) {
-            generatedSandwich.effects[i].type = newTypes[i].type;
-            generatedSandwich.effects[i].level = newLevels[i];
-          }
-        } else {
-          const newLevels = ["2", "2", "1"];
-          for (let i = 0; i < generatedSandwich.effects.length; i++) {
-            generatedSandwich.effects[i].level = newLevels[i];
-          }
-        }
-      } else if (hasTwoHerba(generatedSandwich.condiments)) {
-        const newTypes = [firstType, firstType, firstType];
-        const newLevels = ["3", "3", "3"];
-        for (let i = 0; i < generatedSandwich.effects.length; i++) {
-          generatedSandwich.effects[i].type = newTypes[i].type;
-          generatedSandwich.effects[i].level = newLevels[i];
-        }
+      let newTypes = [firstType, firstType, thirdType];
+      if (mainTypeAmount > 480) { // mono type
+        newTypes = [firstType, firstType, firstType];
+      } else if (mainTypeAmount > 280) { // dual type
+        newTypes = [firstType, firstType, thirdType];
+      } else { // triple type
+        newTypes = [firstType, thirdType, secondType];
+      }
+
+      for (let i = 0; i < generatedSandwich.effects.length; i++) {
+        generatedSandwich.effects[i].type = newTypes[i].type;
+        generatedSandwich.effects[i].fullType = newTypes[i];
       }
 
       // handle levels
-      let level3 = false;
+      // levels continue to remain not 100% consistent
+      // so trial-and-error is still going on here
+      let levelsToAdd = 0;
       for (let i = 0; i < generatedSandwich.effects.length; i++) {
         const effect = generatedSandwich.effects[i];
+        // console.log("\t" + effect.fullType.type, effect.fullType.amount);
         const typeAmount = effect.fullType.amount;
         let effectAmount = effect.fullPower.amount;
-        if (i !== 0 && effect.fullPower?.boosted) {
+        if (i === 2 && effect.fullPower?.boosted) {
           effectAmount -= 100;
         }
         if (typeAmount >= 180 && effectAmount >= 100) {
-          effect.level = "2";
+          levelsToAdd++;
         }
+        if (typeAmount >= 380 || effectAmount >= 1000) {
+          levelsToAdd++;
+        }
+      }
 
-        if (typeAmount >= 380 /*&& effectAmount >= 1000*/) {
-          //level3 = true;
-          effect.level = "3";
-          break;
+      // console.log("adding " + levelsToAdd + " levels", generatedSandwich.effects);
+      let index = 0;
+      while (levelsToAdd > 0) {
+        const level = parseInt(generatedSandwich.effects[index].level) + 1; // lol why did i keep this a string
+        if (level > 3) { break; }
+        generatedSandwich.effects[index].level = "" + level;
+        
+        index++;
+        if (index > generatedSandwich.effects.length - 1) {
+          index = 0;
         }
+        levelsToAdd--;
       }
-      
-      /*
-      if (level3) {
-        for (const effect of generatedSandwich.effects) { effect.level = "3"; }
-      }
-      */
     } else {
-
       // copy over levels if it's a preset sandwich recipe
       for (let i = 0; i < generatedSandwich.effects.length; i++) {
         const presetEffect = presetSandwich.effects[i];

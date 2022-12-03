@@ -9,7 +9,8 @@ bitter 500
 sweet 15
 lv3, lv3, lv3
 
-rice x4, cheese x1-2pieces bitter x1
+Cheese-2,Rice-1,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica
+rice x4, cheese x1-2pieces, bitter x1
 524, 2228, 5400
 title 1000
 item 104
@@ -19,18 +20,17 @@ sweet 14
 normal 380, fighting 380, flying 380
 title normal lv3, item normal lv3, humungo flying lv3
 
-rice x4, cheese x1-1pieces bitter x1
+Cheese-1,Rice-1,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica
+rice x4, cheese x1-1pieces, bitter x1
 520, 2224, 5310
-title 1000
-item 102
-humungo 84
-bitter 500
-sweet 13
-normal 375
-lv2, lv2, lv2
+title 1000, item 102, humungo 84
+bitter 500, sweet 13, sour 4
+normal 375, fighting 375, flying 375
+title normal lv2, item normal lv2, humungo flying lv2
 
 diff between above two: 477 - 484
 
+Rice-1,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica
 rice x4, bitter x1
 516, 2220, 5220
 title 1000
@@ -42,34 +42,29 @@ lv2, lv2, lv2
 
 non-herba
 ==============================
-rice x6, wasabi x2, curry powder x2
+Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Curry Powder,Curry Powder,Wasabi,Wasabi
+rice x6, wasabi x2, curry powder x2 (the classic recipe!)
 188, 400, 1128
 hot 100, sweet 34, bitter 24
 encounter 120, humungo 114, raid 100
 fire 184, water 184, grass 184
 encounter fire lv2, humungo grass lv2, raid water lv1
 
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1_Curry Powder,Pepper,Wasabi,Wasabi
 chorizo x4, rice x2, curry powder x1, pepper x1, wasabi x2
 266, 400, 1264
 hot 134, salty 64, bitter 44
-humungo 133
-encounter 108
-exp 96
-fire 206
-normal 204
-dragon 150
-lv2 lv1 lv1
+humungo 133, encounter 108, exp 96
+fire 206, normal 204, dragon 150
+humungo fire lv2, encounter dragon lv1, exp normal lv1
 
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1_Curry Powder,Curry Powder,Wasabi,Wasabi
 chorizo x4, rice x2, curry powder x2, wasabi x2
 292, 400, 1272
 hot 148, salty 64, bitter 48
-humungo 130
-encounter 120
-exp 84
-fire 208
-normal 204
-bug 148
-lv2 lv1 lv1
+humungo 130, encounter 120, exp 84
+fire 208, normal 204, bug 148
+humungo fire lv2, encounter bug lv1, exp normal lv1
 
 chorizo x4, rice x1, potato salad x1, curry powder x2, wasabi x2
 298, 400, 1272
@@ -92,18 +87,25 @@ sweet 39
 bitter 36
 lv1, lv1, lv1
 
+Potato Tortilla-1,Potato Tortilla-1,Rice-1,Rice-1,Rice-1,Rice-1_Curry Powder,Curry Powder,Wasabi,Wasabi
 rice x4, tortilla x2, wasabi x2, curry powder x2
 204, 400, 1128
-hot 102
-sweet 34
-bitter 30
-raid 124
-encounter 90
-humungo 72
-lv1, lv1, lv1
+hot 102, sweet 34, bitter 30
+raid 124, encounter 90, humungo 72
+fire 164, grass 164, fighting 160
+raid fire lv1, encounter fighting lv1, humungo grass lv1
 
 multiplayer
 ==============================
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica,Horseradish,Horseradish,Mayonnaise,Mayonnaise,Saltchorizo x4, rice x2, tofu x1, mayonnaise x4, horseradish x2, salt, bitter herba
+chorizo x4, rice x3, mayonnaise x2, horseradish x2, bitter herba mystica (or salty herba)
+752, 2460, 5940
+bitter 528, salty 84, sour 80
+title 1000, exp 220, encounter 108
+normal 492, fire 484, poison 398
+title normal 3, exp normal 3, encounter normal 3 (a sought after one)
+
+Ham-3,Ham-3,Ham-3,Ham-3,Herbed Sausage-1,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Noodles-1,Noodles-1_Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream
 ham x4, herbed sausage x4, noodles x2, whipped cream x8
 330, 372, 1248
 sweet 182, salty 108, bitter 40
@@ -111,6 +113,7 @@ encounter 148, egg 140, item 86
 ground 284, psychic 180, fighting 120
 encounter ground lv2, egg (ground) lv2, item fighting lv1
 
+Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Bitter Herba Mystica,Curry Powder,Curry Powder,Salt
 noodles x11, bitter herba x1, curry powder x2, salt x1
 676, 2520, 6508
 bitter 528, salty 72, hot 60
@@ -118,6 +121,7 @@ title 1000, humungo 225, encounter 156
 electric 582, psychic 582, poison 580
 title electric lv3, humungo electric lv3, encounter electric lv3
 
+Noodles-1,Noodles-1,Potato Salad-1,Potato Salad-1,Tomato-3,Tomato-3,Tomato-3,Tomato-3_Salt,Spicy Herba Mystica
 noodles x2, potato salad x2, tomato x4, spicy herba, salt
 636, 2370, 5296
 hot 500, sour 56, salty 34
@@ -126,22 +130,26 @@ fairy 382, electric 312, psychic 312
 title fairy lv3, humungo fairy lv3, encounter psychic lv2
 
 -
+Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Bitter Herba Mystica,Salt
 noodles x7, bitter herba, salt
 title 1000, humungo 147, exp 112
 electric 480, psychic 462, poison 460
 title electric lv3, humungo electric lv3, exp poison lv3
 
-noodles x8, yellow bell pepper x1, basil x1-1pieces, sweet herba, salt
+Basil-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Yellow Bell Pepper-3_Salt,Sweet Herba Mystica
+noodles x7, yellow bell pepper x1, basil x1-1pieces, sweet herba, salt
 title 1000, humungo 147, exp 112
 electric 481, psychic 463, ice 461
 title electric lv3, humungo electric lv3, exp electric lv3
 -
 
+Basil-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Yellow Bell Pepper-3_Bitter Herba Mystica,Salt
 noodles x8, yellow bell pepper x1, basil x1-1pieces, bitter herba, salt
 title 1000, humungo 168, encounter 115
 electric 511, psychic 493, ice 491
 title electric lv3, humungo electric lv3, exp electric lv3
 
+Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Bitter Herba Mystica,Salt
 noodles x8, bitter herba, salt
 title 1000, humungo 168, exp 112
 electric 492, psychic 492, poison 490
