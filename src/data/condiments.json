@@ -17,7 +17,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {
@@ -63,7 +63,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {
@@ -105,11 +105,11 @@
         "amount": 5
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": -3
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 12
       },
       {
@@ -275,11 +275,11 @@
         "amount": 5
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": -3
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 12
       },
       {
@@ -325,7 +325,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {
@@ -371,11 +371,11 @@
         "amount": 5
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": -3
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 12
       },
       {
@@ -417,7 +417,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {
@@ -467,7 +467,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {
@@ -505,11 +505,11 @@
         "amount": 5
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": -3
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 12
       },
       {
@@ -551,7 +551,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {
@@ -593,7 +593,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {
@@ -631,7 +631,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {
@@ -673,11 +673,11 @@
         "amount": 5
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": -3
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 12
       },
       {
@@ -773,11 +773,11 @@
         "amount": 5
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": -3
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 12
       },
       {
@@ -819,7 +819,7 @@
         "amount": -3
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 12
       },
       {

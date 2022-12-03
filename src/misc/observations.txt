@@ -16,8 +16,8 @@ item 104
 humungo 84
 bitter 500
 sweet 14
-normal 380
-lv3, lv3, lv3
+normal 380, fighting 380, flying 380
+title normal lv3, item normal lv3, humungo flying lv3
 
 rice x4, cheese x1-1pieces bitter x1
 520, 2224, 5310
@@ -44,13 +44,10 @@ non-herba
 ==============================
 rice x6, wasabi x2, curry powder x2
 188, 400, 1128
-encounter 120
-humungo 114
-raid 100
-hot 100
-sweet 34
-bitter 24
-lv2, lv2, lv1
+hot 100, sweet 34, bitter 24
+encounter 120, humungo 114, raid 100
+fire 184, water 184, grass 184
+encounter fire lv2, humungo grass lv2, raid water lv1
 
 chorizo x4, rice x2, curry powder x1, pepper x1, wasabi x2
 266, 400, 1264
@@ -104,3 +101,52 @@ raid 124
 encounter 90
 humungo 72
 lv1, lv1, lv1
+
+multiplayer
+==============================
+ham x4, herbed sausage x4, noodles x2, whipped cream x8
+330, 372, 1248
+sweet 182, salty 108, bitter 40
+encounter 148, egg 140, item 86
+ground 284, psychic 180, fighting 120
+encounter ground lv2, egg (ground) lv2, item fighting lv1
+
+noodles x11, bitter herba x1, curry powder x2, salt x1
+676, 2520, 6508
+bitter 528, salty 72, hot 60
+title 1000, humungo 225, encounter 156
+electric 582, psychic 582, poison 580
+title electric lv3, humungo electric lv3, encounter electric lv3
+
+noodles x2, potato salad x2, tomato x4, spicy herba, salt
+636, 2370, 5296
+hot 500, sour 56, salty 34
+title 1000, humungo 184, encounter 132
+fairy 382, electric 312, psychic 312
+title fairy lv3, humungo fairy lv3, encounter psychic lv2
+
+-
+noodles x7, bitter herba, salt
+title 1000, humungo 147, exp 112
+electric 480, psychic 462, poison 460
+title electric lv3, humungo electric lv3, exp poison lv3
+
+noodles x8, yellow bell pepper x1, basil x1-1pieces, sweet herba, salt
+title 1000, humungo 147, exp 112
+electric 481, psychic 463, ice 461
+title electric lv3, humungo electric lv3, exp electric lv3
+-
+
+noodles x8, yellow bell pepper x1, basil x1-1pieces, bitter herba, salt
+title 1000, humungo 168, encounter 115
+electric 511, psychic 493, ice 491
+title electric lv3, humungo electric lv3, exp electric lv3
+
+noodles x8, bitter herba, salt
+title 1000, humungo 168, exp 112
+electric 492, psychic 492, poison 490
+title electric lv3, humungo electric lv3, exp electric lv3
+
+
+
+

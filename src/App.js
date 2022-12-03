@@ -6,9 +6,9 @@ import TYPES from './data/types.json'; // order of types in-game
 import POWERS from './data/powers.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
-import { areEqual, calculatePowerAmount, getCondiments, getFillings, getPowerAliasByValue,
-  ALIAS, ALIAS_FULL, COLORS, FLAVOR_TABLE, oneTwoFirst, hasOneHerba, hasTwoHerba,
-  isOneTwoSandwich, TYPE_EXCEPTIONS, copyTextToClipboard } from './util';
+import { areEqual, calculatePowerAmount, getCondiments, getFillings,
+  ALIAS_FULL, COLORS, FLAVOR_TABLE, oneTwoFirst, hasOneHerba, hasTwoHerba,
+  isOneTwoSandwich, TYPE_EXCEPTIONS, copyTextToClipboard, hasRelevance, getCategory } from './util';
 import Card from './components/Card';
 import './App.css';
 
@@ -27,6 +27,7 @@ function App() {
 
   const [activeFillings, setActiveFillings] = useState([]);
   const [activeCondiments, setActiveCondiments] = useState([]);
+  const [activeKey, setActiveKey] = useState({});
   const [searchNameQuery, setSearchNameQuery] = useState();
   const [searchEffectQuery, setSearchEffectQuery] = useState();
   const [searchTypeQuery, setSearchTypeQuery] = useState();
@@ -34,6 +35,7 @@ function App() {
   const [results, setResults] = useState([]);
   const [heartbeat, setHeartbeat] = useState(0);
   let activeSandwich = undefined;
+  let activeSums;
 
   useEffect(() => {
     if (!megaSandwichMode) {
@@ -49,7 +51,16 @@ function App() {
 
   useEffect(() => {
     setAlwaysShowCustomSandwich(!simpleMode);
+    if (simpleMode) {
+      setActiveKey({});
+    }
   }, [simpleMode]);
+
+  useEffect(() => {
+    if (!advancedIngredients) {
+      setActiveKey({});
+    }
+  }, [advancedIngredients]);
 
   useEffect(() => {
     const tempResults = [];
@@ -117,6 +128,15 @@ function App() {
     }
   }, [results]);
 
+  useEffect(() => {
+    // handle removing active key if no ingredients with it
+    // eg. user clicks on bitter, but then removes the only bitter ingredient
+    if (!hasRelevance(activeSums, activeKey)) {
+      setActiveKey({});
+    }
+
+  }, [activeFillings, activeCondiments]);
+
   const pulse = () => {
     setHeartbeat(heartbeat + 1);
   };
@@ -136,8 +156,13 @@ function App() {
       className += ' filling-portrait';
     }
 
+    let divClass = "";
+    if (!active && !hasRelevance(filling, activeKey)) {
+      divClass = 'ingredient-blur';
+    }
+
     return (
-    <div style={{ width: "fit-content", height: "fit-content", position: "relative" }}>
+    <div className={divClass} style={{ width: "fit-content", height: "fit-content", position: "relative" }}>
       <img
         key={`filling-${index}`}
         alt={filling.name}
@@ -180,9 +205,15 @@ function App() {
     if (active) {
       className += ' condiment-portrait';
     }
+
+    let divClass = "ingredient-div";
+    if (!active && !hasRelevance(condiment, activeKey)) {
+      divClass = 'ingredient-div ingredient-blur';
+    }
+
     
     return (
-    <div style={{ width: "fit-content", height: "fit-content", position: "relative" }}>
+    <div className={divClass}>
       <img
         key={`condiment-${index}`}
         alt={condiment.name}
@@ -219,14 +250,11 @@ function App() {
 
   const renderSandwichBubble = (effect, key) => {
     let power = "Egg";
-    for (const v of Object.values(ALIAS)) {
+    for (const v of Object.keys(ALIAS_FULL)) {
       if (effect.name.indexOf(v) !== -1) {
         power = v;
         break;
       }
-    }
-    if (effect.name.indexOf("Sparkling") !== -1) {
-      power = "Shiny"; // to lazy to not hardcode in with this dumb alias system im too lazy to remove
     }
 
     const powerColor = COLORS[power];
@@ -256,55 +284,18 @@ function App() {
     );
   };
 
-  /*
-  const getSharedTypes = allTypes => {
-    const ingredients = [...activeFillings, ...activeCondiments];
-    const ret = [];
-    const valueMap = {};
-    for (const type of allTypes) {
-      for (const ingredient of ingredients) {
-        for (const iType of ingredient.types) {
-          if (iType.type === type.type) {
-            valueMap[type.type] = (valueMap[type.type] || 0) + 1;
-            break;
-          }
-        }
-      }
+  const toggleActiveKey = key => {
+    const tempKey = activeKey;
+    const category = getCategory(key);
+    if (tempKey[category] === key) {
+      tempKey[category] = undefined;
+      setActiveKey(tempKey);
+    } else {
+      tempKey[category] = key;
+      setActiveKey(tempKey);
     }
-
-    for (const [k, v] of Object.entries(valueMap)) {
-      if (v > 2) {
-        ret.push(allTypes.filter(x => x.type === k)[0]);
-      }
-    }
-
-    return ret;
+    pulse();
   };
-
-  const getSharedPowers = allPowers => {
-    const ingredients = [...activeFillings, ...activeCondiments];
-    const ret = [];
-    const valueMap = {};
-    for (const type of allPowers) {
-      for (const ingredient of ingredients) {
-        for (const iPower of ingredient.powers) {
-          if (iPower.type === type.type) {
-            valueMap[type.type] = (valueMap[type.type] || 0) + 1;
-            break;
-          }
-        }
-      }
-    }
-
-    for (const [k, v] of Object.entries(valueMap)) {
-      if (v > 2) {
-        ret.push(allPowers.filter(x => x.type === k)[0]);
-      }
-    }
-
-    return ret;
-  };
-  */
 
   const craftSandwich = (sums, presetSandwich) => {
     if (sums.tastes.length + sums.powers.length + sums.types.length === 0) {
@@ -348,7 +339,7 @@ function App() {
           }
         }
 
-        const name = ALIAS_FULL[ALIAS[x.type]];
+        const name = ALIAS_FULL[x.type];
         myTypes.push(type);
 
         return {
@@ -406,15 +397,18 @@ function App() {
           effect.level = "2";
         }
 
-        if (typeAmount >= 380 && effectAmount >= 1000) { // 70% sure
-          level3 = true;
+        if (typeAmount >= 380 /*&& effectAmount >= 1000*/) {
+          //level3 = true;
+          effect.level = "3";
           break;
         }
       }
       
+      /*
       if (level3) {
         for (const effect of generatedSandwich.effects) { effect.level = "3"; }
       }
+      */
     } else {
 
       // copy over levels if it's a preset sandwich recipe
@@ -507,8 +501,8 @@ function App() {
       return b.amount - a.amount || FLAVORS.indexOf(a.flavor) - FLAVORS.indexOf(b.flavor);
     });
     sums.powers.sort((a, b) => {
-      const aType = ALIAS_FULL[ALIAS[a.type]]; // these alias are getting old..
-      const bType = ALIAS_FULL[ALIAS[b.type]];
+      const aType = ALIAS_FULL[a.type];
+      const bType = ALIAS_FULL[b.type];
       return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
     });
     sums.types.sort((a, b) => {
@@ -526,7 +520,7 @@ function App() {
       const flavor1 = sums.tastes[0].flavor;
       const flavor2 = sums.tastes[1].flavor;
       const statBoost = FLAVOR_TABLE[flavor1][flavor2];
-      const varName = getPowerAliasByValue(statBoost) || statBoost;
+      const varName = statBoost;
       const existingStat = sums.powers.filter(x => x.type === varName)[0];
       if (!existingStat) {
         sums.powers.push({
@@ -539,8 +533,8 @@ function App() {
         //existingStat.boosted = true;
       }
       sums.powers.sort((a, b) => {
-        const aType = ALIAS_FULL[ALIAS[a.type]]; // these alias are getting old..
-        const bType = ALIAS_FULL[ALIAS[b.type]];
+        const aType = ALIAS_FULL[a.type];
+        const bType = ALIAS_FULL[b.type];
         return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
       });
     }
@@ -559,8 +553,8 @@ function App() {
     let pass = true;
     if (foundSandwich) {
       const tempPowers = sums.powers.slice(0).sort((a, b) => {
-        const aType = ALIAS_FULL[ALIAS[a.type]]; // these alias are getting old..
-        const bType = ALIAS_FULL[ALIAS[b.type]];
+        const aType = ALIAS_FULL[a.type];
+        const bType = ALIAS_FULL[b.type];
         return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
       }).filter(x => x.type !== "Sparkling");
       for (let i = 0; i < 3; i++) {
@@ -575,6 +569,7 @@ function App() {
       }
     }
 
+    activeSums = sums;
     const generatedSandwich = craftSandwich(sums, foundSandwich);
 
     return (
@@ -583,6 +578,8 @@ function App() {
           {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
             simpleMode={simpleMode}
             updatePieces={() => pulse()}
+            onClickBubble={key => toggleActiveKey(key)}
+            activeKey={activeKey}
             onClick={() => {
               if (!simpleMode) {
                 setAdvancedIngredients(!advancedIngredients);
@@ -594,6 +591,8 @@ function App() {
             && <Card sums={sums} activeSandwich={activeSandwich}
                 fillings={activeFillings} condiments={activeCondiments} 
                 detail={!simpleMode && advancedIngredients}
+                onClickBubble={key => toggleActiveKey(key)}
+                activeKey={activeKey}
               />}
         </div>
         <div className="bubble-row" style={{ justifyContent: "center" }}>
@@ -614,6 +613,7 @@ function App() {
       <div className="bubble" key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
         const condiments = getCondiments(sandwich.condiments);
         const fillings = getFillings(sandwich.fillings);
+        setActiveKey({});
 
         setActiveCondiments(condiments);
         setActiveFillings(fillings);

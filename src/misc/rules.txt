@@ -1,6 +1,8 @@
 a lot of this comes from personal trial-and-error, but I also used others' findings in this thread:
 https://old.reddit.com/r/pokemon/comments/z0k5p2/anyone_know_how_sandwich_ingredients_work/ix94rdf/
 so credit to the users in it (New_Log7685, ItzYoboiGuzma, PeddledP)
+additional disclaimer that none of this is 100% and there are still a few
+	unknowns about how it all works
 
 general rules
 ================
@@ -12,14 +14,11 @@ fillings are multiplied by how many on sandwich PHYSICALLY (eg, ham 3, basil 4, 
 types are just sorted by sum first, then in-game type sorting (check an herba or in-game pc box type search to see this order)
 	then listed with effects in 1, 3, 2 order
 	-
-	however, if it has 1 herba (custom recipe)
+	as far as dual/triple typings go
 		::assuming [grass, fighting, ghost]::
-		main type <= 280: 1, 3, 2 (grass 2, ghost 2, fighting 1)
-		main type > 280: 1, 1, 3 (grass 2, grass 2, fighting 2)
-	-
-	however, if it has 2 herba (custom recipe)
-		::assuming [grass, fighting, ghost]::
-		grass 3, grass 3, grass 3
+		main type <= 280: 1, 3, 2 (grass, ghost, fighting)
+		main type > 280: 1, 1, 3 (grass, grass, fighting)
+		main type > 480: 1, 1, 1 (grass, grass, grass)
 	-
 	however, if preset MASTER recipe
 		::assuming [grass, fighting, ghost]::

@@ -1,9 +1,10 @@
-import SANDWICHES from './data/sandwiches.json';
-import MEALS from './data/meals.json';
+//import SANDWICHES from './data/sandwiches.json';
+//import MEALS from './data/meals.json';
 import FILLINGS from './data/fillings.json';
 import CONDIMENTS from './data/condiments.json';
-
-const FILLING_MULT = 3; // multiplier on filling, debug stuff
+import FLAVORS from './data/flavors.json';
+import POWERS from './data/powers.json';
+import TYPES from './data/types.json';
 
 export const oneTwoFirst = [
   "31",
@@ -41,7 +42,7 @@ export const FLAVOR_TABLE = {
     "Hot": "Encounter",
   },
   "Sour": {
-    "Sweet": "Catching",
+    "Sweet": "Catch",
     "Salty": "Teensy",
     "Bitter": "Teensy",
     "Hot": "Teensy",
@@ -93,19 +94,6 @@ export const FLAVOR_PRIORITY_TABLE = {
   },
 };
 
-export const ALIAS = { // power alias
-  "Egg": "Egg",
-  "Catching": "Catch",
-  "Item Drop": "Item",
-  "Humungo": "Humungo",
-  "Teensy": "Teensy",
-  "Raid": "Raid",
-  "Encounter": "Encounter",
-  "Exp.": "Exp",
-  "Title": "Title",
-  "Sparkling": "Shiny",
-};
-
 export const ALIAS_FULL = { // power alias
   "Egg": "Egg Power",
   "Catch": "Catching Power",
@@ -116,12 +104,8 @@ export const ALIAS_FULL = { // power alias
   "Encounter": "Encounter Power",
   "Exp": "Exp. Point Power",
   "Title": "Title Power",
-  "Shiny": "Sparkling Power",
+  "Sparkling": "Sparkling Power",
 };
-
-export const FLAVORS = [
-  "Salty", "Sweet", "Hot", "Bitter", "Sour"
-];
 
 export const COLORS = {
   // flavors (5)
@@ -157,7 +141,7 @@ export const COLORS = {
 	"Bug": '#A6B91A',
 	"Rock": '#B6A136',
 	"Ghost": 'rgba(115, 87, 151, 0.71)', //'#735797',
-	"Dragon": 'rgba(111, 53, 252, 0.87)', //'#6F35FC',
+	"Dragon": 'rgba(118, 73, 225, 0.83)', //'#6F35FC',
 	"Dark": 'rgba(112, 87, 70, 0.88)', //'#705746',
 	"Steel": '#B7B7CE',
 	"Fairy": '#D685AD',
@@ -167,17 +151,6 @@ export const COLORS = {
 
 export const TYPE_EXCEPTIONS = {
   "39": ["Flying", "Poison", "Fighting"], // I'm convinced this is a game bug and it's only counting the flavors on apple once
-};
-
-export const getPowerAliasByValue = power => {
-  const str = power.type || power;
-  for (const [k,v] of Object.entries(ALIAS)) {
-    if (v === str) {
-      return k;
-    }
-  }
-
-  return undefined;
 };
 
 export const getFillings = strArr => {
@@ -234,23 +207,73 @@ export const hasTwoHerba = condiments => {
   return count >= 2;
 };
 
+export const hasRelevance = (ingredient, key) => {
+  if (!ingredient) { return false; }
+  const flavor = key.flavor;
+  const power = key.power;
+  const type = key.type;
+  const all = [...ingredient.tastes, ...ingredient.powers, ...ingredient.types].map(x => x.flavor || x.type);
+  const hasFlavor = !flavor || all.indexOf(flavor) !== -1;
+  const hasPower = !power || all.indexOf(power) !== -1;
+  const hasType = !type || all.indexOf(type) !== -1;
+
+  return hasFlavor && hasPower && hasType;
+}
+
+export const getKeyType = key => {
+  if (isFlavor(key)) {
+    return "flavor";
+  } else if (isPower(key)) {
+    return "power";
+  } else if (isType(key)) {
+    return "type";
+  }
+
+  return undefined;
+}
+
 export const isFilling = obj => {
   if (!obj) { return false; }
   return FILLINGS.filter(x => x.name === obj.name)[0] !== undefined;
 };
 
-export const isPower = obj => {
-  const str = obj.type || obj;
-  return ALIAS[str] !== undefined;
-};
-
-export const isType = obj => {
-  return !(isFlavor(obj) || isPower(obj));
-};
-
 export const isFlavor = obj => {
   const str = obj.flavor || obj;
   return FLAVORS.indexOf(str) !== -1;
+};
+
+export const isPower = obj => {
+  const str = obj.type || obj;
+
+  for (const power of POWERS) {
+    if (power.indexOf(str) !== -1) {
+      return true;
+    }
+  }
+
+  return false;
+};
+
+export const isType = obj => {
+  const str = obj.type || obj;
+  return TYPES.indexOf(str) !== -1;
+};
+
+export const getCategory = obj => {
+  const str = obj || "dammerung";
+  if (isFlavor(str)) {
+    return "flavor";
+  }
+
+  if (isPower(str)) {
+    return "power";
+  }
+
+  if (isType(str)) {
+    return "type";
+  }
+
+  return "unknown";
 };
 
 // check if two arrays contain the same elements

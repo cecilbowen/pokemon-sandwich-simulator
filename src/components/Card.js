@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { calculatePowerAmount } from '../util';
-import { ALIAS, ALIAS_FULL, COLORS, mode, copyTextToClipboard, isFilling } from '../util';
+import { ALIAS_FULL, COLORS, mode, copyTextToClipboard, isFilling } from '../util';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
@@ -16,8 +16,8 @@ const Card = props => {
       return b.amount - a.amount || FLAVORS.indexOf(a.flavor) - FLAVORS.indexOf(b.flavor);
     });
     const powers = (sums.powers || ingredient.powers).sort((a, b) => {
-      const aType = ALIAS_FULL[ALIAS[a.type]]; // these alias are getting old..
-      const bType = ALIAS_FULL[ALIAS[b.type]];
+      const aType = ALIAS_FULL[a.type];
+      const bType = ALIAS_FULL[b.type];
       return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
     });
     const types = (sums.types || ingredient.types).sort((a, b) => {
@@ -30,13 +30,26 @@ const Card = props => {
 
     const sumStr = `${tastesSum}\n${powersSum}\n${typesSum}`;
 
+    const onSelectBubble = key => {
+        if (props.onClickBubble) {
+            props.onClickBubble(key);
+        }
+    };
+
     const renderKeyValue = (kv, id) => {
         let key = (kv.type || kv.flavor);
-        key = ALIAS[key] || key;
         const value = isSum ? kv.amount : calculatePowerAmount(kv.amount, ingredient, kv);
         const backgroundColor = COLORS[key];
+        let borderColor = backgroundColor;
+        let className = "bubble fake-border";
 
-        return <div className="bubble" style={{ backgroundColor }} key={id}>
+        if (props.activeKey && Object.values(props.activeKey).indexOf(key) !== -1) {
+            className = "bubble key-selected";
+            borderColor = "black";
+        }
+
+        return <div className={className} style={{ backgroundColor, borderColor }} key={id}
+            onClick={() => onSelectBubble(key)}>
             <div>{key}:</div>
             <div style={{ marginLeft: "10px" }}>{value}</div>
         </div>;

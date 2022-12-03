@@ -31,6 +31,28 @@
   opacity: 1;
 }
 
+.ingredient-div {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.ingredient-blur {
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(240deg) brightness(35%) contrast(80%);
+  opacity: 0.3;
+}
+
+.key-selected {
+  border: 1px dashed black;
+  font-weight: bold;
+  filter: contrast(150%);
+  /*font-size: 13px;*/
+}
+
+.fake-border {
+  border: 1px solid;
+}
+
 .filling-bkg {
   background-color: rgba(255, 0, 0, 0.13);
   display: flex;
@@ -143,7 +165,7 @@
 
 .bubble {
   display: flex;
-  /*border: 1px solid black;*/
+  user-select: none;
   border-radius: 25px;
   padding: 4px;
   width: fit-content;

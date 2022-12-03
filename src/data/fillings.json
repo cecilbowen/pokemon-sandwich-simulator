@@ -21,11 +21,11 @@
         "amount": 4
       },
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": -1
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 7
       },
       {
@@ -64,7 +64,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -107,7 +107,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -146,11 +146,11 @@
         "amount": 4
       },
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": -1
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 7
       },
       {
@@ -260,15 +260,15 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 2
       },
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 2
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 2
       },
       {
@@ -371,7 +371,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -410,11 +410,11 @@
     ],
     "powers": [
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 7
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": -1
       },
       {
@@ -465,7 +465,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -504,11 +504,11 @@
     ],
     "powers": [
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 7
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": -1
       },
       {
@@ -563,7 +563,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 21
       },
       {
@@ -634,7 +634,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -669,7 +669,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -708,7 +708,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 12
       },
       {
@@ -747,11 +747,11 @@
     ],
     "powers": [
       {
-        "type": "Exp.",
+        "type": "Exp",
         "amount": 7
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": -1
       },
       {
@@ -806,11 +806,11 @@
         "amount": 4
       },
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": -1
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 7
       },
       {
@@ -857,11 +857,11 @@
         "amount": 4
       },
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": -1
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 7
       },
       {
@@ -900,7 +900,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -935,7 +935,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1025,7 +1025,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1064,7 +1064,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1107,11 +1107,11 @@
         "amount": 4
       },
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": -1
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 7
       },
       {
@@ -1225,7 +1225,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 21
       },
       {
@@ -1296,7 +1296,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1335,7 +1335,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1370,7 +1370,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1468,7 +1468,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1507,11 +1507,11 @@
         "amount": 4
       },
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": -1
       },
       {
-        "type": "Item Drop",
+        "type": "Item",
         "amount": 7
       },
       {
@@ -1546,7 +1546,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1585,7 +1585,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
@@ -1699,7 +1699,7 @@
     ],
     "powers": [
       {
-        "type": "Catching",
+        "type": "Catch",
         "amount": 4
       },
       {
