@@ -1,5 +1,4 @@
-//import SANDWICHES from './data/sandwiches.json';
-//import MEALS from './data/meals.json';
+import SANDWICHES from './data/sandwiches.json';
 import FILLINGS from './data/fillings.json';
 import CONDIMENTS from './data/condiments.json';
 import FLAVORS from './data/flavors.json';
@@ -94,7 +93,7 @@ export const FLAVOR_PRIORITY_TABLE = {
   },
 };
 
-export const ALIAS_FULL = { // power alias
+export const ALIAS_TO_FULL = { // power alias
   "Egg": "Egg Power",
   "Catch": "Catching Power",
   "Item": "Item Drop Power",
@@ -105,6 +104,19 @@ export const ALIAS_FULL = { // power alias
   "Exp": "Exp. Point Power",
   "Title": "Title Power",
   "Sparkling": "Sparkling Power",
+};
+
+export const FULL_TO_ALIAS = { // power alias
+  "Egg Power": "Egg",
+  "Catching Power": "Catch",
+  "Item Drop Power": "Item",
+  "Humungo Power": "Humungo",
+  "Teensy Power": "Teensy",
+  "Raid Power": "Raid",
+  "Encounter Power": "Encounter",
+  "Exp. Point Power": "Exp",
+  "Title Power": "Title",
+  "Sparkling Power": "Sparkling",
 };
 
 export const COLORS = {
@@ -175,6 +187,283 @@ export const getCondiments = strArr => {
   }
 
   return ret;
+};
+
+export const getIngredientsFromRecipe = recipe => {
+  if (recipe && recipe.length > 0) {
+    const fillings = [];
+    let condiments = [];
+    const spl = recipe.split("_");
+    if (spl.length !== 2) { return; } // should probably regex check string but whatever
+    const fillingStr = spl[0];
+    const condimentStr = spl[1];
+    
+    const fNames = fillingStr.split(",");
+    const cNames = condimentStr.split(",");
+
+    for (const str of fNames) {
+      const name = str.split("-")[0];
+      let pieces = str.split("-")[1];
+      if (pieces) { pieces = parseInt(pieces); }
+      const filling = FILLINGS.filter(x => x.name === name)[0];
+      if (filling) {
+        fillings.push({ ...filling, pieces });
+      }
+    }
+
+    condiments = getCondiments(cNames);
+
+    return { fillings, condiments };
+  }
+
+  return undefined;
+};
+
+export const getIngredientsSums = ingredients => {
+  const sums = {
+    tastes: [],
+    powers: [],
+    types: [],
+  };
+
+  for (const food of ingredients) {
+    for (const taste of food.tastes) {
+      const hasEntry = sums.tastes.filter(x => x.flavor === taste.flavor)[0];
+      let amount = 0; // existing amount
+      if (hasEntry) {
+        amount = hasEntry.amount;
+        sums.tastes = sums.tastes.filter(x => x.flavor !== taste.flavor);
+      }
+
+      sums.tastes.push({
+        flavor: taste.flavor,
+        amount: amount + (calculatePowerAmount(taste.amount, food, taste)),
+      });
+    }
+
+    for (const power of food.powers) {
+      const hasEntry = sums.powers.filter(x => x.type === power.type)[0];
+      let amount = 0; // existing amount
+      if (hasEntry) {
+        amount = hasEntry.amount;
+        sums.powers = sums.powers.filter(x => x.type !== power.type);
+      }
+
+      sums.powers.push({
+        type: power.type,
+        amount: amount + (calculatePowerAmount(power.amount, food, power)),
+      });
+    }
+
+    for (const type of food.types) {
+      const hasEntry = sums.types.filter(x => x.type === type.type)[0];
+      let amount = 0; // existing amount
+      if (hasEntry) {
+        amount = hasEntry.amount;
+        sums.types = sums.types.filter(x => x.type !== type.type);
+      }
+
+      sums.types.push({
+        type: type.type,
+        amount: amount + (calculatePowerAmount(type.amount, food, type)),
+      });
+    }
+  }
+
+  sums.tastes.sort((a, b) => {
+    return b.amount - a.amount || FLAVORS.indexOf(a.flavor) - FLAVORS.indexOf(b.flavor);
+  });
+  sums.powers.sort((a, b) => {
+    const aType = ALIAS_TO_FULL[a.type];
+    const bType = ALIAS_TO_FULL[b.type];
+    return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
+  });
+  sums.types.sort((a, b) => {
+    return b.amount - a.amount || TYPES.indexOf(a.type) - TYPES.indexOf(b.type);
+  });
+
+  if (sums.tastes.length === 1) {
+    sums.tastes.push({
+      flavor: FLAVORS.filter(x => x !== sums.tastes[0].flavor)[0],
+      amount: 0,
+    });
+  }
+  if (sums.tastes.length > 1) {
+    // at least 2 flavors exist, so check table..
+    const flavor1 = sums.tastes[0].flavor;
+    const flavor2 = sums.tastes[1].flavor;
+    const statBoost = FLAVOR_TABLE[flavor1][flavor2];
+    const varName = statBoost;
+    const existingStat = sums.powers.filter(x => x.type === varName)[0];
+    if (!existingStat) {
+      sums.powers.push({
+        type: varName,
+        amount: 100,
+        modded: true,
+        boosted: true, // boosted 'from zero' stats don't count in determining level
+      });
+    } else {
+      existingStat.amount += 100;
+      existingStat.modded = true;
+    }
+    sums.powers.sort((a, b) => {
+      const aType = ALIAS_TO_FULL[a.type];
+      const bType = ALIAS_TO_FULL[b.type];
+      return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
+    });
+  }
+
+  return sums;
+};
+
+export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
+  if (sums.tastes.length + sums.powers.length + sums.types.length === 0) {
+    return;
+  }
+
+  const formattedTypes = sums.types.slice(0);
+  while (formattedTypes.length < 3) {
+    formattedTypes.push({
+      type: TYPES.filter(x => formattedTypes.map(y => y.type).indexOf(x) === -1)[0],
+      amount: 0,
+    });
+  }
+  const formattedPowers = sums.powers.slice(0).filter(x => (x.type === "Sparkling" ? x.amount >= 2000 : x));
+  const myTypes = [];
+
+  // default sandwich genset with accurate effects and type[1, 3, 2] as base
+  let generatedSandwich = {
+    number: "???",
+    name: "Custom Sandwich",
+    description: "A Tasty Coolio Original",
+    fillings, condiments,
+    effects: formattedPowers.map((x, i) => {
+      const safeIndex = Math.min(i, formattedTypes.length - 1);
+      let fullType = formattedTypes[safeIndex];
+      let type = fullType.type;
+      if (i === 1) {
+        fullType = formattedTypes[2];
+        type = fullType?.type || TYPES.filter(x => myTypes.indexOf(x) === -1)[0];
+      }
+      if (i === 2) {
+        fullType = formattedTypes[1];
+        type = fullType?.type || TYPES.filter(x => myTypes.indexOf(x) === -1)[0];
+      }
+
+      if (!fullType) {
+        fullType = {
+          type,
+          amount: 0,
+        }
+      }
+
+      const name = ALIAS_TO_FULL[x.type];
+      myTypes.push(type);
+
+      return {
+        name,
+        fullType,
+        fullPower: x,
+        type,
+        level: "1",
+      }
+    }).filter((x, i) => i < 3),
+    imageUrl: SANDWICHES[0].imageUrl,
+  };
+
+  const firstType = formattedTypes[0];
+  const secondType = formattedTypes[1];
+  const thirdType = formattedTypes[2]; // null check if only 2 types
+  const mainTypeAmount = firstType.amount;
+
+  // types and levels handling
+  if (!presetSandwich) {
+    let newTypes = [firstType, firstType, thirdType];
+    if (mainTypeAmount > 480) { // mono type
+      newTypes = [firstType, firstType, firstType];
+    } else if (mainTypeAmount > 280) { // dual type
+      newTypes = [firstType, firstType, thirdType];
+    } else { // triple type
+      newTypes = [firstType, thirdType, secondType];
+    }
+
+    for (let i = 0; i < generatedSandwich.effects.length; i++) {
+      generatedSandwich.effects[i].type = newTypes[i].type;
+      generatedSandwich.effects[i].fullType = newTypes[i];
+    }
+
+    // handle levels
+    // levels continue to remain not 100% consistent
+    // so trial-and-error is still going on here
+    let levelsToAdd = 0;
+    for (let i = 0; i < generatedSandwich.effects.length; i++) {
+      const effect = generatedSandwich.effects[i];
+      const typeAmount = effect.fullType.amount;
+      const effectAmount = effect.fullPower.amount;
+      const boosted = effect.fullPower.modded; // whether or not effect received +100 flavor boost
+      if (effectAmount >= 2000) { //at least 2 herbas on sandwich to reach this
+        // I don't quite know the full level calculation pattern/formula yet
+        // but I do know that having 2 herbas is a guaranteed triple level 3
+        levelsToAdd += 6;
+      } else if (typeAmount >= 380/* || effectAmount >= 1000*/) {
+        levelsToAdd += 2;
+      } else if (typeAmount >= 180) {
+        if (!boosted) {
+          levelsToAdd += 1;
+        } else if (effectAmount > 100 || (effectAmount + typeAmount) >= 290) {
+        //} else if (typeAmount + effectAmount > 280) { // >= 285 old value
+          levelsToAdd += 1;
+        } else {
+          if (!boosted) { break; } // only stop adding levels altogether if failed on a non-boosted stat
+        }
+      } else {
+        if (!boosted) { break; }
+      }
+    }
+
+    let index = 0;
+    while (levelsToAdd > 0) {
+      const level = parseInt(generatedSandwich.effects[index].level) + 1; // lol why did i keep this a string
+      if (level > 3) { break; }
+      generatedSandwich.effects[index].level = "" + level;
+      
+      index++;
+      if (index > generatedSandwich.effects.length - 1) {
+        index = 0;
+      }
+      levelsToAdd--;
+    }
+  } else {
+    // copy over levels if it's a preset sandwich recipe
+    for (let i = 0; i < generatedSandwich.effects.length; i++) {
+      const presetEffect = presetSandwich.effects[i];
+      generatedSandwich.effects[i].level = presetEffect.level;
+    }
+
+    if (isOneTwoSandwich(presetSandwich)) {
+      const rawTypes = formattedTypes.map(x => x.type).filter((x, i) => i < 2);
+      const newTypes = [firstType, secondType, { type: TYPES.filter(x => rawTypes.indexOf(x) === -1)[0], amount: 0 }];
+      for (let i = 0; i < generatedSandwich.effects.length; i++) {
+        generatedSandwich.effects[i].type = newTypes[i].type;
+      }
+    }
+
+    const typeException = TYPE_EXCEPTIONS[presetSandwich.number];
+    if (typeException) {
+      for (let i = 0; i < typeException.length; i++) {
+        generatedSandwich.effects[i].type = typeException[i];
+      }
+    }
+  }
+
+  // remove types from egg powers
+  for (const effect of generatedSandwich.effects) {
+    if (effect.name === "Egg Power") {
+      effect.type = "";
+    }
+  }
+
+  return generatedSandwich;
 };
 
 export const isOneTwoSandwich = sandwich => {

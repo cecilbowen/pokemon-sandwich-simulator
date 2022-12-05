@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import { calculatePowerAmount } from '../util';
-import { ALIAS_FULL, COLORS, mode, copyTextToClipboard, isFilling } from '../util';
+import { ALIAS_TO_FULL, COLORS, mode, copyTextToClipboard, isFilling } from '../util';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
@@ -16,8 +16,8 @@ const Card = props => {
       return b.amount - a.amount || FLAVORS.indexOf(a.flavor) - FLAVORS.indexOf(b.flavor);
     });
     const powers = (sums.powers || ingredient.powers).sort((a, b) => {
-      const aType = ALIAS_FULL[a.type];
-      const bType = ALIAS_FULL[b.type];
+      const aType = ALIAS_TO_FULL[a.type];
+      const bType = ALIAS_TO_FULL[b.type];
       return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
     });
     const types = (sums.types || ingredient.types).sort((a, b) => {
@@ -51,7 +51,7 @@ const Card = props => {
         return <div className={className} style={{ backgroundColor, borderColor }} key={id}
             onClick={() => onSelectBubble(key)}>
             <div>{key}:</div>
-            <div style={{ marginLeft: "10px" }}>{value}</div>
+            <div style={{ marginLeft: "10px" }}>{kv.modded ? `${value} (${value - 100} + 100)` : value}</div>
         </div>;
     };
 
@@ -121,7 +121,9 @@ const Card = props => {
     };
 
     return (
-      <div className='card' style={{ borderColor, backgroundColor, alignSelf: "center", position: "relative" }}>
+      <div
+        key={props.number ? props.number : ""} className='card'
+        style={{ borderColor, backgroundColor, alignSelf: "center", position: "relative" }}>
         {!isSum && <div className='bubble bubble-header' onClick={props?.onClick}>
             <img alt={ingredient.name} src={ingredient.imageUrl} />
             <div>{ingredient.name}</div>            
