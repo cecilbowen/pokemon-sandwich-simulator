@@ -38,7 +38,8 @@
 }
 
 .ingredient-blur {
-  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(240deg) brightness(35%) contrast(80%);
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(240deg)
+    brightness(35%) contrast(80%);
   opacity: 0.3;
 }
 

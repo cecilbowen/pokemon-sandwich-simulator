@@ -1,8 +1,8 @@
-import SANDWICHES from "./data/sandwiches.json";
-import FILLINGS from "./data/fillings.json";
-import CONDIMENTS from "./data/condiments.json";
-import POWERS from "./data/powers.json";
-import { useEffect, useState } from "react";
+import SANDWICHES from './data/sandwiches.json';
+import FILLINGS from './data/fillings.json';
+import CONDIMENTS from './data/condiments.json';
+import POWERS from './data/powers.json';
+import { useEffect, useState } from 'react';
 import {
   areEqual,
   getCondiments,
@@ -16,11 +16,11 @@ import {
   hasRelevance,
   getCategory,
   getIngredientsFromRecipe,
-} from "./util";
-import { runTests } from "./test/tests";
-import Card from "./components/Card";
-import "./App.css";
-import React from "react";
+} from './util';
+import { runTests } from './test/tests';
+import Card from './components/Card';
+import './App.css';
+import React from 'react';
 
 // per player
 const MAX_FILLINGS = 6;
@@ -154,9 +154,9 @@ function App() {
       );
       if (activeSandwichElement) {
         activeSandwichElement.scrollIntoView({
-          behavior: "smooth",
-          block: "end",
-          inline: "nearest",
+          behavior: 'smooth',
+          block: 'end',
+          inline: 'nearest',
         });
       }
     }
@@ -185,14 +185,14 @@ function App() {
   };
 
   const renderFilling = (filling, index, active) => {
-    let className = "ingredient";
+    let className = 'ingredient';
     if (active) {
-      className += " filling-portrait";
+      className += ' filling-portrait';
     }
 
-    let divClass = "ingredient-div";
+    let divClass = 'ingredient-div';
     if (!active && !hasRelevance(filling, activeKey)) {
-      divClass = "ingredient-div ingredient-blur";
+      divClass = 'ingredient-div ingredient-blur';
     }
 
     return (
@@ -239,14 +239,14 @@ function App() {
   };
 
   const renderCondiment = (condiment, index, active) => {
-    let className = "ingredient";
+    let className = 'ingredient';
     if (active) {
-      className += " condiment-portrait";
+      className += ' condiment-portrait';
     }
 
-    let divClass = "ingredient-div";
+    let divClass = 'ingredient-div';
     if (!active && !hasRelevance(condiment, activeKey)) {
-      divClass = "ingredient-div ingredient-blur";
+      divClass = 'ingredient-div ingredient-blur';
     }
 
     return (
@@ -291,7 +291,7 @@ function App() {
   };
 
   const renderSandwichBubble = (effect, key) => {
-    let power = "Egg";
+    let power = 'Egg';
     for (const v of Object.keys(ALIAS_TO_FULL)) {
       if (effect.name.indexOf(v) !== -1) {
         power = v;
@@ -301,7 +301,7 @@ function App() {
 
     const powerColor = COLORS[power];
     const typeColor = COLORS[effect.type];
-    const levelColor = "#e6d0d0";
+    const levelColor = '#e6d0d0';
 
     return (
       <div className="bubble-row" key={key}>
@@ -313,7 +313,7 @@ function App() {
           className="bubble chain-b"
           style={{
             backgroundColor: typeColor,
-            display: effect.type === "" ? "none" : "",
+            display: effect.type === '' ? 'none' : '',
           }}
         >{`${effect.type} `}</div>
         <div
@@ -330,11 +330,11 @@ function App() {
     }
 
     return (
-      <div className="card" style={{ display: "flex" }}>
+      <div className="card" style={{ display: 'flex' }}>
         <img
           alt={sandwich.name}
           src={sandwich.imageUrl}
-          style={{ width: "100px" }}
+          style={{ width: '100px' }}
         />
         <div>
           <div
@@ -345,7 +345,7 @@ function App() {
                 runTests();
               }
             }}
-            style={{ backgroundColor: "tan" }}
+            style={{ backgroundColor: 'tan' }}
           >
             #{sandwich.number} - {sandwich.name}
           </div>
@@ -412,7 +412,7 @@ function App() {
             b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType)
           );
         })
-        .filter((x) => x.type !== "Sparkling");
+        .filter((x) => x.type !== 'Sparkling');
       for (let i = 0; i < 3; i++) {
         const effect = foundSandwich.effects[i];
         const resultEffect = tempPowers[i];
@@ -434,12 +434,12 @@ function App() {
     );
 
     return (
-      <div style={{ backgroundColor: pass ? "" : "red" }}>
+      <div style={{ backgroundColor: pass ? '' : 'red' }}>
         <div
           style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
           }}
         >
           {ingredients.map((x, i) => (
@@ -473,7 +473,7 @@ function App() {
             />
           )}
         </div>
-        <div className="bubble-row" style={{ justifyContent: "center" }}>
+        <div className="bubble-row" style={{ justifyContent: 'center' }}>
           {renderSandwich(foundSandwich)}
           {activeCondiments.length > 0 &&
             (alwaysShowCustomSandwich || !foundSandwich) &&
@@ -504,9 +504,9 @@ function App() {
           setActiveFillings(fillings);
         }}
         style={{
-          backgroundColor: highlight ? "yellow" : "#80808030",
-          fontWeight: isWeird ? "bold" : "",
-          color: hasMultiIngredients ? "" : "",
+          backgroundColor: highlight ? 'yellow' : '#80808030',
+          fontWeight: isWeird ? 'bold' : '',
+          color: hasMultiIngredients ? '' : '',
         }}
       >
         {`#${sandwich.number} - ${sandwich.name}`}
@@ -516,19 +516,19 @@ function App() {
 
   const search = (ev, criteria) => {
     const text = ev.target.value;
-    const queries = text.split(",");
+    const queries = text.split(',');
 
     switch (criteria) {
-      case "name":
+      case 'name':
         setSearchNameQuery(queries);
         break;
-      case "effect":
+      case 'effect':
         setSearchEffectQuery(queries);
         break;
-      case "type":
+      case 'type':
         setSearchTypeQuery(queries);
         break;
-      case "ingredient":
+      case 'ingredient':
         setSearchIngredientQuery(queries);
         break;
       default:
@@ -548,38 +548,38 @@ function App() {
             id="nameSearch"
             placeholder="Search names"
             className="search-bar"
-            onChange={(ev) => search(ev, "name")}
-            style={{ width: "250px" }}
+            onChange={(ev) => search(ev, 'name')}
+            style={{ width: '250px' }}
           />
           <input
             type="text"
             id="effectSearch"
             placeholder="Search effects (egg, raid, etc)"
             className="search-bar"
-            onChange={(ev) => search(ev, "effect")}
-            style={{ width: "250px" }}
+            onChange={(ev) => search(ev, 'effect')}
+            style={{ width: '250px' }}
           />
           <input
             type="text"
             id="typeSearch"
             placeholder="Search types (normal, dark, etc)"
             className="search-bar"
-            onChange={(ev) => search(ev, "type")}
-            style={{ width: "250px" }}
+            onChange={(ev) => search(ev, 'type')}
+            style={{ width: '250px' }}
           />
           <input
             type="text"
             id="ingredientSearch"
             placeholder="Search ingredients (ham, bacon, etc)"
             className="search-bar"
-            onChange={(ev) => search(ev, "ingredient")}
-            style={{ width: "250px" }}
+            onChange={(ev) => search(ev, 'ingredient')}
+            style={{ width: '250px' }}
           />
         </div>
         <div className="search-results-div">
           <div
             className="bubble-row"
-            style={{ overflow: "auto", flexWrap: "nowrap" }}
+            style={{ overflow: 'auto', flexWrap: 'nowrap' }}
           >
             {results.map((x, i) => renderSearchBubble(x, i))}
           </div>
@@ -598,19 +598,19 @@ function App() {
       fArr.push(`${f.name}-${f.pieces}`);
     }
 
-    const copyStr = `${fArr.join(",")}_${activeCondiments
+    const copyStr = `${fArr.join(',')}_${activeCondiments
       .map((x) => x.name)
-      .join(",")}`;
-    console.log("Saving recipe", copyStr);
+      .join(',')}`;
+    console.log('Saving recipe', copyStr);
     copyTextToClipboard(copyStr);
 
     if (!DISABLE_ALERTS) {
-      alert("Copied recipe to clipboard!\n" + copyStr);
+      alert('Copied recipe to clipboard!\n' + copyStr);
     }
   };
 
   const loadRecipe = () => {
-    const recipe = window.prompt("Enter/paste recipe:", "");
+    const recipe = window.prompt('Enter/paste recipe:', '');
     const ingredients = getIngredientsFromRecipe(recipe);
     if (ingredients) {
       const fillings = ingredients.fillings;
@@ -635,7 +635,7 @@ function App() {
           className="button-spacing"
           onClick={() => setSimpleMode(!simpleMode)}
         >
-          Toggle Simple Mode: {simpleMode ? "On" : "Off"}
+          Toggle Simple Mode: {simpleMode ? 'On' : 'Off'}
         </button>
         <button
           className="button-spacing"
@@ -647,7 +647,7 @@ function App() {
           className="button-spacing"
           onClick={() => setMegaSandwichMode(!megaSandwichMode)}
         >
-          Toggle Multiplayer Mode: {megaSandwichMode ? "On" : "Off"}
+          Toggle Multiplayer Mode: {megaSandwichMode ? 'On' : 'Off'}
         </button>
         <button className="button-spacing" onClick={() => loadRecipe()}>
           Load Recipe
