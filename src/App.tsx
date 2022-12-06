@@ -16,6 +16,7 @@ import {
   hasRelevance,
   getCategory,
   getIngredientsFromRecipe,
+  presetSandwichExists,
 } from './util';
 import { runTests } from './test/tests';
 import Card from './components/Card';
@@ -376,30 +377,16 @@ function App() {
       ...activeCondiments.sort((a, b) => a.name.localeCompare(b.name)),
     ];
     const sums = getIngredientsSums(ingredients);
+    const sandwichPreset: presetSandwich | null = presetSandwichExists(
+      activeFillings,
+      activeCondiments
+    );
 
-    // check if sums make it a preset sandwich
     let foundSandwich;
-    for (const sandwich of SANDWICHES) {
-      const sandwichIngredients = [
-        ...sandwich.fillings,
-        ...sandwich.condiments,
-      ];
-      if (
-        areEqual(
-          ingredients.map((x) => x.name),
-          sandwichIngredients
-        ) &&
-        areEqual(
-          activeFillings.map((x) => x.pieces),
-          getFillings(sandwich.fillings).map((x) => x.pieces)
-        )
-      ) {
-        foundSandwich = sandwich;
-        activeSandwich = sandwich.number;
-        break;
-      }
+    if (sandwichPreset !== null) {
+      foundSandwich = sandwichPreset;
+      activeSandwich = sandwichPreset.number;
     }
-
     // if it is a preset sandwich, throw out all the sums and just copy the preset sandwich
     let pass = true;
     if (foundSandwich) {

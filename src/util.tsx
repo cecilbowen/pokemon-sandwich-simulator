@@ -225,7 +225,7 @@ export const getIngredientsFromRecipe = (recipe) => {
   return undefined;
 };
 
-export const getIngredientsSums = (ingredients) => {
+export const getIngredientsSums = (ingredients): summation => {
   const sums: {
     tastes: any[];
     powers: any[];
@@ -331,11 +331,39 @@ export const getIngredientsSums = (ingredients) => {
   return sums;
 };
 
+export const presetSandwichExists = (
+  activeFillings: filling[],
+  activeCondiments: condiment[]
+): presetSandwich | null => {
+  const ingredients = [
+    ...activeFillings.sort((a, b) => a.name.localeCompare(b.name)),
+    ...activeCondiments.sort((a, b) => a.name.localeCompare(b.name)),
+  ];
+  const sums: summation = getIngredientsSums(ingredients);
+
+  for (const sandwich of SANDWICHES) {
+    const sandwichIngredients = [...sandwich.fillings, ...sandwich.condiments];
+    if (
+      areEqual(
+        ingredients.map((x) => x.name),
+        sandwichIngredients
+      ) &&
+      areEqual(
+        activeFillings.map((x) => x.pieces),
+        getFillings(sandwich.fillings).map((x) => x.pieces)
+      )
+    ) {
+      return sandwich;
+    }
+  }
+  return null;
+};
+
 export const craftSandwich = (
   fillings: filling[],
   condiments: condiment[],
   sums: summation,
-  presetSandwich: presetSandwich
+  presetSandwich: presetSandwich | null
 ) => {
   if (sums.tastes.length + sums.powers.length + sums.types.length === 0) {
     return;
