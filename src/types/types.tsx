@@ -37,6 +37,7 @@ type power = {
   type: string;
   amount: number;
   modded?: boolean;
+  boosted?: boolean;
 };
 
 type taste = {
@@ -53,6 +54,8 @@ type summation = {
   tastes: taste[];
   powers: power[];
   types: type[];
+  dropped: number;
+  overflow: boolean;
 };
 
 type presetSandwich = {
