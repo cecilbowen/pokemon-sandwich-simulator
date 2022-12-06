@@ -363,7 +363,41 @@ export const getIngredientsSums = (ingredients) => {
   return sums;
 };
 
-export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
+export const presetSandwichExists = (
+  activeFillings: filling[],
+  activeCondiments: condiment[]
+): presetSandwich | null => {
+  console.log(activeFillings);
+  const ingredients = [
+    ...activeFillings.sort((a, b) => a.name.localeCompare(b.name)),
+    ...activeCondiments.sort((a, b) => a.name.localeCompare(b.name)),
+  ];
+  const sums: summation = getIngredientsSums(ingredients);
+
+  for (const sandwich of SANDWICHES) {
+    const sandwichIngredients = [...sandwich.fillings, ...sandwich.condiments];
+    if (
+      areEqual(
+        ingredients.map((x) => x.name),
+        sandwichIngredients
+      ) &&
+      areEqual(
+        activeFillings.map((x) => x.pieces),
+        getFillings(sandwich.fillings).map((x) => x.pieces)
+      )
+    ) {
+      return sandwich;
+    }
+  }
+  return null;
+};
+
+export const craftSandwich = (
+  fillings: filling[],
+  condiments: condiment[],
+  sums: summation,
+  presetSandwich: presetSandwich
+) => {
   if (
     sums.tastes.length === 0 ||
     sums.powers.length === 0 ||
