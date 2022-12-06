@@ -350,7 +350,7 @@ export const getIngredientsSums = ingredients => {
 };
 
 export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
-  if (sums.tastes.length + sums.powers.length + sums.types.length === 0) {
+  if (sums.tastes.length === 0 || sums.powers.length === 0 || sums.types.length === 0) {
     return;
   }
 
