@@ -168,7 +168,7 @@ export const TYPE_EXCEPTIONS = {
 };
 
 export const getFillings = (strArr) => {
-  const ret = [];
+  const ret: any[] = [];
   for (const str of strArr) {
     const filling = FILLINGS.filter((x) => x.name === str)[0];
     if (filling) {
@@ -180,7 +180,7 @@ export const getFillings = (strArr) => {
 };
 
 export const getCondiments = (strArr) => {
-  const ret = [];
+  const ret: any[] = [];
   for (const str of strArr) {
     const condiment = CONDIMENTS.filter((x) => x.name === str)[0];
     if (condiment) {
@@ -193,8 +193,8 @@ export const getCondiments = (strArr) => {
 
 export const getIngredientsFromRecipe = (recipe) => {
   if (recipe && recipe.length > 0) {
-    const fillings = [];
-    let condiments = [];
+    const fillings: any[] = [];
+    let condiments: any[] = [];
     const spl = recipe.split('_');
     if (spl.length !== 2) {
       return;
@@ -226,7 +226,11 @@ export const getIngredientsFromRecipe = (recipe) => {
 };
 
 export const getIngredientsSums = (ingredients) => {
-  const sums = {
+  const sums: {
+    tastes: any[];
+    powers: any[];
+    types: any[];
+  } = {
     tastes: [],
     powers: [],
     types: [],
@@ -327,7 +331,12 @@ export const getIngredientsSums = (ingredients) => {
   return sums;
 };
 
-export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
+export const craftSandwich = (
+  fillings: filling[],
+  condiments: condiment[],
+  sums: summation,
+  presetSandwich: presetSandwich
+) => {
   if (sums.tastes.length + sums.powers.length + sums.types.length === 0) {
     return;
   }
@@ -344,7 +353,7 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
   const formattedPowers = sums.powers
     .slice(0)
     .filter((x) => (x.type === 'Sparkling' ? x.amount >= 2000 : x));
-  const myTypes = [];
+  const myTypes: any[] = [];
 
   // default sandwich genset with accurate effects and type[1, 3, 2] as base
   let generatedSandwich = {
