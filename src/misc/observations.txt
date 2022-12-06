@@ -308,11 +308,6 @@ Lettuce-0_Butter
 egg (bug) lv1, raid ghost lv1
 
 
-just condiments
-===================
-_Butter
-egg (bug) lv1, raid normal lv1, exp ghost lv1
-
 
 
 

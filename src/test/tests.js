@@ -280,14 +280,7 @@ const TEST_SET_2_STAR = [
 
 ];
 
-const TEST_SET_CONDIMENTS = [
-	{ // 1
-		recipe: '_Butter',
-		result: 'Egg,,1/Raid,Normal,1/Exp,Ghost,1'
-	}
-];
-
-const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star', 'Just condiments'];
+const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star'];
 
 // generates a sandwich from a 'save recipe' string
 const generateSandwichFromRecipe = recipe => {
@@ -313,8 +306,7 @@ export const runTests = () => {
 		TEST_SET_NONHERBA,
 		TEST_SET_MULTIPLAYER,
 		TEST_SET_SPLIT_TYPING,
-		TEST_SET_2_STAR,
-		TEST_SET_CONDIMENTS
+		TEST_SET_2_STAR
 	];
 
 	for (let j = 0; j < sets.length; j++) {

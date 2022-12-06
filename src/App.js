@@ -263,6 +263,15 @@ function App() {
   const renderSandwich = sandwich => {
     if (!sandwich) { return null; }
 
+    let display = `#${sandwich.number} - ${sandwich.name}`;
+
+    if (sandwich.number === "???") {
+      display = '⭐'.repeat(sandwich.stars);
+      if (sandwich.stars === 1) {
+        display += "(failure)"
+      }
+    }
+
     return (
       <div className='card' style={{ display: "flex" }}>
         <img alt={sandwich.name} src={sandwich.imageUrl} style={{ width: "100px" }} />
@@ -270,7 +279,7 @@ function App() {
           <div className="bubble bubble-header" onClick={() => {
             if(window.event.ctrlKey) { runTests(); }
           }}
-            style={{ backgroundColor: "tan" }}>#{sandwich.number} - {sandwich.name}</div>
+            style={{ backgroundColor: "tan" }}>{display}</div>
           <div>{sandwich.effects.map((x, i) => renderSandwichBubble(x, i))}</div>          
         </div>
       </div>
@@ -332,6 +341,13 @@ function App() {
     activeSums = sums;
     const generatedSandwich = craftSandwich(activeFillings, activeCondiments, sums, foundSandwich);
 
+    // Sure, we could show results with only condiments, but we can't add only condiments
+    // to a sandwich in-game.  We have to add at least one filling, which we would then
+    // have to remove to have only condiments left on the sandwich, and since the results vary
+    // based on what filling we removed in this case, then there's no point in allowing results
+    // with only condiments.
+    const showResults = activeFillings.length > 0 && activeCondiments.length > 0;
+
     return (
       <div style={{ backgroundColor: pass ? "" : "red" }}>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
@@ -347,7 +363,7 @@ function App() {
             }}
             condiments={activeCondiments} detail={!simpleMode && advancedIngredients} />)}
           {!advancedIngredients && <br className='page-break' />}
-          {(activeCondiments.length > 0) && !simpleMode
+          {showResults && !simpleMode
             && <Card sums={sums} activeSandwich={activeSandwich}
                 fillings={activeFillings} condiments={activeCondiments} 
                 detail={!simpleMode && advancedIngredients}
@@ -357,7 +373,7 @@ function App() {
         </div>
         <div className="bubble-row" style={{ justifyContent: "center" }}>
           {renderSandwich(foundSandwich)}
-          {activeCondiments.length > 0 && (alwaysShowCustomSandwich || !foundSandwich) && renderSandwich(generatedSandwich)}
+          {showResults && (alwaysShowCustomSandwich || !foundSandwich) && renderSandwich(generatedSandwich)}
         </div>
       </div>
     );
