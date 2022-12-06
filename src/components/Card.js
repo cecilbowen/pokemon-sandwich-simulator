@@ -115,7 +115,7 @@ const Card = props => {
         const maxPieces = FILLINGS.slice(0).filter(x => x.name === ingredient.name)[0].pieces;
         let tempPieces = ingredient.pieces + mod;
         if (tempPieces > maxPieces) { tempPieces = maxPieces; }
-        if (tempPieces < 1) { tempPieces = 1; }
+        if (tempPieces < 0) { tempPieces = 0; }
         ingredient.pieces = tempPieces;
         props.updatePieces();
     };

@@ -48,6 +48,23 @@ levels are influenced by the amount of herba you have in sandwich
 			chorizo x4, rice x2, curry powder x2, wasabi x2 - levels 2, 1, 1
 			rice x6, wasabi x2, curry powder x2 - levels 2, 2, 1
 
+miscellaneous
+================
+putting > 13 of same ingredient on sandwich = 1 star (failure), at least in single player
+2 star, low type value sandwiches have a certain threshold that changes the type pattern to [1, 2, 3]
+	believe it's if firstType <= 4 AND < 3 pieces on sandwich
+	along with some misc stuff..
+2 star sandwiches don't add a type when only two exist, making 2 line only sandwiches possible
+# of dropped ingredients might influence star level of sandwich
+	pretty sure if you drop half+ of ingredients, it becomes a 2 star
+	must be more than 1 ingredient, though, so dropping your only rice will keep you 3 stars
+		hamburger, ketchup - drop hamburger, you get 3 star sandwich
+		basil, ketchup - drop all basil, you get 2 star sandwich
+		basil, ketchup - drop 1 basil, you get 3 star sandwich
+		2x chorizo, ketchup - drop 3/6 chorizos, you get 2 star sandwich (so it rounds down)
+
+
+
 flavor bonus table
 ====================
 sweet, salty - egg

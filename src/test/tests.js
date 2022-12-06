@@ -69,6 +69,74 @@ const TEST_SET_NONHERBA = [
 	{ // 10
 		recipe: 'Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Curry Powder,Curry Powder,Olive Oil,Wasabi',
 		result: 'Humungo,Fire,2/Encounter,Water,2/Raid,Grass,1'
+	},
+	{ // 11
+		recipe: 'Egg-3,Egg-3,Egg-3,Jalapeno-3,Jalapeno-3,Potato Salad-1_Whipped Cream',
+		result: 'Raid,Fairy,2/Exp,Grass,1/Encounter,Rock,1'
+	},
+	{ // 12
+		recipe: 'Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Chili Sauce,Chili Sauce,Cream Cheese',
+		result: 'Raid,Water,2/Humungo,Normal,2/Encounter,Grass,1'
+	},
+	{ // 13
+		recipe: 'Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Chili Sauce,Chili Sauce,Olive Oil',
+		result: 'Raid,Grass,2/Humungo,Water,2/Encounter,Fire,1'
+	},
+	{ // 14
+		recipe: 'Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Potato Tortilla-1,Potato Tortilla-1_Salt,Yogurt,Yogurt,Yogurt',
+		result: 'Encounter,Psychic,2/Exp,Ghost,2/Raid,Fighting,1'
+	},
+	{ // 15
+		recipe: 'Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Curry Powder,Ketchup,Wasabi',
+		result: 'Raid,Flying,2/Humungo,Water,2/Encounter,Fire,1'
+	},
+	{ // 16
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3_Pepper,Salt,Salt',
+		result: 'Exp,Flying,1/Encounter,Psychic,1/Raid,Electric,1'
+	},
+	{ // 17
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-3_Pepper,Salt,Salt',
+		result: 'Exp,Flying,1/Encounter,Fighting,1/Raid,Normal,1'
+	},
+	{ // 18
+		recipe: 'Hamburger-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup',
+		result: 'Encounter,Flying,1/Catch,Poison,1/Exp,Steel,1'
+	},
+	{ // 19
+		recipe: 'Cheese-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Tofu-3_Pepper,Whipped Cream',
+		result: 'Humungo,Normal,2/Exp,Poison,1/Encounter,Dragon,1'
+	},
+	{ // 19
+		recipe: 'Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Pepper,Whipped Cream',
+		result: 'Humungo,Normal,2/Raid,Fighting,2/Encounter,Flying,1'
+	},
+	{ // 19
+		recipe: 'Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-2_Ketchup',
+		result: 'Item,Poison,1/Encounter,Normal,1/Catch,Flying,1'
+	},
+	{ // 20
+		recipe: 'Prosciutto-3,Prosciutto-2_Ketchup',
+		result: 'Encounter,Flying,1/Catch,Normal,1/Raid,Poison,1'
+	},
+	{ // 21
+		recipe: 'Watercress-2_Ketchup',
+		result: 'Teensy,Flying,1/Raid,Normal,1/Exp,Poison,1'
+	},
+	{ // 22
+		recipe: 'Noodles-0_Ketchup',
+		result: 'Encounter,Flying,1/Raid,Normal,1/Exp,Poison,1'
+	},
+	{ // 23
+		recipe: 'Noodles-0_Ketchup,Mustard',
+		result: 'Encounter,Flying,1/Raid,Ground,1/Exp,Poison,1'
+	},
+	{ // 24
+		recipe: 'Watercress-2_Ketchup',
+		result: 'Teensy,Flying,1/Raid,Normal,1/Exp,Poison,1'
+	},
+	{ // 25
+		recipe: '',
+		result: ''
 	}
 ];
 
@@ -105,8 +173,121 @@ const TEST_SET_MULTIPLAYER = [
 	{ // 8
 		recipe: 'Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Bitter Herba Mystica,Salt',
 		result: 'Title,Electric,3/Humungo,Electric,3/Exp,Electric,3'
+	}
+];
+
+// singleplayer dual-typing
+const TEST_SET_SPLIT_TYPING = [
+	{ // 1
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-1_Pepper,Salt,Salt',
+		result: 'Exp,Flying,1/Encounter,Fighting,1/Raid,Flying,1'
 	},
-]
+	{ // 2
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-2_Pepper,Salt,Salt',
+		result: 'Exp,Flying,1/Encounter,Fighting,1/Raid,Flying,1'
+	},
+	{ // 3
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter',
+		result: 'Exp,Steel,1/Encounter,Ghost,1/Catch,Steel,1'
+	},
+	{ // 4
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter',
+		result: 'Encounter,Steel,1/Exp,Steel,1/Catch,Ghost,1'
+	},
+	{ // 5
+		recipe: 'Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-3_Pepper,Pepper,Salt,Salt',
+		result: 'Exp,Normal,1/Raid,Flying,1/Encounter,Normal,1'
+	},
+	{ // 6
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3_Salt',
+		result: 'Encounter,Flying,1/Catch,Fighting,1/Raid,Flying,1'
+	},
+	{ // 6
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-1_Ketchup,Whipped Cream,Whipped Cream',
+		result: 'Egg,,1/Encounter,Ground,1/Catch,Flying,1'
+	},
+	{ // 7
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup',
+		result: 'Encounter,Flying,1/Catch,Normal,1/Exp,Flying,1'
+	},
+	{ // 8
+		recipe: 'Apple-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup',
+		result: 'Encounter,Flying,1/Catch,Ice,1/Exp,Flying,1'
+	},
+	{ // 9
+		recipe: 'Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3_Ketchup',
+		result: 'Item,Poison,1/Encounter,Normal,1/Catch,Poison,1'
+	},
+	{ // 10
+		recipe: '',
+		result: ''
+	}
+];
+
+const TEST_SET_2_STAR = [
+	{ // 1
+		recipe: 'Basil-0_Ketchup',
+		result: 'Encounter,Flying,1/Raid,Poison,1'
+	},
+	{ // 2
+		recipe: 'Basil-1_Ketchup',
+		result: 'Encounter,Flying,1/Raid,Poison,1/Exp,Fire,1'
+	},
+	{ // 3
+		recipe: 'Prosciutto-3,Prosciutto-2,Prosciutto-0,Prosciutto-0_Ketchup',
+		result: 'Encounter,Flying,1/Catch,Poison,1'
+	},
+	{ // 4
+		recipe: 'Watercress-1_Ketchup',
+		result: 'Teensy,Flying,1/Raid,Poison,1/Exp,Normal,1'
+	},
+	{ // 5
+		recipe: 'Basil-2,Chorizo-1_Ketchup',
+		result: 'Encounter,Poison,1/Raid,Electric,1/Exp,Fire,1'
+	},
+	{ // 6
+		recipe: 'Watercress-3,Watercress-3,Watercress-3,Watercress-0,Watercress-0,Watercress-0_Ketchup',
+		result: 'Item,Flying,1/Raid,Normal,1/Egg,,1'
+	},
+	{ // 7
+		recipe: 'Watercress-3,Watercress-3,Watercress-2,Watercress-0,Watercress-0,Watercress-0_Ketchup',
+		result: 'Item,Flying,1/Raid,Normal,1/Egg,,1'
+	},
+	{ // 8
+		recipe: 'Watercress-2,Watercress-0,Watercress-0,Watercress-0,Watercress-0,Watercress-0_Ketchup',
+		result: 'Teensy,Flying,1/Raid,Poison,1/Exp,Normal,1'
+	},
+	{ // 9
+		recipe: 'Basil-4,Basil-0_Ketchup',
+		result: 'Encounter,Fire,1/Raid,Grass,1/Exp,Water,1'
+	},
+	{ // 10
+		recipe: 'Basil-3,Basil-0_Ketchup',
+		result: 'Encounter,Fire,1/Raid,Grass,1/Exp,Water,1'
+	},
+	{ // 11
+		recipe: 'Basil-0,Chorizo-1_Ketchup',
+		result: 'Encounter,Poison,1/Raid,Bug,1/Exp,Normal,1'
+	},
+	{ // 12
+		recipe: 'Avocado-2,Basil-0_Ketchup',
+		result: 'Teensy,Dragon,1/Raid,Poison,1/Encounter,Flying,1'
+	},
+	{ // 13
+		recipe: '',
+		result: ''
+	},
+
+];
+
+const TEST_SET_CONDIMENTS = [
+	{ // 1
+		recipe: '_Butter',
+		result: 'Egg,,1/Raid,Normal,1/Exp,Ghost,1'
+	}
+];
+
+const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star', 'Just condiments'];
 
 // generates a sandwich from a 'save recipe' string
 const generateSandwichFromRecipe = recipe => {
@@ -127,12 +308,21 @@ const getSandwichResult = sandwich => {
 
 export const runTests = () => {
 	console.info("Starting tests --------------------");
-	const sets = [TEST_SET_HERBA, TEST_SET_NONHERBA, TEST_SET_MULTIPLAYER];
+	const sets = [
+		TEST_SET_HERBA,
+		TEST_SET_NONHERBA,
+		TEST_SET_MULTIPLAYER,
+		TEST_SET_SPLIT_TYPING,
+		TEST_SET_2_STAR,
+		TEST_SET_CONDIMENTS
+	];
 
 	for (let j = 0; j < sets.length; j++) {
+		const testSetName = TEST_SET_NAMES[j];
 		const testSet = sets[j];
 		let failures = [];
-		console.log("%cTest Set " + (j + 1), 'color: aqua;');
+		console.log(`%cTest Set ${j + 1} (${testSetName})`, 'color: aqua;');
+		console.groupCollapsed(testSetName);
 		for (let i = 0; i < testSet.length; i++) {
 			const result = {
 				powers: "pass",
@@ -143,16 +333,17 @@ export const runTests = () => {
 			const test = testSet[i];
 			const recipe = test.recipe;
 			const sandwich = generateSandwichFromRecipe(recipe);
-			console.groupCollapsed("Sandwich " + (i + 1));
+			
 			if (sandwich) {
 				const realResult = test.result.split("/");
 				const resultStr = getSandwichResult(sandwich);
+				let failSandwich = false;
 	
 				let input = "";
 				let expected = "";
-				for (let i = 0; i < realResult.length; i++) {
-					const realLine = realResult[i];
-					const myLine = resultStr[i];
+				for (let k = 0; k < realResult.length; k++) {
+					const realLine = realResult[k];
+					const myLine = resultStr[k];
 		
 					if (!myLine) {
 						result.powers = result.types = result.levels = "fail";
@@ -177,25 +368,30 @@ export const runTests = () => {
 					if (myType.toLowerCase() !== realType.toLowerCase()) { result.types = "fail"; }
 					if (myLevel.toLowerCase() !== realLevel.toLowerCase()) { result.levels = "fail"; }
 				}
-	
-				console.log("Input Recipe:\n" + input);
-				console.log("Expected Recipe:\n" + expected);
-				console.log(`Powers: ${result.powers}, Types: ${result.types}, Levels: ${result.levels}`);
 				if (result.powers === "fail" || result.types === "fail" || result.levels === "fail") {
 					failures.push("#" + (i + 1));
+					failSandwich = true;
 				}
+
+				console.groupCollapsed("%cSandwich " + (i + 1), failSandwich ? 'color: red;' : 'color: green;');
+	
+				console.log(recipe);
+				console.log("Generated:\n" + input);
+				console.log("Expected:\n" + expected);
+				console.log(`Powers: ${result.powers}, Types: ${result.types}, Levels: ${result.levels}`);
+				console.groupEnd();
 			} else {
-				console.warn("invalid recipe", recipe);
+				// console.warn("invalid recipe", recipe);
 			}
-			console.groupEnd();
 		}
+		console.groupEnd();
 		
 		if (failures.length > 0) {
 			console.log("\tFailed sandwiches: " + failures.join(", "));
 		} else {
 			console.log("\tAll sandwiches passed from Test Set " + (j + 1));
 		}
-	
-		console.info("Tests concluded --------------------");
 	}
+
+	console.info("Tests concluded --------------------");
 };
