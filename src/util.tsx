@@ -225,18 +225,6 @@ export const getIngredientsFromRecipe = (recipe) => {
   return undefined;
 };
 
-// returns max amount of pieces on sandwich if none fall off
-const getMaxTotalPieces = (fillings) => {
-  let ret = 0;
-
-  for (const f of fillings) {
-    const baseFilling = FILLINGS.filter((x) => x.name === f.name)[0];
-    ret += baseFilling.pieces;
-  }
-
-  return ret;
-};
-
 const getPiecesDropped = (obj) => {
   if (obj.pieces === undefined) {
     return 0;
@@ -421,6 +409,7 @@ export const craftSandwich = (
   // get sandwich star level
   let stars = 3;
   const maxTotalPieces = getMaxTotalPieces(fillings);
+
   const totalPieces = fillings
     .map((x) => x.pieces)
     .reduce((partialSum, a) => partialSum + a, 0);
@@ -698,6 +687,18 @@ export const getKeyType = (key) => {
   }
 
   return undefined;
+};
+
+// returns max amount of pieces on sandwich if none fall off
+const getMaxTotalPieces = (fillings) => {
+  let ret = 0;
+
+  for (const f of fillings) {
+    const baseFilling = FILLINGS.filter((x) => x.name === f.name)[0];
+    ret += baseFilling.pieces;
+  }
+
+  return ret;
 };
 
 export const isFilling = (obj) => {

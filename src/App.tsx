@@ -421,21 +421,12 @@ function App() {
     }
 
     activeSums = sums;
-
     const generatedSandwich = craftSandwich(
       activeFillings,
       activeCondiments,
       sums,
       foundSandwich
     );
-
-    // Sure, we could show results with only condiments, but we can't add only condiments
-    // to a sandwich in-game.  We have to add at least one filling, which we would then
-    // have to remove to have only condiments left on the sandwich, and since the results vary
-    // based on what filling we removed in this case, then there's no point in allowing results
-    // with only condiments.
-    const showResults =
-      activeFillings.length > 0 && activeCondiments.length > 0;
 
     return (
       <div style={{ backgroundColor: pass ? '' : 'red' }}>
@@ -465,7 +456,7 @@ function App() {
             />
           ))}
           {!advancedIngredients && <br className="page-break" />}
-          {showResults && !simpleMode && (
+          {activeCondiments.length > 0 && !simpleMode && (
             <Card
               sums={sums}
               activeSandwich={activeSandwich}
