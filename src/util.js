@@ -417,8 +417,8 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
     stars
   };
 
-  const firstType = formattedTypes[0];
-  const secondType = formattedTypes[1];
+  const firstType = formattedTypes[0] || TYPES[0];
+  const secondType = formattedTypes[1] || TYPES[0];
   const thirdType = formattedTypes[2]; // todo: null check if only 2 types
   const mainTypeAmount = firstType.amount;
   const oneTwoDiff = mainTypeAmount - secondType.amount;
