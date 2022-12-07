@@ -139,8 +139,8 @@ const TEST_SET_NONHERBA = [
 		result: 'Raid,Ice,2/Humungo,Electric,1/Encounter,Rock,1'
 	},
 	{ //26
-		recipe: 'Egg-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Wasabi,Wasabi,Yogurt,Yogurt',
-		result: 'Raid,Ice,2/Humungo,Electric,1/Encounter,Rock,1'
+		recipe: '',
+		result: ''
 	}
 ];
 
