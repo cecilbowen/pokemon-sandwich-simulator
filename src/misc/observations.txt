@@ -171,6 +171,11 @@ encounter flying 1, raid ground lv1, exp poison lv1
 Watercress-2_Ketchup
 teensy flying lv1, raid normal lv1, exp poison lv1
 
+==
+
+Egg-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Wasabi,Wasabi,Yogurt,Yogurt
+raid ice lv2, humungo electric lv1, encounter rock lv1
+
 
 multiplayer
 ==============================

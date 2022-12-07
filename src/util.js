@@ -361,8 +361,48 @@ export const getIngredientsSums = ingredients => {
   return sums;
 };
 
+// returns array of levels
+const calculateLevels = effects => {
+  const types = effects;
+  const defaultType = { type: TYPES[0], amount: 0 };
+  const firstType = types[0] || defaultType;
+  const secondType = types[1] || defaultType;
+  const thirdType = types[2] || defaultType;
+
+  let levels = [1, 1, 1];
+  if (firstType.amount < 180) {
+    levels = [1, 1, 1];
+  } else if (firstType.amount >= 180 && firstType.amount <= 280) {
+    if (secondType.amount >= 180 && thirdType.amount >= 180) {
+      levels = [2, 2, 1];
+    } else {
+      levels = [2, 1, 1];
+    }
+  } else if (firstType.amount > 280 && firstType.amount < 380) {
+    if (thirdType.amount < 180 ) {
+      levels = [2, 2, 1];
+    } else {
+      levels = [2, 2, 2];
+    }
+  } else if (firstType.amount >= 380 && firstType.amount < 460) {
+    if (secondType.amount >= 380 && thirdType.amount >= 380) {
+      levels = [3, 3, 3];
+    } else {
+      levels = [3, 3, 2];
+    }
+  } else if (firstType.amount >= 460) {
+    levels = [3, 3, 3];
+  }
+
+  return levels;
+};
+
 export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
-  if (sums.tastes.length === 0 || sums.powers.length === 0 || sums.types.length === 0) {
+  if (sums.tastes.length === 0
+    || sums.powers.length === 0
+    || sums.types.length === 0
+    || fillings.length === 0
+    || condiments.length === 0) {
     return;
   }
 
@@ -421,7 +461,7 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
         fullType,
         fullPower: x,
         type,
-        level: "1"
+        level: 1
       }
     }).filter((x, i) => i < 3),
     imageUrl: SANDWICHES[0].imageUrl,
@@ -432,7 +472,7 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
 
   const firstType = formattedTypes[0] || TYPES[0];
   const secondType = formattedTypes[1] || TYPES[0];
-  const thirdType = formattedTypes[2]; // todo: null check if only 2 types
+  const thirdType = formattedTypes[2];
   const mainTypeAmount = firstType.amount;
   const oneTwoDiff = mainTypeAmount - secondType.amount;
   const oneTwoSum = mainTypeAmount + secondType.amount; // 92
@@ -442,11 +482,11 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
   if (!presetSandwich) {
     let newTypes = [];
     if (mainTypeAmount <= 4 && generatedSandwich.totalPieces <= 2 && stars < 3) {
-      newTypes = [firstType, secondType, thirdType]; // weak recipe triple type
+      newTypes = [firstType, secondType, thirdType]; // 2-star triple type
     } else if (mainTypeAmount >= 100 && oneTwoDiff >= 100) {
-      newTypes = [firstType, firstType, thirdType];
+      newTypes = [firstType, firstType, thirdType]; // todo: needs tweaking
     } else if (mainTypeAmount >= 72 && oneTwoDiff >= 72 && oneTwoSum <= 92 /*typeSum < 130*/) {
-      newTypes = [firstType, thirdType, firstType];
+      newTypes = [firstType, thirdType, firstType]; // todo: needs tweaking
     } else if (mainTypeAmount > 480) { // mono type
       newTypes = [firstType, firstType, firstType];
     } else if (mainTypeAmount > 280) { // dual type
@@ -459,6 +499,8 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
       newTypes = [firstType, secondType, thirdType];
     }
 
+    // can only have an effect if we have a type
+    // so remove effect lines without a type
     const revisedEffects = [];
     for (let i = 0; i < generatedSandwich.effects.length; i++) {
       if (!newTypes[i]) { continue; }
@@ -466,52 +508,15 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
       generatedSandwich.effects[i].fullType = newTypes[i];
       revisedEffects.push(generatedSandwich.effects[i]);
     }
-
     generatedSandwich.effects = revisedEffects;
 
     // handle levels
     // levels continue to remain not 100% consistent
     // so trial-and-error is still going on here
-    let levelsToAdd = 0;
+    const levels = calculateLevels(formattedTypes);
     for (let i = 0; i < generatedSandwich.effects.length; i++) {
       const effect = generatedSandwich.effects[i];
-      const typeAmount = effect.fullType.amount;
-      const effectAmount = effect.fullPower.amount;
-      // const firstFlavor = sums.tastes[0].amount;
-      // const secondFlavor = sums.tastes[1]?.amount || 0;
-      const tastesSum = sums.tastes.filter((x, i) => i < 3).map(x => x.amount).reduce((partialSum, a) => partialSum + a, 0);
-      const modded = effect.fullPower.modded; // whether or not effect received +100 flavor mod
-      if (effectAmount >= 2000) { //at least 2 herbas on sandwich to reach this
-        // I don't quite know the full level calculation pattern/formula yet
-        // but I do know that having 2 herbas is a guaranteed triple level 3
-        levelsToAdd += 6;
-      } else if (typeAmount >= 380/* || effectAmount >= 1000*/) {
-        levelsToAdd += 2;
-      } else if (typeAmount >= 180) {
-        if (!modded) {
-          levelsToAdd += 1;
-        //} else if (effectAmount < firstFlavor) { // only 1 exception (pre-new bs)
-        } else if (effect.fullPower.boosted && i === 0) {
-          levelsToAdd += 1;
-        } else if (effectAmount + tastesSum >= 280) {
-          levelsToAdd += 1;
-        }
-      } else {
-        if (!modded) { break; }
-      }
-    }
-
-    let index = 0;
-    while (levelsToAdd > 0) {
-      const level = parseInt(generatedSandwich.effects[index].level) + 1; // lol why did i keep this a string
-      if (level > 3) { break; }
-      generatedSandwich.effects[index].level = "" + level;
-      
-      index++;
-      if (index > generatedSandwich.effects.length - 1) {
-        index = 0;
-      }
-      levelsToAdd--;
+      effect.level = levels[i];
     }
   } else {
     // copy over levels if it's a preset sandwich recipe

@@ -48,7 +48,7 @@ function App() {
   }, [megaSandwichMode]);
 
   useEffect(() => {
-    setAlwaysShowCustomSandwich(!simpleMode);
+    // setAlwaysShowCustomSandwich(!simpleMode);
     if (simpleMode) {
       setActiveKey({});
     }
@@ -133,6 +133,11 @@ function App() {
     setHeartbeat(heartbeat + 1);
   };
 
+  const clearIngredients = () => {
+    setActiveFillings([]);
+    setActiveCondiments([]);
+  };
+
   const renderFillings = () => {
 
     return (
@@ -154,7 +159,7 @@ function App() {
     }
 
     return (
-    <div className={divClass} key={`filling-${index}`}>
+    <div className={divClass} key={`filling-${index}-${active ? 'active' : 'dormant'}`}>
       <img
         alt={filling.name}
         title={filling.name}
@@ -188,7 +193,7 @@ function App() {
       <div className='condiment-bkg'>
         {CONDIMENTS.map((x, i) => renderCondiment(x, i))}
       </div>
-    )
+    );
   };
 
   const renderCondiment = (condiment, index, active) => {
@@ -204,7 +209,7 @@ function App() {
 
     
     return (
-    <div className={divClass} key={`condiment-${index}`}>
+    <div className={divClass} key={`condiment-${index}-${active ? 'active' : 'dormant'}`}>
       <img
         alt={condiment.name}
         title={condiment.name}
@@ -230,10 +235,13 @@ function App() {
   };
 
   const renderActive = () => {
+    const showClear = activeFillings.length > 0 || activeCondiments.length > 0;
+
     return (
       <div className='active-ingredients-bkg'>
         {activeFillings.map((x, i) => renderFilling(x, i, true))}
         {activeCondiments.map((x, i) => renderCondiment(x, i, true))}
+        {showClear && <span className='clear-ingredients' onClick={() => clearIngredients()}>clear</span>}
       </div>
     )
   };

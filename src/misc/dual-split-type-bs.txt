@@ -1,0 +1,49 @@
+regular case
+--------------
+flying 75, electric 4, psychic 4 -> (diff 71) salty 95
+results in [1, 3, 2] (flying, psychic, electric)
+
+dual-split-typing cases
+------------------------
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup
+flying 74, poison 2, (normal 0) -> (diff 72) salty 64, sum 76/76/1.48
+results in [1, 3, 1] (flying, normal, flying)
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3_Salt
+flying 75, normal 3, fighting 3 -> (diff 72) salty 71, sum 103/81/2.34
+results in [1, 3, 1] (flying, fighting, flying)
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-1_Pepper,Salt,Salt
+flying 76, normal 4, fighting 4 -> (diff 72), sum 120/74/3.2
+results in [1, 3, 1] (flying, fighting, flying)
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-2_Pepper,Salt,Salt
+flying 77, normal 5, fighting 5 -> (diff 72), sum 129/87/4.1
+results in [1, 3, 1] (flying, fighting, flying)
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-1_Ketchup,Whipped Cream,Whipped Cream
+flying 83, normal 9, ground 9 -> (diff 74), sum 109/101/8.28
+results in [1, 3, 1] (flying, ground, flying)
+
+Apple-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup
+flying 81, steel 7, ice 7 -> (diff 74) salty 64, sum 97/95/6.16
+results in [1, 3, 1] (flying, ice, flying)
+
+Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-3_Pepper,Pepper,Salt,Salt
+normal 78, fighting 6, flying 6 -> (diff 72) salty 54, sum 142/90/x
+results in [1, 3, 1] (normal, flying, normal)
+
+back to regular case
+----------------------
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-3_Pepper,Salt,Salt
+flying 78, normal 6, fighting 6 -> (diff 72) salty 98, sum 138/90/5.04
+results in [1, 3, 2] (flying, fighting, normal)
+
+Hamburger-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup
+flying 74, steel 18, poison 2 -> (diff 56) salty 76, sum 94/94/13.68
+results in [1, 3, 2] (flying, poison, steel)
+
+
+if (mainType - nextType) > flavor1, [1, 3, 1]? nah
+
+so if main type >= 72 and no other types exceed 6, typing is [1, 3, 1]

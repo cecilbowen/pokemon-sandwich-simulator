@@ -37,6 +37,24 @@
   position: relative;
 }
 
+.clear-ingredients {
+  border: 2px solid black;
+  border-radius: 10px;
+  border-style: dashed;
+  margin: 0px 2px 0px 2px;
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+  padding: 8px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: monospace;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
 .ingredient-blur {
   filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(240deg) brightness(35%) contrast(80%);
   opacity: 0.3;
