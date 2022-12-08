@@ -1,6 +1,6 @@
 // import { useEffect, useState } from 'react';
 import { calculatePowerAmount } from '../util';
-import { ALIAS_TO_FULL, COLORS, mode, copyTextToClipboard, isFilling } from '../util';
+import { ALIAS_TO_FULL, COLORS, mode, copyTextToClipboard, isFilling, isType } from '../util';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
@@ -48,6 +48,10 @@ const Card = props => {
             borderColor = "black";
         }
 
+        if (isType(key)) {
+            className += " bubble-type";
+        }
+
         return <div className={className} style={{ backgroundColor, borderColor }} key={id}
             onClick={() => onSelectBubble(key)}>
             <div>{key}:</div>
@@ -58,7 +62,7 @@ const Card = props => {
     const renderAllTypes = () => {
         const backgroundColor = COLORS["All Types"];
 
-        return <div className="bubble" style={{ backgroundColor }}>
+        return <div className="bubble bubble-type" style={{ backgroundColor }}>
             <div>All Types:</div>
             <div style={{ marginLeft: "10px" }}>{calculatePowerAmount(types[0].amount, ingredient, types[0])}</div>
         </div>;
@@ -71,7 +75,7 @@ const Card = props => {
         
         return (<div className="bubble-row">
             {toRender.map((x, i) => renderKeyValue(x, i))}
-            <div className="bubble" style={{ backgroundColor }}>
+            <div className="bubble bubble-type" style={{ backgroundColor }}>
                 <div>All Other Types:</div>
                 <div style={{ marginLeft: "10px" }}>{common}</div>
             </div>

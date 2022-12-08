@@ -1,5 +1,41 @@
 [
   {
+    "number": "-1",
+    "name": "Hidden Recipe 1",
+    "description": "A recipe that produces no effects.  It is hidden from the user, but can still be made in-game.",
+    "fillings": [
+      "Chorizo"
+    ],
+    "condiments": [
+      "Salt",
+      "Pepper"
+    ],
+    "effects": [],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/1.jpg",
+    "location": "Unavailable",
+    "rawEffectValues": {
+      "powers": {},
+      "types": {}
+    }
+  },
+  {
+    "number": "0",
+    "name": "Hidden Recipe 2",
+    "description": "A recipe that produces no effects.  It is hidden from the user, and cannot be made in-game.",
+    "fillings": [
+      "Tomato",
+      "Tomato"
+    ],
+    "condiments": [],
+    "effects": [],
+    "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/1.jpg",
+    "location": "Unavailable",
+    "rawEffectValues": {
+      "powers": {},
+      "types": {}
+    }
+  },
+  {
     "number": "1",
     "name": "Jambon-Beurre",
     "description": "A sandwich with just ham and butter in it. So simple that there's no way to fake it.",
@@ -27,7 +63,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/1.jpg",
-    "location": "Start"
+    "location": "Start",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Raid Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Ground": 90,
+        "Bug": 80,
+        "Ghost": 85
+      }
+    }
   },
   {
     "number": "2",
@@ -58,7 +106,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/2.jpg",
-    "location": "From man in Sandwich Shop if you have Bitter Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Bitter Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ground": 190,
+        "Bug": 180,
+        "Ghost": 185
+      }
+    }
   },
   {
     "number": "3",
@@ -89,7 +149,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/3.jpg",
-    "location": "From man in Sandwich Shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ground": 190,
+        "Bug": 180,
+        "Ghost": 185
+      }
+    }
   },
   {
     "number": "4",
@@ -120,7 +192,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/4.jpg",
-    "location": "From man in Sandwich Shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 80,
+        "Title Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Ground": 190,
+        "Bug": 180,
+        "Ghost": 185
+      }
+    }
   },
   {
     "number": "5",
@@ -151,7 +235,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/5.jpg",
-    "location": "From man in Sandwich Shop if you have Sour Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Sour Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Teensy Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ground": 190,
+        "Bug": 180,
+        "Ghost": 185
+      }
+    }
   },
   {
     "number": "6",
@@ -182,7 +278,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/6.jpg",
-    "location": "From man in Sandwich Shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Humungo Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ground": 190,
+        "Bug": 180,
+        "Ghost": 185
+      }
+    }
   },
   {
     "number": "7",
@@ -214,7 +322,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/7.jpg",
-    "location": "From man in Sandwich Shop if you have Bitter Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Bitter Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Rock": 190,
+        "Grass": 180,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "8",
@@ -246,7 +366,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/8.jpg",
-    "location": "From man in Sandwich Shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Rock": 190,
+        "Grass": 180,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "9",
@@ -278,7 +410,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/9.jpg",
-    "location": "From man in Sandwich Shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Rock": 190,
+        "Grass": 180,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "10",
@@ -310,7 +454,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/10.jpg",
-    "location": "From man in Sandwich Shop if you have Sour Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Sour Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Teensy Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Rock": 190,
+        "Grass": 180,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "11",
@@ -342,7 +498,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/11.jpg",
-    "location": "From man in Sandwich Shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich Shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Humungo Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Rock": 190,
+        "Grass": 180,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "12",
@@ -372,7 +540,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/12.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 90,
+        "Item Drop Power": 85
+      },
+      "types": {
+        "Fighting": 90,
+        "Ghost": 80,
+        "Psychic": 85
+      }
+    }
   },
   {
     "number": "13",
@@ -403,7 +583,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/13.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Item Drop Power": 85,
+        "Raid Power": 80
+      },
+      "types": {
+        "Fighting": 190,
+        "Ghost": 80,
+        "Psychic": 85
+      }
+    }
   },
   {
     "number": "14",
@@ -435,7 +627,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/14.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 90,
+        "Item Drop Power": 85
+      },
+      "types": {
+        "Fighting": 80,
+        "Ground": 185,
+        "Dark": 190
+      }
+    }
   },
   {
     "number": "15",
@@ -468,7 +672,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/15.jpg",
-    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Item Drop Power": 80,
+        "Title Power": 90
+      },
+      "types": {
+        "Fighting": 180,
+        "Ground": 185,
+        "Dark": 190
+      }
+    }
   },
   {
     "number": "16",
@@ -498,7 +714,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/16.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Item Drop Power": 85,
+        "Raid Power": 80
+      },
+      "types": {
+        "Normal": 90,
+        "Bug": 80,
+        "Electric": 85
+      }
+    }
   },
   {
     "number": "17",
@@ -529,7 +757,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/17.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Exp. Point Power": 80,
+        "Raid Power": 85
+      },
+      "types": {
+        "Normal": 80,
+        "Bug": 190,
+        "Electric": 85
+      }
+    }
   },
   {
     "number": "18",
@@ -561,7 +801,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/18.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Item Drop Power": 80,
+        "Raid Power": 85
+      },
+      "types": {
+        "Normal": 185,
+        "Bug": 80,
+        "Electric": 190
+      }
+    }
   },
   {
     "number": "19",
@@ -594,7 +846,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/19.jpg",
-    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Item Drop Power": 80,
+        "Raid Power": 85,
+        "Title Power": 90
+      },
+      "types": {
+        "Normal": 185,
+        "Bug": 180,
+        "Electric": 190
+      }
+    }
   },
   {
     "number": "20",
@@ -624,7 +888,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/20.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Fighting": 90,
+        "Ghost": 80,
+        "Fire": 85
+      }
+    }
   },
   {
     "number": "21",
@@ -655,7 +931,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/21.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Item Drop Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Fighting": 190,
+        "Ghost": 80,
+        "Fire": 85
+      }
+    }
   },
   {
     "number": "22",
@@ -687,7 +975,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/22.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 85,
+        "Catching Power": 80,
+        "Item Drop Power": 90
+      },
+      "types": {
+        "Fighting": 190,
+        "Fire": 80,
+        "Grass": 185
+      }
+    }
   },
   {
     "number": "23",
@@ -720,7 +1020,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/23.jpg",
-    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Title Power": 90,
+        "Teensy Power": 85
+      },
+      "types": {
+        "Fighting": 190,
+        "Fire": 180,
+        "Grass": 185
+      }
+    }
   },
   {
     "number": "24",
@@ -750,7 +1062,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/24.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 85,
+        "Item Drop Power": 90
+      },
+      "types": {
+        "Fighting": 90,
+        "Poison": 80,
+        "Rock": 85
+      }
+    }
   },
   {
     "number": "25",
@@ -781,7 +1105,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/25.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Item Drop Power": 80,
+        "Raid Power": 85
+      },
+      "types": {
+        "Fighting": 190,
+        "Poison": 80,
+        "Rock": 85
+      }
+    }
   },
   {
     "number": "26",
@@ -813,7 +1149,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/26.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Item Drop Power": 85,
+        "Raid Power": 80
+      },
+      "types": {
+        "Fighting": 80,
+        "Poison": 185,
+        "Bug": 190
+      }
+    }
   },
   {
     "number": "27",
@@ -846,7 +1194,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/27.jpg",
-    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Item Drop Power": 80,
+        "Title Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Fighting": 180,
+        "Poison": 185,
+        "Bug": 190
+      }
+    }
   },
   {
     "number": "28",
@@ -876,7 +1236,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/28.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Fighting": 90,
+        "Ground": 80,
+        "Ghost": 85
+      }
+    }
   },
   {
     "number": "29",
@@ -907,7 +1279,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/29.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Fighting": 80,
+        "Ground": 190,
+        "Ghost": 85
+      }
+    }
   },
   {
     "number": "30",
@@ -939,7 +1323,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/30.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 90,
+        "Raid Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Fighting": 80,
+        "Ground": 190,
+        "Ghost": 185
+      }
+    }
   },
   {
     "number": "31",
@@ -972,7 +1368,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/31.jpg",
-    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Title Power": 90
+      },
+      "types": {
+        "Normal": 180,
+        "Fighting": 185,
+        "Ground": 190
+      }
+    }
   },
   {
     "number": "32",
@@ -1003,7 +1411,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/32.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 80,
+        "Humungo Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 90,
+        "Fighting": 80,
+        "Fire": 85
+      }
+    }
   },
   {
     "number": "33",
@@ -1035,7 +1455,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/33.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Item Drop Power": 80,
+        "Humungo Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 80,
+        "Fighting": 85,
+        "Grass": 190
+      }
+    }
   },
   {
     "number": "34",
@@ -1068,7 +1500,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/34.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Item Drop Power": 80,
+        "Humungo Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 185,
+        "Grass": 190,
+        "Fairy": 80
+      }
+    }
   },
   {
     "number": "35",
@@ -1102,7 +1546,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/35.jpg",
-    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Humungo Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Grass": 190,
+        "Fairy": 185
+      }
+    }
   },
   {
     "number": "36",
@@ -1134,7 +1590,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/36.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 90,
+        "Item Drop Power": 85
+      },
+      "types": {
+        "Flying": 90,
+        "Steel": 80,
+        "Ice": 85
+      }
+    }
   },
   {
     "number": "37",
@@ -1167,7 +1635,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/37.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 90,
+        "Item Drop Power": 85
+      },
+      "types": {
+        "Flying": 190,
+        "Steel": 80,
+        "Ice": 85
+      }
+    }
   },
   {
     "number": "38",
@@ -1201,7 +1681,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/38.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 85,
+        "Item Drop Power": 90
+      },
+      "types": {
+        "Flying": 190,
+        "Steel": 80,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "39",
@@ -1236,7 +1728,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/39.jpg",
-    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Item Drop Power": 85,
+        "Title Power": 90
+      },
+      "types": {
+        "Fighting": 180,
+        "Flying": 190,
+        "Poison": 185
+      }
+    }
   },
   {
     "number": "40",
@@ -1267,7 +1771,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/40.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Catching Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Fighting": 85,
+        "Ice": 90,
+        "Dragon": 80
+      }
+    }
   },
   {
     "number": "41",
@@ -1299,7 +1815,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/41.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Item Drop Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Ground": 190,
+        "Water": 80,
+        "Dark": 85
+      }
+    }
   },
   {
     "number": "42",
@@ -1332,7 +1860,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/42.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Item Drop Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ground": 80,
+        "Rock": 190,
+        "Water": 185
+      }
+    }
   },
   {
     "number": "43",
@@ -1366,7 +1906,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/43.jpg",
-    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Item Drop Power": 80,
+        "Title Power": 90
+      },
+      "types": {
+        "Ground": 180,
+        "Rock": 190,
+        "Water": 185
+      }
+    }
   },
   {
     "number": "44",
@@ -1397,7 +1949,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/44.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Exp. Point Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Electric": 85,
+        "Dragon": 90,
+        "Dark": 80
+      }
+    }
   },
   {
     "number": "45",
@@ -1429,7 +1993,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/45.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Exp. Point Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Dragon": 190,
+        "Dark": 80,
+        "Fairy": 85
+      }
+    }
   },
   {
     "number": "46",
@@ -1462,7 +2038,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/46.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Exp. Point Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Grass": 190,
+        "Dragon": 80,
+        "Dark": 185
+      }
+    }
   },
   {
     "number": "47",
@@ -1496,7 +2084,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/47.jpg",
-    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Grass": 190,
+        "Dragon": 180,
+        "Dark": 185
+      }
+    }
   },
   {
     "number": "48",
@@ -1527,7 +2127,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/48.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 85,
+        "Humungo Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Poison": 90,
+        "Ground": 80,
+        "Rock": 85
+      }
+    }
   },
   {
     "number": "49",
@@ -1559,7 +2171,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/49.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 80,
+        "Humungo Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Poison": 190,
+        "Ground": 80,
+        "Rock": 85
+      }
+    }
   },
   {
     "number": "50",
@@ -1592,7 +2216,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/50.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Humungo Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Poison": 190,
+        "Fire": 185,
+        "Electric": 80
+      }
+    }
   },
   {
     "number": "51",
@@ -1626,7 +2262,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/51.jpg",
-    "location": "From man in Sandwich shop if you have Bitty Herba Mystica"
+    "location": "From man in Sandwich shop if you have Bitty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Poison": 190,
+        "Electric": 185
+      }
+    }
   },
   {
     "number": "52",
@@ -1658,7 +2306,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/52.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Bug": 90,
+        "Ghost": 80,
+        "Steel": 85
+      }
+    }
   },
   {
     "number": "53",
@@ -1691,7 +2351,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/53.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Humungo Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Bug": 80,
+        "Ghost": 85,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "54",
@@ -1725,7 +2397,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/54.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Humungo Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Bug": 185,
+        "Ghost": 190,
+        "Dragon": 80
+      }
+    }
   },
   {
     "number": "55",
@@ -1760,7 +2444,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/55.jpg",
-    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Ghost": 190,
+        "Dragon": 185
+      }
+    }
   },
   {
     "number": "56",
@@ -1792,7 +2488,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/56.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Humungo Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Fighting": 85,
+        "Water": 80,
+        "Psychic": 90
+      }
+    }
   },
   {
     "number": "57",
@@ -1825,7 +2533,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/57.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Humungo Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Fighting": 85,
+        "Water": 80,
+        "Psychic": 190
+      }
+    }
   },
   {
     "number": "58",
@@ -1859,7 +2579,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/58.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Humungo Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Fighting": 80,
+        "Ground": 185,
+        "Psychic": 190
+      }
+    }
   },
   {
     "number": "59",
@@ -1894,7 +2626,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/59.jpg",
-    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Teensy Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Fighting": 185,
+        "Psychic": 190
+      }
+    }
   },
   {
     "number": "60",
@@ -1926,7 +2670,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/60.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Flying": 90,
+        "Rock": 80,
+        "Steel": 85
+      }
+    }
   },
   {
     "number": "61",
@@ -1959,7 +2715,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/61.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Flying": 190,
+        "Rock": 80,
+        "Steel": 85
+      }
+    }
   },
   {
     "number": "62",
@@ -1993,7 +2761,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/62.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Flying": 190,
+        "Rock": 80,
+        "Steel": 185
+      }
+    }
   },
   {
     "number": "63",
@@ -2028,7 +2808,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/63.jpg",
-    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Title Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 180,
+        "Flying": 190,
+        "Rock": 185
+      }
+    }
   },
   {
     "number": "64",
@@ -2060,7 +2852,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/64.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Item Drop Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Ghost": 90,
+        "Fire": 80,
+        "Grass": 85
+      }
+    }
   },
   {
     "number": "65",
@@ -2093,7 +2897,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/65.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Humungo Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ghost": 190,
+        "Fire": 80,
+        "Grass": 85
+      }
+    }
   },
   {
     "number": "66",
@@ -2127,7 +2943,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/66.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Humungo Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ghost": 80,
+        "Fire": 185,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "67",
@@ -2162,7 +2990,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/67.jpg",
-    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Item Drop Power": 85,
+        "Title Power": 90
+      },
+      "types": {
+        "Normal": 180,
+        "Ghost": 185,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "68",
@@ -2194,7 +3034,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/68.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Raid Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Fighting": 85,
+        "Bug": 90,
+        "Dragon": 80
+      }
+    }
   },
   {
     "number": "69",
@@ -2227,7 +3079,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/69.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Item Drop Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Poison": 80,
+        "Fire": 85,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "70",
@@ -2261,7 +3125,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/70.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Item Drop Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Fighting": 185,
+        "Poison": 80,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "71",
@@ -2296,7 +3172,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/71.jpg",
-    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Humungo Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Poison": 185,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "72",
@@ -2329,7 +3217,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/72.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Rock": 90,
+        "Grass": 80,
+        "Fairy": 85
+      }
+    }
   },
   {
     "number": "73",
@@ -2363,7 +3263,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/73.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Rock": 85,
+        "Grass": 190,
+        "Fairy": 80
+      }
+    }
   },
   {
     "number": "74",
@@ -2398,7 +3310,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/74.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Rock": 185,
+        "Grass": 190,
+        "Fairy": 80
+      }
+    }
   },
   {
     "number": "75",
@@ -2434,7 +3358,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/75.jpg",
-    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Grass": 190,
+        "Fairy": 185
+      }
+    }
   },
   {
     "number": "76",
@@ -2466,7 +3402,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/76.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Raid Power": 85,
+        "Teensy Power": 90
+      },
+      "types": {
+        "Bug": 90,
+        "Steel": 80,
+        "Dark": 85
+      }
+    }
   },
   {
     "number": "77",
@@ -2499,7 +3447,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/77.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Raid Power": 85,
+        "Teensy Power": 90
+      },
+      "types": {
+        "Bug": 190,
+        "Steel": 80,
+        "Dark": 85
+      }
+    }
   },
   {
     "number": "78",
@@ -2533,7 +3493,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/78.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 85,
+        "Teensy Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Bug": 190,
+        "Steel": 80,
+        "Dark": 185
+      }
+    }
   },
   {
     "number": "79",
@@ -2568,7 +3540,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/79.jpg",
-    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 80,
+        "Title Power": 90,
+        "Humungo Power": 85
+      },
+      "types": {
+        "Normal": 180,
+        "Bug": 190,
+        "Steel": 185
+      }
+    }
   },
   {
     "number": "80",
@@ -2600,7 +3584,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/80.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 85,
+        "Fighting": 90,
+        "Ground": 80
+      }
+    }
   },
   {
     "number": "81",
@@ -2633,7 +3629,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/81.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Raid Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Fighting": 190,
+        "Flying": 85,
+        "Ground": 80
+      }
+    }
   },
   {
     "number": "82",
@@ -2667,7 +3675,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/82.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Rock": 190,
+        "Grass": 80,
+        "Fairy": 185
+      }
+    }
   },
   {
     "number": "83",
@@ -2702,7 +3722,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/83.jpg",
-    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Title Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Rock": 190,
+        "Grass": 180,
+        "Fairy": 185
+      }
+    }
   },
   {
     "number": "84",
@@ -2734,7 +3766,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/84.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Raid Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Bug": 90,
+        "Steel": 80,
+        "Water": 85
+      }
+    }
   },
   {
     "number": "85",
@@ -2767,7 +3811,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/85.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Raid Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Bug": 80,
+        "Steel": 85,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "86",
@@ -2801,7 +3857,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/86.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Exp. Point Power": 90,
+        "Raid Power": 85
+      },
+      "types": {
+        "Water": 80,
+        "Electric": 185,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "87",
@@ -2836,7 +3904,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/87.jpg",
-    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Title Power": 90
+      },
+      "types": {
+        "Water": 180,
+        "Electric": 185,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "88",
@@ -2868,7 +3948,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/88.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Humungo Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Steel": 80,
+        "Psychic": 90,
+        "Dragon": 85
+      }
+    }
   },
   {
     "number": "89",
@@ -2901,7 +3993,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/89.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Humungo Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Steel": 80,
+        "Psychic": 190,
+        "Dragon": 85
+      }
+    }
   },
   {
     "number": "90",
@@ -2935,7 +4039,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/90.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Humungo Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Steel": 80,
+        "Psychic": 190,
+        "Dragon": 185
+      }
+    }
   },
   {
     "number": "91",
@@ -2970,7 +4086,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/91.jpg",
-    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Steel": 180,
+        "Psychic": 190,
+        "Dragon": 185
+      }
+    }
   },
   {
     "number": "92",
@@ -3003,7 +4131,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/92.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 90,
+        "Raid Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Psychic": 80,
+        "Dragon": 85,
+        "Dark": 90
+      }
+    }
   },
   {
     "number": "93",
@@ -3037,7 +4177,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/93.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 90,
+        "Raid Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ghost": 190,
+        "Psychic": 85,
+        "Dark": 80
+      }
+    }
   },
   {
     "number": "94",
@@ -3072,7 +4224,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/94.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 90,
+        "Raid Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ghost": 80,
+        "Psychic": 185,
+        "Dark": 190
+      }
+    }
   },
   {
     "number": "95",
@@ -3108,7 +4272,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/95.jpg",
-    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Title Power": 90
+      },
+      "types": {
+        "Ghost": 180,
+        "Psychic": 185,
+        "Dark": 190
+      }
+    }
   },
   {
     "number": "96",
@@ -3141,7 +4317,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/96.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 85,
+        "Item Drop Power": 90
+      },
+      "types": {
+        "Normal": 90,
+        "Flying": 80,
+        "Ground": 85
+      }
+    }
   },
   {
     "number": "97",
@@ -3175,7 +4363,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/97.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 85,
+        "Item Drop Power": 90
+      },
+      "types": {
+        "Normal": 190,
+        "Flying": 80,
+        "Poison": 85
+      }
+    }
   },
   {
     "number": "98",
@@ -3210,7 +4410,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/98.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 80,
+        "Catching Power": 85,
+        "Item Drop Power": 90
+      },
+      "types": {
+        "Normal": 190,
+        "Flying": 80,
+        "Poison": 185
+      }
+    }
   },
   {
     "number": "99",
@@ -3246,7 +4458,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/99.jpg",
-    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Item Drop Power": 85,
+        "Title Power": 90
+      },
+      "types": {
+        "Normal": 190,
+        "Flying": 180,
+        "Poison": 185
+      }
+    }
   },
   {
     "number": "100",
@@ -3279,7 +4503,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/100.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Flying": 90,
+        "Bug": 80,
+        "Dark": 85
+      }
+    }
   },
   {
     "number": "101",
@@ -3313,7 +4549,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/101.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Bug": 190,
+        "Dragon": 85,
+        "Dark": 80
+      }
+    }
   },
   {
     "number": "102",
@@ -3348,7 +4596,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/102.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Humungo Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Bug": 190,
+        "Steel": 80,
+        "Dark": 185
+      }
+    }
   },
   {
     "number": "103",
@@ -3384,7 +4644,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/103.jpg",
-    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Bug": 190,
+        "Steel": 185
+      }
+    }
   },
   {
     "number": "104",
@@ -3417,7 +4689,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/104.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Item Drop Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Grass": 90,
+        "Ice": 80,
+        "Fairy": 85
+      }
+    }
   },
   {
     "number": "105",
@@ -3451,7 +4735,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/105.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Item Drop Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Grass": 190,
+        "Ice": 80,
+        "Fairy": 85
+      }
+    }
   },
   {
     "number": "106",
@@ -3486,7 +4782,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/106.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Item Drop Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Grass": 190,
+        "Electric": 80,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "107",
@@ -3522,7 +4830,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/107.jpg",
-    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Humungo Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Grass": 190,
+        "Electric": 180,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "108",
@@ -3555,7 +4875,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/108.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Item Drop Power": 85,
+        "Raid Power": 80
+      },
+      "types": {
+        "Normal": 90,
+        "Flying": 80,
+        "Bug": 85
+      }
+    }
   },
   {
     "number": "109",
@@ -3589,7 +4921,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/109.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Item Drop Power": 85,
+        "Raid Power": 80
+      },
+      "types": {
+        "Normal": 190,
+        "Flying": 80,
+        "Bug": 85
+      }
+    }
   },
   {
     "number": "110",
@@ -3624,7 +4968,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/110.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 90,
+        "Item Drop Power": 85,
+        "Raid Power": 80
+      },
+      "types": {
+        "Normal": 80,
+        "Flying": 185,
+        "Electric": 190
+      }
+    }
   },
   {
     "number": "111",
@@ -3660,7 +5016,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/111.jpg",
-    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Item Drop Power": 80,
+        "Title Power": 90
+      },
+      "types": {
+        "Normal": 185,
+        "Fighting": 180,
+        "Electric": 190
+      }
+    }
   },
   {
     "number": "112",
@@ -3694,7 +5062,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/112.jpg",
-    "location": "From your mother in Cabo Poco"
+    "location": "From your mother in Cabo Poco",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Poison": 90,
+        "Bug": 80,
+        "Water": 85
+      }
+    }
   },
   {
     "number": "113",
@@ -3729,7 +5109,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/113.jpg",
-    "location": "From your mother in Cabo Poco"
+    "location": "From your mother in Cabo Poco",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Poison": 80,
+        "Bug": 85,
+        "Ghost": 190
+      }
+    }
   },
   {
     "number": "114",
@@ -3765,7 +5157,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/114.jpg",
-    "location": "From your mother in Cabo Poco"
+    "location": "From your mother in Cabo Poco",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Poison": 80,
+        "Bug": 185,
+        "Ghost": 190
+      }
+    }
   },
   {
     "number": "115",
@@ -3802,7 +5206,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/115.jpg",
-    "location": "From your mother in Cabo Poco if you have Salty Herba Mystica"
+    "location": "From your mother in Cabo Poco if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Title Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Poison": 180,
+        "Bug": 185,
+        "Ghost": 190
+      }
+    }
   },
   {
     "number": "116",
@@ -3836,7 +5252,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/116.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Raid Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Bug": 80,
+        "Ghost": 85,
+        "Steel": 90
+      }
+    }
   },
   {
     "number": "117",
@@ -3871,7 +5299,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/117.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Raid Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Ghost": 190,
+        "Psychic": 85,
+        "Dark": 80
+      }
+    }
   },
   {
     "number": "118",
@@ -3907,7 +5347,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/118.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Raid Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Ghost": 190,
+        "Steel": 185,
+        "Dark": 80
+      }
+    }
   },
   {
     "number": "119",
@@ -3944,7 +5396,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/119.jpg",
-    "location": "From man in Sandwich shop if you have Sour Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sour Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Title Power": 90,
+        "Teensy Power": 85
+      },
+      "types": {
+        "Normal": 180,
+        "Ghost": 190,
+        "Dark": 185
+      }
+    }
   },
   {
     "number": "120",
@@ -3978,7 +5442,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/120.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 85,
+        "Raid Power": 80,
+        "Humungo Power": 90
+      },
+      "types": {
+        "Normal": 85,
+        "Poison": 90,
+        "Dragon": 80
+      }
+    }
   },
   {
     "number": "121",
@@ -4013,7 +5489,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/121.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Raid Power": 85,
+        "Humungo Power": 90
+      },
+      "types": {
+        "Poison": 190,
+        "Fire": 85,
+        "Dragon": 80
+      }
+    }
   },
   {
     "number": "122",
@@ -4049,7 +5537,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/122.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Raid Power": 85,
+        "Humungo Power": 90
+      },
+      "types": {
+        "Poison": 190,
+        "Fire": 185,
+        "Dragon": 80
+      }
+    }
   },
   {
     "number": "123",
@@ -4086,7 +5586,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/123.jpg",
-    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Raid Power": 80,
+        "Title Power": 90,
+        "Humungo Power": 85
+      },
+      "types": {
+        "Normal": 180,
+        "Poison": 190,
+        "Dragon": 185
+      }
+    }
   },
   {
     "number": "124",
@@ -4120,7 +5632,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/124.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Item Drop Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Electric": 90,
+        "Psychic": 80,
+        "Fairy": 85
+      }
+    }
   },
   {
     "number": "125",
@@ -4155,7 +5679,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/125.jpg",
-    "location": "From your mother in Cabo Poco"
+    "location": "From your mother in Cabo Poco",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Item Drop Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Electric": 190,
+        "Psychic": 80,
+        "Fairy": 85
+      }
+    }
   },
   {
     "number": "126",
@@ -4191,7 +5727,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/126.jpg",
-    "location": "From your mother in Cabo Poco"
+    "location": "From your mother in Cabo Poco",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Teensy Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Electric": 190,
+        "Psychic": 80,
+        "Fairy": 185
+      }
+    }
   },
   {
     "number": "127",
@@ -4228,7 +5776,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/127.jpg",
-    "location": "From your mother in Cabo Poco if you have Sweet Herba Mystica"
+    "location": "From your mother in Cabo Poco if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Electric": 190,
+        "Psychic": 180,
+        "Fairy": 185
+      }
+    }
   },
   {
     "number": "128",
@@ -4262,7 +5822,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/128.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Item Drop Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Poison": 90,
+        "Ground": 80,
+        "Fire": 85
+      }
+    }
   },
   {
     "number": "129",
@@ -4297,7 +5869,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/129.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Item Drop Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Poison": 80,
+        "Ground": 85,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "130",
@@ -4333,7 +5917,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/130.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 90,
+        "Item Drop Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Poison": 80,
+        "Ground": 185,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "131",
@@ -4370,7 +5966,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/131.jpg",
-    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Item Drop Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Poison": 185,
+        "Dragon": 190
+      }
+    }
   },
   {
     "number": "132",
@@ -4405,7 +6013,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/132.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 90,
+        "Raid Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Psychic": 85,
+        "Ice": 90,
+        "Dark": 80
+      }
+    }
   },
   {
     "number": "133",
@@ -4441,7 +6061,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/133.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Exp. Point Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 85,
+        "Ice": 190,
+        "Dark": 80
+      }
+    }
   },
   {
     "number": "134",
@@ -4478,7 +6110,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/134.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Exp. Point Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Ghost": 190,
+        "Ice": 80,
+        "Dark": 185
+      }
+    }
   },
   {
     "number": "135",
@@ -4516,7 +6160,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/135.jpg",
-    "location": "From man in Sandwich shop if you have Spicy Herba Mystica"
+    "location": "From man in Sandwich shop if you have Spicy Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Humungo Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Ghost": 190,
+        "Ice": 180,
+        "Dark": 185
+      }
+    }
   },
   {
     "number": "136",
@@ -4551,7 +6207,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/136.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 85,
+        "Catching Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Normal": 90,
+        "Fighting": 85,
+        "Grass": 80
+      }
+    }
   },
   {
     "number": "137",
@@ -4587,7 +6255,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/137.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Raid Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Normal": 190,
+        "Fighting": 85,
+        "Grass": 80
+      }
+    }
   },
   {
     "number": "138",
@@ -4624,7 +6304,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/138.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Raid Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 190,
+        "Fighting": 185,
+        "Grass": 80
+      }
+    }
   },
   {
     "number": "139",
@@ -4662,7 +6354,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/139.jpg",
-    "location": "From man in Sandwich shop if you have Salty Herba Mystica"
+    "location": "From man in Sandwich shop if you have Salty Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Title Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 190,
+        "Fighting": 180,
+        "Grass": 185
+      }
+    }
   },
   {
     "number": "140",
@@ -4697,7 +6401,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/140.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Exp. Point Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Rock": 80,
+        "Electric": 90,
+        "Psychic": 85
+      }
+    }
   },
   {
     "number": "141",
@@ -4733,7 +6449,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/141.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Item Drop Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Rock": 190,
+        "Electric": 80,
+        "Psychic": 85
+      }
+    }
   },
   {
     "number": "142",
@@ -4770,7 +6498,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/142.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Exp. Point Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Rock": 190,
+        "Grass": 185,
+        "Ice": 80
+      }
+    }
   },
   {
     "number": "143",
@@ -4808,7 +6548,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/143.jpg",
-    "location": "From man in Sandwich shop if you have Sweet Herba Mystica"
+    "location": "From man in Sandwich shop if you have Sweet Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Egg Power": 85,
+        "Title Power": 90,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Rock": 190,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "144",
@@ -4843,7 +6595,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/144.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 90,
+        "Humungo Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Ghost": 80,
+        "Steel": 90,
+        "Fire": 85
+      }
+    }
   },
   {
     "number": "145",
@@ -4879,7 +6643,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/145.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 90,
+        "Humungo Power": 80,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Ghost": 85,
+        "Steel": 190,
+        "Ice": 80
+      }
+    }
   },
   {
     "number": "146",
@@ -4916,7 +6692,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/146.jpg",
-    "location": "From man in Sandwich shop"
+    "location": "From man in Sandwich shop",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Humungo Power": 85,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Normal": 80,
+        "Steel": 190,
+        "Ice": 185
+      }
+    }
   },
   {
     "number": "147",
@@ -4954,7 +6742,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/147.jpg",
-    "location": "From man in Sandwich shop if you have Bitter Herba Mystica"
+    "location": "From man in Sandwich shop if you have Bitter Herba Mystica",
+    "rawEffectValues": {
+      "powers": {
+        "Exp. Point Power": 80,
+        "Title Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 185,
+        "Fighting": 180,
+        "Steel": 190
+      }
+    }
   },
   {
     "number": "148",
@@ -4989,7 +6789,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/148.jpg",
-    "location": "From Sushi Oficianado in Casseroya Lake"
+    "location": "From Sushi Oficianado in Casseroya Lake",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Humungo Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Normal": 80,
+        "Fighting": 85,
+        "Dark": 90
+      }
+    }
   },
   {
     "number": "149",
@@ -5025,7 +6837,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/149.jpg",
-    "location": "From Sushi Oficianado in Casseroya Lake"
+    "location": "From Sushi Oficianado in Casseroya Lake",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 80,
+        "Exp. Point Power": 90,
+        "Encounter Power": 85
+      },
+      "types": {
+        "Normal": 80,
+        "Fighting": 85,
+        "Dark": 190
+      }
+    }
   },
   {
     "number": "150",
@@ -5062,7 +6886,19 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/150.jpg",
-    "location": "From Sushi Oficianado in Casseroya Lake"
+    "location": "From Sushi Oficianado in Casseroya Lake",
+    "rawEffectValues": {
+      "powers": {
+        "Catching Power": 85,
+        "Humungo Power": 80,
+        "Encounter Power": 90
+      },
+      "types": {
+        "Normal": 185,
+        "Ice": 190,
+        "Dark": 80
+      }
+    }
   },
   {
     "number": "151",
@@ -5100,6 +6936,18 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/151.jpg",
-    "location": "From Sushi Oficianado in Casseroya Lake"
+    "location": "From Sushi Oficianado in Casseroya Lake",
+    "rawEffectValues": {
+      "powers": {
+        "Title Power": 90,
+        "Teensy Power": 85,
+        "Encounter Power": 80
+      },
+      "types": {
+        "Normal": 180,
+        "Ice": 190,
+        "Dark": 185
+      }
+    }
   }
 ]

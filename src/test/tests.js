@@ -278,19 +278,170 @@ const TEST_SET_2_STAR = [
 		result: 'Teensy,Dragon,1/Raid,Poison,1/Encounter,Flying,1'
 	},
 	{ // 13
+		recipe: 'Prosciutto-1_Bitter Herba Mystica',
+		result: 'Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1'
+	},
+	{ // 14
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Bitter Herba Mystica',
+		result: 'Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1'
+	},
+	{ // 15
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-1,Prosciutto-0_Bitter Herba Mystica',
+		result: 'Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1'
+	},
+	{ // 16
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica',
+		result: 'Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2'
+	},
+	{ // 17
+		recipe: '',
+		result: ''
+	},
+	{ // 18
+		recipe: '',
+		result: ''
+	},
+	{ // 19
+		recipe: '',
+		result: ''
+	},
+	{ // 20
+		recipe: '',
+		result: ''
+	},
+	{ // 21
+		recipe: '',
+		result: ''
+	}
+];
+
+const TEST_SET_1_STAR = [
+	{ // 1
+		recipe: 'Onion-3,Onion-3,Onion-3,Onion-3,Onion-3,Onion-3_Chili Sauce,Sour Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica',
+		result: 'Sparkling,Psychic,2/Title,Water,2/Encounter,Grass,2'
+	},
+	{ // 2
+		recipe: 'Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3_Bitter Herba Mystica,Bitter Herba Mystica',
+		result: 'Sparkling,Dragon,1'
+	},
+	{ // 3
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sweet Herba Mystica',
+		result: ''
+	},
+	{ // 4
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sweet Herba Mystica,Whipped Cream,Whipped Cream,Whipped Cream',
+		result: ''
+	},
+	{ // 5
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1_Bitter Herba Mystica',
+		result: ''
+	},
+	{ // 6
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1_Bitter Herba Mystica,Spicy Herba Mystica',
+		result: 'Sparkling,Normal,2/Title,Fire,2/Humungo,Poison,1'
+	},
+	{ // 7
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Bitter Herba Mystica,Bitter Herba Mystica',
+		result: 'Sparkling,Normal,3/Title,Poison,3/Exp,Bug,3'
+	},
+	{ // 8
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sour Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica',
+		result: 'Sparkling,Normal,3/Title,Poison,3/Exp,Bug,3'
+	},
+	{ // 9
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-1_Salty Herba Mystica,Sweet Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Normal,3/Title,Poison,3/Egg,,3'
+	},
+	{ // 10
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Salty Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Flying,3/Title,Normal,3/Encounter,Fighting,3'
+	},
+	{ // 11
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Salty Herba Mystica,Sour Herba Mystica',
+		result: 'Sparkling,Flying,2/Title,Normal,2/Encounter,Fighting,2'
+	},
+	{ // 12
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Flying,1'
+	},
+	{ // 13
+		recipe: 'Prosciutto-0,Prosciutto-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Flying,3/Title,Normal,3/Encounter,Fighting,3'
+	},
+	{ // 14
+		recipe: 'Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Bitter Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Fire,3/Title,Water,3/Item,Grass,3'
+	},
+	{ // 15
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Sour Herba Mystica,Spicy Herba Mystica',
+		result: 'Sparkling,Flying,2/Title,Normal,2/Encounter,Fighting,2'
+	},
+	{ // 16
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-1_Bitter Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Flying,2/Title,Normal,2/Egg,,2'
+	},
+	{ // 17
+		recipe: 'Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Sour Herba Mystica,Spicy Herba Mystica',
+		result: 'Sparkling,Fire,2/Title,Water,2/Item,Grass,2'
+	},
+	{ // 18
+		recipe: 'Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Sour Herba Mystica',
+		result: 'Sparkling,Fire,1/Title,Water,1/Item,Grass,1'
+	},
+	{ // 19
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Salty Herba Mystica',
+		result: 'Sparkling,Normal,2/Title,Poison,2/Exp,Bug,2'
+	},
+	{ // 20
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-2_Bitter Herba Mystica,Sour Herba Mystica',
+		result: 'Sparkling,Normal,2/Title,Poison,2/Exp,Bug,2'
+	},
+	{ // 21
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-1_Spicy Herba Mystica,Spicy Herba Mystica',
+		result: 'Sparkling,Normal,1/Title,Poison,1/Exp,Bug,1'
+	},
+	{ // 22
+		recipe: 'Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Bitter Herba Mystica',
+		result: 'Sparkling,Normal,1/Title,Poison,1/Exp,Bug,1'
+	},
+	{ // 23
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Salty Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Flying,1'
+	},
+	{ // 24
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Peanut Butter,Sweet Herba Mystica',
+		result: 'Sparkling,Flying,1/Title,Steel,1/Encounter,Fire,1'
+	},
+	{ // 25
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Ketchup,Sweet Herba Mystica',
+		result: 'Sparkling,Flying,1/Title,Poison,1'
+	},
+	{ // 26
+		recipe: 'Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3,Chorizo-3_Bitter Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica,Vinegar',
+		result: 'Sparkling,Dragon,2/Title,Normal,2/Encounter,Poison,2'
+	},
+	{ // 27
+		recipe: '',
+		result: ''
+	},
+	{ // 28
+		recipe: '',
+		result: ''
+	},
+	{ // 29
 		recipe: '',
 		result: ''
 	},
 
-];
+]
 
-const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star'];
+const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star', '1 star'];
 
 // generates a sandwich from a 'save recipe' string
 const generateSandwichFromRecipe = recipe => {
 	const ingredients = getIngredientsFromRecipe(recipe);
 	if (!ingredients) { return undefined; }
-	const sums = getIngredientsSums([...ingredients.fillings, ...ingredients.condiments]);
+	const sums = getIngredientsSums(ingredients.fillings, ingredients.condiments);
 	return craftSandwich(ingredients.fillings, ingredients.condiments, sums);
 };
 
@@ -310,7 +461,8 @@ export const runTests = () => {
 		TEST_SET_NONHERBA,
 		TEST_SET_MULTIPLAYER,
 		TEST_SET_SPLIT_TYPING,
-		TEST_SET_2_STAR
+		TEST_SET_2_STAR,
+		TEST_SET_1_STAR
 	];
 
 	for (let j = 0; j < sets.length; j++) {
@@ -337,32 +489,38 @@ export const runTests = () => {
 	
 				let input = "";
 				let expected = "";
-				for (let k = 0; k < realResult.length; k++) {
+				for (let k = 0; k < Math.max(realResult.length, resultStr.length); k++) {
 					const realLine = realResult[k];
 					const myLine = resultStr[k];
 		
-					if (!myLine) {
-						result.powers = result.types = result.levels = "fail";
-						break;
+					let myPower = "1", myType = "1", myLevel = "1";
+					if (myLine) {
+						const mySplit = myLine.split(",");
+						myPower = FULL_TO_ALIAS[mySplit[0].trim()];
+						myType = mySplit[1].trim();
+						myLevel = mySplit[2].trim();
+						input += `\t${myPower}: ${myType} Lv. ${myLevel}\n`;						
 					}
+
+					let realPower = "2", realType = "2", realLevel = "2";
+					if (realLine) {
+						const realSplit = realLine.split(",");
+						realPower = realSplit[0].trim();
+						realType = realSplit[1].trim();
+						realLevel = realSplit[2].trim();
+						expected += `\t${realPower}: ${realType} Lv. ${realLevel}\n`;
+					}
+
+					if (input.length === 0) { input = "\tno effects"; }
+					if (expected.length === 0) { expected = "\tno effects"; }
 		
-					const realSplit = realLine.split(",");
-					const mySplit = myLine.split(",");
-		
-					const realPower = realSplit[0].trim();
-					const realType = realSplit[1].trim();
-					const realLevel = realSplit[2].trim();
-					expected += `\t${realPower}: ${realType} Lv. ${realLevel}\n`;
-		
-					const myPower = FULL_TO_ALIAS[mySplit[0].trim()];
-					const myType = mySplit[1].trim();
-					const myLevel = mySplit[2].trim();
-					input += `\t${myPower}: ${myType} Lv. ${myLevel}\n`;
-		
-					// console.log(realLine, myLine);
-					if (myPower.toLowerCase() !== realPower.toLowerCase()) { result.powers = "fail"; }
-					if (myType.toLowerCase() !== realType.toLowerCase()) { result.types = "fail"; }
-					if (myLevel.toLowerCase() !== realLevel.toLowerCase()) { result.levels = "fail"; }
+					if (input === expected) {
+						result.powers = result.types = result.levels = "pass";
+					} else {
+						if (myPower.toLowerCase() !== realPower.toLowerCase()) { result.powers = "fail"; }
+						if (myType.toLowerCase() !== realType.toLowerCase()) { result.types = "fail"; }
+						if (myLevel.toLowerCase() !== realLevel.toLowerCase()) { result.levels = "fail"; }						
+					}
 				}
 				if (result.powers === "fail" || result.types === "fail" || result.levels === "fail") {
 					failures.push("#" + (i + 1));
@@ -371,10 +529,17 @@ export const runTests = () => {
 
 				console.groupCollapsed("%cSandwich " + (i + 1), failSandwich ? 'color: red;' : 'color: green;');
 	
+				const color1 = result.powers === "pass" ? 'green' : 'red';
+				const color2 = result.types === "pass" ? 'green' : 'red';
+				const color3 = result.levels === "pass" ? 'green' : 'red';
+
 				console.log(recipe);
 				console.log("Generated:\n" + input);
 				console.log("Expected:\n" + expected);
-				console.log(`Powers: ${result.powers}, Types: ${result.types}, Levels: ${result.levels}`);
+				console.log(`Powers: %c${result.powers}%c, Types: %c${result.types}%c, Levels: %c${result.levels}%c`,
+					`color: ${color1};`, `color: ;`,
+					`color: ${color2};`, `color: ;`, 
+					`color: ${color3};`, `color: ;`);
 				console.groupEnd();
 			} else {
 				// console.warn("invalid recipe", recipe);

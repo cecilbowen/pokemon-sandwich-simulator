@@ -57,6 +57,7 @@ putting > 13 of same ingredient on sandwich = 1 star (failure), at least in sing
 2 star sandwiches don't add a type when only two exist, making 2 line only sandwiches possible
 # of dropped ingredients might influence star level of sandwich
 	pretty sure if you drop half+ of ingredients, it becomes a 2 star
+		maybe something more like, "if drop count > half of pieces on sandwich, 2 star"
 	must be more than 1 ingredient, though, so dropping your only rice will keep you 3 stars
 		hamburger, ketchup - drop hamburger, you get 3 star sandwich
 		basil, ketchup - drop all basil, you get 2 star sandwich

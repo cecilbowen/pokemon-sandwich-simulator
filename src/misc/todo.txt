@@ -3,11 +3,21 @@ the most obvious next step would be to let users enter criteria such as:
 	achieve the desired sandwich.  I could do this soon, or who knows, someone else could use the data
 	from this tool and do it before me
 	
-distinguish between a custom 'from scratch' sandwich and a modified preset recipe sandwich
-	the levels differ between these two, is why
-	
 x add a text-based loading system, so other users can give each other text strings and load up their custom recipes
 
 x handle loading a multiplayer recipe when in single player mode
 
 x remove alias system and just update jsons to have the preferred aliases
+
+add option for labels on ingredients (off by default)
+
+add a tutorial guide/video link at bottom
+
+probably disable being able to modify pieces in simple mode, since it seems to be causing users confusion
+
+fine-tune 2-star type and level calculation (to pass all tests)
+
+fine-tune dual-split type and level calculation (to pass all tests)
+
+narrow down what determines if 2 star, since it looks like dropping >= half total pieces is not exactly it
+	might be related to amount of pieces on dish (top of table)

@@ -48,7 +48,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/apple.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 32,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Avocado",
@@ -83,7 +85,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/avocado.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 13,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Bacon",
@@ -126,7 +130,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/bacon.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 14,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Banana",
@@ -173,7 +179,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/banana.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 30,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Basil",
@@ -244,7 +252,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/basil.png",
-    "pieces": 4
+    "pieces": 4,
+    "id": 37,
+    "maxPiecesOnDish": 4
   },
   {
     "name": "Cheese",
@@ -351,7 +361,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/cheese.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 29,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Cherry Tomatoes",
@@ -390,7 +402,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/cherrytomatoes.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 5,
+    "maxPiecesOnDish": 9
   },
   {
     "name": "Chorizo",
@@ -449,7 +463,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/chorizo.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 17,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Cucumber",
@@ -484,7 +500,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/cucumber.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 6,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Egg",
@@ -543,7 +561,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/egg.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 23,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Fried Fillet",
@@ -614,7 +634,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/friedfillet.png",
-    "pieces": 1
+    "pieces": 1,
+    "id": 22,
+    "maxPiecesOnDish": 1
   },
   {
     "name": "Green Bell Pepper",
@@ -653,7 +675,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/greenbellpepper.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 10,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Ham",
@@ -688,7 +712,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/ham.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 15,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Hamburger",
@@ -727,7 +753,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/hamburger.png",
-    "pieces": 1
+    "pieces": 1,
+    "id": 19,
+    "maxPiecesOnDish": 1
   },
   {
     "name": "Herbed Sausage",
@@ -786,7 +814,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/herbedsausage.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 18,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Jalapeno",
@@ -833,7 +863,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/jalapeno.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 35,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Kiwi",
@@ -884,7 +916,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/kiwi.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 33,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Klawf Stick",
@@ -919,7 +953,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/klawfstick.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 20,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Lettuce",
@@ -954,7 +990,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/lettuce.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 3,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Noodles",
@@ -1005,7 +1043,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/noodles.png",
-    "pieces": 1
+    "pieces": 1,
+    "id": 27,
+    "maxPiecesOnDish": 1
   },
   {
     "name": "Onion",
@@ -1044,7 +1084,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/onion.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 8,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Pickle",
@@ -1083,7 +1125,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/pickle.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 7,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Pineapple",
@@ -1134,7 +1178,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/pineapple.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 34,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Potato Salad",
@@ -1197,7 +1243,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/potatosalad.png",
-    "pieces": 1
+    "pieces": 1,
+    "id": 28,
+    "maxPiecesOnDish": 1
   },
   {
     "name": "Potato Tortilla",
@@ -1276,7 +1324,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/potatotortilla.png",
-    "pieces": 1
+    "pieces": 1,
+    "id": 24,
+    "maxPiecesOnDish": 1
   },
   {
     "name": "Prosciutto",
@@ -1315,7 +1365,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/prosciutto.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 16,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Red Bell Pepper",
@@ -1354,7 +1406,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/redbellpepper.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 11,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Red Onion",
@@ -1389,7 +1443,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/redonion.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 9,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Rice",
@@ -1444,7 +1500,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/rice.png",
-    "pieces": 1
+    "pieces": 1,
+    "id": 26,
+    "maxPiecesOnDish": 1
   },
   {
     "name": "Smoked Fillet",
@@ -1487,7 +1545,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/smokedfillet.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 21,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Strawberry",
@@ -1534,7 +1594,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/strawberry.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 31,
+    "maxPiecesOnDish": 6
   },
   {
     "name": "Tofu",
@@ -1565,7 +1627,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/tofu.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 25,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Tomato",
@@ -1604,7 +1668,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/tomato.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 4,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Watercress",
@@ -1679,7 +1745,9 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/watercress.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 36,
+    "maxPiecesOnDish": 3
   },
   {
     "name": "Yellow Bell Pepper",
@@ -1718,6 +1786,8 @@
       }
     ],
     "imageUrl": "https://www.serebii.net/itemdex/sprites/yellowbellpepper.png",
-    "pieces": 3
+    "pieces": 3,
+    "id": 12,
+    "maxPiecesOnDish": 6
   }
 ]

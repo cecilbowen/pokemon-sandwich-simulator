@@ -27,6 +27,13 @@
   font-style: italic;
 }
 
+.no-effects {
+  font-family: monospace;
+  font-size: 14px;
+  padding: 4px;
+  font-style: italic;
+}
+
 .expand-help:hover {
   opacity: 1;
 }
@@ -192,6 +199,10 @@
   font-size: 14px;
   margin: 2px;
   cursor: pointer;
+}
+
+.bubble-type {
+  border-radius: 5px;
 }
 
 .chain-a {

@@ -35,7 +35,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/butter.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/butter.png",
+    "cid": 4
   },
   {
     "name": "Chili Sauce",
@@ -81,7 +82,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/chilisauce.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/chilisauce.png",
+    "cid": 6
   },
   {
     "name": "Cream Cheese",
@@ -131,7 +133,8 @@
         "amount": 4
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/creamcheese.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/creamcheese.png",
+    "cid": 11
   },
   {
     "name": "Curry Powder",
@@ -197,7 +200,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/currypowder.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/currypowder.png",
+    "cid": 17
   },
   {
     "name": "Horseradish",
@@ -251,7 +255,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/horseradish.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/horseradish.png",
+    "cid": 16
   },
   {
     "name": "Jam",
@@ -301,7 +306,8 @@
         "amount": 4
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/jam.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/jam.png",
+    "cid": 12
   },
   {
     "name": "Ketchup",
@@ -343,7 +349,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/ketchup.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/ketchup.png",
+    "cid": 2
   },
   {
     "name": "Marmalade",
@@ -397,7 +404,8 @@
         "amount": 4
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/marmalade.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/marmalade.png",
+    "cid": 13
   },
   {
     "name": "Mayonnaise",
@@ -435,7 +443,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/mayonnaise.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/mayonnaise.png",
+    "cid": 1
   },
   {
     "name": "Mustard",
@@ -485,7 +494,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/mustard.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/mustard.png",
+    "cid": 3
   },
   {
     "name": "Olive Oil",
@@ -531,7 +541,8 @@
         "amount": 4
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/oliveoil.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/oliveoil.png",
+    "cid": 14
   },
   {
     "name": "Peanut Butter",
@@ -569,7 +580,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/peanutbutter.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/peanutbutter.png",
+    "cid": 5
   },
   {
     "name": "Pepper",
@@ -611,7 +623,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/pepper.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/pepper.png",
+    "cid": 8
   },
   {
     "name": "Salt",
@@ -649,7 +662,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/salt.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/salt.png",
+    "cid": 7
   },
   {
     "name": "Vinegar",
@@ -699,7 +713,8 @@
         "amount": 4
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/vinegar.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/vinegar.png",
+    "cid": 15
   },
   {
     "name": "Wasabi",
@@ -757,7 +772,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/wasabi.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/wasabi.png",
+    "cid": 18
   },
   {
     "name": "Whipped Cream",
@@ -799,7 +815,8 @@
         "amount": 4
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/whippedcream.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/whippedcream.png",
+    "cid": 10
   },
   {
     "name": "Yogurt",
@@ -837,7 +854,8 @@
         "amount": 2
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/yogurt.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/yogurt.png",
+    "cid": 9
   },
   {
     "name": "Bitter Herba Mystica",
@@ -931,7 +949,8 @@
         "amount": 250
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/bitterherbamystica.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/bitterherbamystica.png",
+    "cid": 22
   },
   {
     "name": "Spicy Herba Mystica",
@@ -1025,7 +1044,8 @@
         "amount": 250
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/spicyherbamystica.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/spicyherbamystica.png",
+    "cid": 23
   },
   {
     "name": "Salty Herba Mystica",
@@ -1119,7 +1139,8 @@
         "amount": 250
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/saltyherbamystica.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/saltyherbamystica.png",
+    "cid": 20
   },
   {
     "name": "Sour Herba Mystica",
@@ -1213,7 +1234,8 @@
         "amount": 250
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/sourherbamystica.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/sourherbamystica.png",
+    "cid": 21
   },
   {
     "name": "Sweet Herba Mystica",
@@ -1307,6 +1329,7 @@
         "amount": 250
       }
     ],
-    "imageUrl": "https://www.serebii.net/itemdex/sprites/sweetherbamystica.png"
+    "imageUrl": "https://www.serebii.net/itemdex/sprites/sweetherbamystica.png",
+    "cid": 19
   }
 ]

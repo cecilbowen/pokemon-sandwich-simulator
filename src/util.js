@@ -238,13 +238,18 @@ const getPiecesDropped = obj => {
   return basePieces - obj.pieces;
 };
 
-export const getIngredientsSums = ingredients => {
+export const getIngredientsSums = (fillings, condiments) => {
+  const ingredients = [
+    ...fillings.sort((a, b) => a.name.localeCompare(b.name)),
+    ...condiments.sort((a, b) => a.name.localeCompare(b.name))
+  ];
+
   const sums = {
     tastes: [],
     powers: [],
     types: [],
     dropped: 0,
-    overflow: false
+    overflow: 0
   };
 
   const tempFillingPieces = {};
@@ -311,7 +316,7 @@ export const getIngredientsSums = ingredients => {
 
   for (const pieces of Object.values(tempFillingPieces)) {
     if (pieces > 12) {
-      sums.overflow = true;
+      sums.overflow = Math.max(sums.overflow - 12, pieces - 12);
     }
   }
 
@@ -362,39 +367,112 @@ export const getIngredientsSums = ingredients => {
 };
 
 // returns array of levels
-const calculateLevels = effects => {
+const calculateLevels = (effects, sandwich) => {
   const types = effects;
   const defaultType = { type: TYPES[0], amount: 0 };
   const firstType = types[0] || defaultType;
   const secondType = types[1] || defaultType;
   const thirdType = types[2] || defaultType;
+  const stars = sandwich.stars;
 
   let levels = [1, 1, 1];
-  if (firstType.amount < 180) {
-    levels = [1, 1, 1];
-  } else if (firstType.amount >= 180 && firstType.amount <= 280) {
-    if (secondType.amount >= 180 && thirdType.amount >= 180) {
-      levels = [2, 2, 1];
-    } else {
-      levels = [2, 1, 1];
-    }
-  } else if (firstType.amount > 280 && firstType.amount < 380) {
-    if (thirdType.amount < 180 ) {
-      levels = [2, 2, 1];
-    } else {
-      levels = [2, 2, 2];
-    }
-  } else if (firstType.amount >= 380 && firstType.amount < 460) {
-    if (secondType.amount >= 380 && thirdType.amount >= 380) {
+
+  if (stars > 1) {
+    // regular
+    if (firstType.amount < 180) {
+      levels = [1, 1, 1];
+    } else if (firstType.amount >= 180 && firstType.amount <= 280) {
+      if (secondType.amount >= 180 && thirdType.amount >= 180) {
+        levels = [2, 2, 1];
+      } else {
+        levels = [2, 1, 1];
+      }
+    } else if (firstType.amount > 280 && firstType.amount < 380) {
+      if (thirdType.amount < 180 ) {
+        levels = [2, 2, 1];
+      } else {
+        levels = [2, 2, 2];
+      }
+    } else if (firstType.amount >= 380 && firstType.amount < 460) {
+      if (secondType.amount >= 380 && thirdType.amount >= 380) {
+        levels = [3, 3, 3];
+      } else {
+        levels = [3, 3, 2];
+      }
+    } else if (firstType.amount >= 460) {
       levels = [3, 3, 3];
-    } else {
-      levels = [3, 3, 2];
     }
-  } else if (firstType.amount >= 460) {
-    levels = [3, 3, 3];
+  } else {
+    // 1 star
+    const firstAmount = firstType.amount;
+    const secondAmount = secondType.amount;
+    const thirdAmount = thirdType.amount;
+    if (firstType.amount <= 680) {
+      levels = [1, 1, 1];
+    } else if (firstAmount > 700 && firstAmount < 780) {
+      if (secondAmount > 700 && thirdAmount > 700) {
+        levels = [2, 2, 2];
+      } else {
+        levels = [2, 2, 1];
+      }
+    } else if (firstAmount >= 780 && firstAmount <= 880) {
+      if (thirdAmount < 700 ) {
+        levels = [2, 2, 1];
+      } else {
+        levels = [2, 2, 2];
+      }
+    } else if (firstAmount > 880 && firstAmount < 960) {
+      if (secondAmount > 880 && thirdAmount > 880) {
+        levels = [3, 3, 3];
+      } else {
+        levels = [3, 3, 2];
+      }
+    } else if (firstAmount >= 960) {
+      levels = [3, 3, 3];
+    }
   }
 
   return levels;
+};
+
+export const checkPresetSandwich = (sums, fillings, condiments) => {
+  const ingredients = [
+    ...fillings.sort((a, b) => a.name.localeCompare(b.name)),
+    ...condiments.sort((a, b) => a.name.localeCompare(b.name))
+  ];
+
+  // check if sums make it a preset sandwich
+  let foundSandwich;
+  for (const sandwich of SANDWICHES) {
+    const sandwichIngredients = [...sandwich.fillings, ...sandwich.condiments];
+    if (areEqual(ingredients.map(x => x.name), sandwichIngredients) &&
+      areEqual(fillings.map(x => x.pieces), getFillings(sandwich.fillings).map(x => x.pieces))) {
+      foundSandwich = sandwich;
+      break;
+    }
+  }
+
+  // if it is a preset sandwich, throw out all the sums and just copy the preset sandwich
+  if (foundSandwich) {
+    foundSandwich.pass = true;
+    const tempPowers = sums.powers.slice(0).sort((a, b) => {
+      const aType = ALIAS_TO_FULL[a.type];
+      const bType = ALIAS_TO_FULL[b.type];
+      return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
+    }).filter(x => x.type !== "Sparkling");
+    for (let i = 0; i < 3; i++) {
+      const effect = foundSandwich.effects[i];
+      const resultEffect = tempPowers[i];
+      if (effect && resultEffect) {
+        if (effect.name.indexOf(resultEffect.type) === -1) {
+          foundSandwich.pass = false;
+          break;
+        }
+      }
+    }
+  }
+
+  return foundSandwich;
 };
 
 export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
@@ -466,6 +544,7 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
     }).filter((x, i) => i < 3),
     imageUrl: SANDWICHES[0].imageUrl,
     piecesDropped,
+    piecesOverflow: sums.overflow,
     totalPieces,
     stars
   };
@@ -483,20 +562,26 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
     let newTypes = [];
     if (mainTypeAmount <= 4 && generatedSandwich.totalPieces <= 2 && stars < 3) {
       newTypes = [firstType, secondType, thirdType]; // 2-star triple type
-    } else if (mainTypeAmount >= 100 && oneTwoDiff >= 100) {
+    } else if (stars > 2 && mainTypeAmount >= 100 && oneTwoDiff >= 100) {
       newTypes = [firstType, firstType, thirdType]; // todo: needs tweaking
-    } else if (mainTypeAmount >= 72 && oneTwoDiff >= 72 && oneTwoSum <= 92 /*typeSum < 130*/) {
+    } else if (stars > 2 && mainTypeAmount >= 72 && oneTwoDiff >= 72 && oneTwoSum <= 92 /*typeSum < 130*/) {
       newTypes = [firstType, thirdType, firstType]; // todo: needs tweaking
-    } else if (mainTypeAmount > 480) { // mono type
+    } else if (stars > 2 && mainTypeAmount > 480) { // mono type
       newTypes = [firstType, firstType, firstType];
-    } else if (mainTypeAmount > 280) { // dual type
+    } else if (stars > 2 && mainTypeAmount > 280) { // dual type
       newTypes = [firstType, firstType, thirdType];
     } else { // triple type
       newTypes = [firstType, thirdType, secondType];
     }
 
-    if (!thirdType && stars < 3) {
+    if ((!thirdType && stars < 3) || stars === 1) {
       newTypes = [firstType, secondType, thirdType];
+    }
+
+    if (stars === 1) {
+      newTypes = newTypes.map(x => {
+        return { type: x.type, amount: x.amount - 500 }
+      }).map(x => x.amount > 0 ? x : undefined);
     }
 
     // can only have an effect if we have a type
@@ -513,7 +598,7 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
     // handle levels
     // levels continue to remain not 100% consistent
     // so trial-and-error is still going on here
-    const levels = calculateLevels(formattedTypes);
+    const levels = calculateLevels(formattedTypes, generatedSandwich);
     for (let i = 0; i < generatedSandwich.effects.length; i++) {
       const effect = generatedSandwich.effects[i];
       effect.level = levels[i];
@@ -522,6 +607,7 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
     // copy over levels if it's a preset sandwich recipe
     for (let i = 0; i < generatedSandwich.effects.length; i++) {
       const presetEffect = presetSandwich.effects[i];
+      if (!presetEffect) { continue; }
       generatedSandwich.effects[i].level = presetEffect.level;
     }
 

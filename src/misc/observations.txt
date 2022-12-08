@@ -56,6 +56,11 @@ title 1000, humungo 139, encounter 60
 fighting 384, water 382, ground 324
 title fighting lv3, humungo fighting lv3, encounter ground lv2
 
+==
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Sweet Herba Mystica
+title flying lv2, egg lv2, encounter fighting lv2
+
 
 non-herba
 ==============================
@@ -171,10 +176,19 @@ encounter flying 1, raid ground lv1, exp poison lv1
 Watercress-2_Ketchup
 teensy flying lv1, raid normal lv1, exp poison lv1
 
-==
-
 Egg-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Wasabi,Wasabi,Yogurt,Yogurt
 raid ice lv2, humungo electric lv1, encounter rock lv1
+
+==
+
+Basil-4,Basil-4,Basil-1_Salt
+exp electric lv1, raid fire lv1, egg (psychic) lv1
+
+Basil-4,Basil-4,Basil-1,Herbed Sausage-3_Salt
+exp psychic lv1, raid dark lv1, egg (water) lv1
+
+Basil-4,Basil-4,Basil-1,Herbed Sausage-2_Salt
+exp psychic lv1, raid dark lv1, egg (water) lv1
 
 
 multiplayer
@@ -270,6 +284,11 @@ encounter flying lv1, catch ice lv1, exp flying lv1
 Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3_Ketchup
 item poison lv1, encounter normal lv1, catch poison lv1
 
+==
+
+Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0_Bitter Herba Mystica
+title flying lv2, exp flying lv2, encounter fighting lv2
+
 
 two-star recipes
 ========================
@@ -312,8 +331,122 @@ teensy dragon lv1, raid poison lv1, encounter flying lv1
 Lettuce-0_Butter
 egg (bug) lv1, raid ghost lv1
 
+==
+
+Prosciutto-1_Bitter Herba Mystica
+title flying lv2, exp fighting lv2, encounter normal lv1
+
+Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Bitter Herba Mystica
+title flying lv2, exp fighting lv2, encounter normal lv1
+
+Prosciutto-3,Prosciutto-3,Prosciutto-1,Prosciutto-0_Bitter Herba Mystica
+title flying lv2, exp fighting lv2, encounter normal lv1 (this is a 2-star huh.. I wonder why)
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica
+title flying lv2, humungo flying lv2, encounter fighting lv2
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-1,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica
+title flying lv2, humungo flying lv2, encounter fighting lv2
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica
+title flying lv2, humungo flying lv2, encounter fighting lv2
+
+Basil-4,Basil-3,Basil-0_Salt
+exp electric lv1, raid fire lv1, egg (psychic) lv1
+
+Basil-4,Basil-4,Basil-0_Salt
+exp electric lv1, raid fire lv1, egg (psychic) lv1
 
 
+
+
+one star recipes
+==================
+Onion-3,Onion-3,Onion-3,Onion-3,Onion-3,Onion-3_Chili Sauce,Sour Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica
+sparkling psychic lv2, title water lv2, encounter grass lv2
+
+Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3_Bitter Herba Mystica,Bitter Herba Mystica
+sparkling dragon lv1
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sweet Herba Mystica
+no effects
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sweet Herba Mystica,Whipped Cream,Whipped Cream,Whipped Cream
+no effects
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1_Bitter Herba Mystica
+no effects
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1_Bitter Herba Mystica,Spicy Herba Mystica
+sparkling normal lv2, title fire lv2, humungo poison lv1
+
+-
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Bitter Herba Mystica,Bitter Herba Mystica
+sparkling normal lv3, title poison lv3, exp bug lv3
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sour Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica
+sparkling normal lv3, title poison lv3, exp bug lv3
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-1_Salty Herba Mystica,Sweet Herba Mystica,Sweet Herba Mystica
+sparkling normal lv3, title poison lv3, egg (bug) lv3
+-
+
+-
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Salty Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica
+sparkling flying lv3, title normal lv3, encounter fighting lv3
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Salty Herba Mystica,Sour Herba Mystica
+sparkling flying lv2, title normal lv2, encounter fighting lv2
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Sweet Herba Mystica
+sparkling flying lv1
+-
+
+-
+Prosciutto-0,Prosciutto-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica
+sparkling flying lv3, title normal lv3, encounter fighting lv3
+
+Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Bitter Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica
+sparkling fire lv3, title water lv3, item grass lv3
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Sour Herba Mystica,Spicy Herba Mystica
+sparkling flying lv2, title normal lv2, encounter fighting lv2
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-1_Bitter Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica
+sparkling flying lv2, title normal lv2, egg (fighting) lv2
+
+Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Sour Herba Mystica,Spicy Herba Mystica
+sparkling fire lv2, title water lv2, item grass lv2
+-
+
+Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Sour Herba Mystica
+sparkling fire lv1, title water lv1, item grass lv1
+
+-
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Salty Herba Mystica
+sparkling normal lv2, title poison lv2, exp bug lv2
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-2_Bitter Herba Mystica,Sour Herba Mystica
+sparkling normal lv2, title poison lv2, exp bug lv2
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-1_Spicy Herba Mystica,Spicy Herba Mystica
+sparkling normal lv1, title poison lv1, exp bug lv1
+
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Bitter Herba Mystica
+sparkling normal lv1, title poison lv1, exp bug lv1
+-
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Salty Herba Mystica,Sweet Herba Mystica
+sparkling flying lv1
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Peanut Butter,Sweet Herba Mystica
+sparkling flying lv1, title steel lv1, encounter fire lv1
+
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Ketchup,Sweet Herba Mystica
+sparkling flying lv1, title poison lv1
+
+Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3,Chorizo-3_Bitter Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica,Vinegar
+sparkling dragon lv2, title normal lv2, encounter poison lv2
 
 
 

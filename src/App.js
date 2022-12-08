@@ -3,8 +3,8 @@ import FILLINGS from './data/fillings.json';
 import CONDIMENTS from './data/condiments.json';
 import POWERS from './data/powers.json';
 import { useEffect, useState } from 'react';
-import { areEqual, getCondiments, getFillings,
-  ALIAS_TO_FULL, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich,
+import { getCondiments, getFillings,
+  ALIAS_TO_FULL, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
   copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
 import { runTests } from './test/tests';
 import Card from './components/Card';
@@ -275,7 +275,7 @@ function App() {
 
     if (sandwich.number === "???") {
       display = '⭐'.repeat(sandwich.stars);
-      if (sandwich.stars === 1) {
+      if (sandwich.effects.length === 0) {
         display += "(failure)"
       }
     }
@@ -288,7 +288,8 @@ function App() {
             if(window.event.ctrlKey) { runTests(); }
           }}
             style={{ backgroundColor: "tan" }}>{display}</div>
-          <div>{sandwich.effects.map((x, i) => renderSandwichBubble(x, i))}</div>          
+          {sandwich.effects.length > 0 && <div>{sandwich.effects.map((x, i) => renderSandwichBubble(x, i))}</div>}
+          {sandwich.effects.length === 0 && <div className='no-effects'>This sandwich has no effects.</div>}
         </div>
       </div>
     );
@@ -312,42 +313,12 @@ function App() {
       ...activeFillings.sort((a, b) => a.name.localeCompare(b.name)),
       ...activeCondiments.sort((a, b) => a.name.localeCompare(b.name))
     ];
-    const sums = getIngredientsSums(ingredients);
-
-    // check if sums make it a preset sandwich
-    let foundSandwich;
-    for (const sandwich of SANDWICHES) {
-      const sandwichIngredients = [...sandwich.fillings, ...sandwich.condiments];
-      if (areEqual(ingredients.map(x => x.name), sandwichIngredients)
-        && areEqual(activeFillings.map(x => x.pieces), getFillings(sandwich.fillings).map(x => x.pieces))) {
-        foundSandwich = sandwich;
-        activeSandwich = sandwich.number;
-        break;
-      }
-    }
-
-    // if it is a preset sandwich, throw out all the sums and just copy the preset sandwich
-    let pass = true;
-    if (foundSandwich) {
-      const tempPowers = sums.powers.slice(0).sort((a, b) => {
-        const aType = ALIAS_TO_FULL[a.type];
-        const bType = ALIAS_TO_FULL[b.type];
-        return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
-      }).filter(x => x.type !== "Sparkling");
-      for (let i = 0; i < 3; i++) {
-        const effect = foundSandwich.effects[i];
-        const resultEffect = tempPowers[i];
-        if (effect && resultEffect) {
-          if (effect.name.indexOf(resultEffect.type) === -1) {
-            pass = false;
-            break;
-          }
-        }
-      }
-    }
-
+    const sums = getIngredientsSums(activeFillings, activeCondiments);
     activeSums = sums;
+
+    const foundSandwich = checkPresetSandwich(sums, activeFillings, activeCondiments);
     const generatedSandwich = craftSandwich(activeFillings, activeCondiments, sums, foundSandwich);
+    activeSandwich = foundSandwich?.number;
 
     // Sure, we could show results with only condiments, but we can't add only condiments
     // to a sandwich in-game.  We have to add at least one filling, which we would then
@@ -357,7 +328,7 @@ function App() {
     const showResults = activeFillings.length > 0 && activeCondiments.length > 0;
 
     return (
-      <div style={{ backgroundColor: pass ? "" : "red" }}>
+      <div>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
           {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
             simpleMode={simpleMode}
