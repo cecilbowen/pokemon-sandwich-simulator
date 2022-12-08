@@ -2,6 +2,7 @@ import SANDWICHES from './data/sandwiches.json';
 import FILLINGS from './data/fillings.json';
 import CONDIMENTS from './data/condiments.json';
 import POWERS from './data/powers.json';
+import TYPES from './data/types.json'
 import { useEffect, useState } from 'react';
 import { areEqual, getCondiments, getFillings,
   ALIAS_TO_FULL, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich,
@@ -434,28 +435,54 @@ function App() {
     if (!showSearchPanel) { return null; }
 
     return (
-      <div className='search-panel'>
-        <div className='search-bars-div'>
-          <input type="text" id="nameSearch" placeholder='Search names' className='search-bar'
-            onChange={ev => search(ev, "name")} style={{ width: "250px" }}
-          />
-          <input type="text" id="effectSearch" placeholder='Search effects (egg, raid, etc)' className='search-bar'
-            onChange={ev => search(ev, "effect")} style={{ width: "250px" }}
-          />
-          <input type="text" id="typeSearch" placeholder='Search types (normal, dark, etc)' className='search-bar'
-            onChange={ev => search(ev, "type")} style={{ width: "250px" }}
-          />
-          <input type="text" id="ingredientSearch" placeholder='Search ingredients (ham, bacon, etc)' className='search-bar'
-            onChange={ev => search(ev, "ingredient")} style={{ width: "250px" }}
-          />
-        </div>
-        <div className='search-results-div'>
-          <div className="bubble-row" style={{ overflow: "auto", flexWrap: "nowrap" }}>
-            {results.map((x, i) => renderSearchBubble(x, i))}
-          </div>
-        </div>
-      </div>
-    );
+			<div className="search-panel">
+				<div className="search-bars-div">
+					<input
+						type="text"
+						id="nameSearch"
+						placeholder="Search names"
+						className="search-bar"
+						onChange={(ev) => search(ev, "name")}
+						style={{ width: "250px" }}
+					/>
+					<label for="Effects">Choose an effect:</label>
+					<select
+						name="Effects"
+						id="Effects"
+						onChange={(ev) => search(ev, "effect")}
+					>
+						<option value=""></option>
+            {Object.keys(POWERS).map((key) => {
+							return <option value={POWERS[key]}>{POWERS[key]}</option>;
+						})}
+					</select>
+
+					<label for="Types">Search for types:</label>
+					<select name="Types" id="Types" onChange={(ev) => search(ev, "type")}>
+						<option value=""></option>
+						{Object.keys(TYPES).map((key) => {
+							return <option value={TYPES[key]}>{TYPES[key]}</option>;
+						})}
+					</select>
+					<input
+						type="text"
+						id="ingredientSearch"
+						placeholder="Search ingredients (ham, bacon, etc)"
+						className="search-bar"
+						onChange={(ev) => search(ev, "ingredient")}
+						style={{ width: "250px" }}
+					/>
+				</div>
+				<div className="search-results-div">
+					<div
+						className="bubble-row"
+						style={{ overflow: "auto", flexWrap: "nowrap" }}
+					>
+						{results.map((x, i) => renderSearchBubble(x, i))}
+					</div>
+				</div>
+			</div>
+		);
   };
 
   const saveRecipe = () => {
