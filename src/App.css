@@ -129,8 +129,8 @@
   margin-top: 10px;
 }
 
-.complex-search-panel {
-  margin-bottom: 10px;
+.complex-search-panel > * {
+  margin-bottom:6px;
 }
 
 .settings-bar {
@@ -204,7 +204,6 @@
   margin: 2px;
   cursor: pointer;
 }
-
 
 .bubble-min-width {
   min-width: 80px;

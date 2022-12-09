@@ -1,8 +1,8 @@
 import SANDWICHES from './data/sandwiches.json';
 import FILLINGS from './data/fillings.json';
 import CONDIMENTS from './data/condiments.json';
-import POWERS from './data/powers.json';
 import TYPES from './data/types.json';
+import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
 import { getCondiments, getFillings,
   ALIAS_TO_FULL, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
@@ -434,32 +434,42 @@ function App() {
   const renderComplexSearch = () => {
     return (
       <div className="complex-search-panel">
-        <div>
-          <h5 className="search-heading">Powers:</h5>
-          <div className="bubble-row">
-            {Object.keys(ALIAS_TO_FULL).map((power) => (
-              <Bubble
-                label={power}
-                key={power}
-                onClick={() => toggleActiveKey(power)}
-                selected={activeKey && Object.values(activeKey).indexOf(power) !== -1}
-              />
-            ))}
-          </div>
+        <div className="bubble-row">
+          {FLAVORS.map((flavor) => (
+            <Bubble
+              label={flavor}
+              key={flavor}
+              onClick={() => toggleActiveKey(flavor)}
+              selected={
+                activeKey && Object.values(activeKey).indexOf(flavor) !== -1
+              }
+            />
+          ))}
         </div>
-        <div>
-          <h5 className="search-heading">Types:</h5>
-          <div className="bubble-row">
-            {TYPES.map((type) => (
-              <Bubble
-                label={type}
-                key={type}
-                isType
-                onClick={() => toggleActiveKey(type)}
-                selected={activeKey && Object.values(activeKey).indexOf(type) !== -1}
-              />
-            ))}
-          </div>
+        <div className="bubble-row">
+          {Object.keys(ALIAS_TO_FULL).map((power) => (
+            <Bubble
+              label={power}
+              key={power}
+              onClick={() => toggleActiveKey(power)}
+              selected={
+                activeKey && Object.values(activeKey).indexOf(power) !== -1
+              }
+            />
+          ))}
+        </div>
+        <div className="bubble-row">
+          {TYPES.map((type) => (
+            <Bubble
+              label={type}
+              key={type}
+              isType
+              onClick={() => toggleActiveKey(type)}
+              selected={
+                activeKey && Object.values(activeKey).indexOf(type) !== -1
+              }
+            />
+          ))}
         </div>
       </div>
     );
