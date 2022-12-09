@@ -129,6 +129,10 @@
   margin-top: 10px;
 }
 
+.complex-search-panel > * {
+  margin-bottom:6px;
+}
+
 .settings-bar {
   margin: 10px;
 }
@@ -192,13 +196,18 @@
   display: flex;
   user-select: none;
   border-radius: 25px;
-  padding: 4px;
+  padding: 4px 8px;
   width: fit-content;
   height: fit-content;
   font-family: monospace;
   font-size: 14px;
   margin: 2px;
   cursor: pointer;
+}
+
+.bubble-min-width {
+  min-width: 80px;
+  justify-content: center;
 }
 
 .bubble-type {
