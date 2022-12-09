@@ -1,9 +1,14 @@
 import React from "react";
-import { COLORS } from "../util";
+import { COLORS, shadeColor } from "../util";
 
-const Bubble = ({ label, isType, onClick, selected }) => {
+const Bubble = ({ label, isFlavor, isType, onClick, selected }) => {
   const backgroundColor = COLORS[label];
+  let backgroundImage = "";
   let borderColor = selected ? "black" : backgroundColor;
+
+  if (isFlavor) {
+    backgroundImage = `-webkit-linear-gradient(100deg, ${shadeColor(backgroundColor)} 30%, ${backgroundColor} 50%)`;
+  }
 
   return (
     <div
@@ -11,7 +16,7 @@ const Bubble = ({ label, isType, onClick, selected }) => {
         selected ? "key-selected" : "fake-border"
       }`}
       onClick={onClick}
-      style={{ backgroundColor, borderColor }}
+      style={{ backgroundColor, borderColor, backgroundImage }}
     >
       {label}
     </div>

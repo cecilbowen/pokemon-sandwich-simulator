@@ -122,15 +122,6 @@ function App() {
     }
   }, [results]);
 
-  useEffect(() => {
-    // handle removing active key if no ingredients with it
-    // eg. user clicks on bitter, but then removes the only bitter ingredient
-    if (!hasRelevance(activeSums, activeKey)) {
-      setActiveKey({});
-    }
-
-  }, [activeFillings, activeCondiments]);
-
   const pulse = () => {
     setHeartbeat(heartbeat + 1);
   };
@@ -370,8 +361,6 @@ function App() {
       <div className="bubble" key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
         const condiments = getCondiments(sandwich.condiments);
         const fillings = getFillings(sandwich.fillings);
-        setActiveKey({});
-
         setActiveCondiments(condiments);
         setActiveFillings(fillings);
       }} style={{ backgroundColor: highlight ? "yellow" : "#80808030",
@@ -434,11 +423,12 @@ function App() {
   const renderComplexSearch = () => {
     return (
       <div className="complex-search-panel">
-        <div className="bubble-row">
+        <div className="bubble-row complex-row">
           {FLAVORS.map((flavor) => (
             <Bubble
               label={flavor}
               key={flavor}
+              isFlavor
               onClick={() => toggleActiveKey(flavor)}
               selected={
                 activeKey && Object.values(activeKey).indexOf(flavor) !== -1
@@ -446,7 +436,7 @@ function App() {
             />
           ))}
         </div>
-        <div className="bubble-row">
+        <div className="bubble-row complex-row">
           {Object.keys(ALIAS_TO_FULL).map((power) => (
             <Bubble
               label={power}
@@ -458,7 +448,7 @@ function App() {
             />
           ))}
         </div>
-        <div className="bubble-row">
+        <div className="bubble-row complex-row">
           {TYPES.map((type) => (
             <Bubble
               label={type}

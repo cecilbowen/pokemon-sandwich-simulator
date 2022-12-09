@@ -1,6 +1,6 @@
 // import { useEffect, useState } from 'react';
 import { calculatePowerAmount } from '../util';
-import { ALIAS_TO_FULL, COLORS, mode, copyTextToClipboard, isFilling, isType } from '../util';
+import { ALIAS_TO_FULL, COLORS, mode, copyTextToClipboard, isFilling, isFlavor, isType, shadeColor } from '../util';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
@@ -40,6 +40,7 @@ const Card = props => {
         let key = (kv.type || kv.flavor);
         const value = isSum ? kv.amount : calculatePowerAmount(kv.amount, ingredient, kv);
         const backgroundColor = COLORS[key];
+        let backgroundImage = "";
         let borderColor = backgroundColor;
         let className = "bubble fake-border";
 
@@ -52,7 +53,11 @@ const Card = props => {
             className += " bubble-type";
         }
 
-        return <div className={className} style={{ backgroundColor, borderColor }} key={id}
+        if (isFlavor(key)) {
+            backgroundImage = `-webkit-linear-gradient(100deg, ${shadeColor(backgroundColor)} 30%, ${backgroundColor} 50%)`;
+        }
+
+        return <div className={className} style={{ backgroundColor, borderColor, backgroundImage }} key={id}
             onClick={() => onSelectBubble(key)}>
             <div>{key}:</div>
             <div style={{ marginLeft: "10px" }}>{kv.modded ? `${value} (${value - 100} + 100)` : value}</div>

@@ -298,6 +298,8 @@ exp steel lv1, encounter ghost lv1, catch steel lv1
 Cheese-3,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter
 encounter steel lv1, catch ghost lv1, exp steel lv1
 
+Ham-3,Ham-3,Ham-3,Ham-3_Mustard
+encounter ground lv1, catch normal lv1, exp ground lv1
 
 two-star recipes
 ========================
@@ -380,7 +382,7 @@ Avocado-0,Prosciutto-0_Ketchup,Sour Herba Mystica,Sweet Herba Mystica
 sparkling flying lv3, title flying lv3, catching flying lv3
 
 Avocado-1,Basil-4,Basil-1,Prosciutto-1,Prosciutto-2_Mustard
-encounter flying lv1, raid dragon lv1, encounter fire lv1 (1, 2, 3)
+exp flying lv1, raid dragon lv1, encounter fire lv1 (1, 2, 3)
 
 
 one star recipes

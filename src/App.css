@@ -130,7 +130,11 @@
 }
 
 .complex-search-panel > * {
-  margin-bottom:6px;
+  margin-bottom: 4px;
+}
+
+.complex-row {
+  justify-content: center;
 }
 
 .settings-bar {
@@ -196,7 +200,7 @@
   display: flex;
   user-select: none;
   border-radius: 25px;
-  padding: 4px 8px;
+  padding: 4px;
   width: fit-content;
   height: fit-content;
   font-family: monospace;
@@ -206,7 +210,7 @@
 }
 
 .bubble-min-width {
-  min-width: 80px;
+  min-width: 70px;
   justify-content: center;
 }
 
