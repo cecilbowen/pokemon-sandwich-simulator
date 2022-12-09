@@ -4,66 +4,90 @@ so credit to the users in it (New_Log7685, ItzYoboiGuzma, PeddledP)
 additional disclaimer that none of this is 100% and there are still a few
 	unknowns about how it all works
 
-general rules
+common terms
 ================
-just a sum of all fillings and condiments
-fillings are multiplied by how many on sandwich PHYSICALLY (eg, ham 3, basil 4, rice 1, etc)
-+100 to a stat based on flavor bonus table below when comparing top 2 flavors
-	if there's only 1 flavor (eg. just a bitter herb, no fillings) then it picks the next unused flavor from the flavor priority list to use as the second
-	  flavor to compare the first one to
-types are just sorted by sum first, then in-game type sorting (check an herba or in-game pc box type search to see this order)
-	then listed with effects in 1, 3, 2 order
-	-
-	as far as dual/triple typings go
-		::assuming [grass, fighting, ghost]::
-		main type <= 280: 1, 3, 2 (grass, ghost, fighting)
-		main type > 280: 1, 1, 3 (grass, grass, fighting)
-		main type > 480: 1, 1, 1 (grass, grass, grass)
-	-
-	however, if preset MASTER recipe
-		::assuming [grass, fighting, ghost]::
-		1, 3, 2 (grass, ghost, fighting)
-		or 1, 2, first (grass, fighting, normal) 'first' meaning first from priority list
-		unsure of reason why (see 'priorities.txt')
-	the one exception to the types is preset recipe #39 - Master Dessert Sandwich
-		it calculates the type to [flying, ice, steel], but it's actually [flying, poison, fighting]
-		for some reason, it's treating the type levels from both apples as if it's just 1 apple,
-		  which results in the [flying, poison, fighting] for slots 1 - 3 instead
-		i'm gonna call it a bug for now and just hard-code to match the recipe
-levels are influenced by the amount of herba you have in sandwich
-	1 herba defaults to 2, 2, 1 but can be 2, 2, 2 with enough type points
-	2 herba defaults to 3, 3, 3 (this is 3, 3 minimum with no fillings)
-	preset sandwich recipes have hard-coded levels
-	if you start with a preset sandwich and drop off ingredients, the levels will remain based
-	  on preset sandwich, regardless.  this is not shown in the tool.
-	it is possible to get >1 levels on non-herba, custom sandwiches
-		the level 2 check goes as follows:
-			if type amount >= 180, then check power amount
-			if power amount >= 100, then make skill level 2
-		the level 3 check is:
-			if type amount >= 380, then check power amount
-			if power amount >= 1000, then make all lines level 3 (until I see a sandwich that isn't all level 3, like [3, 1, 1])
-		a few examples:
-			rice x6, wasabi x2, curry powder x2 - levels 2, 2, 1
-			chorizo x4, rice x2, curry powder x2, wasabi x2 - levels 2, 1, 1
-			rice x6, wasabi x2, curry powder x2 - levels 2, 2, 1
+given "Capture Power: Normal Lv. 1" -
+	effect: general term for the whole line
+	power: what the effects do, such as capture, egg, teensy, humungo, etc.
+	type: the pokemon type associated with an effect (normal, fairy, dragon, grass, etc.)
+flavor: sweet, bitter, sour, salty, hot
 
+
+determining meal effects
+===========================
+meal effects are determined by the sum of all the individual ingredient stat values
+	fillings have a multiplier to each of their stat values based on how many pieces of the filling go on the sandwich
+		for example, an apple has 3 slices, so it's multiplier is 3
+		a hamburger, on the other hand, only has 1 patty, so it's multiplier is 1
+		condiments do not have multiple, so their multiplier is always just 1
+	after you have the sum of all the flavors, the order of the top two flavors determines which power gets an additional +100 boost
+		see the flavor bonus table below to check this
+		if there's only 1 flavor (eg. 1x rice, 1x bitter herb, drop the rice) then it picks the next unused flavor from the flavor priority list to use as the second
+		  flavor to compare the first one to
+	once you've gotten all the sums, the values are then sorted in descending order
+		flavors, powers and types each have a set priority for tiebreakers
+	-
+	from this point on, your three powers are set in stone as the top 3 powers, respectively
+	the top 3 types determine both the types associated with each power and the levels
+		-
+		see calculateLevels() from util.js for the full level calculation, but generally, you're checking to see if the
+		  first, second and third type amounts reach a certain threshold to advance a level
+		-
+		
+		-
+		type calculation is instead about taking your top 3 types, and determining which powers they are going
+		  to associate themselves with (see calculateTypes() from util.js)
+		standard case, for a basic level 1 recipe, results in the type selection of [1, 3, 2], which basically just means
+		  that the firstPower (power with highest value) is paired with the first (1) type, secondPower paired with the third (3)
+		  type, and thirdPower paired with the second (2) type (hence, [1, 3, 2])
+		depending on the type values, there are cases where other type orders could result
+			using [grass, fire, water] as an example:
+				[1, 2, 3] -> grass, fire, water
+				[1, 1, 3] -> grass, grass, water
+				[1, 3, 1] -> grass, water, fire
+				[1, 1, 1] -> grass, grass, grass
+		-
+		
+		-
+		the number of effect lines you have are determined by their associated types
+		missing powers (eg, you have 3 types but only 2 powers) are always supplemented to match number of types
+			takes the next, unused power from the power priority list
+		missing types (eg, having less than 3 types) are only supplemented if it is a 3-star recipe
+			if it is a 3-star recipe, then the types are supplemented until you have 3 types
+				takes the next, unused type from the type priority list
+			if it is a 1/2-star recipe, then any types with values 0 and below get dropped, allowing your final types to
+			  be less than 3
+			using final type values [grass 40, water 0, fire -10] as a 2-star example:
+				final types would be [grass], because both water and fire are <= 0, meaning your effect lines would be:
+					"Capture Power: Grass Lv. 1" (using capture as example)
+					"none"
+					"none"
+		-
+		
+		preset, numbered in-game recipes follow a separate pattern of level calculation, and are hard-coded
+			preset recipe #39 - "Master Dessert Sandwich" is the sole exception of breaking this pattern and is likely bugged
+		
+	
 miscellaneous
 ================
-putting > 13 of same ingredient on sandwich = 1 star (failure), at least in single player
+putting > 12 of same ingredient on sandwich = 1 star (failure), this limit varies in multiplayer
 2 star, low type value sandwiches have a certain threshold that changes the type pattern to [1, 2, 3]
 	believe it's if firstType <= 4 AND < 3 pieces on sandwich
 	along with some misc stuff..
-2 star sandwiches don't add a type when only two exist, making 2 line only sandwiches possible
-# of dropped ingredients might influence star level of sandwich
-	pretty sure if you drop half+ of ingredients, it becomes a 2 star
-		maybe something more like, "if drop count > half of pieces on sandwich, 2 star"
-	must be more than 1 ingredient, though, so dropping your only rice will keep you 3 stars
-		hamburger, ketchup - drop hamburger, you get 3 star sandwich
-		basil, ketchup - drop all basil, you get 2 star sandwich
-		basil, ketchup - drop 1 basil, you get 3 star sandwich
-		2x chorizo, ketchup - drop 3/6 chorizos, you get 2 star sandwich (so it rounds down)
-
+# of dropped ingredients influences star level of sandwich
+	pretty sure if pieces dropped are more than half of amount of pieces on sandwich, it becomes a 2 star
+		12 total, 8 on, 4 dropped -> 3 star
+		18 total, 12 on, 6 dropped -> 3 star
+		1 total, 0 on, 1 dropped -> 3 star
+		16 total, 11 on, 5 dropped -> 3 star
+		4 total, 0 on, 4 dropped -> 2 star
+		8 total, 4 on, 4 dropped -> 2 star
+		6 total, 3 on, 3 dropped -> 2 star
+		16 total, 10 on, 6 dropped -> 2 star
+		etc
+1-star sandwiches have all type values reduced by 500, minimum
+	this means that recipes without at least 2 herba mystica will fail (have no effects) since only 3-star
+	  sandwiches supplement types
 
 
 flavor bonus table
@@ -89,19 +113,28 @@ hot, salty - humungo
 hot, sour - humungo
 hot, bitter - humungo
 
-flavor priority table
-(deprecated by flavor priority list below)
-=====================
-sweet, salty - sweet
-sweet, sour - sweet
-sweet, bitter - sweet
-sweet, hot - sweet
-salty, sour - salty
-salty, bitter - salty
-salty, hot - salty
-sour, bitter - sour
-sour, hot - sour
-bitter, hot - bitter
+flavor priority
+=================
+sweet
+salty
+sour
+bitter
+hot
+
+
+power priority
+========================
+egg
+catch
+exp
+item
+raid
+title
+sparkling
+humungo
+teensy
+encounter
+
 
 type priority
 =================
@@ -123,41 +156,3 @@ Ice
 Dragon
 Dark
 Fairy
-
-flavor priority
-=================
-sweet
-salty
-sour
-bitter
-hot
-
-power priority (in-game)
-========================
-egg
-catch
-exp
-item
-raid
-title
-sparkling
-humungo
-teensy
-encounter
-
-
-1 herba mystica
-=================
-some combos of [lettuce, pickle, basil, bitter, olive oil]* to modify GRASS
-------------------------------------------------------
-268 - 280 only 1 of first typing (lv2, lv2, lv1)
-	grass, fighting, ghost = grass, ghost, fighting (1, 3, 2)
-281+ double first typing (lv2, lv2, lv2)
-	fighting, grass, ghost = fighting, fighting, ghost (1, 1, 3)
-
-2 herba mystica
-=================
-500 - 674 gave 3 of first time (lv3, lv3, lv3)
-just 2 herba (no fillings)
-	sparkling, title, item (lv3, lv3, lv3)
-

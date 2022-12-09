@@ -130,12 +130,12 @@
 }
 
 .settings-bar {
-  margin: 10px 0px 10px 0px;
+  margin: 10px;
 }
 
 .button-spacing {
   cursor: pointer;
-  margin: 0px 10px 0px 10px;
+  margin: 10px;
 }
 
 .ingredient {

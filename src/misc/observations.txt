@@ -56,8 +56,6 @@ title 1000, humungo 139, encounter 60
 fighting 384, water 382, ground 324
 title fighting lv3, humungo fighting lv3, encounter ground lv2
 
-==
-
 Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Sweet Herba Mystica
 title flying lv2, egg lv2, encounter fighting lv2
 
@@ -179,8 +177,6 @@ teensy flying lv1, raid normal lv1, exp poison lv1
 Egg-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Wasabi,Wasabi,Yogurt,Yogurt
 raid ice lv2, humungo electric lv1, encounter rock lv1
 
-==
-
 Basil-4,Basil-4,Basil-1_Salt
 exp electric lv1, raid fire lv1, egg (psychic) lv1
 
@@ -189,6 +185,12 @@ exp psychic lv1, raid dark lv1, egg (water) lv1
 
 Basil-4,Basil-4,Basil-1,Herbed Sausage-2_Salt
 exp psychic lv1, raid dark lv1, egg (water) lv1
+
+Avocado-3,Basil-4,Basil-0,Prosciutto-3,Prosciutto-3_Mustard
+encounter flying lv1, catch fire lv1, raid dragon lv1
+
+Apple-3,Basil-2,Cheese-2,Prosciutto-2,Watercress-2_Mustard
+exp flying lv1, raid ice lv1, item steel lv1
 
 
 multiplayer
@@ -251,6 +253,9 @@ title 1000, humungo 168, exp 112
 electric 492, psychic 492, poison 490
 title electric lv3, humungo electric lv3, exp electric lv3
 
+Basil-4,Cheese-3,Cheese-3,Cheese-3,Cheese-3,Cheese-3,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Jam,Jam,Ketchup,Ketchup,Ketchup,Mayonnaise,Mayonnaise,Mayonnaise
+humungo dark lv3, raid dark lv3, exp fairy lv2 (tested by another user)
+
 
 dual-typing (singleplayer)
 ================================
@@ -284,10 +289,14 @@ encounter flying lv1, catch ice lv1, exp flying lv1
 Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3_Ketchup
 item poison lv1, encounter normal lv1, catch poison lv1
 
-==
-
 Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0_Bitter Herba Mystica
 title flying lv2, exp flying lv2, encounter fighting lv2
+
+Cheese-2,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter
+exp steel lv1, encounter ghost lv1, catch steel lv1
+
+Cheese-3,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter
+encounter steel lv1, catch ghost lv1, exp steel lv1
 
 
 two-star recipes
@@ -331,8 +340,6 @@ teensy dragon lv1, raid poison lv1, encounter flying lv1
 Lettuce-0_Butter
 egg (bug) lv1, raid ghost lv1
 
-==
-
 Prosciutto-1_Bitter Herba Mystica
 title flying lv2, exp fighting lv2, encounter normal lv1
 
@@ -357,7 +364,23 @@ exp electric lv1, raid fire lv1, egg (psychic) lv1
 Basil-4,Basil-4,Basil-0_Salt
 exp electric lv1, raid fire lv1, egg (psychic) lv1
 
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Ketchup,Spicy Herba Mystica
+title flying lv2, humungo flying lv2, encounter normal lv2
 
+Avocado-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Ketchup,Spicy Herba Mystica
+title flying lv2, humungo poison lv2, encounter dragon lv1
+
+Apple-1,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0,Prosciutto-3_Bitter Herba Mystica,Ketchup
+title flying lv2, exp ice lv2, encounter steel lv1
+
+Apple-1,Cheese-1,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-3_Bitter Herba Mystica,Ketchup
+title flying lv2, exp ice lv2, encounter steel lv1
+
+Avocado-0,Prosciutto-0_Ketchup,Sour Herba Mystica,Sweet Herba Mystica
+sparkling flying lv3, title flying lv3, catching flying lv3
+
+Avocado-1,Basil-4,Basil-1,Prosciutto-1,Prosciutto-2_Mustard
+encounter flying lv1, raid dragon lv1, encounter fire lv1 (1, 2, 3)
 
 
 one star recipes

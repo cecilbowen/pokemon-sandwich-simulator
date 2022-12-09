@@ -20,7 +20,7 @@ function App() {
   const [advancedIngredients, setAdvancedIngredients] = useState(false);
   const [alwaysShowCustomSandwich, setAlwaysShowCustomSandwich] = useState(false);
   const [simpleMode, setSimpleMode] = useState(true);
-  const [showSearchPanel, setShowSearchPanel] = useState(true);
+  const [showSearchPanel, setShowSearchPanel] = useState(false);
   const [megaSandwichMode, setMegaSandwichMode] = useState(false);
 
   const [activeFillings, setActiveFillings] = useState([]);

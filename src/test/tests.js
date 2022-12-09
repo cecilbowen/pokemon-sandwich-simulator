@@ -25,6 +25,10 @@ const TEST_SET_HERBA = [
 	{ // 6
 		recipe: 'Herbed Sausage-3,Herbed Sausage-3,Rice-1,Rice-1_Horseradish,Spicy Herba Mystica',
 		result: 'Title,Fighting,3/Humungo,Fighting,3/Encounter,Ground,2'
+	},
+	{ // 7
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Sweet Herba Mystica',
+		result: 'Title,Flying,2/Egg,,2/Encounter,Fighting,2'
 	}
 ];
 
@@ -106,39 +110,59 @@ const TEST_SET_NONHERBA = [
 		recipe: 'Cheese-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Tofu-3_Pepper,Whipped Cream',
 		result: 'Humungo,Normal,2/Exp,Poison,1/Encounter,Dragon,1'
 	},
-	{ // 19
+	{ // 20
 		recipe: 'Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Pepper,Whipped Cream',
 		result: 'Humungo,Normal,2/Raid,Fighting,2/Encounter,Flying,1'
 	},
-	{ // 19
+	{ // 21
 		recipe: 'Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-2_Ketchup',
 		result: 'Item,Poison,1/Encounter,Normal,1/Catch,Flying,1'
 	},
-	{ // 20
+	{ // 22
 		recipe: 'Prosciutto-3,Prosciutto-2_Ketchup',
 		result: 'Encounter,Flying,1/Catch,Normal,1/Raid,Poison,1'
 	},
-	{ // 21
+	{ // 23
 		recipe: 'Watercress-2_Ketchup',
 		result: 'Teensy,Flying,1/Raid,Normal,1/Exp,Poison,1'
 	},
-	{ // 22
+	{ // 24
 		recipe: 'Noodles-0_Ketchup',
 		result: 'Encounter,Flying,1/Raid,Normal,1/Exp,Poison,1'
 	},
-	{ // 23
+	{ // 25
 		recipe: 'Noodles-0_Ketchup,Mustard',
 		result: 'Encounter,Flying,1/Raid,Ground,1/Exp,Poison,1'
 	},
-	{ // 24
+	{ // 26
 		recipe: 'Watercress-2_Ketchup',
 		result: 'Teensy,Flying,1/Raid,Normal,1/Exp,Poison,1'
 	},
-	{ // 25
+	{ // 27
 		recipe: 'Egg-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Wasabi,Wasabi,Yogurt,Yogurt',
 		result: 'Raid,Ice,2/Humungo,Electric,1/Encounter,Rock,1'
 	},
-	{ //26
+	{ // 28
+		recipe: 'Basil-4,Basil-4,Basil-1_Salt',
+		result: 'Exp,Electric,1/Raid,Fire,1/Egg,,1'
+	},
+	{ // 29
+		recipe: 'Basil-4,Basil-4,Basil-1,Herbed Sausage-3_Salt',
+		result: 'Exp,Psychic,1/Raid,Dark,1/Egg,,1'
+	},
+	{ // 30
+		recipe: 'Basil-4,Basil-4,Basil-1,Herbed Sausage-2_Salt',
+		result: 'Exp,Psychic,1/Raid,Dark,1/Egg,,1'
+	},
+	{ // 31
+		recipe: 'Avocado-3,Basil-4,Basil-0,Prosciutto-3,Prosciutto-3_Mustard',
+		result: 'Encounter,Flying,1/Catch,Fire,1/Raid,Dragon,1'
+	},
+	{ // 32
+		recipe: 'Apple-3,Basil-2,Cheese-2,Prosciutto-2,Watercress-2_Mustard',
+		result: 'Exp,Flying,1/Raid,Ice,1/Item,Steel,1'
+	},
+	{ // 33
 		recipe: '',
 		result: ''
 	}
@@ -223,11 +247,28 @@ const TEST_SET_SPLIT_TYPING = [
 		result: 'Item,Poison,1/Encounter,Normal,1/Catch,Poison,1'
 	},
 	{ // 10
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0_Bitter Herba Mystica',
+		result: 'Title,Flying,2/Exp,Flying,2/Encounter,Fighting,2'
+	},
+	{ // 11
+		recipe: 'Cheese-2,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter',
+		result: 'Exp,Steel,1/Encounter,Ghost,1/Catch,Steel,1'
+	},
+	{ // 12
+		recipe: 'Cheese-3,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter',
+		result: 'Encounter,Steel,1/Catch,Ghost,1/Exp,Steel,1'
+	},
+	{ // 13
+		recipe: 'Ham-3,Ham-3,Ham-3,Ham-3_Mustard',
+		result: 'Encounter,Ground,1/Catch,Normal,1/Exp,Ground,1'
+	},
+	{ // 14
 		recipe: '',
 		result: ''
 	}
 ];
 
+// 2-star
 const TEST_SET_2_STAR = [
 	{ // 1
 		recipe: 'Basil-0_Ketchup',
@@ -294,27 +335,68 @@ const TEST_SET_2_STAR = [
 		result: 'Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2'
 	},
 	{ // 17
-		recipe: '',
-		result: ''
+		recipe: 'Prosciutto-1_Bitter Herba Mystica',
+		result: 'Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1'
 	},
 	{ // 18
-		recipe: '',
-		result: ''
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Bitter Herba Mystica',
+		result: 'Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1'
 	},
 	{ // 19
-		recipe: '',
-		result: ''
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-1,Prosciutto-0_Bitter Herba Mystica',
+		result: 'Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1'
 	},
 	{ // 20
-		recipe: '',
-		result: ''
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica',
+		result: 'Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2'
 	},
 	{ // 21
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-1,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica',
+		result: 'Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2'
+	},
+	{ // 22
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica',
+		result: 'Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2'
+	},
+	{ // 23
+		recipe: 'Basil-4,Basil-3,Basil-0_Salt',
+		result: 'Exp,Electric,1/Raid,Fire,1/Egg,,1'
+	},
+	{ // 24
+		recipe: 'Basil-4,Basil-4,Basil-0_Salt',
+		result: 'Exp,Electric,1/Raid,Fire,1/Egg,,1'
+	},
+	{ // 25
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Ketchup,Spicy Herba Mystica',
+		result: 'Title,Flying,2/Humungo,Flying,2/Encounter,Normal,2'
+	},
+	{ // 26
+		recipe: 'Avocado-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Ketchup,Spicy Herba Mystica',
+		result: 'Title,Flying,2/Humungo,Poison,2/Encounter,Dragon,1'
+	},
+	{ // 27
+		recipe: 'Apple-1,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0,Prosciutto-3_Bitter Herba Mystica,Ketchup',
+		result: 'Title,Flying,2/Exp,Ice,2/Encounter,Steel,1'
+	},
+	{ // 28
+		recipe: 'Apple-1,Cheese-1,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-3_Bitter Herba Mystica,Ketchup',
+		result: 'Title,Flying,2/Exp,Ice,2/Encounter,Steel,1'
+	},
+	{ // 29
+		recipe: 'Avocado-0,Prosciutto-0_Ketchup,Sour Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Flying,3/Title,Flying,3/Catch,Flying,3'
+	},
+	{ // 30
+		recipe: 'Avocado-1,Basil-4,Basil-1,Prosciutto-1,Prosciutto-2_Mustard',
+		result: 'Exp,Flying,1/Raid,Dragon,1/Encounter,Fire,1'
+	},
+	{ // 31
 		recipe: '',
 		result: ''
 	}
 ];
 
+// 1-star
 const TEST_SET_1_STAR = [
 	{ // 1
 		recipe: 'Onion-3,Onion-3,Onion-3,Onion-3,Onion-3,Onion-3_Chili Sauce,Sour Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica',
@@ -431,9 +513,8 @@ const TEST_SET_1_STAR = [
 	{ // 29
 		recipe: '',
 		result: ''
-	},
-
-]
+	}
+];
 
 const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star', '1 star'];
 
