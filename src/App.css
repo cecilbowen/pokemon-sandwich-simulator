@@ -79,16 +79,15 @@
 }
 
 .colorless-border {
-  border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
 }
 
 .power-increase {
-  border-top:solid red 2px;
+  border-bottom:solid rgb(6, 190, 6) 2px;
 }
 
 .power-decrease {
-  border-bottom:solid blue 2px;
+  border-bottom:solid rgba(255, 95, 95, 0.8) 2px;
 }
 
 .filling-bkg {
