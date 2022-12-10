@@ -44,7 +44,7 @@ meal effects are determined by the sum of all the individual ingredient stat val
 			using [grass, fire, water] as an example:
 				[1, 2, 3] -> grass, fire, water
 				[1, 1, 3] -> grass, grass, water
-				[1, 3, 1] -> grass, water, fire
+				[1, 3, 1] -> grass, water, grass
 				[1, 1, 1] -> grass, grass, grass
 		-
 		
