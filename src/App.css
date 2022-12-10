@@ -78,6 +78,19 @@
   border: 1px solid;
 }
 
+.colorless-border {
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.power-increase {
+  border-top:solid red 2px;
+}
+
+.power-decrease {
+  border-bottom:solid blue 2px;
+}
+
 .filling-bkg {
   background-color: rgba(255, 0, 0, 0.13);
   display: flex;

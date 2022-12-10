@@ -140,8 +140,24 @@ function App() {
     );
   };
 
+  const checkPowerOfAmount = (checkArr, power) =>{
+    let retClass = ' colorless-border';
+    const activePower = checkArr["powers"].find((u) => u.type === power);
+
+    if (hasRelevance(checkArr, activeKey) && activePower !== undefined) { 
+      if(activePower.amount > 0) {
+        retClass += ' power-increase';
+      }
+      if(activePower.amount < 0){
+        retClass += ' power-decrease';
+      }
+    } 
+    return retClass;
+  }
+
   const renderFilling = (filling, index, active) => {
     let className = "ingredient";
+    className += checkPowerOfAmount(filling,activeKey["power"]);
     if (active) {
       className += ' filling-portrait';
     }
@@ -191,6 +207,7 @@ function App() {
 
   const renderCondiment = (condiment, index, active) => {
     let className = "ingredient";
+    className += checkPowerOfAmount(condiment,activeKey["power"]);
     if (active) {
       className += ' condiment-portrait';
     }
