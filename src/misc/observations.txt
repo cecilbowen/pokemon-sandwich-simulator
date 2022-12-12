@@ -474,7 +474,17 @@ Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3,Chorizo-3_Bitter Herba Mystica
 sparkling dragon lv2, title normal lv2, encounter poison lv2
 
 
+4-star recipes
+================
+Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Green Bell Pepper-2,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Potato Tortilla-1,Potato Tortilla-1,Potato Tortilla-1,Potato Tortilla-1,Potato Tortilla-1_Horseradish,Horseradish,Horseradish,Horseradish,Horseradish,Horseradish,Horseradish,Horseradish,Ketchup,Ketchup,Ketchup,Ketchup,Ketchup,Ketchup,Ketchup,Ketchup
+encounter poison lv3, raid poison lv3, exp dragon lv2
 
+Basil-4,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Noodles-1,Noodles-1,Onion-3,Onion-3,Onion-3,Potato Tortilla-1,Potato Tortilla-1,Potato Tortilla-1,Strawberry-3,Strawberry-3,Strawberry-3_Salt,Salt,Salt,Salt,Vinegar,Vinegar,Vinegar,Vinegar,Wasabi,Wasabi,Wasabi,Wasabi
+encounter psychic lv3, raid psychic lv3, item ghost lv2
 
+==
+
+Ham-3,Ham-3,Ham-3,Ham-3_Bitter Herba Mystica,Curry Powder,Curry Powder,Curry Powder,Curry Powder,Salty Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica
+sparkling ground lv3, title ground lv3, encounter ground lv3
 
 

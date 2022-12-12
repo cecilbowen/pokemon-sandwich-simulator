@@ -71,6 +71,8 @@ meal effects are determined by the sum of all the individual ingredient stat val
 miscellaneous
 ================
 putting > 12 of same ingredient on sandwich = 1 star (failure), this limit varies in multiplayer
+4 star sandwiches possible in multiplayer
+	seem to be able to get a 4-star if all flavors are used (sweet, sour, hot, salty, bitter) and there value is at least 100 each
 2 star, low type value sandwiches have a certain threshold that changes the type pattern to [1, 2, 3]
 	believe it's if firstType <= 4 AND < 3 pieces on sandwich
 	along with some misc stuff..

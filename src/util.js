@@ -378,7 +378,7 @@ const calculateLevels = (types, sandwich) => {
 
   let levels = [1, 1, 1];
 
-  if (stars === 3) {
+  if (stars >= 3) {
     // regular
     if (firstType.amount < 180) {
       levels = [1, 1, 1];
@@ -389,10 +389,10 @@ const calculateLevels = (types, sandwich) => {
         levels = [2, 1, 1];
       }
     } else if (firstType.amount > 280 && firstType.amount < 380) {
-      if (thirdType.amount < 180 ) {
-        levels = [2, 2, 1];
-      } else {
+      if (thirdType.amount >= 180 ) {
         levels = [2, 2, 2];
+      } else {
+        levels = [2, 2, 1];
       }
     } else if (firstType.amount >= 380 && firstType.amount < 460) {
       if (secondType.amount >= 380 && thirdType.amount >= 380) {
@@ -476,7 +476,7 @@ const calculateTypes = (baseTypes, sandwich) => {
 
   let newTypes = [];
   
-  if (stars === 3) {
+  if (stars >= 3) {
     // 3-star
     if (mainTypeAmount > 480) { // mono type
       newTypes = [firstType, firstType, firstType];
@@ -598,6 +598,11 @@ export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
     stars = 1;
   } else if (maxTotalPieces > 1 && piecesDropped > totalPieces / 2) {
     stars = 2;
+  } else {
+    const highTastes = sums.tastes.slice(0).filter(x => x.amount >= 100);
+    if (highTastes.length === 5) {
+      stars = 4;
+    }
   }
 
   const formattedTypes = sums.types.slice(0);

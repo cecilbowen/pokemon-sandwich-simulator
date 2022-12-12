@@ -516,7 +516,22 @@ const TEST_SET_1_STAR = [
 	}
 ];
 
-const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star', '1 star'];
+const TEST_SET_4_STAR = [
+	{
+		recipe: 'Ham-3,Ham-3,Ham-3,Ham-3_Bitter Herba Mystica,Curry Powder,Curry Powder,Curry Powder,Curry Powder,Salty Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Ground,3/Title,Ground,3/Encounter,Ground,3'
+	},
+	{
+		recipe: 'Basil-4,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Noodles-1,Noodles-1,Onion-3,Onion-3,Onion-3,Potato Tortilla-1,Potato Tortilla-1,Potato Tortilla-1,Strawberry-3,Strawberry-3,Strawberry-3_Salt,Salt,Salt,Salt,Vinegar,Vinegar,Vinegar,Vinegar,Wasabi,Wasabi,Wasabi,Wasabi',
+		result: 'Encounter,Psychic,3/Raid,Psychic,3/Item,Ghost,2'
+	},
+	{
+		recipe: '',
+		result: ''
+	}
+];
+
+const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star', '1 star', '4 star'];
 
 // generates a sandwich from a 'save recipe' string
 const generateSandwichFromRecipe = recipe => {
@@ -543,7 +558,8 @@ export const runTests = () => {
 		TEST_SET_MULTIPLAYER,
 		TEST_SET_SPLIT_TYPING,
 		TEST_SET_2_STAR,
-		TEST_SET_1_STAR
+		TEST_SET_1_STAR,
+		TEST_SET_4_STAR
 	];
 
 	for (let j = 0; j < sets.length; j++) {
