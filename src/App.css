@@ -78,16 +78,21 @@
   border: 1px solid;
 }
 
-.colorless-border {
-  border-bottom: 2px solid transparent;
+.ingredient-power-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  z-index: -10;  
 }
 
 .power-increase {
-  border-bottom:solid rgb(6, 190, 6) 2px;
+  background-color: rgb(21, 230, 21);
 }
 
 .power-decrease {
-  border-bottom:solid rgba(255, 95, 95, 0.8) 2px;
+  background-color: rgba(255, 95, 95, 0.8) ;
 }
 
 .filling-bkg {

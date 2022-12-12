@@ -141,7 +141,7 @@ function App() {
   };
 
   const checkPowerOfAmount = (checkArr, power) =>{
-    let retClass = ' colorless-border';
+    let retClass = 'ingredient-power-bg';
     const activePower = checkArr["powers"].find((u) => u.type === power);
 
     if (hasRelevance(checkArr, activeKey) && activePower !== undefined) { 
@@ -157,7 +157,6 @@ function App() {
 
   const renderFilling = (filling, index, active) => {
     let className = "ingredient";
-    className += checkPowerOfAmount(filling,activeKey["power"]);
     if (active) {
       className += ' filling-portrait';
     }
@@ -167,8 +166,12 @@ function App() {
       divClass = 'ingredient-div ingredient-blur';
     }
 
+    let ingredientPowerClass = "";
+    ingredientPowerClass += checkPowerOfAmount(filling,activeKey["power"]);
+
     return (
     <div className={divClass} key={`filling-${index}-${active ? 'active' : 'dormant'}`}>
+      <div className={ingredientPowerClass}></div>
       <img
         alt={filling.name}
         title={filling.name}
@@ -207,7 +210,6 @@ function App() {
 
   const renderCondiment = (condiment, index, active) => {
     let className = "ingredient";
-    className += checkPowerOfAmount(condiment,activeKey["power"]);
     if (active) {
       className += ' condiment-portrait';
     }
@@ -217,9 +219,12 @@ function App() {
       divClass = 'ingredient-div ingredient-blur';
     }
 
+    let ingredientPowerClass = "";
+    ingredientPowerClass += checkPowerOfAmount(condiment,activeKey["power"]);
     
     return (
     <div className={divClass} key={`condiment-${index}-${active ? 'active' : 'dormant'}`}>
+      <div className={ingredientPowerClass}></div>
       <img
         alt={condiment.name}
         title={condiment.name}
