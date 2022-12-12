@@ -140,6 +140,21 @@ function App() {
     );
   };
 
+  const checkPowerOfAmount = (checkArr, power) =>{
+    let retClass = 'ingredient-power-bg';
+    const activePower = checkArr["powers"].find((u) => u.type === power);
+
+    if (hasRelevance(checkArr, activeKey) && activePower !== undefined) { 
+      if(activePower.amount > 0) {
+        retClass += ' power-increase';
+      }
+      if(activePower.amount < 0){
+        retClass += ' power-decrease';
+      }
+    } 
+    return retClass;
+  }
+
   const renderFilling = (filling, index, active) => {
     let className = "ingredient";
     if (active) {
@@ -151,8 +166,12 @@ function App() {
       divClass = 'ingredient-div ingredient-blur';
     }
 
+    let ingredientPowerClass = "";
+    ingredientPowerClass += checkPowerOfAmount(filling,activeKey["power"]);
+
     return (
     <div className={divClass} key={`filling-${index}-${active ? 'active' : 'dormant'}`}>
+      <div className={ingredientPowerClass}></div>
       <img
         alt={filling.name}
         title={filling.name}
@@ -200,9 +219,12 @@ function App() {
       divClass = 'ingredient-div ingredient-blur';
     }
 
+    let ingredientPowerClass = "";
+    ingredientPowerClass += checkPowerOfAmount(condiment,activeKey["power"]);
     
     return (
     <div className={divClass} key={`condiment-${index}-${active ? 'active' : 'dormant'}`}>
+      <div className={ingredientPowerClass}></div>
       <img
         alt={condiment.name}
         title={condiment.name}
