@@ -23,6 +23,7 @@ function App() {
   const [alwaysShowCustomSandwich, setAlwaysShowCustomSandwich] = useState(false);
   const [simpleMode, setSimpleMode] = useState(true);
   const [showSearchPanel, setShowSearchPanel] = useState(false);
+  const [showEffectFilter, setShowEffectFilter] = useState(true);
   const [megaSandwichMode, setMegaSandwichMode] = useState(false);
 
   const [activeFillings, setActiveFillings] = useState([]);
@@ -140,7 +141,7 @@ function App() {
     );
   };
 
-  const checkPowerOfAmount = (checkArr, power) =>{
+  const checkAmountOfPower = (checkArr, power) => {
     let retClass = 'ingredient-power-bg';
     const activePower = checkArr["powers"].find((u) => u.type === power);
 
@@ -148,12 +149,13 @@ function App() {
       if(activePower.amount > 0) {
         retClass += ' power-increase';
       }
-      if(activePower.amount < 0){
+      if(activePower.amount < 0) {
         retClass += ' power-decrease';
       }
     } 
+
     return retClass;
-  }
+  };
 
   const renderFilling = (filling, index, active) => {
     let className = "ingredient";
@@ -166,8 +168,7 @@ function App() {
       divClass = 'ingredient-div ingredient-blur';
     }
 
-    let ingredientPowerClass = "";
-    ingredientPowerClass += checkPowerOfAmount(filling,activeKey["power"]);
+    const ingredientPowerClass = checkAmountOfPower(filling, activeKey["power"]);
 
     return (
     <div className={divClass} key={`filling-${index}-${active ? 'active' : 'dormant'}`}>
@@ -219,8 +220,7 @@ function App() {
       divClass = 'ingredient-div ingredient-blur';
     }
 
-    let ingredientPowerClass = "";
-    ingredientPowerClass += checkPowerOfAmount(condiment,activeKey["power"]);
+    const ingredientPowerClass = checkAmountOfPower(condiment, activeKey["power"]);
     
     return (
     <div className={divClass} key={`condiment-${index}-${active ? 'active' : 'dormant'}`}>
@@ -504,8 +504,11 @@ function App() {
     }
   };
 
-  const loadRecipe = () => {
-    const recipe = window.prompt("Enter/paste recipe:", "");
+  const loadRecipe = recipe => {
+    if (!recipe) {
+      recipe = window.prompt("Enter/paste recipe:", "");
+    }
+    
     const ingredients = getIngredientsFromRecipe(recipe);
     if (ingredients) {
       const fillings = ingredients.fillings;
@@ -525,6 +528,7 @@ function App() {
       <div className='settings-bar'>
         <button className='button-spacing' onClick={() => setSimpleMode(!simpleMode)}>Toggle Simple Mode: {simpleMode ? "On" : "Off"}</button>
         <button className='button-spacing' onClick={() => setShowSearchPanel(!showSearchPanel)}>Toggle Search Panel</button>
+        {!simpleMode && <button className='button-spacing' onClick={() => setShowEffectFilter(!showEffectFilter)}>Toggle Effect Filter</button>}
         <button className='button-spacing' onClick={() => setMegaSandwichMode(!megaSandwichMode)}>Toggle Multiplayer Mode: {megaSandwichMode ? "On" : "Off"}</button>
         <button className='button-spacing' onClick={() => loadRecipe()}>Load Recipe</button>
         <button className='button-spacing' onClick={() => saveRecipe()}>Save Recipe</button>
@@ -534,7 +538,7 @@ function App() {
 
   return (
     <div className="App">
-      {!simpleMode && renderComplexSearch()}
+      {!simpleMode && showEffectFilter && renderComplexSearch()}
       {renderFillings()}
       {renderCondiments()}
       {renderActive()}
