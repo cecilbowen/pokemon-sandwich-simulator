@@ -1,9 +1,17 @@
 # Pokemon Sandwich Simulator
 
+<div style="text-align:center">
+    <img src="./docs/sandwich.png" />
+</div>
+
 This tool lets you simulate making sandwiches for Pokemon Scarlet and Violet.
+<br/>
 
-## Screenshots: https://imgur.com/a/WJXqJ5p
+## 🗂 Project Structure
 
-Live demo here: https://cecilbowen.github.io/pokemon-sandwich-simulator/
+* **docs**: Contains written documents related to sandwich formula and development documentation.
+* **cli**: Contains an application that returns ingredients and sandwich details in CLI form.
 
-This tool is not perfect, so if you find any recipes that are not accurate in-game, then the best place to post them for my visibility is here: https://redd.it/z8q0ko
+## Credits
+
+* **[cecilbowen/pokemon-sandwich-simulator](https://github.com/cecilbowen/pokemon-sandwich-simulator)** for the original simulator data and logic.
