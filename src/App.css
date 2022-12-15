@@ -291,3 +291,48 @@
 small {
   font-size: 0.7em;
 }
+
+#saved-sandwichs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+}
+.saved-sandwich {
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.8rem;
+  margin: 0.6rem;
+  border: 2px solid #282c34;
+}
+.saved-sandwich > span:hover {
+  background-color: #d92525;
+}
+.saved-sandwich:hover {
+  background-color: rgba(0, 0, 255, 0.14);
+}
+.saved-sandwich .ingredients {
+  display: flex;
+}
+
+.saved-sandwich .display-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.saved-sandwich .display-name > p {
+  display: flex;
+  min-width: max-content;
+  align-items: center;
+}
+
+#github-banner {
+  position: sticky;
+  bottom: 0;
+  background-color: rgba(0, 0, 255, 0.50);
+}
+#github-banner > a {
+  margin: 1rem;
+}
+

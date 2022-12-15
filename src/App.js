@@ -35,8 +35,14 @@ function App() {
   const [searchIngredientQuery, setSearchIngredientQuery] = useState();
   const [results, setResults] = useState([]);
   const [heartbeat, setHeartbeat] = useState(0);
+  const [editNameKey, setEditNameKey] = useState(-1);
+  const [filterSavedSandwiches, setFilterSavedSandwiches] = useState('');
+  const [savedSandwhiches, setSavedSandwhiches] = useState(() => {
+    return JSON.parse(localStorage.getItem('savedSandwhiches') || '[]')
+  });
   let activeSandwich = undefined;
   let activeSums;
+  let generatedSandwich = {}
 
   useEffect(() => {
     if (!megaSandwichMode) {
@@ -323,6 +329,19 @@ function App() {
     pulse();
   };
 
+  const saveSandwich = () => {
+    let sandwich = generatedSandwich
+    console.log(SANDWICHES.find(s => s.number === activeSandwich))
+    if (activeSandwich) {
+      sandwich = {
+        ...SANDWICHES.find(s => s.number === activeSandwich),
+        condiments: sandwich.condiments,
+        fillings: sandwich.fillings,
+      }
+    }
+    setSavedSandwhiches(Array.of(...savedSandwhiches, sandwich))
+  }
+
   const renderMath = () => {
     const ingredients = [
       ...activeFillings.sort((a, b) => a.name.localeCompare(b.name)),
@@ -332,7 +351,7 @@ function App() {
     activeSums = sums;
 
     const foundSandwich = checkPresetSandwich(sums, activeFillings, activeCondiments);
-    const generatedSandwich = craftSandwich(activeFillings, activeCondiments, sums, foundSandwich);
+    generatedSandwich = craftSandwich(activeFillings, activeCondiments, sums, foundSandwich);
     activeSandwich = foundSandwich?.number;
 
     // Sure, we could show results with only condiments, but we can't add only condiments
@@ -346,6 +365,7 @@ function App() {
       <div>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
           {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
+            key={`ingredient-card-${i}`}
             simpleMode={simpleMode}
             updatePieces={() => pulse()}
             onClickBubble={key => toggleActiveKey(key)}
@@ -369,6 +389,7 @@ function App() {
           {renderSandwich(foundSandwich)}
           {showResults && (alwaysShowCustomSandwich || !foundSandwich) && renderSandwich(generatedSandwich)}
         </div>
+        {showResults && <button onClick={saveSandwich}>Save Sandwich</button>}
       </div>
     );
   };
@@ -536,6 +557,81 @@ function App() {
     );
   };
 
+  useEffect(() => {
+    localStorage.setItem("savedSandwhiches", JSON.stringify(savedSandwhiches));
+  }, [savedSandwhiches]);
+
+  const loadLocalRecipe = (fillings, condiments) => {
+    if (fillings.length > MAX_FILLINGS || condiments.length > MAX_CONDIMENTS) {
+      setMegaSandwichMode(true);
+    }
+
+    setActiveFillings(fillings);
+    setActiveCondiments(condiments);
+  };
+
+  const removeLocalRecipe = (idx, e) => {
+    e.stopPropagation()
+    setSavedSandwhiches(savedSandwhiches.filter((s, sIdx) => sIdx !== idx))
+  }
+
+  const changeName = (idx, e) => {
+    const name = e.target.value
+    savedSandwhiches.splice(idx, 1, {...savedSandwhiches[idx], name: name})
+    setSavedSandwhiches([...savedSandwhiches])
+    e.stopPropagation()
+  }
+
+  const filter = (text) => {
+    return !!text ? savedSandwhiches.filter(s => s.name.toLowerCase().includes(text)) : savedSandwhiches
+  }
+
+  const renderSavedSandwiches = () => {
+    return (
+      <div>
+        <p style={{fontSize: '1.5rem'}}>Saved Sandwiches (Total: {savedSandwhiches.length})</p>
+        <label htmlFor="sandwich-filter">Filter by name: </label>
+        <input type="text" id="sandwich-filter" value={filterSavedSandwiches} onChange={(e) => {
+          e.stopPropagation()
+          setFilterSavedSandwiches(e.target.value.toLowerCase())
+        }} />
+        {filter(filterSavedSandwiches).length === 0 && <p>No results</p>}
+        <div id="saved-sandwichs">
+          {filter(filterSavedSandwiches).map(({condiments, fillings, effects, name, stars, number}, idx) => (
+            <div key={`saved-recipe-${idx}`} className="saved-sandwich" onClick={() => loadLocalRecipe(fillings, condiments)}>
+              <div className="display-name">
+                {number !== '???' && <p>{number}</p>}
+                <p>{name}</p>
+                <p>{'⭐'.repeat(stars)}</p>
+                <p>
+                  {!Number.isInteger(parseInt(number)) && 
+                  <button onClick={(e) => {
+                    e.stopPropagation()
+                    setEditNameKey(idx)
+                  }}>Edit name</button>}</p>
+              </div>
+              {
+                editNameKey === idx && 
+                <input type="text" 
+                autoFocus 
+                value={name} 
+                onChange={(e) => changeName(idx, e)} 
+                onClick={(e) => e.stopPropagation()} 
+                onBlur={() => setEditNameKey(-1)} />
+              }
+              {effects.length > 0 && <div>{effects.map(({name}, idx) => <span key={`effect-${idx}`} style={{margin: "0 0.3rem"}}>{name}</span>)}</div>}
+              <div className="ingredients">
+                {fillings.map((x, i) => renderFilling(x, `local-filling-${idx}-${i}`, false))}
+                {condiments.map((x, i) => renderCondiment(x, `local-condiment-${idx}-${i}`, false))}
+              </div>
+                <span className='clear-ingredients' onClick={(e) => removeLocalRecipe(idx, e)}>Remove</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="App">
       {!simpleMode && showEffectFilter && renderComplexSearch()}
@@ -545,7 +641,8 @@ function App() {
       {renderMath()}
       {renderSearch()}
       {renderSettings()}
-      <small><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">Source Code</a></small>
+      {renderSavedSandwiches()}
+      <div id="github-banner"><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">Source Code</a></div>
     </div>
   );
 }
