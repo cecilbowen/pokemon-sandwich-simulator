@@ -1,6 +1,6 @@
 // import { useEffect, useState } from 'react';
 import { calculatePowerAmount } from '../util';
-import { ALIAS_TO_FULL, COLORS, mode, copyTextToClipboard, isFilling, isFlavor, isType, shadeColor } from '../util';
+import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode, copyTextToClipboard, isFilling, isFlavor, isPower, isType, shadeColor } from '../util';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
@@ -129,6 +129,11 @@ const Card = props => {
         props.updatePieces();
     };
 
+    const flavorComboStr = FLAVOR_TABLE_EZ[props?.activeKey.power];
+    const powerExplain = isPower(props?.activeKey.power) ? `+100 ${props.activeKey.power}: ${flavorComboStr}` : "";
+    const powerExplainDisplay = flavorComboStr ? "" : "none";
+    const powerExplainTitle = "What flavor combo ordering boosts this power";
+
     return (
       <div
         key={props.number ? props.number : ""} className='card'
@@ -137,9 +142,10 @@ const Card = props => {
             <img alt={ingredient.name} src={ingredient.imageUrl} />
             <div>{ingredient.name}</div>            
         </div>}
-        {isSum && <div className='bubble bubble-header' title={sumStr} onClick={() => copyValues(tastes, powers, types)}>
-            <img alt={"Total"} src="https://www.serebii.net/itemdex/sprites/sandwich.png" />
+        {isSum && <div className='bubble bubble-header' onClick={() => copyValues(tastes, powers, types)}>
+            <img alt={"Total"} src="https://www.serebii.net/itemdex/sprites/sandwich.png" title={sumStr} />
             <div>Total Stats</div>
+            <div id='power-flavors-description' title={powerExplainTitle} style={{ display: powerExplainDisplay }}>{powerExplain}</div>
         </div>}
         {!isSum && ingredient && isFilling(ingredient) && <div className="pieces">
             <div title='How many pieces of this filling to put on sandwich'>Pieces: {ingredient.pieces}</div>

@@ -60,6 +60,17 @@ export const FLAVOR_TABLE = {
   },
 };
 
+export const FLAVOR_TABLE_EZ = {
+  "Egg": "sweet-salty/bitter",
+  "Catch": "sweet/sour",
+  "Raid": "sweet/hot",
+  "Encounter": "salty-sweet/sour/hot",
+  "Exp": "salty/bitter",
+  "Teensy": "sour-salty/bitter/hot",
+  "Item": "bitter-sweet/sour/hot",
+  "Humungo": "hot-salty/sour/bitter",
+};
+
 export const FLAVOR_PRIORITY_TABLE = {
   "Sweet": {
     "Salty": "Sweet",

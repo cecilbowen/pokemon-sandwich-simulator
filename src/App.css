@@ -291,3 +291,17 @@
 small {
   font-size: 0.7em;
 }
+
+#power-flavors-description {
+  position: absolute;
+  width: fit-content;
+  top: 25px;
+  left: 46px;
+  font-style: italic;
+  font-weight: initial;
+  border: 1px dashed;
+  border-radius: 25px;
+  padding: 4px;
+  font-size: 12px;
+}
+
