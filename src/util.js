@@ -219,6 +219,19 @@ export const getIngredientsFromRecipe = recipe => {
   return undefined;
 };
 
+export const getRecipeFromIngredients = ingredients => {
+  const condiments = ingredients.condiments;
+  const fillings = ingredients.fillings;
+  if (condiments.length === 0) { return undefined; }
+
+  const fArr = [];
+  for (const f of fillings) {
+    fArr.push(`${f.name}-${f.pieces}`);
+  }
+
+  return `${fArr.join(",")}_${condiments.map(x => x.name).join(",")}`;
+};
+
 // returns max amount of pieces on sandwich if none fall off
 const getMaxTotalPieces = fillings => {
   let ret = 0;
@@ -484,26 +497,31 @@ const calculateTypes = (baseTypes, sandwich) => {
       newTypes = [firstType, firstType, thirdType];
     } else {
       newTypes = [firstType, thirdType, secondType];
+      let split = false;
 
-      // this is bs, and definitely not the final way for this, but hey, all tests pass for now
-      if (mainTypeAmount > 100) {
-        if (oneTwoDiff >= 100) {
+      // still not 100%, but better
+      if (mainTypeAmount > 105 && oneTwoDiff > 105) {
           newTypes = [firstType, firstType, thirdType];
-        } else if (oneTwoDiff >= 82) {
-          newTypes = [firstType, thirdType, firstType];
-        } else if (oneTwoDiff >= 72) {
-          newTypes = [firstType, thirdType, secondType];
+      } else if (mainTypeAmount >= 100 && mainTypeAmount <= 105) {
+        if (oneTwoDiff >= 80 && secondType.amount <= 21) {
+          split = true;
         }
-      } else {
-        if (oneTwoDiff >= 72 && secondPowerAmount > 60 && thirdPowerAmount > 60) {
-          if (Math.abs(secondPowerAmount - thirdPowerAmount) <= 10) {
-            newTypes = [firstType, thirdType, secondType];
-          } else {
-            newTypes = [firstType, thirdType, firstType]
+      } else if (mainTypeAmount >= 90 && mainTypeAmount < 100) {
+        if (oneTwoDiff >= 78 && secondType.amount <= 16) {
+          split = true;
           }
-        } else if (oneTwoDiff >= 72) {
-          newTypes = [firstType, thirdType, firstType]
+      } else if (mainTypeAmount >= 80 && mainTypeAmount < 90) {
+        if (oneTwoDiff >= 74 && secondType.amount <= 9) {
+          split = true;
         }
+      } else if (mainTypeAmount >= 74 && mainTypeAmount < 80) {
+        if (oneTwoDiff >= 72 && secondType.amount <= 5) {
+          split = true;
+        }
+      }
+
+      if (split) {
+        newTypes = [firstType, thirdType, firstType];
       }
     }
   } else if (stars === 2) {

@@ -4,7 +4,7 @@ import CONDIMENTS from './data/condiments.json';
 import TYPES from './data/types.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
-import { getCondiments, getFillings,
+import { getCondiments, getFillings, getRecipeFromIngredients,
   ALIAS_TO_FULL, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
   copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
 import { runTests } from './test/tests';
@@ -56,6 +56,12 @@ function App() {
       setActiveKey({});
     }
   }, [simpleMode]);
+
+  useEffect(() => {
+    if (!showEffectFilter) {
+      setActiveKey({});
+    }
+  }, [showEffectFilter]);
 
   useEffect(() => {
     const tempResults = [];
@@ -488,14 +494,9 @@ function App() {
   };
 
   const saveRecipe = () => {
-    if (activeCondiments.length === 0) { return; }
+    const copyStr = getRecipeFromIngredients({ fillings: activeFillings, condiments: activeCondiments });
+    if (!copyStr) { return; }
 
-    const fArr = [];
-    for (const f of activeFillings) {
-      fArr.push(`${f.name}-${f.pieces}`);
-    }
-
-    const copyStr = `${fArr.join(",")}_${activeCondiments.map(x => x.name).join(",")}`;
     console.log("Saving recipe", copyStr);
     copyTextToClipboard(copyStr);
 

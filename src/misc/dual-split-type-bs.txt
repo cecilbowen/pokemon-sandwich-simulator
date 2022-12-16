@@ -3,8 +3,12 @@ regular case
 flying 75, electric 4, psychic 4 -> (diff 71) salty 95
 results in [1, 3, 2] (flying, psychic, electric)
 
-dual-split-typing cases
+
+dual-split-typing cases [1, 3, 1]
 ------------------------
+Ham-3,Ham-3,Ham-3,Ham-3_Mustard
+74, 2 -> (diff 72)
+
 Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup
 flying 74, poison 2, (normal 0) -> (diff 72) salty 64, sum 76/76/1.48
 results in [1, 3, 1] (flying, normal, flying)
@@ -14,27 +18,74 @@ flying 75, normal 3, fighting 3 -> (diff 72) salty 71, sum 103/81/2.34
 results in [1, 3, 1] (flying, fighting, flying)
 
 Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-1_Pepper,Salt,Salt
-flying 76, normal 4, fighting 4 -> (diff 72), sum 120/74/3.2
+flying 76, normal 4, fighting 4 -> (diff 72), sum 120/84/3.2
 results in [1, 3, 1] (flying, fighting, flying)
+
+Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-1_Pepper,Pepper,Salt,Salt
+normal 76, fighting 4, flying 4 -> (diff 72) salty 52
+results in [1, 3, 1] (normal, flying, normal)
+
+Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-2_Pepper,Pepper,Salt,Salt
+normal 77, fighting 5, flying 5 -> (diff 72) salty 53
+results in [1, 3, 1] (normal, flying, normal)
 
 Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-2_Pepper,Salt,Salt
 flying 77, normal 5, fighting 5 -> (diff 72), sum 129/87/4.1
 results in [1, 3, 1] (flying, fighting, flying)
 
-Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-1_Ketchup,Whipped Cream,Whipped Cream
-flying 83, normal 9, ground 9 -> (diff 74), sum 109/101/8.28
-results in [1, 3, 1] (flying, ground, flying)
-
 Apple-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup
 flying 81, steel 7, ice 7 -> (diff 74) salty 64, sum 97/95/6.16
 results in [1, 3, 1] (flying, ice, flying)
 
-Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-3_Pepper,Pepper,Salt,Salt
-normal 78, fighting 6, flying 6 -> (diff 72) salty 54, sum 142/90/x
-results in [1, 3, 1] (normal, flying, normal)
+Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-1_Ketchup,Whipped Cream,Whipped Cream
+flying 83, normal 9, ground 9 -> (diff 74), sum 109/101/8.28
+results in [1, 3, 1] (flying, ground, flying)
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter
+90, 2, 2 -> (diff 88)
+results in [1, 3, 1]
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-1_Peanut Butter,Peanut Butter
+94, 10 -> diff 84
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-2_Peanut Butter,Peanut Butter
+94, 16 -> diff 78
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+99, 8, 1 -> diff 91
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-2_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+100, 8 -> diff 92
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-3_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+101, 8 -> diff 93
+
+Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Kiwi-3_Ketchup,Ketchup,Ketchup,Ketchup
+101, 21, 21 -> diff 80
+
+Apple-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+105, 8, 7 -> diff 97
+
+
+'in-a-row' lv1 dual cases [1, 1, 3]
+----------------------------
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Mustard
+108, 2, 2 -> diff 106, [1, 1, 3]
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter
+110, 2 -> diff 108, [1, 1, 3]
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+116, 8 -> diff 108, [1, 1, 3]
+
 
 back to regular case
 ----------------------
+Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-3_Pepper,Pepper,Salt,Salt
+normal 78, fighting 6, flying 6 -> (diff 72) salty 54
+results in [1, 3, 2] (normal, flying, fighting)
+
 Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-3_Pepper,Salt,Salt
 flying 78, normal 6, fighting 6 -> (diff 72) salty 98, sum 138/90/5.04
 results in [1, 3, 2] (flying, fighting, normal)

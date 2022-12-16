@@ -29,6 +29,10 @@ const TEST_SET_HERBA = [
 	{ // 7
 		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Sweet Herba Mystica',
 		result: 'Title,Flying,2/Egg,,2/Encounter,Fighting,2'
+	},
+	{ // 8
+		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0_Bitter Herba Mystica',
+		result: 'Title,Flying,2/Exp,Flying,2/Encounter,Fighting,2'
 	}
 ];
 
@@ -163,8 +167,32 @@ const TEST_SET_NONHERBA = [
 		result: 'Exp,Flying,1/Raid,Ice,1/Item,Steel,1'
 	},
 	{ // 33
-		recipe: '',
-		result: ''
+		recipe: 'Red Onion-3,Red Onion-3,Red Onion-3,Red Onion-2_Butter',
+		result: 'Egg,,1/Encounter,Normal,1/Catch,Bug,1'
+	},
+	{ // 34
+		recipe: 'Onion-3,Onion-3,Onion-3,Onion-3_Butter',
+		result: 'Raid,Psychic,1/Encounter,Ghost,1/Catch,Bug,1'
+	},
+	{ // 35
+		recipe: 'Onion-3,Onion-3,Onion-3,Onion-3,Strawberry-3_Salt',
+		result: 'Raid,Psychic,1/Encounter,Ghost,1/Catch,Fighting,1'
+	},
+	{ // 36 - weird [1, 2, 3] typing
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-3_Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Catch,Fire,1/Exp,Normal,1'
+	},
+	{ // 37
+		recipe: 'Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Kiwi-3,Kiwi-3_Chili Sauce',
+		result: 'Item,Poison,1/Encounter,Dragon,1/Catch,Fire,1'
+	},
+	{ // 38
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-3_Butter,Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Catch,Bug,1/Raid,Fire,1'
+	},
+	{ // 39
+		recipe: 'Hamburger-1,Red Bell Pepper-3_Peanut Butter,Peanut Butter',
+		result: 'Egg,,1/Encounter,Fire,1/Raid,Normal,1'
 	}
 ];
 
@@ -201,6 +229,10 @@ const TEST_SET_MULTIPLAYER = [
 	{ // 8
 		recipe: 'Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Bitter Herba Mystica,Salt',
 		result: 'Title,Electric,3/Humungo,Electric,3/Exp,Electric,3'
+	},
+	{ // 9
+		recipe: 'Banana-3,Banana-3,Banana-3,Cheese-3,Cheese-3,Cheese-3,Cheese-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Mayonnaise,Mayonnaise,Mayonnaise,Whipped Cream,Whipped Cream',
+		result: 'Encounter,Normal,3/Exp,Normal,3/Item,Normal,3'
 	}
 ];
 
@@ -223,46 +255,94 @@ const TEST_SET_SPLIT_TYPING = [
 		result: 'Encounter,Steel,1/Exp,Steel,1/Catch,Ghost,1'
 	},
 	{ // 5
-		recipe: 'Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-3_Pepper,Pepper,Salt,Salt',
+		recipe: 'Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-1_Pepper,Pepper,Salt,Salt',
 		result: 'Exp,Normal,1/Raid,Flying,1/Encounter,Normal,1'
 	},
 	{ // 6
 		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3_Salt',
 		result: 'Encounter,Flying,1/Catch,Fighting,1/Raid,Flying,1'
 	},
-	{ // 6
+	{ // 7
 		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-1_Ketchup,Whipped Cream,Whipped Cream',
 		result: 'Egg,,1/Encounter,Ground,1/Catch,Flying,1'
 	},
-	{ // 7
+	{ // 8
 		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup',
 		result: 'Encounter,Flying,1/Catch,Normal,1/Exp,Flying,1'
 	},
-	{ // 8
+	{ // 9
 		recipe: 'Apple-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup',
 		result: 'Encounter,Flying,1/Catch,Ice,1/Exp,Flying,1'
 	},
-	{ // 9
+	{ // 10
 		recipe: 'Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3_Ketchup',
 		result: 'Item,Poison,1/Encounter,Normal,1/Catch,Poison,1'
 	},
-	{ // 10
-		recipe: 'Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0_Bitter Herba Mystica',
-		result: 'Title,Flying,2/Exp,Flying,2/Encounter,Fighting,2'
-	},
 	{ // 11
+		recipe: 'Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Kiwi-3_Ketchup,Ketchup,Ketchup,Ketchup',
+		result: 'Teensy,Poison,1/Encounter,Dragon,1/Raid,Poison,1'
+	},
+	{ // 12
 		recipe: 'Cheese-2,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter',
 		result: 'Exp,Steel,1/Encounter,Ghost,1/Catch,Steel,1'
 	},
-	{ // 12
+	{ // 13
 		recipe: 'Cheese-3,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter',
 		result: 'Encounter,Steel,1/Catch,Ghost,1/Exp,Steel,1'
 	},
-	{ // 13
+	{ // 14
 		recipe: 'Ham-3,Ham-3,Ham-3,Ham-3_Mustard',
 		result: 'Encounter,Ground,1/Catch,Normal,1/Exp,Ground,1'
 	},
-	{ // 14
+	{ // 15
+		recipe: 'Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-2_Pepper,Pepper,Salt,Salt',
+		result: 'Exp,Normal,1/Raid,Flying,1/Encounter,Normal,1'
+	},
+	{ // 16
+		recipe: 'Red Onion-3,Red Onion-3,Red Onion-3,Red Onion-3_Butter',
+		result: 'Egg,,1/Encounter,Normal,1/Catch,Ghost,1'
+	},
+	{ // 17
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-1_Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Catch,Normal,1/Raid,Steel,1'
+	},
+	{ // 18
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-2_Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Catch,Normal,1/Raid,Steel,1'
+	},
+	{ // 19
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Raid,Normal,1/Catch,Steel,1'
+	},
+	{ // 20
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-2_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Raid,Normal,1/Catch,Steel,1'
+	},
+	{ // 21
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-3_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Raid,Normal,1/Catch,Steel,1'
+	},
+	{ // 22
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Catch,Steel,1/Raid,Normal,1'
+	},
+	{ // 23
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter',
+		result: 'Encounter,Steel,1/Exp,Steel,1/Catch,Normal,1'
+	},
+	{ // 24
+		recipe: 'Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Mustard',
+		result: 'Encounter,Steel,1/Exp,Steel,1/Catch,Rock,1'
+	},
+	{ // 25
+		recipe: 'Apple-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter',
+		result: 'Encounter,Steel,1/Raid,Flying,1/Catch,Steel,1'
+	},
+	{ // 26
+		recipe: '',
+		result: ''
+	},
+	{ // 27
 		recipe: '',
 		result: ''
 	}
@@ -516,6 +596,7 @@ const TEST_SET_1_STAR = [
 	}
 ];
 
+// 4-star
 const TEST_SET_4_STAR = [
 	{
 		recipe: 'Ham-3,Ham-3,Ham-3,Ham-3_Bitter Herba Mystica,Curry Powder,Curry Powder,Curry Powder,Curry Powder,Salty Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica',
@@ -526,15 +607,15 @@ const TEST_SET_4_STAR = [
 		result: 'Encounter,Psychic,3/Raid,Psychic,3/Item,Ghost,2'
 	},
 	{
-		recipe: '',
-		result: ''
+		recipe: 'Ham-3,Ham-3,Ham-3,Ham-3_Bitter Herba Mystica,Curry Powder,Curry Powder,Curry Powder,Curry Powder,Salty Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica',
+		result: 'Sparkling,Ground,3/Title,Ground,3/Encounter,Ground,3'
 	}
 ];
 
 const TEST_SET_NAMES = ['Herba', 'Non-herba', 'Multiplayer', 'Split-Typing', '2 star', '1 star', '4 star'];
 
 // generates a sandwich from a 'save recipe' string
-const generateSandwichFromRecipe = recipe => {
+export const generateSandwichFromRecipe = recipe => {
 	const ingredients = getIngredientsFromRecipe(recipe);
 	if (!ingredients) { return undefined; }
 	const sums = getIngredientsSums(ingredients.fillings, ingredients.condiments);

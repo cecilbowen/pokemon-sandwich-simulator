@@ -59,6 +59,8 @@ title fighting lv3, humungo fighting lv3, encounter ground lv2
 Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Sweet Herba Mystica
 title flying lv2, egg lv2, encounter fighting lv2
 
+Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0_Bitter Herba Mystica
+title flying lv2, exp flying lv2, encounter fighting lv2
 
 non-herba
 ==============================
@@ -192,6 +194,44 @@ encounter flying lv1, catch fire lv1, raid dragon lv1
 Apple-3,Basil-2,Cheese-2,Prosciutto-2,Watercress-2_Mustard
 exp flying lv1, raid ice lv1, item steel lv1
 
+Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-3_Pepper,Pepper,Salt,Salt
+exp normal lv1, raid flying lv1, encounter fighting lv1
+
+Red Onion-3,Red Onion-3,Red Onion-3,Red Onion-2_Butter
+egg (ghost) lv1, encounter normal lv1, catch bug lv1
+
+Onion-3,Onion-3,Onion-3,Onion-3_Butter
+raid psychic lv1, encounter ghost lv1, catch bug lv1
+
+Onion-3,Onion-3,Onion-3,Onion-3,Strawberry-3_Salt
+raid psychic lv1, encounter ghost lv1, catch fighting lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-3_Peanut Butter,Peanut Butter
+encounter steel lv1, catch fire lv1, exp normal lv1
+
+Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Kiwi-3,Kiwi-3_Chili Sauce
+item poison lv1, encounter dragon lv1, catch fire lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-3_Butter,Peanut Butter,Peanut Butter
+encounter steel lv1, catch bug lv1, raid fire lv1
+
+Hamburger-1,Red Bell Pepper-3_Peanut Butter,Peanut Butter
+egg (steel) lv1, encounter fire lv1, raid normal lv1
+
+==
+
+Cherry Tomatoes-3_Butter
+catch bug lv1, encounter normal lv1, raid ghost lv1
+
+Cherry Tomatoes-3,Red Onion-3_Butter
+catch bug lv1, encounter ghost lv1, raid normal lv1 (1, 2, 3)
+
+Cherry Tomatoes-2,Red Onion-2_Butter
+egg (bug) lv1, encounter normal lv1, raid ghost lv1
+
+Cherry Tomatoes-3,Red Onion-1_Butter
+catch bug lv1, encounter normal lv1, raid ghost lv1
+
 
 multiplayer
 ==============================
@@ -256,6 +296,8 @@ title electric lv3, humungo electric lv3, exp electric lv3
 Basil-4,Cheese-3,Cheese-3,Cheese-3,Cheese-3,Cheese-3,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Jam,Jam,Ketchup,Ketchup,Ketchup,Mayonnaise,Mayonnaise,Mayonnaise
 humungo dark lv3, raid dark lv3, exp fairy lv2 (tested by another user)
 
+Banana-3,Banana-3,Banana-3,Cheese-3,Cheese-3,Cheese-3,Cheese-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Mayonnaise,Mayonnaise,Mayonnaise,Whipped Cream,Whipped Cream
+encounter normal lv3, exp normal lv3, item normal lv3
 
 dual-typing (singleplayer)
 ================================
@@ -265,7 +307,10 @@ exp steel lv1, encounter ghost lv1, catch steel lv1
 Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter
 encounter steel lv1, exp steel lv1, catch ghost lv1
 
-Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-1_Pepper,Salt,Salt
+Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-1_Pepper,Pepper,Salt,Salt
+exp normal lv1, raid flying lv1, encounter normal lv1
+
+Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-2_Pepper,Pepper,Salt,Salt
 exp normal lv1, raid flying lv1, encounter normal lv1
 
 Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-1_Pepper,Salt,Salt
@@ -289,9 +334,6 @@ encounter flying lv1, catch ice lv1, exp flying lv1
 Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3_Ketchup
 item poison lv1, encounter normal lv1, catch poison lv1
 
-Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0_Bitter Herba Mystica
-title flying lv2, exp flying lv2, encounter fighting lv2
-
 Cheese-2,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter
 exp steel lv1, encounter ghost lv1, catch steel lv1
 
@@ -300,6 +342,40 @@ encounter steel lv1, catch ghost lv1, exp steel lv1
 
 Ham-3,Ham-3,Ham-3,Ham-3_Mustard
 encounter ground lv1, catch normal lv1, exp ground lv1
+
+Red Onion-3,Red Onion-3,Red Onion-3,Red Onion-3_Butter
+egg (ghost) lv1, encounter normal lv1, catch ghost lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-1_Peanut Butter,Peanut Butter
+encounter steel lv1, catch normal lv1, raid steel lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-2_Peanut Butter,Peanut Butter
+encounter steel lv1, catch normal lv1, raid steel lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+encounter steel lv1, raid normal lv1, catch steel lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-2_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+encounter steel lv1, raid normal lv1, catch steel lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-3_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+encounter steel lv1, raid normal lv1, catch steel lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+encounter steel lv1, catch steel lv1, raid normal lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter
+encounter steel lv1, exp steel lv1, catch normal lv1
+
+Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Mustard
+encounter steel lv1, exp steel lv1, catch rock lv1
+
+Apple-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter
+encounter steel lv1, raid flying lv1, catch steel lv1
+
+Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Kiwi-3_Ketchup,Ketchup,Ketchup,Ketchup
+teensy poison lv1, encounter dragon lv1, raid poison lv1
+
 
 two-star recipes
 ========================
@@ -383,6 +459,11 @@ sparkling flying lv3, title flying lv3, catching flying lv3
 
 Avocado-1,Basil-4,Basil-1,Prosciutto-1,Prosciutto-2_Mustard
 exp flying lv1, raid dragon lv1, encounter fire lv1 (1, 2, 3)
+
+==
+
+Cherry Tomatoes-2,Onion-1_Butter
+egg (bug) lv1, encounter psychic lv1, raid ghost lv1 (1, 2, 3)
 
 
 one star recipes
@@ -481,8 +562,6 @@ encounter poison lv3, raid poison lv3, exp dragon lv2
 
 Basil-4,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Noodles-1,Noodles-1,Onion-3,Onion-3,Onion-3,Potato Tortilla-1,Potato Tortilla-1,Potato Tortilla-1,Strawberry-3,Strawberry-3,Strawberry-3_Salt,Salt,Salt,Salt,Vinegar,Vinegar,Vinegar,Vinegar,Wasabi,Wasabi,Wasabi,Wasabi
 encounter psychic lv3, raid psychic lv3, item ghost lv2
-
-==
 
 Ham-3,Ham-3,Ham-3,Ham-3_Bitter Herba Mystica,Curry Powder,Curry Powder,Curry Powder,Curry Powder,Salty Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica
 sparkling ground lv3, title ground lv3, encounter ground lv3
