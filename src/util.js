@@ -792,12 +792,12 @@ export const isFilling = obj => {
 };
 
 export const isFlavor = obj => {
-  const str = obj.flavor || obj;
+  const str = obj?.flavor || obj;
   return FLAVORS.indexOf(str) !== -1;
 };
 
 export const isPower = obj => {
-  const str = obj.type || obj;
+  const str = obj?.type || obj;
 
   for (const power of POWERS) {
     if (power.indexOf(str) !== -1) {
@@ -809,7 +809,7 @@ export const isPower = obj => {
 };
 
 export const isType = obj => {
-  const str = obj.type || obj;
+  const str = obj?.type || obj;
   return TYPES.indexOf(str) !== -1;
 };
 
