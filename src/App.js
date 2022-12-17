@@ -560,6 +560,7 @@ function App() {
     return (
       <div>
         <small><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">{ts("Source Code")}</a></small>
+        <span style={{ paddingLeft: '4px' }}>|</span>
         {languages.map(x => renderLanguage(x))}
       </div>
     );

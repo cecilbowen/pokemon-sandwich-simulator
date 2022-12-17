@@ -7,6 +7,7 @@ import TYPES from './data/types.json';
 import ENGLISH from './language/strings.json';
 import SPANISH from './language/strings-es.json';
 import GERMAN from './language/strings-de.json';
+import JAPANESE from './language/strings-ja.json';
 import { LANGUAGE } from './App';
 
 export const oneTwoFirst = [
@@ -184,7 +185,7 @@ export const LANGUAGE_STRINGS = {
   'en': ENGLISH,
   'es': SPANISH,
   'de': GERMAN,
-  //'ja': JAPANESE,
+  'ja': JAPANESE,
   //'ru': RUSSIAN,
   //'sv': SWEDISH,
   //'fr': FRENCH
@@ -194,7 +195,7 @@ export const LANGUAGE_NAMES = {
   'en': 'English',
   'es': 'Español',
   'de': 'Deutsch',
-  //'ja': '日本',
+  'ja': '日本',
   //'ru': 'Pусский',
   //'sv': 'Svenska',
   //'fr': 'Français',
