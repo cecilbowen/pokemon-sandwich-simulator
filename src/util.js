@@ -251,9 +251,15 @@ export const getIngredientsFromRecipe = recipe => {
     const cNames = condimentStr.split(",");
 
     for (const str of fNames) {
-      const name = str.split("-")[0];
+      let name = str.split("-")[0];
       let pieces = str.split("-")[1];
       if (pieces) { pieces = parseInt(pieces); }
+
+      // support old egg name saved recipes
+      if (name === "Egg") {
+        name = "Sliced Egg";
+      }
+
       const filling = FILLINGS.filter(x => x.name === name)[0];
       if (filling) {
         fillings.push({ ...filling, pieces });

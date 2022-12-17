@@ -8,7 +8,7 @@
     "Cherry Tomatoes": "カットミニトマト",
     "Chorizo": "やきチョリソー",
     "Cucumber": "キュウリスライス",
-    "Egg": "たまご",
+    "Sliced Egg": "たまご",
     "Fried Fillet": "きりみフライ",
     "Green Bell Pepper": "ピーマンスライス",
     "Ham": "ハムスライス",
@@ -96,6 +96,7 @@
     "Teensy Power": "ちびちびパワー",
     "Encounter Power": "そうぐうパワー",
     
+    "Egg": "たまご",
     "Catch": "ほかく",
     "Item": "おとしもの",
     "Humungo": "でかでか",

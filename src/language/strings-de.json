@@ -8,7 +8,7 @@
     "Cherry Tomatoes": "Mini-Tomate",
     "Chorizo": "Chorizo",
     "Cucumber": "Gurke",
-    "Egg": "Ei",
+    "Sliced Egg": "Ei",
     "Fried Fillet": "Frittierfilet",
     "Green Bell Pepper": "Grüne Paprika",
     "Ham": "Kochschinken",
@@ -95,6 +95,7 @@
     "Teensy Power": "Minikraft",
     "Encounter Power": "Begegnungskraft",
 
+    "Egg": "Ei",
     "Catch": "Fang",
     "Item": "Fund",
     "Humungo": "Maxi",

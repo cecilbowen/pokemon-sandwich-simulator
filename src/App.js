@@ -5,7 +5,7 @@ import TYPES from './data/types.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
 import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES,
-  ALIAS_TO_FULL, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
+  ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
   copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
 import { runTests } from './test/tests';
 import Card from './components/Card';
@@ -160,10 +160,10 @@ function App() {
     const activePower = checkArr["powers"].find((u) => u.type === power);
 
     if (hasRelevance(checkArr, activeKey) && activePower !== undefined) { 
-      if(activePower.amount > 0) {
+      if (activePower.amount > 0) {
         retClass += ' power-increase';
       }
-      if(activePower.amount < 0) {
+      if (activePower.amount < 0) {
         retClass += ' power-decrease';
       }
     } 
@@ -276,14 +276,7 @@ function App() {
   };
 
   const renderSandwichBubble = (effect, key) => {
-    let power = "Egg";
-    for (const v of Object.keys(ALIAS_TO_FULL)) {
-      if (effect.name.indexOf(v) !== -1) {
-        power = v;
-        break;
-      }
-    }
-
+    const power = FULL_TO_ALIAS[effect.name];
     const powerColor = COLORS[power];
     const typeColor = COLORS[effect.type];
     const levelColor = "#e6d0d0";

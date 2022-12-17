@@ -8,7 +8,7 @@
     "Cherry Tomatoes": "Cherry Tomatoes",
     "Chorizo": "Chorizo",
     "Cucumber": "Cucumber",
-    "Egg": "Egg",
+    "Sliced Egg": "Egg",
     "Fried Fillet": "Fried Fillet",
     "Green Bell Pepper": "Green Bell Pepper",
     "Ham": "Ham",
@@ -95,6 +95,7 @@
     "Teensy Power": "Teensy Power",
     "Encounter Power": "Encounter Power",
 
+    "Egg": "Egg",
     "Catch": "Catching",
     "Item": "Item",
     "Humungo": "Humungo",

@@ -24,4 +24,4 @@ narrow down what determines if 2 star, since it looks like dropping >= half tota
 
 add a visual identifier for how many players it takes to make a multiplayer recipe, minimum
 
-make search panel take search criteria in current language instead of just english all the tempCondiments
+make search panel take search criteria in current language instead of just english

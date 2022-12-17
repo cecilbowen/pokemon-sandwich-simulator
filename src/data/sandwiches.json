@@ -2645,7 +2645,7 @@
     "name": "Egg Sandwich",
     "description": "A sandwich with pleasingly straightforward flavors. The fundamental taste of the egg gets to shine.",
     "fillings": [
-      "Egg",
+      "Sliced Egg",
       "Cucumber"
     ],
     "condiments": [
@@ -2689,7 +2689,7 @@
     "name": "Great Egg Sandwich",
     "description": "The crunch and sweetness of the onion brings out the richness of the egg.",
     "fillings": [
-      "Egg",
+      "Sliced Egg",
       "Cucumber",
       "Red Onion"
     ],
@@ -2734,7 +2734,7 @@
     "name": "Ultra Egg Sandwich",
     "description": "For those who've gotten tired of the plain and simple Egg Sandwich. The egg and the cheese pair beautifully.",
     "fillings": [
-      "Egg",
+      "Sliced Egg",
       "Cucumber",
       "Red Onion",
       "Cheese"
@@ -2780,7 +2780,7 @@
     "name": "Master Egg Sandwich",
     "description": "The fully realized Egg Sandwich. Robust saltiness is its standout feature.",
     "fillings": [
-      "Egg",
+      "Sliced Egg",
       "Cucumber",
       "Red Onion",
       "Cheese"
@@ -6473,7 +6473,7 @@
       "Bacon",
       "Yellow Bell Pepper",
       "Jalapeno",
-      "Egg"
+      "Sliced Egg"
     ],
     "condiments": [
       "Olive Oil",
@@ -6522,7 +6522,7 @@
       "Bacon",
       "Yellow Bell Pepper",
       "Jalapeno",
-      "Egg"
+      "Sliced Egg"
     ],
     "condiments": [
       "Olive Oil",
