@@ -305,3 +305,9 @@ small {
   font-size: 12px;
 }
 
+.language-link {
+  padding-left: 4px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+

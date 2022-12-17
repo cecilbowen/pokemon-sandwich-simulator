@@ -23,3 +23,5 @@ narrow down what determines if 2 star, since it looks like dropping >= half tota
 	might be related to amount of pieces on dish (top of table)
 
 add a visual identifier for how many players it takes to make a multiplayer recipe, minimum
+
+make search panel take search criteria in current language instead of just english all the tempCondiments

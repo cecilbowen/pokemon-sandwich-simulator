@@ -1,6 +1,8 @@
 // import { useEffect, useState } from 'react';
 import { calculatePowerAmount } from '../util';
-import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode, copyTextToClipboard, isFilling, isFlavor, isPower, isType, shadeColor } from '../util';
+import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode, ts,
+    copyTextToClipboard, isFilling, isFlavor, isPower, isType, shadeColor
+} from '../util';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
@@ -59,7 +61,7 @@ const Card = props => {
 
         return <div className={className} style={{ backgroundColor, borderColor, backgroundImage }} key={id}
             onClick={() => onSelectBubble(key)}>
-            <div>{key}:</div>
+            <div>{ts(key)}:</div>
             <div style={{ marginLeft: "10px" }}>{kv.modded ? `${value} (${value - 100} + 100)` : value}</div>
         </div>;
     };
@@ -68,7 +70,7 @@ const Card = props => {
         const backgroundColor = COLORS["All Types"];
 
         return <div className="bubble bubble-type" style={{ backgroundColor }}>
-            <div>All Types:</div>
+            <div>{ts("All Types")}:</div>
             <div style={{ marginLeft: "10px" }}>{calculatePowerAmount(types[0].amount, ingredient, types[0])}</div>
         </div>;
     };
@@ -81,7 +83,7 @@ const Card = props => {
         return (<div className="bubble-row">
             {toRender.map((x, i) => renderKeyValue(x, i))}
             <div className="bubble bubble-type" style={{ backgroundColor }}>
-                <div>All Other Types:</div>
+                <div>{ts("All Other Types")}:</div>
                 <div style={{ marginLeft: "10px" }}>{common}</div>
             </div>
         </div>);
@@ -130,25 +132,25 @@ const Card = props => {
     };
 
     const flavorComboStr = FLAVOR_TABLE_EZ[props?.activeKey.power];
-    const powerExplain = isPower(props?.activeKey.power) ? `+100 ${props.activeKey.power}: ${flavorComboStr}` : "";
+    const powerExplain = isPower(props?.activeKey.power) ? `+100 ${ts(props.activeKey.power)}: ${ts(flavorComboStr)}` : "";
     const powerExplainDisplay = flavorComboStr ? "" : "none";
-    const powerExplainTitle = "What flavor combo ordering boosts this power";
+    const powerExplainTitle = ts("What flavor combo ordering boosts this power");
 
     return (
       <div
         key={props.number ? props.number : ""} className='card'
         style={{ borderColor, backgroundColor, alignSelf: "center", position: "relative" }}>
         {!isSum && <div className='bubble bubble-header' onClick={props?.onClick}>
-            <img alt={ingredient.name} src={ingredient.imageUrl} />
-            <div>{ingredient.name}</div>            
+            <img alt={ts(ingredient.name)} src={ingredient.imageUrl} />
+            <div>{ts(ingredient.name)}</div>            
         </div>}
         {isSum && <div className='bubble bubble-header' onClick={() => copyValues(tastes, powers, types)}>
             <img alt={"Total"} src="https://www.serebii.net/itemdex/sprites/sandwich.png" title={sumStr} />
-            <div>Total Stats</div>
+            <div>{ts("Total Stats")}</div>
             <div id='power-flavors-description' title={powerExplainTitle} style={{ display: powerExplainDisplay }}>{powerExplain}</div>
         </div>}
         {!isSum && ingredient && isFilling(ingredient) && <div className="pieces">
-            <div title='How many pieces of this filling to put on sandwich'>Pieces: {ingredient.pieces}</div>
+            <div title={ts('How many pieces of this filling to put on sandwich')}>{ts("Pieces")}: {ingredient.pieces}</div>
             <button className='piece-button' onClick={() => modifyPieces(-1)}>-</button>
             <button className='piece-button' onClick={() => modifyPieces(1)}>+</button>
         </div>}
@@ -161,7 +163,7 @@ const Card = props => {
         </div>}
         {/*!isSum && <button className='expand-button' onClick={props?.onClick}></button>*/}
         {props.number !== undefined && <div className='numbering'>{props.number + 1}</div>}
-        {!isSum && !props.simpleMode && <div className='expand-help' onClick={props?.onClick}>{showStats ? "Click to minimize" : "expand"}</div>}
+        {!isSum && !props.simpleMode && <div className='expand-help' onClick={props?.onClick}>{showStats ? ts("Click to minimize") : ts("expand")}</div>}
       </div>
     );
 };

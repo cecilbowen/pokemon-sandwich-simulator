@@ -4,7 +4,7 @@ import CONDIMENTS from './data/condiments.json';
 import TYPES from './data/types.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
-import { getCondiments, getFillings, getRecipeFromIngredients,
+import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES,
   ALIAS_TO_FULL, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
   copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
 import { runTests } from './test/tests';
@@ -17,6 +17,9 @@ const MAX_FILLINGS = 6;
 const MAX_CONDIMENTS = 4;
 const DISABLE_ALERTS = false;
 let NUM_PLAYERS = 1;
+
+// en, es, ja, de, ru, sv, fr
+export let LANGUAGE = "en";
 
 function App() {
   const [advancedIngredients, setAdvancedIngredients] = useState(false);
@@ -133,6 +136,11 @@ function App() {
     setHeartbeat(heartbeat + 1);
   };
 
+  const changeLanguage = lang => {
+    LANGUAGE = lang;
+    pulse();
+  };
+
   const clearIngredients = () => {
     setActiveFillings([]);
     setActiveCondiments([]);
@@ -180,8 +188,8 @@ function App() {
     <div className={divClass} key={`filling-${index}-${active ? 'active' : 'dormant'}`}>
       <div className={ingredientPowerClass}></div>
       <img
-        alt={filling.name}
-        title={filling.name}
+        alt={ts(filling.name)}
+        title={ts(filling.name)}
         src={filling.imageUrl}
         className={className}
         onClick={() => {
@@ -232,8 +240,8 @@ function App() {
     <div className={divClass} key={`condiment-${index}-${active ? 'active' : 'dormant'}`}>
       <div className={ingredientPowerClass}></div>
       <img
-        alt={condiment.name}
-        title={condiment.name}
+        alt={ts(condiment.name)}
+        title={ts(condiment.name)}
         src={condiment.imageUrl}
         className={className}
         onClick={() => {
@@ -262,7 +270,7 @@ function App() {
       <div className='active-ingredients-bkg'>
         {activeFillings.map((x, i) => renderFilling(x, i, true))}
         {activeCondiments.map((x, i) => renderCondiment(x, i, true))}
-        {showClear && <span className='clear-ingredients' onClick={() => clearIngredients()}>clear</span>}
+        {showClear && <span className='clear-ingredients' onClick={() => clearIngredients()}>{ts("clear")}</span>}
       </div>
     )
   };
@@ -282,9 +290,9 @@ function App() {
 
     return (
       <div className="bubble-row" key={key}>
-        <div className="bubble chain-a" style={{ backgroundColor: powerColor }}>{`${effect.name}: `}</div>
-        <div className="bubble chain-b" style={{ backgroundColor: typeColor, display: effect.type === "" ? "none" : "" }}>{`${effect.type} `}</div>
-        <div className="bubble chain-c" style={{ backgroundColor: levelColor }}>{`Lv. ${effect.level}`}</div>
+        <div className="bubble chain-a" style={{ backgroundColor: powerColor }}>{`${ts(effect.name)}: `}</div>
+        <div className="bubble chain-b" style={{ backgroundColor: typeColor, display: effect.type === "" ? "none" : "" }}>{`${ts(effect.type)} `}</div>
+        <div className="bubble chain-c" style={{ backgroundColor: levelColor }}>{`${ts("Lv.")} ${effect.level}`}</div>
       </div>
     );
   };
@@ -292,7 +300,7 @@ function App() {
   const renderSandwich = sandwich => {
     if (!sandwich) { return null; }
 
-    let display = `#${sandwich.number} - ${sandwich.name}`;
+    let display = `#${sandwich.number} - ${ts(sandwich.name)}`;
 
     if (sandwich.number === "???") {
       display = '⭐'.repeat(sandwich.stars);
@@ -303,14 +311,18 @@ function App() {
 
     return (
       <div className='card' style={{ display: "flex" }}>
-        <img alt={sandwich.name} src={sandwich.imageUrl} style={{ width: "100px" }} />
+        <img alt={ts(sandwich.name)}
+          src={sandwich.imageUrl}
+          style={{ width: "100px" }}
+          onClick={() => { if (window.event.ctrlKey) { setShowGenerator(true); }}}
+        />
         <div>
           <div className="bubble bubble-header" onClick={() => {
             if(window.event.ctrlKey) { runTests(); }
           }}
             style={{ backgroundColor: "tan" }}>{display}</div>
           {sandwich.effects.length > 0 && <div>{sandwich.effects.map((x, i) => renderSandwichBubble(x, i))}</div>}
-          {sandwich.effects.length === 0 && <div className='no-effects'>This sandwich has no effects.</div>}
+          {sandwich.effects.length === 0 && <div className='no-effects'>{ts("This sandwich has no effects.")}</div>}
         </div>
       </div>
     );
@@ -393,7 +405,7 @@ function App() {
         setActiveFillings(fillings);
       }} style={{ backgroundColor: highlight ? "yellow" : "#80808030",
         fontWeight: isWeird ? "bold" : "", color: hasMultiIngredients ? "" : ""}}>
-        {`#${sandwich.number} - ${sandwich.name}`}
+        {`#${sandwich.number} - ${ts(sandwich.name)}`}
       </div>
     );
   };
@@ -426,16 +438,16 @@ function App() {
     return (
       <div className='search-panel'>
         <div className='search-bars-div'>
-          <input type="text" id="nameSearch" placeholder='Search names' className='search-bar'
+          <input type="text" id="nameSearch" placeholder={ts('Search names')} className='search-bar'
             onChange={ev => search(ev, "name")} style={{ width: "250px" }}
           />
-          <input type="text" id="effectSearch" placeholder='Search effects (egg, raid, etc)' className='search-bar'
+          <input type="text" id="effectSearch" placeholder={ts('Search effects (egg, raid, etc)')} className='search-bar'
             onChange={ev => search(ev, "effect")} style={{ width: "250px" }}
           />
-          <input type="text" id="typeSearch" placeholder='Search types (normal, dark, etc)' className='search-bar'
+          <input type="text" id="typeSearch" placeholder={ts('Search types (normal, dark, etc)')} className='search-bar'
             onChange={ev => search(ev, "type")} style={{ width: "250px" }}
           />
-          <input type="text" id="ingredientSearch" placeholder='Search ingredients (ham, bacon, etc)' className='search-bar'
+          <input type="text" id="ingredientSearch" placeholder={ts('Search ingredients (ham, bacon, etc)')} className='search-bar'
             onChange={ev => search(ev, "ingredient")} style={{ width: "250px" }}
           />
         </div>
@@ -501,13 +513,13 @@ function App() {
     copyTextToClipboard(copyStr);
 
     if (!DISABLE_ALERTS) {
-      alert("Copied recipe to clipboard!\n" + copyStr);
+      alert(ts("Copied recipe to clipboard!") + "\n" + copyStr);
     }
   };
 
   const loadRecipe = recipe => {
     if (!recipe) {
-      recipe = window.prompt("Enter/paste recipe:", "");
+      recipe = window.prompt(ts("Enter/paste recipe:"), "");
     }
     
     const ingredients = getIngredientsFromRecipe(recipe);
@@ -527,12 +539,29 @@ function App() {
   const renderSettings = () => {
     return (
       <div className='settings-bar'>
-        <button className='button-spacing' onClick={() => setSimpleMode(!simpleMode)}>Toggle Simple Mode: {simpleMode ? "On" : "Off"}</button>
-        <button className='button-spacing' onClick={() => setShowSearchPanel(!showSearchPanel)}>Toggle Search Panel</button>
-        {!simpleMode && <button className='button-spacing' onClick={() => setShowEffectFilter(!showEffectFilter)}>Toggle Effect Filter</button>}
-        <button className='button-spacing' onClick={() => setMegaSandwichMode(!megaSandwichMode)}>Toggle Multiplayer Mode: {megaSandwichMode ? "On" : "Off"}</button>
-        <button className='button-spacing' onClick={() => loadRecipe()}>Load Recipe</button>
-        <button className='button-spacing' onClick={() => saveRecipe()}>Save Recipe</button>
+        <button className='button-spacing' onClick={() => setSimpleMode(!simpleMode)}>{ts("Toggle Simple Mode")}: {simpleMode ? ts("On") : ts("Off")}</button>
+        <button className='button-spacing' onClick={() => setShowSearchPanel(!showSearchPanel)}>{ts("Toggle Search Panel")}</button>
+        {!simpleMode && <button className='button-spacing' onClick={() => setShowEffectFilter(!showEffectFilter)}>{ts("Toggle Effect Filter")}</button>}
+        <button className='button-spacing' onClick={() => setMegaSandwichMode(!megaSandwichMode)}>{ts("Toggle Multiplayer Mode")}: {megaSandwichMode ? ts("On") : ts("Off")}</button>
+        <button className='button-spacing' onClick={() => loadRecipe()}>{ts("Load Recipe")}</button>
+        <button className='button-spacing' onClick={() => saveRecipe()}>{ts("Save Recipe")}</button>
+      </div>
+    );
+  };
+
+  const renderLanguage = language => {
+    return (
+      <small key={`lang-${language[0]}`} className='language-link' onClick={() => changeLanguage(language[0])}>{language[1]}</small>
+    );
+  };
+
+  const renderFooter = () => {
+    const languages = Object.entries(LANGUAGE_NAMES).map(x => x).filter(x => x[0] !== LANGUAGE);
+
+    return (
+      <div>
+        <small><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">{ts("Source Code")}</a></small>
+        {languages.map(x => renderLanguage(x))}
       </div>
     );
   };
@@ -546,7 +575,7 @@ function App() {
       {renderMath()}
       {renderSearch()}
       {renderSettings()}
-      <small><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">Source Code</a></small>
+      {renderFooter()}
     </div>
   );
 }

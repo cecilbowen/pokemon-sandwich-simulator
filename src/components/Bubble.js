@@ -1,5 +1,5 @@
 import React from "react";
-import { COLORS, shadeColor } from "../util";
+import { COLORS, shadeColor, ts } from "../util";
 
 const Bubble = ({ label, isFlavor, isType, onClick, selected }) => {
   const backgroundColor = COLORS[label];
@@ -18,7 +18,7 @@ const Bubble = ({ label, isFlavor, isType, onClick, selected }) => {
       onClick={onClick}
       style={{ backgroundColor, borderColor, backgroundImage }}
     >
-      {label}
+      {ts(label)}
     </div>
   );
 };

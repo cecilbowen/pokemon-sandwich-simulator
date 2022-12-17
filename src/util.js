@@ -4,6 +4,10 @@ import CONDIMENTS from './data/condiments.json';
 import FLAVORS from './data/flavors.json';
 import POWERS from './data/powers.json';
 import TYPES from './data/types.json';
+import ENGLISH from './language/strings.json';
+import SPANISH from './language/strings-es.json';
+import GERMAN from './language/strings-de.json';
+import { LANGUAGE } from './App';
 
 export const oneTwoFirst = [
   "31",
@@ -174,6 +178,36 @@ export const COLORS = {
 
 export const TYPE_EXCEPTIONS = {
   "39": ["Flying", "Poison", "Fighting"], // I'm convinced this is a game bug and it's only counting the flavors on apple once
+};
+
+export const LANGUAGE_STRINGS = {
+  'en': ENGLISH,
+  'es': SPANISH,
+  'de': GERMAN,
+  //'ja': JAPANESE,
+  //'ru': RUSSIAN,
+  //'sv': SWEDISH,
+  //'fr': FRENCH
+};
+
+export const LANGUAGE_NAMES = {
+  'en': 'English',
+  'es': 'Español',
+  'de': 'Deutsch',
+  //'ja': '日本',
+  //'ru': 'Pусский',
+  //'sv': 'Svenska',
+  //'fr': 'Français',
+};
+
+export const ts = text => {
+  text = (text || "dammerung").toLowerCase();
+  const preStrings = LANGUAGE_STRINGS[LANGUAGE] || {};
+  const strings = {};
+  for (const [k, v] of Object.entries(preStrings)) {
+    strings[k.toLowerCase()] = v;
+  }
+  return strings[text] || "???";
 };
 
 export const getFillings = strArr => {
