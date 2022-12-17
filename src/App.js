@@ -314,7 +314,6 @@ function App() {
         <img alt={ts(sandwich.name)}
           src={sandwich.imageUrl}
           style={{ width: "100px" }}
-          onClick={() => { if (window.event.ctrlKey) { setShowGenerator(true); }}}
         />
         <div>
           <div className="bubble bubble-header" onClick={() => {
