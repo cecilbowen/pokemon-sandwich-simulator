@@ -8,6 +8,7 @@ import ENGLISH from './language/strings.json';
 import SPANISH from './language/strings-es.json';
 import GERMAN from './language/strings-de.json';
 import JAPANESE from './language/strings-ja.json';
+import SIMPLIFIED_CHINESE from './language/strings-zh-CN.json';
 import { LANGUAGE } from './App';
 
 export const oneTwoFirst = [
@@ -186,6 +187,7 @@ export const LANGUAGE_STRINGS = {
   'es': SPANISH,
   'de': GERMAN,
   'ja': JAPANESE,
+  'zh-CN': SIMPLIFIED_CHINESE
   //'ru': RUSSIAN,
   //'sv': SWEDISH,
   //'fr': FRENCH
@@ -196,6 +198,7 @@ export const LANGUAGE_NAMES = {
   'es': 'Español',
   'de': 'Deutsch',
   'ja': '日本',
+  'zh-CN': '简中'
   //'ru': 'Pусский',
   //'sv': 'Svenska',
   //'fr': 'Français',
