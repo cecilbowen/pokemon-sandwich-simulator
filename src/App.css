@@ -175,6 +175,15 @@
   width: fit-content;
   height: fit-content;
   min-width: 100px;
+  position: relative;
+}
+
+#players-icon {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 .page-break {
