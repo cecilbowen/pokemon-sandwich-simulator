@@ -4,7 +4,7 @@ import CONDIMENTS from './data/condiments.json';
 import TYPES from './data/types.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
-import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES,
+import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES, getNumberOfPlayers,
   ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
   copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
 import { runTests } from './test/tests';
@@ -302,12 +302,15 @@ function App() {
       }
     }
 
+    const numberOfPlayers = getNumberOfPlayers({ fillings: activeFillings, condiments: activeCondiments });
+
     return (
       <div className='card' style={{ display: "flex" }}>
         <img alt={ts(sandwich.name)}
           src={sandwich.imageUrl}
           style={{ width: "100px" }}
         />
+        {megaSandwichMode && <div id="players-icon">{numberOfPlayers}P</div>}
         <div>
           <div className="bubble bubble-header" onClick={() => {
             if(window.event.ctrlKey) { runTests(); }

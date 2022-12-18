@@ -19,10 +19,10 @@ fine-tune 2-star type and level calculation (to pass all tests)
 
 fine-tune dual-split type and level calculation (to pass all tests)
 
-narrow down what determines if 2 star, since it looks like dropping >= half total pieces is not exactly it
+x narrow down what determines if 2 star, since it looks like dropping >= half total pieces is not exactly it
 	might be related to amount of pieces on dish (top of table)
 
-add a visual identifier for how many players it takes to make a multiplayer recipe, minimum
+x add a visual identifier for how many players it takes to make a multiplayer recipe, minimum
 
 make search panel take search criteria in current language instead of just english
 

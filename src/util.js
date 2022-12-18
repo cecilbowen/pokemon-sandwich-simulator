@@ -221,6 +221,10 @@ export const ts = text => {
   return strings[text] || "???";
 };
 
+export const getNumberOfPlayers = ingredients => {
+  return Math.max(1, Math.ceil(ingredients.fillings.length / 6), Math.ceil(ingredients.condiments.length / 4));
+};
+
 export const getFillings = strArr => {
   const ret = [];
   for (const str of strArr) {

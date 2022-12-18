@@ -1,0 +1,73 @@
+Reverse-engineering any sandwich to get the desired effects perfectly is hard.  The algorithm complexity level
+  would be very high, and computation would be slow.  So one might get try to instead go,
+  "Well, I'll just brute force it and generate every possible recipe instead!".  After realizing that
+  this task, too, would be near out-of-scope, then maybe they'll refine it to instead be, "Okay,
+  how about I look at every type combination available, and instead generate all possible power
+  combinations of each type combo."
+
+As of Scarlet/Violet, there are 18 different types with 153 different type combinations.
+  If one was to theoretically generate a recipe for every possible singleplayer type combination,
+  then that would be ~1,422 recipes for mono-type, and ~28,152 recipes for dual-type, totaling
+  at ~29,574 recipes.
+
+==================================================
+== for all single types (3-star+, singleplayer) ==
+====   79 per type, so 1,422 recipes total	 =====
+==================================================
+level 1, 2 & 3 of each: (~27 recipes)
+  "Egg Power",
+  "Catching Power",
+  "Exp. Point Power",
+  "Item Drop Power",
+  "Raid Power",
+  "Humungo Power",
+  "Teensy Power",
+  "Encounter Power",
+  "Title Power", (level 2+ only)
+  "Sparkling Power", (level 3 only)
+  --
+  8 different level 1, 1 power results - 8 recipes
+  9 different level 2, 1 power results - 9 recipes
+  10 different level 3, 1 power results - 10 recipes
+
+levels 1, 2 & 3 triplets of each: (~52 recipes)
+  "Egg Power",
+  "Catching Power",
+  "Exp. Point Power",
+  "Item Drop Power",
+  "Raid Power",
+  "Humungo Power",
+  "Teensy Power",
+  "Encounter Power",
+  "Title Power", (level 2+ only)
+  "Sparkling Power", (level 3 only)
+  --
+  28 different level 1, 2 power combos - 28 recipes
+  10 different level 2, 2 power combos (title + ?) - 8 recipes
+  10 different level 3, 2 power combos (title + ?) - 8 recipes
+  10 different level 3, 3 power combos (title + sparkling + ?) - 8 recipes
+  
+==================================================
+==  for all dual types (3-star+, singleplayer)  ==
+====  184 per type, so 28,152 recipes total	 =====
+==================================================
+level 1, 2 & 3 of each: (~184 recipes)
+  "Egg Power",
+  "Catching Power",
+  "Exp. Point Power",
+  "Item Drop Power",
+  "Raid Power",
+  "Humungo Power",
+  "Teensy Power",
+  "Encounter Power",
+  "Title Power", (level 2+ only)
+  "Sparkling Power", (level 3 only)
+  --
+  28 different level 1, 2 power combos - 28 recipes
+  28 different level 2-1, 2 power combos - 28 recipes
+  8 different level 2-2-x, 2 power combos (title + ?) - 8 recipes
+  28 different level x-2-1, 2 power combos (title + ? + ?) - 28 recipes
+  28 different level x-2-2, 2 power combos (title + ? + ?) - 28 recipes
+  8 different level 3-3-x, 2 power combos (title + ?) - 8 recipes
+  28 different level x-3-2, 2 power combos (title + ? + ?) - 28 recipes
+  28 different level x-3-3, 2 power combos (title + ? + ?) - 28 recipes

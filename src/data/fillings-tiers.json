@@ -1,0 +1,48 @@
+{
+    "S": [
+        "Chorizo",
+        "Herbed Sausage",
+        "Sliced Egg"
+    ],
+    "A": [
+        "Rice",
+        "Noodles",
+        "Potato Salad"
+    ],
+    "B": [
+        "Apple",
+        "Banana",
+        "Jalapeno",
+        "Kiwi",
+        "Pineapple",
+        "Strawberry"
+    ],
+    "C": [
+        "Fried Fillet",
+        "Potato Tortilla"
+    ],
+    "D": [
+        "Avocado",
+        "Bacon",
+        "Cherry Tomatoes",
+        "Cucumber",
+        "Green Bell Pepper",
+        "Ham",
+        "Hamburger",
+        "Klawf Stick",
+        "Lettuce",
+        "Onion",
+        "Pickle",
+        "Prosciutto",
+        "Red Bell Pepper",
+        "Red Onion",
+        "Smoked Fillet",
+        "Tofu",
+        "Tomato",
+        "Yellow Bell Pepper"
+    ],
+    "F": [
+        "Basil",
+        "Watercress"
+    ]
+}
