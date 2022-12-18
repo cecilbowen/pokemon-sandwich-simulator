@@ -9,6 +9,7 @@ import SPANISH from './language/strings-es.json';
 import GERMAN from './language/strings-de.json';
 import JAPANESE from './language/strings-ja.json';
 import SIMPLIFIED_CHINESE from './language/strings-zh-CN.json';
+import TRADITIONAL_CHINESE from './language/strings-zh-TW.json';
 import FRENCH from './language/strings-fr.json';
 import ITALIAN from './language/strings-it.json';
 import { LANGUAGE } from './App';
@@ -190,6 +191,7 @@ export const LANGUAGE_STRINGS = {
   'de': GERMAN,
   'ja': JAPANESE,
   'zh-CN': SIMPLIFIED_CHINESE,
+  'zh-TW': TRADITIONAL_CHINESE,
   'fr': FRENCH,
   'it': ITALIAN
   //'ru': RUSSIAN,
@@ -202,6 +204,7 @@ export const LANGUAGE_NAMES = {
   'de': 'Deutsch',
   'ja': '日本',
   'zh-CN': '简中',
+  'zh-TW': '繁中',
   'fr': 'Français',
   'it': 'Italiano'
   //'ru': 'Pусский',
