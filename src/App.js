@@ -6,7 +6,7 @@ import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
 import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES, getNumberOfPlayers,
   ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
-  copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
+  copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe, isFilling } from './util';
 import { runTests } from './test/tests';
 import Card from './components/Card';
 import './App.css';
@@ -306,12 +306,11 @@ function App() {
 
     return (
       <div className='card' style={{ display: "flex" }}>
-        <img alt={ts(sandwich.name)}
+        <img className='sandwich-image' alt={ts(sandwich.name)}
           src={sandwich.imageUrl}
-          style={{ width: "100px" }}
         />
         {megaSandwichMode && <div id="players-icon">{numberOfPlayers}P</div>}
-        <div>
+        <div className='sandwich-info'>
           <div className="bubble bubble-header" onClick={() => {
             if(window.event.ctrlKey) { runTests(); }
           }}
@@ -355,28 +354,47 @@ function App() {
     // with only condiments.
     const showResults = activeFillings.length > 0 && activeCondiments.length > 0;
 
+    const fillings = []
+    const flavours = []
+    ingredients.forEach((item) => isFilling(item) ? fillings.push(item) : flavours.push(item))
+
+    const renderCard = (isFlavour) => (x, i) => (<Card 
+      ingredient={x} 
+      number={isFlavour ? fillings.length + i : i} 
+      fillings={activeFillings}
+      simpleMode={simpleMode}
+      key={i}
+      updatePieces={() => pulse()}
+      onClickBubble={key => toggleActiveKey(key)}
+      activeKey={activeKey}
+      onClick={() => {
+        if (!simpleMode) {
+          setAdvancedIngredients(!advancedIngredients);
+        }
+      }}
+      condiments={activeCondiments} detail={!simpleMode && advancedIngredients} />
+    )
+
     return (
       <div>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-          {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
-            simpleMode={simpleMode}
-            updatePieces={() => pulse()}
-            onClickBubble={key => toggleActiveKey(key)}
-            activeKey={activeKey}
-            onClick={() => {
-              if (!simpleMode) {
-                setAdvancedIngredients(!advancedIngredients);
-              }
-            }}
-            condiments={activeCondiments} detail={!simpleMode && advancedIngredients} />)}
-          {!advancedIngredients && <br className='page-break' />}
+        <div className='ingredients-results'>
+          <div className='flex-wrap fillings'>
+            {fillings.map(renderCard(false))}
+          </div>
+          <div className='flex-wrap flavours'>
+            {flavours.map(renderCard(true))}
+          </div>
           {showResults && !simpleMode
-            && <Card sums={sums} activeSandwich={activeSandwich}
+            && 
+            <div className='flex-wrap advanced-mode'>
+              <Card sums={sums} activeSandwich={activeSandwich}
                 fillings={activeFillings} condiments={activeCondiments} 
                 detail={!simpleMode && advancedIngredients}
                 onClickBubble={key => toggleActiveKey(key)}
                 activeKey={activeKey}
-              />}
+              />
+            </div>
+          }
         </div>
         <div className="bubble-row" style={{ justifyContent: "center" }}>
           {renderSandwich(foundSandwich)}
