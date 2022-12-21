@@ -356,4 +356,8 @@ small {
   a:visited {
     color: pink;
   }
+
+  .active-ingredients-bkg {
+    background-color: #53585c;
+  }
 }
