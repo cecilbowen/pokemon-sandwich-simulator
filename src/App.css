@@ -321,3 +321,39 @@ small {
   text-decoration: underline;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    /* Dark Theme */
+    background-color: #333;
+    color: #efefef;
+  }
+
+  input {
+    background-color: #555;
+    color: #efefef;
+  }
+
+  .clear-ingredients {
+    color: black;
+  }
+
+  .ingredient-div:hover {
+    box-shadow: rgba(255, 255, 255, 0.26) 0px 1px 1px 1px;
+  }
+
+  .ingredient-div:active {
+    box-shadow: rgba(255, 255, 255, 0.39) 0px 1px 1px 1px;
+  }
+
+  .bubble.highlighted, .results .bubble-row {
+    color: black;
+  }
+
+  .bubble.highlighted {
+    background-color: gold;
+  }
+
+  a:visited {
+    color: pink;
+  }
+}
