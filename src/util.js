@@ -209,7 +209,7 @@ export const LANGUAGE_NAMES = {
   'zh-TW': '繁中',
   'fr': 'Français',
   'it': 'Italiano',
-  'ko': 'Korean'
+  'ko': '한국어'
   //'ru': 'Pусский',
   //'sv': 'Svenska'
 };
