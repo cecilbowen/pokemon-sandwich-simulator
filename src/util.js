@@ -12,6 +12,7 @@ import SIMPLIFIED_CHINESE from './language/strings-zh-CN.json';
 import TRADITIONAL_CHINESE from './language/strings-zh-TW.json';
 import FRENCH from './language/strings-fr.json';
 import ITALIAN from './language/strings-it.json';
+import KOREAN from './language/strings-ko.json';
 import { LANGUAGE } from './App';
 
 export const oneTwoFirst = [
@@ -193,7 +194,8 @@ export const LANGUAGE_STRINGS = {
   'zh-CN': SIMPLIFIED_CHINESE,
   'zh-TW': TRADITIONAL_CHINESE,
   'fr': FRENCH,
-  'it': ITALIAN
+  'it': ITALIAN,
+  'ko': KOREAN
   //'ru': RUSSIAN,
   //'sv': SWEDISH
 };
@@ -206,7 +208,8 @@ export const LANGUAGE_NAMES = {
   'zh-CN': '简中',
   'zh-TW': '繁中',
   'fr': 'Français',
-  'it': 'Italiano'
+  'it': 'Italiano',
+  'ko': 'Korean'
   //'ru': 'Pусский',
   //'sv': 'Svenska'
 };
