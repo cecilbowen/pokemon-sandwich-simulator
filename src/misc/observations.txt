@@ -232,6 +232,24 @@ egg (bug) lv1, encounter normal lv1, raid ghost lv1
 Cherry Tomatoes-3,Red Onion-1_Butter
 catch bug lv1, encounter normal lv1, raid ghost lv1
 
+Cherry Tomatoes-3,Cherry Tomatoes-3,Hamburger-1,Hamburger-1_Salt
+encounter bug lv1, catch steel lv1, exp electric lv1 (1, 2, 3)
+
+Hamburger-1,Hamburger-1,Tomato-3,Tomato-3_Salt
+exp steel lv1, encounter fairy lv1, catch electric lv1 (1, 2, 3)
+
+Avocado-3,Smoked Fillet-3,Watercress-1_Butter
+egg (dragon) lv1, encounter bug lv1, catch dark lv1
+
+Avocado-3,Avocado-1,Smoked Fillet-3,Smoked Fillet-1,Watercress-2_Butter
+egg (dragon) lv1, encounter bug lv1, catch dark lv1
+
+Avocado-3,Avocado-2,Smoked Fillet-3,Smoked Fillet-2,Watercress-1_Butter
+egg (dragon) lv1, encounter dark lv1, catch bug lv1 (1, 2, 3)
+
+Avocado-3,Avocado-2,Smoked Fillet-3,Smoked Fillet-1,Watercress-1_Butter
+egg (dragon) lv1, encounter bug lv1, catch dark lv1
+
 
 multiplayer
 ==============================

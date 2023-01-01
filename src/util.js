@@ -938,14 +938,17 @@ export const mode = (array, prop, skipMax = false, useMin = false) => {
   return maxEl;
 };
 
-export const copyTextToClipboard = text => {
+export const copyTextToClipboard = (text, postFunc) => {
   if (!navigator.clipboard) {
     fallbackCopyTextToClipboard(text);
     return;
   }
-  navigator.clipboard.writeText(text).then(function() {
+  navigator.clipboard.writeText(text).then(() => {
     console.log('Async: Copying to clipboard was successful!');
-  }, function(err) {
+    if (postFunc) {
+      postFunc();
+    }
+  }, err => {
     console.error('Async: Could not copy text: ', err);
   });
 };

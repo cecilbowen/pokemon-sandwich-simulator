@@ -505,11 +505,11 @@ function App() {
     if (!copyStr) { return; }
 
     console.log("Saving recipe", copyStr);
-    copyTextToClipboard(copyStr);
-
+    copyTextToClipboard(copyStr, () => {
     if (!DISABLE_ALERTS) {
       alert(ts("Copied recipe to clipboard!") + "\n" + copyStr);
     }
+    });
   };
 
   const loadRecipe = recipe => {
