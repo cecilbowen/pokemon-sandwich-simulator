@@ -562,6 +562,25 @@ function App() {
     );
   };
 
+  const windowUrl = window.location.search;
+  const params = new URLSearchParams(windowUrl);
+  useEffect(() => {
+    if (params.get('recipe')) {
+      const ingredients = getIngredientsFromRecipe(params.get('recipe'));
+      if (ingredients) {
+        const fillings = ingredients.fillings;
+        const condiments = ingredients.condiments;
+
+        if (fillings.length > MAX_FILLINGS || condiments.length > MAX_CONDIMENTS) {
+          setMegaSandwichMode(true);
+        }
+  
+        setActiveFillings(fillings);
+        setActiveCondiments(condiments);
+      }
+    }
+  }, []);
+
   return (
     <div className="App">
       {!simpleMode && showEffectFilter && renderComplexSearch()}
