@@ -1,5 +1,3 @@
-// import { getIngredientsFromRecipe } from './util';
-
 const sandwich_util = require('./util_module.js')
 const express = require('express');
 const app = express();

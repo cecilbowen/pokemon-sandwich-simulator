@@ -1,8 +1,8 @@
 // import { useEffect, useState } from 'react';
-import { calculatePowerAmount } from '../util';
-import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode, ts,
+import { calculatePowerAmount } from '../util_module';
+import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode,
     copyTextToClipboard, isFilling, isFlavor, isPower, isType, shadeColor
-} from '../util';
+} from '../util_module';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
@@ -13,6 +13,7 @@ const Card = props => {
     const ingredient = props.ingredient;
     const isSum = props.sums !== undefined;
     const sums = props.sums || {};
+    const ts = props.ts;
 
     const tastes = (sums.tastes || ingredient.tastes).sort((a, b) => {
       return b.amount - a.amount || FLAVORS.indexOf(a.flavor) - FLAVORS.indexOf(b.flavor);

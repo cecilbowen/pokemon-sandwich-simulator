@@ -1,7 +1,7 @@
 import React from "react";
-import { COLORS, shadeColor, ts } from "../util";
+import { COLORS, shadeColor } from "../util_module";
 
-const Bubble = ({ label, isFlavor, isType, onClick, selected }) => {
+const Bubble = ({ label, isFlavor, isType, onClick, selected, ts }) => {
   const backgroundColor = COLORS[label];
   let backgroundImage = "";
   let borderColor = selected ? "black" : backgroundColor;

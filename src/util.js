@@ -13,7 +13,7 @@ import TRADITIONAL_CHINESE from './language/strings-zh-TW.json';
 import FRENCH from './language/strings-fr.json';
 import ITALIAN from './language/strings-it.json';
 import KOREAN from './language/strings-ko.json';
-import { LANGUAGE } from './App';
+import { LANGUAGE } from './language_util';
 
 export const oneTwoFirst = [
   "31",

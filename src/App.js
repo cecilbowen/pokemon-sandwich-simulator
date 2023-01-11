@@ -4,13 +4,21 @@ import CONDIMENTS from './data/condiments.json';
 import TYPES from './data/types.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
-import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES, getNumberOfPlayers,
+
+import {getIngredientsFromRecipe, getCondiments, getFillings, getRecipeFromIngredients, getNumberOfPlayers,
   ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
-  copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
+  copyTextToClipboard, hasRelevance, getCategory} from './util_module'
+
+import { ts_lang, LANGUAGE_NAMES } from './language_util';
+
 import { runTests } from './test/tests';
 import Card from './components/Card';
 import './App.css';
 import Bubble from './components/Bubble';
+
+// en, es, ja, de, ru, sv, fr
+export let LANGUAGE = "en";
+export const ts = (text) => { return ts_lang(text, LANGUAGE); }
 
 // per player
 const MAX_FILLINGS = 6;
@@ -18,8 +26,6 @@ const MAX_CONDIMENTS = 4;
 const DISABLE_ALERTS = false;
 let NUM_PLAYERS = 1;
 
-// en, es, ja, de, ru, sv, fr
-export let LANGUAGE = "en";
 
 function App() {
   const [advancedIngredients, setAdvancedIngredients] = useState(false);
@@ -358,7 +364,7 @@ function App() {
     return (
       <div>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-          {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
+          {ingredients.map((x, i) => <Card ts={ts} ingredient={x} number={i} fillings={activeFillings}
             simpleMode={simpleMode}
             updatePieces={() => pulse()}
             onClickBubble={key => toggleActiveKey(key)}
@@ -468,6 +474,7 @@ function App() {
               selected={
                 activeKey && Object.values(activeKey).indexOf(flavor) !== -1
               }
+              ts={ts}
             />
           ))}
         </div>
