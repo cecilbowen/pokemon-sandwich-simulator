@@ -356,7 +356,7 @@ function App() {
     const showResults = activeFillings.length > 0 && activeCondiments.length > 0;
 
     return (
-      <div>
+      <div class="results">
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
           {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
             simpleMode={simpleMode}
