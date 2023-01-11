@@ -92,7 +92,7 @@
 }
 
 .power-decrease {
-  background-color: rgba(255, 95, 95, 0.8) ;
+  background-color: rgba(255, 95, 95, 0.8);
 }
 
 .filling-bkg {
@@ -146,7 +146,7 @@
   margin-top: 10px;
 }
 
-.complex-search-panel > * {
+.complex-search-panel>* {
   margin-bottom: 4px;
 }
 
@@ -176,6 +176,21 @@
   height: fit-content;
   min-width: 100px;
   position: relative;
+}
+
+.card .sandwich-image {
+  width: 100px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .card .sandwich-image {
+    width: 120px;
+  }
+}
+
+.card .sandwich-info {
+  padding: 7px;
 }
 
 #players-icon {
@@ -252,6 +267,7 @@
   border-top-right-radius: 0px;
   margin-right: 0px;
 }
+
 .chain-b {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
@@ -260,6 +276,7 @@
   margin-right: 0px;
   margin-left: 0px;
 }
+
 .chain-c {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
@@ -293,6 +310,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -321,3 +339,26 @@ small {
   text-decoration: underline;
 }
 
+.ingredients-results {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.advanced-mode .card {
+  max-width: 90%;
+  padding: 7px;
+}
+
+@media (max-width: 600px) {
+  .advanced-mode .card {
+    max-width: 70%;
+  }
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
