@@ -1,19 +1,9 @@
-import SANDWICHES from './data/sandwiches.json';
-import FILLINGS from './data/fillings.json';
-import CONDIMENTS from './data/condiments.json';
-import FLAVORS from './data/flavors.json';
-import POWERS from './data/powers.json';
-import TYPES from './data/types.json';
-import ENGLISH from './language/strings.json';
-import SPANISH from './language/strings-es.json';
-import GERMAN from './language/strings-de.json';
-import JAPANESE from './language/strings-ja.json';
-import SIMPLIFIED_CHINESE from './language/strings-zh-CN.json';
-import TRADITIONAL_CHINESE from './language/strings-zh-TW.json';
-import FRENCH from './language/strings-fr.json';
-import ITALIAN from './language/strings-it.json';
-import KOREAN from './language/strings-ko.json';
-import { LANGUAGE } from './language_util';
+import SANDWICHES from './data/sandwiches.json' assert { type: "json" };
+import FILLINGS from './data/fillings.json' assert { type: "json" };
+import CONDIMENTS from './data/condiments.json' assert { type: "json" };
+import FLAVORS from './data/flavors.json' assert { type: "json" };
+import POWERS from './data/powers.json' assert { type: "json" };
+import TYPES from './data/types.json' assert { type: "json" };
 
 export const oneTwoFirst = [
   "31",
@@ -184,44 +174,6 @@ export const COLORS = {
 
 export const TYPE_EXCEPTIONS = {
   "39": ["Flying", "Poison", "Fighting"], // I'm convinced this is a game bug and it's only counting the flavors on apple once
-};
-
-export const LANGUAGE_STRINGS = {
-  'en': ENGLISH,
-  'es': SPANISH,
-  'de': GERMAN,
-  'ja': JAPANESE,
-  'zh-CN': SIMPLIFIED_CHINESE,
-  'zh-TW': TRADITIONAL_CHINESE,
-  'fr': FRENCH,
-  'it': ITALIAN,
-  'ko': KOREAN
-  //'ru': RUSSIAN,
-  //'sv': SWEDISH
-};
-
-export const LANGUAGE_NAMES = {
-  'en': 'English',
-  'es': 'Español',
-  'de': 'Deutsch',
-  'ja': '日本',
-  'zh-CN': '简中',
-  'zh-TW': '繁中',
-  'fr': 'Français',
-  'it': 'Italiano',
-  'ko': '한국어'
-  //'ru': 'Pусский',
-  //'sv': 'Svenska'
-};
-
-export const ts = text => {
-  text = (text || "dammerung").toLowerCase();
-  const preStrings = LANGUAGE_STRINGS[LANGUAGE] || {};
-  const strings = {};
-  for (const [k, v] of Object.entries(preStrings)) {
-    strings[k.toLowerCase()] = v;
-  }
-  return strings[text] || "???";
 };
 
 export const getNumberOfPlayers = ingredients => {

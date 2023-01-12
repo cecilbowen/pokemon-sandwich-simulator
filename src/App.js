@@ -7,18 +7,18 @@ import { useEffect, useState } from 'react';
 
 import {getIngredientsFromRecipe, getCondiments, getFillings, getRecipeFromIngredients, getNumberOfPlayers,
   ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
-  copyTextToClipboard, hasRelevance, getCategory} from './util_module'
+  copyTextToClipboard, getCategory, hasRelevance } from './util.mjs'
 
-import { ts_lang, LANGUAGE_NAMES } from './language_util';
-
-import { runTests } from './test/tests';
-import Card from './components/Card';
+import { runTests } from './test/tests.js';
+import Card from './components/Card.js';
 import './App.css';
-import Bubble from './components/Bubble';
+import Bubble from './components/Bubble.js';
+
+import { ts_lang, LANGUAGE_NAMES } from './language_util.mjs';
 
 // en, es, ja, de, ru, sv, fr
-export let LANGUAGE = "en";
-export const ts = (text) => { return ts_lang(text, LANGUAGE); }
+let LANGUAGE = "en";
+const ts = (text) => { return ts_lang(text, LANGUAGE); }
 
 // per player
 const MAX_FILLINGS = 6;
@@ -364,7 +364,10 @@ function App() {
     return (
       <div>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-          {ingredients.map((x, i) => <Card ts={ts} ingredient={x} number={i} fillings={activeFillings}
+          {ingredients.map((x, i) => 
+            <Card 
+              key={i}
+              ts={ts} ingredient={x} number={i} fillings={activeFillings}
             simpleMode={simpleMode}
             updatePieces={() => pulse()}
             onClickBubble={key => toggleActiveKey(key)}

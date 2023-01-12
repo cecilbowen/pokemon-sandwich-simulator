@@ -14,11 +14,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server_start": "npm run build && nodemon src/server.js"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "server": "npm run build && nodemon src/server.mjs"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +39,9 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "customize-cra": "^1.0.0",
+    "nodemon": "^2.0.20",
+    "react-app-rewired": "^2.2.1"
   }
 }

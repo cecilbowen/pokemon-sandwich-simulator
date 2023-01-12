@@ -1,8 +1,8 @@
 // import { useEffect, useState } from 'react';
-import { calculatePowerAmount } from '../util_module';
+import { calculatePowerAmount } from '../util.mjs';
 import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode,
     copyTextToClipboard, isFilling, isFlavor, isPower, isType, shadeColor
-} from '../util_module';
+} from '../util.mjs';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';

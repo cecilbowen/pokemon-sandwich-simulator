@@ -1,5 +1,5 @@
 import React from "react";
-import { COLORS, shadeColor } from "../util_module";
+import { COLORS, shadeColor } from "../util.mjs";
 
 const Bubble = ({ label, isFlavor, isType, onClick, selected, ts }) => {
   const backgroundColor = COLORS[label];
