@@ -356,7 +356,7 @@ function App() {
     const showResults = activeFillings.length > 0 && activeCondiments.length > 0;
 
     return (
-      <div>
+      <div class="results">
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
           {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
             simpleMode={simpleMode}
@@ -393,14 +393,15 @@ function App() {
     const hasMultiIngredients = foodCombo.length !== Array.from(new Set(foodCombo)).length;
 
     return (
-      <div className="bubble" key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
+      <div className={`bubble sandwich ${highlight ? 'highlighted' : ''} ${isWeird ? 'weird' : ''}`}
+          key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
         const condiments = getCondiments(sandwich.condiments);
         const fillings = getFillings(sandwich.fillings);
         setActiveCondiments(condiments);
         setActiveFillings(fillings);
-      }} style={{ backgroundColor: highlight ? "yellow" : "#80808030",
-        fontWeight: isWeird ? "bold" : "", color: hasMultiIngredients ? "" : ""}}>
-        {`#${sandwich.number} - ${ts(sandwich.name)}`}
+      }} style={{ color: hasMultiIngredients ? "" : ""}}>
+        <small class="sandwich-no">#{sandwich.number}</small>
+        <span class="sandwich-name">{`${ts(sandwich.name)}`}</span>
       </div>
     );
   };

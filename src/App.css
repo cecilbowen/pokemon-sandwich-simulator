@@ -42,6 +42,16 @@
   width: fit-content;
   height: fit-content;
   position: relative;
+  transition: all 0.1s;
+  box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px 1px;
+}
+
+.ingredient-div:hover {
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 1px 1px 1px;
+}
+
+.ingredient-div:active {
+  box-shadow: rgba(0, 0, 0, 0.39) 0px 1px 1px 1px;
 }
 
 .clear-ingredients {
@@ -205,6 +215,8 @@
 .bubble-row {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .numbering {
@@ -234,6 +246,42 @@
   font-size: 14px;
   margin: 2px;
   cursor: pointer;
+  transition: all 0.1s;
+}
+
+.bubble.sandwich {
+  border-radius: 8px;
+}
+
+.search-panel .bubble {
+  display: block;
+  background-color: #80808030;
+}
+
+.bubble > .sandwich-no {
+  float: left;
+}
+
+.bubble > .sandwich-name {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.bubble.highlighted {
+  background-color: yellow;
+}
+
+.bubble.weird {
+  font-weight: bold;
+}
+
+.search-panel .bubble:hover {
+  background-color: #aaa !important;
+}
+
+.search-panel .bubble:active {
+  background-color: #777 !important;
+  color: white;
 }
 
 .bubble-min-width {
