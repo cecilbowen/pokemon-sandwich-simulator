@@ -328,6 +328,10 @@ small {
     color: #efefef;
   }
 
+  .no-effects {
+    color: #efefef;
+  }
+
   input {
     background-color: #555;
     color: #efefef;
