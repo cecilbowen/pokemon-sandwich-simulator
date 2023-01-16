@@ -238,7 +238,7 @@
 .bubble {
   display: flex;
   user-select: none;
-  border-radius: 8px;
+  border-radius: 25px;
   padding: 4px;
   width: fit-content;
   height: fit-content;
@@ -247,6 +247,10 @@
   margin: 2px;
   cursor: pointer;
   transition: all 0.1s;
+}
+
+.bubble.sandwich {
+  border-radius: 8px;
 }
 
 .search-panel .bubble {

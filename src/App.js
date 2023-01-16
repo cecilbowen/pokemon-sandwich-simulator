@@ -393,7 +393,7 @@ function App() {
     const hasMultiIngredients = foodCombo.length !== Array.from(new Set(foodCombo)).length;
 
     return (
-      <div className={`bubble ${highlight ? 'highlighted' : ''} ${isWeird ? 'weird' : ''}`}
+      <div className={`bubble sandwich ${highlight ? 'highlighted' : ''} ${isWeird ? 'weird' : ''}`}
           key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
         const condiments = getCondiments(sandwich.condiments);
         const fillings = getFillings(sandwich.fillings);
@@ -401,7 +401,7 @@ function App() {
         setActiveFillings(fillings);
       }} style={{ color: hasMultiIngredients ? "" : ""}}>
         <small class="sandwich-no">#{sandwich.number}</small>
-        <span class="sandwich-name">{`${sandwich.name}`}</span>
+        <span class="sandwich-name">{`${ts(sandwich.name)}`}</span>
       </div>
     );
   };
