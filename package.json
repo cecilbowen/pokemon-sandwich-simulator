@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "react-app-rewired build && webpack",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "server": "npm run build && nodemon src/server.mjs"
@@ -42,6 +42,7 @@
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "customize-cra": "^1.0.0",
     "nodemon": "^2.0.20",
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "webpack-cli": "^5.0.1"
   }
 }
