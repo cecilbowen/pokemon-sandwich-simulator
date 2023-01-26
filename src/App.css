@@ -321,6 +321,14 @@ small {
   text-decoration: underline;
 }
 
+.dim {
+  background-color: #80808030;
+}
+
+.highlighted {
+  background-color: yellow;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     /* Dark Theme */
@@ -349,7 +357,7 @@ small {
     box-shadow: rgba(255, 255, 255, 0.39) 0px 1px 1px 1px;
   }
 
-  .bubble.highlighted, .results .bubble-row {
+  .bubble.highlighted, .results .bubble-row, .fake-border, .key-selected {
     color: black;
   }
 
@@ -362,6 +370,14 @@ small {
   }
 
   .active-ingredients-bkg {
+    background-color: #53585c;
+  }
+
+  .total-stats {
+    color: black;
+  }
+
+  #total-stats-card {
     background-color: #53585c;
   }
 }

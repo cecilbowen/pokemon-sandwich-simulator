@@ -391,15 +391,18 @@ function App() {
     const isWeird = oneTwoFirst.filter(x => x === sandwich.number)[0];
     const foodCombo = [...sandwich.fillings, ...sandwich.condiments];
     const hasMultiIngredients = foodCombo.length !== Array.from(new Set(foodCombo)).length;
+    const cls = highlight ? 'bubble highlighted' : 'bubble dim';
 
     return (
-      <div className="bubble" key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
+      <div className={cls} key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
         const condiments = getCondiments(sandwich.condiments);
         const fillings = getFillings(sandwich.fillings);
         setActiveCondiments(condiments);
         setActiveFillings(fillings);
-      }} style={{ backgroundColor: highlight ? "yellow" : "#80808030",
-        fontWeight: isWeird ? "bold" : "", color: hasMultiIngredients ? "" : ""}}>
+      }} style={{
+        fontWeight: isWeird ? "bold" : "",
+        color: hasMultiIngredients ? "" : ""
+      }}>
         {`#${sandwich.number} - ${ts(sandwich.name)}`}
       </div>
     );

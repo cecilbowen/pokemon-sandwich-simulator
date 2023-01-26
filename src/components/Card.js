@@ -109,7 +109,7 @@ const Card = props => {
     const defaultRender = !shouldRenderAllTypes && !shouldRenderAllOtherTypes;
 
     let borderColor = "black";
-    let backgroundColor = "white";
+    let backgroundColor = "";
     if (ingredient) {
         if (isFilling(ingredient)) {
             borderColor = "red";
@@ -138,7 +138,8 @@ const Card = props => {
 
     return (
       <div
-        key={props.number ? props.number : ""} className='card'
+        key={props.number ? `card-${props.number}` : ""} className='card'
+        id={isSum ? 'total-stats-card' : ''}
         style={{ borderColor, backgroundColor, alignSelf: "center", position: "relative" }}>
         {!isSum && <div className='bubble bubble-header' onClick={props?.onClick}>
             <img alt={ts(ingredient.name)} src={ingredient.imageUrl} />
@@ -146,7 +147,7 @@ const Card = props => {
         </div>}
         {isSum && <div className='bubble bubble-header' onClick={() => copyValues(tastes, powers, types)}>
             <img alt={"Total"} src="https://www.serebii.net/itemdex/sprites/sandwich.png" title={sumStr} />
-            <div>{ts("Total Stats")}</div>
+            <div className='total-stats'>{ts("Total Stats")}</div>
             <div id='power-flavors-description' title={powerExplainTitle} style={{ display: powerExplainDisplay }}>{powerExplain}</div>
         </div>}
         {!isSum && ingredient && isFilling(ingredient) && <div className="pieces">
