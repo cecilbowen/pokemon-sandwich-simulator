@@ -1,4 +1,4 @@
-import { craftSandwich, getIngredientsFromRecipe, getIngredientsSums, FULL_TO_ALIAS } from '../util';
+import { craftSandwich, getIngredientsFromRecipe, getIngredientsSums, FULL_TO_ALIAS } from '../util.mjs';
 
 // herba
 const TEST_SET_HERBA = [

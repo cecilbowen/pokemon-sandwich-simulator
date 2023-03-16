@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>[JAVASCRIPT] Pokemon Sandwich Simulator</title>
+    <script src="http://localhost:3000/sandwich_generator.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const result = sandwich_generator.generate_recipe("Bacon-3,Lettuce-3_Pepper,Salty%20Herba%20Mystica");
+      console.log(result);
+      document.getElementById("root").innerHTML = (result)?result.name:"undefined";
+    </script>
+  </body>
+</html>

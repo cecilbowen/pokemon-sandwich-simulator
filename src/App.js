@@ -4,13 +4,21 @@ import CONDIMENTS from './data/condiments.json';
 import TYPES from './data/types.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
-import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES, getNumberOfPlayers,
+
+import {getIngredientsFromRecipe, getCondiments, getFillings, getRecipeFromIngredients, getNumberOfPlayers,
   ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
-  copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
-import { runTests } from './test/tests';
-import Card from './components/Card';
+  copyTextToClipboard, getCategory, hasRelevance } from './util.mjs'
+
+import { runTests } from './test/tests.js';
+import Card from './components/Card.js';
 import './App.css';
-import Bubble from './components/Bubble';
+import Bubble from './components/Bubble.js';
+
+import { ts_lang, LANGUAGE_NAMES } from './language_util.mjs';
+
+// en, es, ja, de, ru, sv, fr
+let LANGUAGE = "en";
+const ts = (text) => { return ts_lang(text, LANGUAGE); }
 
 // per player
 const MAX_FILLINGS = 6;
@@ -18,8 +26,6 @@ const MAX_CONDIMENTS = 4;
 const DISABLE_ALERTS = false;
 let NUM_PLAYERS = 1;
 
-// en, es, ja, de, ru, sv, fr
-export let LANGUAGE = "en";
 
 function App() {
   const [advancedIngredients, setAdvancedIngredients] = useState(false);
@@ -358,7 +364,10 @@ function App() {
     return (
       <div class="results">
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-          {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
+          {ingredients.map((x, i) => 
+            <Card 
+              key={i}
+              ts={ts} ingredient={x} number={i} fillings={activeFillings}
             simpleMode={simpleMode}
             updatePieces={() => pulse()}
             onClickBubble={key => toggleActiveKey(key)}
@@ -471,6 +480,7 @@ function App() {
               selected={
                 activeKey && Object.values(activeKey).indexOf(flavor) !== -1
               }
+              ts={ts}
             />
           ))}
         </div>
