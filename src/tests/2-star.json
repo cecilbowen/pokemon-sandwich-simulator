@@ -1,0 +1,130 @@
+[
+  {
+    "recipe": "Basil-0_Ketchup",
+    "result": "Encounter,Flying,1/Raid,Poison,1"
+  },
+  {
+    "recipe": "Basil-1_Ketchup",
+    "result": "Encounter,Flying,1/Raid,Poison,1/Exp,Fire,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-2,Prosciutto-0,Prosciutto-0_Ketchup",
+    "result": "Encounter,Flying,1/Catch,Poison,1"
+  },
+  {
+    "recipe": "Watercress-1_Ketchup",
+    "result": "Teensy,Flying,1/Raid,Poison,1/Exp,Normal,1"
+  },
+  {
+    "recipe": "Basil-2,Chorizo-1_Ketchup",
+    "result": "Encounter,Poison,1/Raid,Electric,1/Exp,Fire,1"
+  },
+  {
+    "recipe": "Watercress-3,Watercress-3,Watercress-3,Watercress-0,Watercress-0,Watercress-0_Ketchup",
+    "result": "Item,Flying,1/Raid,Normal,1/Egg,,1"
+  },
+  {
+    "recipe": "Watercress-3,Watercress-3,Watercress-2,Watercress-0,Watercress-0,Watercress-0_Ketchup",
+    "result": "Item,Flying,1/Raid,Normal,1/Egg,,1"
+  },
+  {
+    "recipe": "Watercress-2,Watercress-0,Watercress-0,Watercress-0,Watercress-0,Watercress-0_Ketchup",
+    "result": "Teensy,Flying,1/Raid,Poison,1/Exp,Normal,1"
+  },
+  {
+    "recipe": "Basil-4,Basil-0_Ketchup",
+    "result": "Encounter,Fire,1/Raid,Grass,1/Exp,Water,1"
+  },
+  {
+    "recipe": "Basil-3,Basil-0_Ketchup",
+    "result": "Encounter,Fire,1/Raid,Grass,1/Exp,Water,1"
+  },
+  {
+    "recipe": "Basil-0,Chorizo-1_Ketchup",
+    "result": "Encounter,Poison,1/Raid,Bug,1/Exp,Normal,1"
+  },
+  {
+    "recipe": "Avocado-2,Basil-0_Ketchup",
+    "result": "Teensy,Dragon,1/Raid,Poison,1/Encounter,Flying,1"
+  },
+  {
+    "recipe": "Prosciutto-1_Bitter Herba Mystica",
+    "result": "Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Bitter Herba Mystica",
+    "result": "Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-1,Prosciutto-0_Bitter Herba Mystica",
+    "result": "Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica",
+    "result": "Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2"
+  },
+  {
+    "recipe": "Prosciutto-1_Bitter Herba Mystica",
+    "result": "Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Bitter Herba Mystica",
+    "result": "Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-1,Prosciutto-0_Bitter Herba Mystica",
+    "result": "Title,Flying,2/Exp,Fighting,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica",
+    "result": "Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-1,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica",
+    "result": "Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0,Prosciutto-0_Spicy Herba Mystica",
+    "result": "Title,Flying,2/Humungo,Flying,2/Encounter,Fighting,2"
+  },
+  {
+    "recipe": "Basil-4,Basil-3,Basil-0_Salt",
+    "result": "Exp,Electric,1/Raid,Fire,1/Egg,,1"
+  },
+  {
+    "recipe": "Basil-4,Basil-4,Basil-0_Salt",
+    "result": "Exp,Electric,1/Raid,Fire,1/Egg,,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Ketchup,Spicy Herba Mystica",
+    "result": "Title,Flying,2/Humungo,Flying,2/Encounter,Normal,2"
+  },
+  {
+    "recipe": "Avocado-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0_Ketchup,Spicy Herba Mystica",
+    "result": "Title,Flying,2/Humungo,Poison,2/Encounter,Dragon,1"
+  },
+  {
+    "recipe": "Apple-1,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-0,Prosciutto-3_Bitter Herba Mystica,Ketchup",
+    "result": "Title,Flying,2/Exp,Ice,2/Encounter,Steel,1"
+  },
+  {
+    "recipe": "Apple-1,Cheese-1,Prosciutto-3,Prosciutto-0,Prosciutto-0,Prosciutto-3_Bitter Herba Mystica,Ketchup",
+    "result": "Title,Flying,2/Exp,Ice,2/Encounter,Steel,1"
+  },
+  {
+    "recipe": "Avocado-0,Prosciutto-0_Ketchup,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,3/Title,Flying,3/Catch,Flying,3"
+  },
+  {
+    "recipe": "Avocado-1,Basil-4,Basil-1,Prosciutto-1,Prosciutto-2_Mustard",
+    "result": "Exp,Flying,1/Raid,Dragon,1/Encounter,Fire,1"
+  },
+  {
+    "recipe": "Green Bell Pepper-1,Red Bell Pepper-1_Mayonnaise",
+    "result": "Teensy,Poison,1/Raid,Fire,1/Encounter,Normal,1"
+  },
+  {
+      "recipe": "Green Bell Pepper-1,Red Bell Pepper-1_Mayonnaise,Mayonnaise",
+      "result": "Teensy,Poison,1/Raid,Normal,1/Exp,Fire,1"
+  }
+]

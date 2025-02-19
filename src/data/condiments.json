@@ -869,10 +869,6 @@
       {
         "type": "Title",
         "amount": 1000
-      },
-      {
-        "type": "Sparkling",
-        "amount": 1000
       }
     ],
     "types": [
@@ -963,10 +959,6 @@
     "powers": [
       {
         "type": "Title",
-        "amount": 1000
-      },
-      {
-        "type": "Sparkling",
         "amount": 1000
       }
     ],
@@ -1059,10 +1051,6 @@
       {
         "type": "Title",
         "amount": 1000
-      },
-      {
-        "type": "Sparkling",
-        "amount": 1000
       }
     ],
     "types": [
@@ -1154,10 +1142,6 @@
       {
         "type": "Title",
         "amount": 1000
-      },
-      {
-        "type": "Sparkling",
-        "amount": 1000
       }
     ],
     "types": [
@@ -1248,10 +1232,6 @@
     "powers": [
       {
         "type": "Title",
-        "amount": 1000
-      },
-      {
-        "type": "Sparkling",
         "amount": 1000
       }
     ],

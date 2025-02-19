@@ -1,0 +1,110 @@
+[
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-1_Pepper,Salt,Salt",
+    "result": "Exp,Flying,1/Encounter,Fighting,1/Raid,Flying,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-2_Pepper,Salt,Salt",
+    "result": "Exp,Flying,1/Encounter,Fighting,1/Raid,Flying,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter",
+    "result": "Exp,Steel,1/Encounter,Ghost,1/Catch,Steel,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter",
+    "result": "Encounter,Steel,1/Exp,Steel,1/Catch,Ghost,1"
+  },
+  {
+    "recipe": "Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-1_Pepper,Pepper,Salt,Salt",
+    "result": "Exp,Normal,1/Raid,Flying,1/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3_Salt",
+    "result": "Encounter,Flying,1/Catch,Fighting,1/Raid,Flying,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-1_Ketchup,Whipped Cream,Whipped Cream",
+    "result": "Egg,,1/Encounter,Ground,1/Catch,Flying,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup",
+    "result": "Encounter,Flying,1/Catch,Normal,1/Exp,Flying,1"
+  },
+  {
+    "recipe": "Apple-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup",
+    "result": "Encounter,Flying,1/Catch,Ice,1/Exp,Flying,1"
+  },
+  {
+    "recipe": "Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3_Ketchup",
+    "result": "Item,Poison,1/Encounter,Normal,1/Catch,Poison,1"
+  },
+  {
+    "recipe": "Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Kiwi-3_Ketchup,Ketchup,Ketchup,Ketchup",
+    "result": "Teensy,Poison,1/Encounter,Dragon,1/Raid,Poison,1"
+  },
+  {
+    "recipe": "Cheese-2,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter",
+    "result": "Exp,Steel,1/Encounter,Ghost,1/Catch,Steel,1"
+  },
+  {
+    "recipe": "Cheese-3,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter",
+    "result": "Encounter,Steel,1/Catch,Ghost,1/Exp,Steel,1"
+  },
+  {
+    "recipe": "Ham-3,Ham-3,Ham-3,Ham-3_Mustard",
+    "result": "Encounter,Ground,1/Catch,Normal,1/Exp,Ground,1"
+  },
+  {
+    "recipe": "Tofu-3,Tofu-3,Tofu-3,Tofu-3,Watercress-3,Watercress-2_Pepper,Pepper,Salt,Salt",
+    "result": "Exp,Normal,1/Raid,Flying,1/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Red Onion-3,Red Onion-3,Red Onion-3,Red Onion-3_Butter",
+    "result": "Egg,,1/Encounter,Normal,1/Catch,Ghost,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-1_Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Catch,Normal,1/Raid,Steel,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-2_Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Catch,Normal,1/Raid,Steel,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Raid,Normal,1/Catch,Steel,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-2_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Raid,Normal,1/Catch,Steel,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Watercress-3_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Raid,Normal,1/Catch,Steel,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Catch,Steel,1/Raid,Normal,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter",
+    "result": "Encounter,Steel,1/Exp,Steel,1/Catch,Normal,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Mustard",
+    "result": "Encounter,Steel,1/Exp,Steel,1/Catch,Rock,1"
+  },
+  {
+    "recipe": "Apple-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Peanut Butter,Peanut Butter,Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Raid,Flying,1/Catch,Steel,1"
+  },
+  {
+    "recipe": "Avocado-2,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Sliced Egg-1_Cream Cheese,Mayonnaise,Mayonnaise",
+    "result": "Encounter,Steel,1/Catch,Rock,1/Exp,Steel,1"
+  },
+  {
+    "recipe": "",
+    "result": ""
+  }
+]

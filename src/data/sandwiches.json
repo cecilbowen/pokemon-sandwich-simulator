@@ -1,6 +1,6 @@
 [
   {
-    "number": "-1",
+    "number": -1,
     "name": "Hidden Recipe 1",
     "description": "A recipe that produces no effects.  It is hidden from the user, but can still be made in-game.",
     "fillings": [
@@ -19,7 +19,7 @@
     }
   },
   {
-    "number": "0",
+    "number": 0,
     "name": "Hidden Recipe 2",
     "description": "A recipe that produces no effects.  It is hidden from the user, and cannot be made in-game.",
     "fillings": [
@@ -36,7 +36,7 @@
     }
   },
   {
-    "number": "1",
+    "number": 1,
     "name": "Jambon-Beurre",
     "description": "A sandwich with just ham and butter in it. So simple that there's no way to fake it.",
     "fillings": [
@@ -78,7 +78,7 @@
     }
   },
   {
-    "number": "2",
+    "number": 2,
     "name": "Bitter Jambon-Beurre",
     "description": "A Jambon-Beurre with a bitter twist. If you love a touch of bitterness, you'll want to eat this.",
     "fillings": [
@@ -121,7 +121,7 @@
     }
   },
   {
-    "number": "3",
+    "number": 3,
     "name": "Sweet Jambon-Beurre",
     "description": "A Jambon-Beurre with a sweet twist. Seeking the finest sweetness around? Look no further.",
     "fillings": [
@@ -164,7 +164,7 @@
     }
   },
   {
-    "number": "4",
+    "number": 4,
     "name": "Salty Jambon-Beurre",
     "description": "A Jambon-Beurre with a salty twist. Packs a delicious salty punch.",
     "fillings": [
@@ -207,7 +207,7 @@
     }
   },
   {
-    "number": "5",
+    "number": 5,
     "name": "Sour Jambon-Beurre",
     "description": "A Jambon-Beurre with a sour twist. Its vivid acidic notes will leave you wanting another.",
     "fillings": [
@@ -250,7 +250,7 @@
     }
   },
   {
-    "number": "6",
+    "number": 6,
     "name": "Spicy Jambon-Beurre",
     "description": "A Jambon-Beurre with a spicy twist. If you like a sandwich with some kick to it, don't miss this.",
     "fillings": [
@@ -293,7 +293,7 @@
     }
   },
   {
-    "number": "7",
+    "number": 7,
     "name": "Legendary Bitter Sandwich",
     "description": "A sandwich known as the ultimate in bitter taste. The herbs should be laid on thick.",
     "fillings": [
@@ -337,7 +337,7 @@
     }
   },
   {
-    "number": "8",
+    "number": 8,
     "name": "Legendary Salty Sandwich",
     "description": "A sandwich for the true salt aficionado. When eating this, make absolutely certain to have a drink at hand.",
     "fillings": [
@@ -381,7 +381,7 @@
     }
   },
   {
-    "number": "9",
+    "number": 9,
     "name": "Legendary Sweet Sandwich",
     "description": "A sandwich so sweet it's downright frightening. The trick is to really pile on the herbs.",
     "fillings": [
@@ -425,7 +425,7 @@
     }
   },
   {
-    "number": "10",
+    "number": 10,
     "name": "Legendary Sour Sandwich",
     "description": "A sandwich devoted to true fans of sour flavors. The fresher the herbs, the more potent the sourness.",
     "fillings": [
@@ -469,7 +469,7 @@
     }
   },
   {
-    "number": "11",
+    "number": 11,
     "name": "Legendary Spicy Sandwich",
     "description": "A sandwich so spicy it practically assaults the tongue. Dislikers of spicy food, beware.",
     "fillings": [
@@ -513,7 +513,7 @@
     }
   },
   {
-    "number": "12",
+    "number": 12,
     "name": "Jam Sandwich",
     "description": "A sandwich made with only jam and slices of strawberry. The simplicity of this dish is what makes it so appetizing.",
     "fillings": [
@@ -555,7 +555,7 @@
     }
   },
   {
-    "number": "13",
+    "number": 13,
     "name": "Great Jam Sandwich",
     "description": "The addition of yogurt has heightened the sweetness and deepened the richness of this sandwich.",
     "fillings": [
@@ -598,7 +598,7 @@
     }
   },
   {
-    "number": "14",
+    "number": 14,
     "name": "Ultra Jam Sandwich",
     "description": "Filling enough to be a meal, tasty enough to be a snack. It's best when you choose the sweetest pineapples.",
     "fillings": [
@@ -642,7 +642,7 @@
     }
   },
   {
-    "number": "15",
+    "number": 15,
     "name": "Master Jam Sandwich",
     "description": "A truly perfected sandwich, with the addition of the herbs elevating all the other fillings.",
     "fillings": [
@@ -687,7 +687,7 @@
     }
   },
   {
-    "number": "16",
+    "number": 16,
     "name": "Peanut Butter Sandwich",
     "description": "Peanut butter and bananas make a surprisingly nice pair. They leave you feeling full and satisfied.",
     "fillings": [
@@ -729,7 +729,7 @@
     }
   },
   {
-    "number": "17",
+    "number": 17,
     "name": "Great Peanut Butter Sandwich",
     "description": "Adding butter into the mix has contributed yet more substance, making this one robust sandwich.",
     "fillings": [
@@ -772,7 +772,7 @@
     }
   },
   {
-    "number": "18",
+    "number": 18,
     "name": "Ultra Peanut Butter Sandwich",
     "description": "The jam adds a new note of sweetness, making this sandwich yet more filling.",
     "fillings": [
@@ -816,7 +816,7 @@
     }
   },
   {
-    "number": "19",
+    "number": 19,
     "name": "Master Peanut Butter Sandwich",
     "description": "The daring addition of bold spice has made this sandwich strangely addicting.",
     "fillings": [
@@ -861,7 +861,7 @@
     }
   },
   {
-    "number": "20",
+    "number": 20,
     "name": "Pickle Sandwich",
     "description": "This sandwich keeps it profoundly simple. It's best when you don't skimp on the olive oil.",
     "fillings": [
@@ -903,7 +903,7 @@
     }
   },
   {
-    "number": "21",
+    "number": 21,
     "name": "Great Pickle Sandwich",
     "description": "The sourness of the pickles pairs with the fresh taste of the watercress for a sandwich as refreshing as a light breeze.",
     "fillings": [
@@ -946,7 +946,7 @@
     }
   },
   {
-    "number": "22",
+    "number": 22,
     "name": "Ultra Pickle Sandwich",
     "description": "The fragrant basil draws out new depths of flavor from this sandwich's fillings.",
     "fillings": [
@@ -990,7 +990,7 @@
     }
   },
   {
-    "number": "23",
+    "number": 23,
     "name": "Master Pickle Sandwich",
     "description": "The hit of sourness from the added herbs will leave you wanting more of this simple yet satisfying sandwich.",
     "fillings": [
@@ -1035,7 +1035,7 @@
     }
   },
   {
-    "number": "24",
+    "number": 24,
     "name": "Marmalade Sandwich",
     "description": "A simple, economical, and tasty sandwich. Toasting it for extra flavor is also good.",
     "fillings": [
@@ -1077,7 +1077,7 @@
     }
   },
   {
-    "number": "25",
+    "number": 25,
     "name": "Great Marmalade Sandwich",
     "description": "The sweetness of the butter highlights the sourness. But add too much butter, and you'll spoil the overall flavor.",
     "fillings": [
@@ -1120,7 +1120,7 @@
     }
   },
   {
-    "number": "26",
+    "number": 26,
     "name": "Ultra Marmalade Sandwich",
     "description": "The stronger the marmalade's sourness, the better. This sandwich is particularly appealing.",
     "fillings": [
@@ -1164,7 +1164,7 @@
     }
   },
   {
-    "number": "27",
+    "number": 27,
     "name": "Master Marmalade Sandwich",
     "description": "The finishing touch of saltiness is the clincher. This sandwich's exquisite balance of flavor brings it to life.",
     "fillings": [
@@ -1209,7 +1209,7 @@
     }
   },
   {
-    "number": "28",
+    "number": 28,
     "name": "Herbed-Sausage Sandwich",
     "description": "Sausage with fragrant herbs meets ketchup in this sandwich.",
     "fillings": [
@@ -1251,7 +1251,7 @@
     }
   },
   {
-    "number": "29",
+    "number": 29,
     "name": "Great Herbed-Sausage Sandwich",
     "description": "The sour bite and spiciness of the mustard takes this sandwich to the next level.",
     "fillings": [
@@ -1294,7 +1294,7 @@
     }
   },
   {
-    "number": "30",
+    "number": 30,
     "name": "Ultra Herbed-Sausage Sandwich",
     "description": "This sandwich boasts fresh vegetables and sausage— a faultless combo.",
     "fillings": [
@@ -1338,7 +1338,7 @@
     }
   },
   {
-    "number": "31",
+    "number": 31,
     "name": "Master Herbed-Sausage Sandwich",
     "description": "A sandwich with a tried-and-true type of tastiness. The bitter flavor really ties all the fillings together.",
     "fillings": [
@@ -1383,7 +1383,7 @@
     }
   },
   {
-    "number": "32",
+    "number": 32,
     "name": "Curry-and-Rice-Style Sandwich",
     "description": "A tricky proposition of a sandwich. You might try lightly toasting the curry powder.",
     "fillings": [
@@ -1426,7 +1426,7 @@
     }
   },
   {
-    "number": "33",
+    "number": 33,
     "name": "Great Curry-and-Rice-Style Sandwich",
     "description": "The spicy addition has made this sandwich a bit more palatable, but still, it's not necessarily for everyone.",
     "fillings": [
@@ -1470,7 +1470,7 @@
     }
   },
   {
-    "number": "34",
+    "number": 34,
     "name": "Ultra Curry-and-Rice-Style Sandwich",
     "description": "With tasty tomatoes, this sandwich is more approachable than ever—and yet it remains an acquired taste.",
     "fillings": [
@@ -1515,7 +1515,7 @@
     }
   },
   {
-    "number": "35",
+    "number": 35,
     "name": "Master Curry-and-Rice-Style Sandwich",
     "description": "A sandwich of intense, provocative spiciness. For all the added ingredients, it remains an adventurous choice.",
     "fillings": [
@@ -1561,7 +1561,7 @@
     }
   },
   {
-    "number": "36",
+    "number": 36,
     "name": "Dessert Sandwich",
     "description": "This sandwich is just the thing for dessert time. The yogurt is on the sweeter side.",
     "fillings": [
@@ -1605,7 +1605,7 @@
     }
   },
   {
-    "number": "37",
+    "number": 37,
     "name": "Great Dessert Sandwich",
     "description": "The addition of vibrant green kiwi makes this sandwich as pleasing to the eye as to the palate.",
     "fillings": [
@@ -1650,7 +1650,7 @@
     }
   },
   {
-    "number": "38",
+    "number": 38,
     "name": "Ultra Dessert Sandwich",
     "description": "A sandwich with a lovely trio of fruits. It's a winner when served slightly chilled.",
     "fillings": [
@@ -1696,7 +1696,7 @@
     }
   },
   {
-    "number": "39",
+    "number": 39,
     "name": "Master Dessert Sandwich",
     "description": "The Dessert Sandwich's ultimate form. Just a hint of herbs will do the trick.",
     "fillings": [
@@ -1743,7 +1743,7 @@
     }
   },
   {
-    "number": "40",
+    "number": 40,
     "name": "Tropical Sandwich",
     "description": "The balance of acidity and umami is key. A touch of extra marmalade is the trick to making it special.",
     "fillings": [
@@ -1786,7 +1786,7 @@
     }
   },
   {
-    "number": "41",
+    "number": 41,
     "name": "Great Tropical Sandwich",
     "description": "The pineapple unlocks the tropical atmosphere. The more the sourness comes through, the tastier the sandwich.",
     "fillings": [
@@ -1830,7 +1830,7 @@
     }
   },
   {
-    "number": "42",
+    "number": 42,
     "name": "Ultra Tropical Sandwich",
     "description": "A sandwich with an unfamiliar twist. The added spiciness brings depth to the flavors.",
     "fillings": [
@@ -1875,7 +1875,7 @@
     }
   },
   {
-    "number": "43",
+    "number": 43,
     "name": "Master Tropical Sandwich",
     "description": "A sandwich befitting the “tropical” label. The herbs bring the flavors into tight unison.",
     "fillings": [
@@ -1921,7 +1921,7 @@
     }
   },
   {
-    "number": "44",
+    "number": 44,
     "name": "Avocado Sandwich",
     "description": "The flavor of this sandwich changes depending on the ripeness of the avocado. One never tires of eating this one.",
     "fillings": [
@@ -1964,7 +1964,7 @@
     }
   },
   {
-    "number": "45",
+    "number": 45,
     "name": "Great Avocado Sandwich",
     "description": "A sandwich with a firm flavor profile. With fillings so widely beloved, it's a sure hit.",
     "fillings": [
@@ -2008,7 +2008,7 @@
     }
   },
   {
-    "number": "46",
+    "number": 46,
     "name": "Ultra Avocado Sandwich",
     "description": "A solidly delicious sandwich. It's impossible to go wrong with these fillings—this is flavor you can depend on.",
     "fillings": [
@@ -2053,7 +2053,7 @@
     }
   },
   {
-    "number": "47",
+    "number": 47,
     "name": "Master Avocado Sandwich",
     "description": "The steadfast sandwich in its ultimate form. The salt works its magic, making for a profoundly tasty sandwich.",
     "fillings": [
@@ -2099,7 +2099,7 @@
     }
   },
   {
-    "number": "48",
+    "number": 48,
     "name": "Noodle Sandwich",
     "description": "When exactly did this sandwich rise to fame? Where did the recipe even come from? Mysteries abound.",
     "fillings": [
@@ -2142,7 +2142,7 @@
     }
   },
   {
-    "number": "49",
+    "number": 49,
     "name": "Great Noodle Sandwich",
     "description": "A nice, filling sandwich. The addition of lettuce makes it more approachable.",
     "fillings": [
@@ -2186,7 +2186,7 @@
     }
   },
   {
-    "number": "50",
+    "number": 50,
     "name": "Ultra Noodle Sandwich",
     "description": "This sandwich will fill you up like few others do. The richness of the chorizo works wonders.",
     "fillings": [
@@ -2231,7 +2231,7 @@
     }
   },
   {
-    "number": "51",
+    "number": 51,
     "name": "Master Noodle Sandwich",
     "description": "The touch of bitterness tugs at the appetite. This is one solid, substantial sandwich.",
     "fillings": [
@@ -2277,7 +2277,7 @@
     }
   },
   {
-    "number": "52",
+    "number": 52,
     "name": "Potato Salad Sandwich",
     "description": "A veggie-forward, filling sandwich. How tasty it ends up being depends entirely on the quality of the potato salad.",
     "fillings": [
@@ -2321,7 +2321,7 @@
     }
   },
   {
-    "number": "53",
+    "number": 53,
     "name": "Great Potato Salad Sandwich",
     "description": "The veggies are the star players of this satisfying sandwich. Tasty even if the avocado is still a tad firm.",
     "fillings": [
@@ -2366,7 +2366,7 @@
     }
   },
   {
-    "number": "54",
+    "number": 54,
     "name": "Ultra Potato Salad Sandwich",
     "description": "A sandwich boasting a plethora of different vegetables. Connoisseurs prefer generous amounts of seasoning.",
     "fillings": [
@@ -2412,7 +2412,7 @@
     }
   },
   {
-    "number": "55",
+    "number": 55,
     "name": "Master Potato Salad Sandwich",
     "description": "The ultimate form of the Potato Salad Sandwich. The sweetness of the herbs is what will decide its success.",
     "fillings": [
@@ -2459,7 +2459,7 @@
     }
   },
   {
-    "number": "56",
+    "number": 56,
     "name": "Zesty Sandwich",
     "description": "The spiciness of the sauce brings the sweetness of the veggies to life in this sandwich.",
     "fillings": [
@@ -2503,7 +2503,7 @@
     }
   },
   {
-    "number": "57",
+    "number": 57,
     "name": "Great Zesty Sandwich",
     "description": "The bitterness of this sandwich's green bell peppers goes perfectly with the spicy sauce.",
     "fillings": [
@@ -2548,7 +2548,7 @@
     }
   },
   {
-    "number": "58",
+    "number": 58,
     "name": "Ultra Zesty Sandwich",
     "description": "A sandwich packing a nice dose of veggies, whose savory sides are brought out by the spicy sauce.",
     "fillings": [
@@ -2594,7 +2594,7 @@
     }
   },
   {
-    "number": "59",
+    "number": 59,
     "name": "Master Zesty Sandwich",
     "description": "A sandwich with such a fine ratio of spiciness to sourness that you'll just keep reaching for more.",
     "fillings": [
@@ -2641,7 +2641,7 @@
     }
   },
   {
-    "number": "60",
+    "number": 60,
     "name": "Egg Sandwich",
     "description": "A sandwich with pleasingly straightforward flavors. The fundamental taste of the egg gets to shine.",
     "fillings": [
@@ -2685,7 +2685,7 @@
     }
   },
   {
-    "number": "61",
+    "number": 61,
     "name": "Great Egg Sandwich",
     "description": "The crunch and sweetness of the onion brings out the richness of the egg.",
     "fillings": [
@@ -2730,7 +2730,7 @@
     }
   },
   {
-    "number": "62",
+    "number": 62,
     "name": "Ultra Egg Sandwich",
     "description": "For those who've gotten tired of the plain and simple Egg Sandwich. The egg and the cheese pair beautifully.",
     "fillings": [
@@ -2776,7 +2776,7 @@
     }
   },
   {
-    "number": "63",
+    "number": 63,
     "name": "Master Egg Sandwich",
     "description": "The fully realized Egg Sandwich. Robust saltiness is its standout feature.",
     "fillings": [
@@ -2823,7 +2823,7 @@
     }
   },
   {
-    "number": "64",
+    "number": 64,
     "name": "Classic Bocadillo",
     "description": "A sandwich with potent fillings. Young people in particular appreciate how substantial it is.",
     "fillings": [
@@ -2867,7 +2867,7 @@
     }
   },
   {
-    "number": "65",
+    "number": 65,
     "name": "Great Classic Bocadillo",
     "description": "The spicy flavor gives this sandwich a comforting feel. Especially tasty when the potato tortilla is piping hot.",
     "fillings": [
@@ -2912,7 +2912,7 @@
     }
   },
   {
-    "number": "66",
+    "number": 66,
     "name": "Ultra Classic Bocadillo",
     "description": "A sandwich that won't leave you hungry. Well-ripened avocados are better for this one.",
     "fillings": [
@@ -2958,7 +2958,7 @@
     }
   },
   {
-    "number": "67",
+    "number": 67,
     "name": "Master Classic Bocadillo",
     "description": "A deeply substantial sandwich. The bitterness brings harmony to the flavors.",
     "fillings": [
@@ -3005,7 +3005,7 @@
     }
   },
   {
-    "number": "68",
+    "number": 68,
     "name": "Refreshing Sandwich",
     "description": "This sandwich feels like a cousin to a salad. The more tomatoes, the better.",
     "fillings": [
@@ -3049,7 +3049,7 @@
     }
   },
   {
-    "number": "69",
+    "number": 69,
     "name": "Great Refreshing Sandwich",
     "description": "A fruit-forward sandwich. The kiwi's sourness does it plenty of favors.",
     "fillings": [
@@ -3094,7 +3094,7 @@
     }
   },
   {
-    "number": "70",
+    "number": 70,
     "name": "Ultra Refreshing Sandwich",
     "description": "This sandwich may only have fruits and veggies in it, but it's tasty no matter how into veggies you are—or aren't.",
     "fillings": [
@@ -3140,7 +3140,7 @@
     }
   },
   {
-    "number": "71",
+    "number": 71,
     "name": "Master Refreshing Sandwich",
     "description": "The spicy addition to the sandwich's mostly sour fillings and condiments creates a tantalizing flavor.",
     "fillings": [
@@ -3187,7 +3187,7 @@
     }
   },
   {
-    "number": "72",
+    "number": 72,
     "name": "BLT Sandwich",
     "description": "A tried and true sandwich. You can't go wrong with these classic, ordinary flavors.",
     "fillings": [
@@ -3232,7 +3232,7 @@
     }
   },
   {
-    "number": "73",
+    "number": 73,
     "name": "Great BLT Sandwich",
     "description": "Adding basil lends a bit of a rich air to this BLT Sandwich.",
     "fillings": [
@@ -3278,7 +3278,7 @@
     }
   },
   {
-    "number": "74",
+    "number": 74,
     "name": "Ultra BLT Sandwich",
     "description": "The cheese makes for a more filling experience. The flavors of this sandwich are in perfect balance.",
     "fillings": [
@@ -3325,7 +3325,7 @@
     }
   },
   {
-    "number": "75",
+    "number": 75,
     "name": "Master BLT Sandwich",
     "description": "The hint of sweetness manages to preserve the harmony between all the fillings of this miraculous sandwich.",
     "fillings": [
@@ -3373,7 +3373,7 @@
     }
   },
   {
-    "number": "76",
+    "number": 76,
     "name": "Fried Fillet Sandwich",
     "description": "The potato salad plays an important part in counteracting the oiliness of the fried fillet.",
     "fillings": [
@@ -3417,7 +3417,7 @@
     }
   },
   {
-    "number": "77",
+    "number": 77,
     "name": "Great Fried Fillet Sandwich",
     "description": "The fresh crunch of the lettuce matches exceptionally well with this sandwich's fried fillet.",
     "fillings": [
@@ -3462,7 +3462,7 @@
     }
   },
   {
-    "number": "78",
+    "number": 78,
     "name": "Ultra Fried Fillet Sandwich",
     "description": "The horseradish's invigorating spiciness helps make this a very inviting sandwich.",
     "fillings": [
@@ -3508,7 +3508,7 @@
     }
   },
   {
-    "number": "79",
+    "number": 79,
     "name": "Master Fried Fillet Sandwich",
     "description": "This is the ultimate expression of the Fried Fillet Sandwich. The spicy kick makes it an absolute pleasure.",
     "fillings": [
@@ -3555,7 +3555,7 @@
     }
   },
   {
-    "number": "80",
+    "number": 80,
     "name": "Ham Sandwich",
     "description": "This sandwich is the embodiment of cheap and tasty. It tastes best when mayonnaise is applied generously.",
     "fillings": [
@@ -3599,7 +3599,7 @@
     }
   },
   {
-    "number": "81",
+    "number": 81,
     "name": "Great Ham Sandwich",
     "description": "A sandwich boasting two different types of ham. A little rich, perhaps, but plenty tasty.",
     "fillings": [
@@ -3644,7 +3644,7 @@
     }
   },
   {
-    "number": "82",
+    "number": 82,
     "name": "Ultra Ham Sandwich",
     "description": "The stimulating spiciness of the jalapeño draws out the savoriness of the ham.",
     "fillings": [
@@ -3690,7 +3690,7 @@
     }
   },
   {
-    "number": "83",
+    "number": 83,
     "name": "Master Ham Sandwich",
     "description": "The ultimate Ham Sandwich, with a saltiness that caresses the taste buds. More ham, more happy.",
     "fillings": [
@@ -3737,7 +3737,7 @@
     }
   },
   {
-    "number": "84",
+    "number": 84,
     "name": "Cheese Sandwich",
     "description": "A sandwich for the cheese lover. The simple seasonings make this a welcoming bite.",
     "fillings": [
@@ -3781,7 +3781,7 @@
     }
   },
   {
-    "number": "85",
+    "number": 85,
     "name": "Great Cheese Sandwich",
     "description": "A sandwich that will certainly fill you up. It's tastiest when the avocado is just a tad firm.",
     "fillings": [
@@ -3826,7 +3826,7 @@
     }
   },
   {
-    "number": "86",
+    "number": 86,
     "name": "Ultra Cheese Sandwich",
     "description": "The fragrance of the basil in this sandwich activates the appetite. Using plenty of pepper balances the flavors well.",
     "fillings": [
@@ -3872,7 +3872,7 @@
     }
   },
   {
-    "number": "87",
+    "number": 87,
     "name": "Master Cheese Sandwich",
     "description": "The strong note of salt in this sandwich makes the richness and savoriness of the cheese shine through.",
     "fillings": [
@@ -3919,7 +3919,7 @@
     }
   },
   {
-    "number": "88",
+    "number": 88,
     "name": "Hamburger Patty Sandwich",
     "description": "The hamburger patty is the heart and soul of this sandwich, but the vinegar's acidic note is what sets it apart.",
     "fillings": [
@@ -3963,7 +3963,7 @@
     }
   },
   {
-    "number": "89",
+    "number": 89,
     "name": "Great Hamburger Patty Sandwich",
     "description": "The hamburger patty is the heart and soul of this sandwich, but the horseradish's spicy kick is what sets it apart.",
     "fillings": [
@@ -4008,7 +4008,7 @@
     }
   },
   {
-    "number": "90",
+    "number": 90,
     "name": "Ultra Hamburger Patty Sandwich",
     "description": "The hamburger patty is the heart and soul of this sandwich, but the watercress's bitter taste is what sets it apart.",
     "fillings": [
@@ -4054,7 +4054,7 @@
     }
   },
   {
-    "number": "91",
+    "number": 91,
     "name": "Master Hamburger Patty Sandwich",
     "description": "The hamburger patty is the heart and soul of this sandwich, but the herbs' sweetness is what sets it apart.",
     "fillings": [
@@ -4101,7 +4101,7 @@
     }
   },
   {
-    "number": "92",
+    "number": 92,
     "name": "Smoky Sandwich",
     "description": "A sandwich with a sophisticated flavor. Nailing the balance between the condiments is crucial.",
     "fillings": [
@@ -4146,7 +4146,7 @@
     }
   },
   {
-    "number": "93",
+    "number": 93,
     "name": "Great Smoky Sandwich",
     "description": "A sandwich with a refreshing flavor. It's tastier if you don't go overboard on the vegetables.",
     "fillings": [
@@ -4192,7 +4192,7 @@
     }
   },
   {
-    "number": "94",
+    "number": 94,
     "name": "Ultra Smoky Sandwich",
     "description": "A sandwich with a refined flavor. The fragrant basil goes well with the smoked fillet.",
     "fillings": [
@@ -4239,7 +4239,7 @@
     }
   },
   {
-    "number": "95",
+    "number": 95,
     "name": "Master Smoky Sandwich",
     "description": "This sandwich is rumored in some circles to unequivocally be the best way to eat smoked fillet.",
     "fillings": [
@@ -4287,7 +4287,7 @@
     }
   },
   {
-    "number": "96",
+    "number": 96,
     "name": "Fruit Sandwich",
     "description": "Full of fruit. The sophisticated approach is to go easy on the cream and let the ingredients speak for themselves.",
     "fillings": [
@@ -4332,7 +4332,7 @@
     }
   },
   {
-    "number": "97",
+    "number": 97,
     "name": "Great Fruit Sandwich",
     "description": "This sandwich feels akin to a treat. Just a hint of marmalade is ideal.",
     "fillings": [
@@ -4378,7 +4378,7 @@
     }
   },
   {
-    "number": "98",
+    "number": 98,
     "name": "Ultra Fruit Sandwich",
     "description": "This sandwich feels quite dessert-like. It's best when you don't go overboard on the yogurt.",
     "fillings": [
@@ -4425,7 +4425,7 @@
     }
   },
   {
-    "number": "99",
+    "number": 99,
     "name": "Master Fruit Sandwich",
     "description": "A sandwich whose flavors positively sing. It's best when you don't go overboard on the herbs.",
     "fillings": [
@@ -4473,7 +4473,7 @@
     }
   },
   {
-    "number": "100",
+    "number": 100,
     "name": "Variety Sandwich",
     "description": "A sandwich with a range of flavors to enjoy. The fillings can be in whatever proportions you like.",
     "fillings": [
@@ -4518,7 +4518,7 @@
     }
   },
   {
-    "number": "101",
+    "number": 101,
     "name": "Great Variety Sandwich",
     "description": "A sandwich popular with younger folks. The potato salad leaves you pleasantly full.",
     "fillings": [
@@ -4564,7 +4564,7 @@
     }
   },
   {
-    "number": "102",
+    "number": 102,
     "name": "Ultra Variety Sandwich",
     "description": "The addition of hamburger brings more heft. Younger folks tend to like this with plenty of condiments.",
     "fillings": [
@@ -4611,7 +4611,7 @@
     }
   },
   {
-    "number": "103",
+    "number": 103,
     "name": "Master Variety Sandwich",
     "description": "A connoisseur's sandwich, with the fillings tied together by a supreme note of bitterness.",
     "fillings": [
@@ -4659,7 +4659,7 @@
     }
   },
   {
-    "number": "104",
+    "number": 104,
     "name": "Klawf Claw Sandwich",
     "description": "A sandwich that fills you up well without being too heavy. Ideal for those in search of a light meal.",
     "fillings": [
@@ -4704,7 +4704,7 @@
     }
   },
   {
-    "number": "105",
+    "number": 105,
     "name": "Great Klawf Claw Sandwich",
     "description": "A sandwich for the somewhat mature palate, with an addictively spicy note from the sauce.",
     "fillings": [
@@ -4750,7 +4750,7 @@
     }
   },
   {
-    "number": "106",
+    "number": 106,
     "name": "Ultra Klawf Claw Sandwich",
     "description": "A sandwich that spares no detail. The crunch of the bell pepper provides a lovely accent.",
     "fillings": [
@@ -4797,7 +4797,7 @@
     }
   },
   {
-    "number": "107",
+    "number": 107,
     "name": "Master Klawf Claw Sandwich",
     "description": "This sandwich's savory flavors stand out even more boldly thanks to the boost of spiciness.",
     "fillings": [
@@ -4845,7 +4845,7 @@
     }
   },
   {
-    "number": "108",
+    "number": 108,
     "name": "Sweet Sandwich",
     "description": "It's a close cousin to the Fruit Sandwich, but the butter sets this one apart.",
     "fillings": [
@@ -4890,7 +4890,7 @@
     }
   },
   {
-    "number": "109",
+    "number": 109,
     "name": "Great Sweet Sandwich",
     "description": "The pinch of salt serves to tease out the sweetness of this sandwich's fillings.",
     "fillings": [
@@ -4936,7 +4936,7 @@
     }
   },
   {
-    "number": "110",
+    "number": 110,
     "name": "Ultra Sweet Sandwich",
     "description": "The basil's light touch of bitter flavor helps bring this sandwich's other fillings to life.",
     "fillings": [
@@ -4983,7 +4983,7 @@
     }
   },
   {
-    "number": "111",
+    "number": 111,
     "name": "Master Sweet Sandwich",
     "description": "A sandwich with a subtle note of sourness. The slightest amount of herbs is all that's needed.",
     "fillings": [
@@ -5031,7 +5031,7 @@
     }
   },
   {
-    "number": "112",
+    "number": 112,
     "name": "Vegetable Sandwich",
     "description": "A juicy, vegetable-laden sandwich. The fresher the veggies, the tastier the dish.",
     "fillings": [
@@ -5077,7 +5077,7 @@
     }
   },
   {
-    "number": "113",
+    "number": 113,
     "name": "Great Vegetable Sandwich",
     "description": "A sandwich featuring an all-veggie lineup of fillings. The condiments play a major role in the overall flavor.",
     "fillings": [
@@ -5124,7 +5124,7 @@
     }
   },
   {
-    "number": "114",
+    "number": 114,
     "name": "Ultra Vegetable Sandwich",
     "description": "Veggies are this sandwich's bread and butter, so to speak. Adding plenty of watercress firms up the flavor.",
     "fillings": [
@@ -5172,7 +5172,7 @@
     }
   },
   {
-    "number": "115",
+    "number": 115,
     "name": "Master Vegetable Sandwich",
     "description": "The fully realized all-veggie sandwich. The overall quality depends hugely on how thickly you lay on the herbs.",
     "fillings": [
@@ -5221,7 +5221,7 @@
     }
   },
   {
-    "number": "116",
+    "number": 116,
     "name": "Hefty Sandwich",
     "description": "A sandwich that only has time for the ingredients that'll fill you up the best.",
     "fillings": [
@@ -5267,7 +5267,7 @@
     }
   },
   {
-    "number": "117",
+    "number": 117,
     "name": "Great Hefty Sandwich",
     "description": "A sandwich whose main goal is filling up the tummy. Flavor is nice, but quantity is the main concern.",
     "fillings": [
@@ -5314,7 +5314,7 @@
     }
   },
   {
-    "number": "118",
+    "number": 118,
     "name": "Ultra Hefty Sandwich",
     "description": "A sandwich devoted to the cause of filling up the tummy. Eaters should know what they're getting into.",
     "fillings": [
@@ -5362,7 +5362,7 @@
     }
   },
   {
-    "number": "119",
+    "number": 119,
     "name": "Master Hefty Sandwich",
     "description": "A bright acidic note makes this sandwich a pleasure to eat, though it doesn't change the impact of the sheer volume.",
     "fillings": [
@@ -5411,7 +5411,7 @@
     }
   },
   {
-    "number": "120",
+    "number": 120,
     "name": "Five-Alarm Sandwich",
     "description": "As the name suggests, this sandwich packs a bit of heat. Enjoying these veggies is a mark of grown-up taste.",
     "fillings": [
@@ -5457,7 +5457,7 @@
     }
   },
   {
-    "number": "121",
+    "number": 121,
     "name": "Great Five-Alarm Sandwich",
     "description": "Achieving proper balance between the condiments is delicate work. The fragrance of basil whets the appetite.",
     "fillings": [
@@ -5504,7 +5504,7 @@
     }
   },
   {
-    "number": "122",
+    "number": 122,
     "name": "Ultra Five-Alarm Sandwich",
     "description": "This sandwich has become yet spicier and more appealing to grown-up tastes. It's not necessarily for everyone.",
     "fillings": [
@@ -5552,7 +5552,7 @@
     }
   },
   {
-    "number": "123",
+    "number": 123,
     "name": "Master Five-Alarm Sandwich",
     "description": "This sandwich is spicy to the core. If you're not seeking such stimulation, it may not be for you.",
     "fillings": [
@@ -5601,7 +5601,7 @@
     }
   },
   {
-    "number": "124",
+    "number": 124,
     "name": "Nouveau Veggie Sandwich",
     "description": "A vegetable-centric sandwich whose sauce delivers a particular shocking kick.",
     "fillings": [
@@ -5647,7 +5647,7 @@
     }
   },
   {
-    "number": "125",
+    "number": 125,
     "name": "Great Nouveau Veggie Sandwich",
     "description": "This sandwich boasts an all-star vegetable cast. It's best to eat it immediately after the cucumber has been added.",
     "fillings": [
@@ -5694,7 +5694,7 @@
     }
   },
   {
-    "number": "126",
+    "number": 126,
     "name": "Ultra Nouveau Veggie Sandwich",
     "description": "A sandwich one can proudly offer to a veggie lover. Use just enough mayonnaise to provide a little flavor accent.",
     "fillings": [
@@ -5742,7 +5742,7 @@
     }
   },
   {
-    "number": "127",
+    "number": 127,
     "name": "Master Nouveau Veggie Sandwich",
     "description": "Veggies are this sandwich's sole purpose. Adding a touch of sweet makes the veggies' natural savoriness stand out.",
     "fillings": [
@@ -5791,7 +5791,7 @@
     }
   },
   {
-    "number": "128",
+    "number": 128,
     "name": "Spicy-Sweet Sandwich",
     "description": "A sandwich that pairs the sweetness of butter with the spicy kick of horseradish.",
     "fillings": [
@@ -5837,7 +5837,7 @@
     }
   },
   {
-    "number": "129",
+    "number": 129,
     "name": "Great Spicy-Sweet Sandwich",
     "description": "The richness of the avocado shines in this sandwich. The balance between the fruits is key to making it tasty.",
     "fillings": [
@@ -5884,7 +5884,7 @@
     }
   },
   {
-    "number": "130",
+    "number": 130,
     "name": "Ultra Spicy-Sweet Sandwich",
     "description": "This sandwich walks a tightrope between sweet and spicy. Tastiest when the cheese is abundant.",
     "fillings": [
@@ -5932,7 +5932,7 @@
     }
   },
   {
-    "number": "131",
+    "number": 131,
     "name": "Master Spicy-Sweet Sandwich",
     "description": "The hint of bitterness in this sandwich creates a new harmony between the spicy and sweet flavors.",
     "fillings": [
@@ -5981,7 +5981,7 @@
     }
   },
   {
-    "number": "132",
+    "number": 132,
     "name": "Decadent Sandwich",
     "description": "This sandwich's fillings speak for themselves—loudly— so it's tastiest when you go light on the condiments.",
     "fillings": [
@@ -6028,7 +6028,7 @@
     }
   },
   {
-    "number": "133",
+    "number": 133,
     "name": "Great Decadent Sandwich",
     "description": "This sandwich uses truly precious and fine ingredients. The tofu lends it more substance.",
     "fillings": [
@@ -6076,7 +6076,7 @@
     }
   },
   {
-    "number": "134",
+    "number": 134,
     "name": "Ultra Decadent Sandwich",
     "description": "Achieving balance between these ingredients is no easy feat. Tastiest when the seasonings are piled on a bit.",
     "fillings": [
@@ -6125,7 +6125,7 @@
     }
   },
   {
-    "number": "135",
+    "number": 135,
     "name": "Master Decadent Sandwich",
     "description": "Adding the ultimate in spiciness makes this sandwich of distinct, vibrant ingredients into a unified masterpiece.",
     "fillings": [
@@ -6175,7 +6175,7 @@
     }
   },
   {
-    "number": "136",
+    "number": 136,
     "name": "Tofu Sandwich",
     "description": "A sandwich designed by and for tofu lovers. It will never leave you hungry.",
     "fillings": [
@@ -6222,7 +6222,7 @@
     }
   },
   {
-    "number": "137",
+    "number": 137,
     "name": "Great Tofu Sandwich",
     "description": "This sandwich is not the easiest to pull off. Be sure to drain the tofu thoroughly.",
     "fillings": [
@@ -6270,7 +6270,7 @@
     }
   },
   {
-    "number": "138",
+    "number": 138,
     "name": "Ultra Tofu Sandwich",
     "description": "The simple flavor of the tofu and the bitterness of the watercress make for a strangely appealing match.",
     "fillings": [
@@ -6319,7 +6319,7 @@
     }
   },
   {
-    "number": "139",
+    "number": 139,
     "name": "Master Tofu Sandwich",
     "description": "The precious herbs' saltiness makes the tofu's savory notes shine through.",
     "fillings": [
@@ -6369,7 +6369,7 @@
     }
   },
   {
-    "number": "140",
+    "number": 140,
     "name": "Curry-and-Noodle Sandwich",
     "description": "While others ask “why?,” this sandwich asks, “why not?” It's best when the curry powder is lightly toasted.",
     "fillings": [
@@ -6416,7 +6416,7 @@
     }
   },
   {
-    "number": "141",
+    "number": 141,
     "name": "Great Curry-and-Noodle Sandwich",
     "description": "The eye-widening spiciness of the jalapeño heightens the curry flavor.",
     "fillings": [
@@ -6464,7 +6464,7 @@
     }
   },
   {
-    "number": "142",
+    "number": 142,
     "name": "Ultra Curry-and-Noodle Sandwich",
     "description": "The eggs provide a mellow coating over the spicy flavors beneath.",
     "fillings": [
@@ -6513,7 +6513,7 @@
     }
   },
   {
-    "number": "143",
+    "number": 143,
     "name": "Master Curry-and-Noodle Sandwich",
     "description": "The faint sweetness perfects the taste, bringing new depth and richness to the sandwich.",
     "fillings": [
@@ -6563,7 +6563,7 @@
     }
   },
   {
-    "number": "144",
+    "number": 144,
     "name": "Tower Sandwich",
     "description": "To this sandwich, the righteous path lies in sheer quantity. It's downright aggressive in its effort to fill you up.",
     "fillings": [
@@ -6610,7 +6610,7 @@
     }
   },
   {
-    "number": "145",
+    "number": 145,
     "name": "Great Tower Sandwich",
     "description": "This sandwich prioritizes filling you up first and foremost. It's not particularly concerned with flavor.",
     "fillings": [
@@ -6658,7 +6658,7 @@
     }
   },
   {
-    "number": "146",
+    "number": 146,
     "name": "Ultra Tower Sandwich",
     "description": "A sandwich concerned only with volume. It can be tasty, too, depending on the seasonings.",
     "fillings": [
@@ -6707,7 +6707,7 @@
     }
   },
   {
-    "number": "147",
+    "number": 147,
     "name": "Master Tower Sandwich",
     "description": "Thanks to the magic of spice, this ultra-voluminous sandwich even manages to taste rather good.",
     "fillings": [
@@ -6757,7 +6757,7 @@
     }
   },
   {
-    "number": "148",
+    "number": 148,
     "name": "Sushi Sandwich",
     "description": "A sandwich that aspires to be sushi. Are you surprised at how tasty it is? Good—that's the idea.",
     "fillings": [
@@ -6804,7 +6804,7 @@
     }
   },
   {
-    "number": "149",
+    "number": 149,
     "name": "Great Sushi Sandwich",
     "description": "A sandwich made with a love of sushi foremost in the mind. The bitterness of the watercress works well here.",
     "fillings": [
@@ -6852,7 +6852,7 @@
     }
   },
   {
-    "number": "150",
+    "number": 150,
     "name": "Ultra Sushi Sandwich",
     "description": "A sandwich dreamed up by a sushi aficionado. The sheer amount of sandwich going on here is part of the appeal.",
     "fillings": [
@@ -6901,7 +6901,7 @@
     }
   },
   {
-    "number": "151",
+    "number": 151,
     "name": "Master Sushi Sandwich",
     "description": "The ultimate form of the Sushi Sandwich. The refreshing sourness elevates this sandwich to masterpiece level.",
     "fillings": [

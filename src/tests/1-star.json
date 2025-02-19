@@ -1,0 +1,118 @@
+[
+  {
+    "recipe": "Onion-3,Onion-3,Onion-3,Onion-3,Onion-3,Onion-3_Chili Sauce,Sour Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Psychic,2/Title,Water,2/Encounter,Grass,2"
+  },
+  {
+    "recipe": "Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3_Bitter Herba Mystica,Bitter Herba Mystica",
+    "result": "Sparkling,Dragon,1"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sweet Herba Mystica",
+    "result": ""
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sweet Herba Mystica,Whipped Cream,Whipped Cream,Whipped Cream",
+    "result": ""
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1_Bitter Herba Mystica",
+    "result": ""
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1_Bitter Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Normal,2/Title,Fire,2/Humungo,Poison,1"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Bitter Herba Mystica,Bitter Herba Mystica",
+    "result": "Sparkling,Normal,3/Title,Poison,3/Exp,Bug,3"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Sour Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Normal,3/Title,Poison,3/Exp,Bug,3"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-1_Salty Herba Mystica,Sweet Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Normal,3/Title,Poison,3/Egg,,3"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Salty Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,3/Title,Normal,3/Encounter,Fighting,3"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Salty Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Flying,2/Title,Normal,2/Encounter,Fighting,2"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,1"
+  },
+  {
+    "recipe": "Prosciutto-0,Prosciutto-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,3/Title,Normal,3/Encounter,Fighting,3"
+  },
+  {
+    "recipe": "Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Bitter Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Fire,3/Title,Water,3/Item,Grass,3"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Flying,2/Title,Normal,2/Encounter,Fighting,2"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-1_Bitter Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,2/Title,Normal,2/Egg,,2"
+  },
+  {
+    "recipe": "Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Fire,2/Title,Water,2/Item,Grass,2"
+  },
+  {
+    "recipe": "Basil-4,Basil-4,Basil-4,Basil-1_Bitter Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Fire,1/Title,Water,1/Item,Grass,1"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Salty Herba Mystica",
+    "result": "Sparkling,Normal,2/Title,Poison,2/Exp,Bug,2"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-2_Bitter Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Normal,2/Title,Poison,2/Exp,Bug,2"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-1_Spicy Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Normal,1/Title,Poison,1/Exp,Bug,1"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3_Bitter Herba Mystica,Bitter Herba Mystica",
+    "result": "Sparkling,Normal,1/Title,Poison,1/Exp,Bug,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Salty Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Peanut Butter,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,1/Title,Steel,1/Encounter,Fire,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Bitter Herba Mystica,Ketchup,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,1/Title,Poison,1"
+  },
+  {
+    "recipe": "Avocado-3,Avocado-3,Avocado-3,Avocado-3,Avocado-3,Chorizo-3_Bitter Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica,Vinegar",
+    "result": "Sparkling,Dragon,2/Title,Normal,2/Encounter,Poison,2"
+  },
+  {
+    "recipe": "",
+    "result": ""
+  },
+  {
+    "recipe": "",
+    "result": ""
+  },
+  {
+    "recipe": "",
+    "result": ""
+  }
+]

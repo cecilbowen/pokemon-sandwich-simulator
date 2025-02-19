@@ -1,0 +1,42 @@
+[
+	{
+		"tastes": [1, 0],
+		"skillType": 5,
+		"power": 100
+	},
+	{
+		"tastes": [1, 3],
+		"skillType": 2,
+		"power": 100
+	},
+	{
+		"tastes": [4, 2],
+		"skillType": 3,
+		"power": 100
+	},
+	{
+		"tastes": [1],
+		"skillType": 1,
+		"power": 100
+	},
+	{
+		"tastes": [0],
+		"skillType": 8,
+		"power": 100
+	},
+	{
+		"tastes": [2],
+		"skillType": 10,
+		"power": 100
+	},
+	{
+		"tastes": [3],
+		"skillType": 9,
+		"power": 100
+	},
+	{
+		"tastes": [4],
+		"skillType": 4,
+		"power": 100
+	}
+]

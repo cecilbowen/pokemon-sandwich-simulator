@@ -1,0 +1,34 @@
+[
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica",
+    "result": "Title,Normal,3/Humungo,Normal,3/Item,Flying,3"
+  },
+  {
+    "recipe": "Chorizo-1,Rice-1,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica",
+    "result": "Title,Normal,3/Item,Normal,3/Humungo,Fighting,2"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica",
+    "result": "Title,Normal,2/Item,Normal,2/Humungo,Flying,2"
+  },
+  {
+    "recipe": "Cheese-2,Rice-1,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica",
+    "result": "Title,Normal,3/Item,Normal,3/Humungo,Flying,3"
+  },
+  {
+    "recipe": "Cheese-1,Rice-1,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica",
+    "result": "Title,Normal,2/Item,Normal,2/Humungo,Flying,2"
+  },
+  {
+    "recipe": "Herbed Sausage-3,Herbed Sausage-3,Rice-1,Rice-1_Horseradish,Spicy Herba Mystica",
+    "result": "Title,Fighting,3/Humungo,Fighting,3/Encounter,Ground,2"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-0,Prosciutto-0_Sweet Herba Mystica",
+    "result": "Title,Flying,2/Egg,,2/Encounter,Fighting,2"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-2,Prosciutto-0_Bitter Herba Mystica",
+    "result": "Title,Flying,2/Exp,Flying,2/Encounter,Fighting,2"
+  }
+]

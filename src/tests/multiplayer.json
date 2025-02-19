@@ -1,0 +1,38 @@
+[
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1,Rice-1_Bitter Herba Mystica,Horseradish,Horseradish,Mayonnaise,Mayonnaise,Saltchorizo x4, rice x2, tofu x1, mayonnaise x4, horseradish x2, salt, bitter herba",
+    "result": "Title,Normal,3/Exp,Normal,3/Encounter,Normal,3"
+  },
+  {
+    "recipe": "Ham-3,Ham-3,Ham-3,Ham-3,Herbed Sausage-1,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Noodles-1,Noodles-1_Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream,Whipped Cream",
+    "result": "Encounter,Ground,2/Egg,,2/Item,Fighting,1"
+  },
+  {
+    "recipe": "Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Bitter Herba Mystica,Curry Powder,Curry Powder,Salt",
+    "result": "Title,Electric,3/Humungo,Electric,3/Encounter,Electric,3"
+  },
+  {
+    "recipe": "Noodles-1,Noodles-1,Potato Salad-1,Potato Salad-1,Tomato-3,Tomato-3,Tomato-3,Tomato-3_Salt,Spicy Herba Mystica",
+    "result": "Title,Fairy,3/Humungo,Fairy,3/Encounter,Psychic,2"
+  },
+  {
+    "recipe": "Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Bitter Herba Mystica,Salt",
+    "result": "Title,Electric,3/Humungo,Electric,3/Exp,Poison,3"
+  },
+  {
+    "recipe": "Basil-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Yellow Bell Pepper-3_Salt,Sweet Herba Mystica",
+    "result": "Title,Electric,3/Humungo,Electric,3/Encounter,Electric,3"
+  },
+  {
+    "recipe": "Basil-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Yellow Bell Pepper-3_Bitter Herba Mystica,Salt",
+    "result": "Title,Electric,3/Humungo,Electric,3/Encounter,Electric,3"
+  },
+  {
+    "recipe": "Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Bitter Herba Mystica,Salt",
+    "result": "Title,Electric,3/Humungo,Electric,3/Exp,Electric,3"
+  },
+  {
+    "recipe": "Banana-3,Banana-3,Banana-3,Cheese-3,Cheese-3,Cheese-3,Cheese-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Mayonnaise,Mayonnaise,Mayonnaise,Whipped Cream,Whipped Cream",
+    "result": "Encounter,Normal,3/Exp,Normal,3/Item,Normal,3"
+  }
+]

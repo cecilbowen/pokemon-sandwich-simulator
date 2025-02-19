@@ -1,0 +1,10 @@
+[
+    {
+        "recipe": "Bread_Watercress-1_Ketchup",
+        "result": "Teensy,Flying,1/Raid,Normal,1/Exp,Poison,1"
+    },
+    {
+        "recipe": "Watercress-1_Ketchup",
+        "result": "Teensy,Flying,1/Raid,Poison,1/Exp,Normal,1"
+    }
+]

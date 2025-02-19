@@ -5,12 +5,13 @@ import TYPES from './data/types.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
 import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES, getNumberOfPlayers,
-  ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, craftSandwich, checkPresetSandwich,
+  ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, checkPresetSandwich,
   copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
-import { runTests } from './test/tests';
+import { runTests } from './tests/tests';
 import Card from './components/Card';
 import './App.css';
 import Bubble from './components/Bubble';
+import { getSandwich } from './helper/helper';
 
 // per player
 const MAX_FILLINGS = 6;
@@ -18,16 +19,17 @@ const MAX_CONDIMENTS = 4;
 const DISABLE_ALERTS = false;
 let NUM_PLAYERS = 1;
 
-// en, es, ja, de, ru, sv, fr
+// en, es, ja, de, ru, sv, fr, etc
 export let LANGUAGE = "en";
 
-function App() {
+const App = () => {
   const [advancedIngredients, setAdvancedIngredients] = useState(false);
   const [alwaysShowCustomSandwich, setAlwaysShowCustomSandwich] = useState(false);
   const [simpleMode, setSimpleMode] = useState(true);
   const [showSearchPanel, setShowSearchPanel] = useState(false);
   const [showEffectFilter, setShowEffectFilter] = useState(true);
   const [megaSandwichMode, setMegaSandwichMode] = useState(false);
+  const [hasBread, setHasBread] = useState(true);
 
   const [activeFillings, setActiveFillings] = useState([]);
   const [activeCondiments, setActiveCondiments] = useState([]);
@@ -39,7 +41,10 @@ function App() {
   const [results, setResults] = useState([]);
   const [heartbeat, setHeartbeat] = useState(0);
   let activeSandwich = undefined;
-  let activeSums;
+
+  useEffect(() => {
+    window.runTests = runTests;
+  }, []);
 
   useEffect(() => {
     if (!megaSandwichMode) {
@@ -78,7 +83,7 @@ function App() {
             sandwichList.push(s);
             continue;
           }
-        }        
+        }
       }
     } else {
       sandwichList = SANDWICHES;
@@ -117,17 +122,16 @@ function App() {
       if (hasAllQueries) {
         tempResults.push(s);
       }
-
     }
 
     setResults(tempResults);
   }, [searchNameQuery, searchEffectQuery, searchTypeQuery, searchIngredientQuery]);
 
   useEffect(() => {
-    if (activeSandwich) {
+    if (activeSandwich !== undefined) {
       const activeSandwichElement = document.getElementById(`sandwich-${activeSandwich}`);
       if (activeSandwichElement) {
-        activeSandwichElement.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+        activeSandwichElement.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
       }
     }
   }, [results]);
@@ -147,9 +151,8 @@ function App() {
   };
 
   const renderFillings = () => {
-
     return (
-      <div className='filling-bkg'>
+      <div className="filling-bkg">
         {FILLINGS.map((x, i) => renderFilling(x, i))}
       </div>
     );
@@ -157,16 +160,16 @@ function App() {
 
   const checkAmountOfPower = (checkArr, power) => {
     let retClass = 'ingredient-power-bg';
-    const activePower = checkArr["powers"].find((u) => u.type === power);
+    const activePower = checkArr.powers.find(u => u.type === power);
 
-    if (hasRelevance(checkArr, activeKey) && activePower !== undefined) { 
+    if (hasRelevance(checkArr, activeKey) && activePower !== undefined) {
       if (activePower.amount > 0) {
         retClass += ' power-increase';
       }
       if (activePower.amount < 0) {
         retClass += ' power-decrease';
       }
-    } 
+    }
 
     return retClass;
   };
@@ -182,7 +185,7 @@ function App() {
       divClass = 'ingredient-div ingredient-blur';
     }
 
-    const ingredientPowerClass = checkAmountOfPower(filling, activeKey["power"]);
+    const ingredientPowerClass = checkAmountOfPower(filling, activeKey.power);
 
     return (
     <div className={divClass} key={`filling-${index}-${active ? 'active' : 'dormant'}`}>
@@ -196,7 +199,7 @@ function App() {
           const tempActiveFillings = activeFillings.slice(0);
 
           if (active) {
-            var indexToRemove = tempActiveFillings.indexOf(filling);
+            const indexToRemove = tempActiveFillings.indexOf(filling);
             if (indexToRemove !== -1) {
               tempActiveFillings.splice(indexToRemove, 1);
             }
@@ -210,14 +213,13 @@ function App() {
           setActiveFillings(tempActiveFillings);
         }}
       />
-      {active && <div className='numbering numbering-icon'>{index + 1}</div>}
+      {active && <div className="numbering numbering-icon">{index + 1}</div>}
     </div>);
   };
 
   const renderCondiments = () => {
-
     return (
-      <div className='condiment-bkg'>
+      <div className="condiment-bkg">
         {CONDIMENTS.map((x, i) => renderCondiment(x, i))}
       </div>
     );
@@ -234,8 +236,8 @@ function App() {
       divClass = 'ingredient-div ingredient-blur';
     }
 
-    const ingredientPowerClass = checkAmountOfPower(condiment, activeKey["power"]);
-    
+    const ingredientPowerClass = checkAmountOfPower(condiment, activeKey.power);
+
     return (
     <div className={divClass} key={`condiment-${index}-${active ? 'active' : 'dormant'}`}>
       <div className={ingredientPowerClass}></div>
@@ -247,7 +249,7 @@ function App() {
         onClick={() => {
           const tempActiveCondiments = activeCondiments.slice(0);
           if (active) {
-            var indexToRemove = tempActiveCondiments.indexOf(condiment);
+            const indexToRemove = tempActiveCondiments.indexOf(condiment);
             if (indexToRemove !== -1) {
               tempActiveCondiments.splice(indexToRemove, 1);
             }
@@ -258,21 +260,41 @@ function App() {
           setActiveCondiments(tempActiveCondiments);
         }}
       />
-      {active && <div className='numbering numbering-icon'>{index + activeFillings.length + 1}</div>}
+      {active && <div className="numbering numbering-icon">{index + activeFillings.length + 1}</div>}
     </div>
     );
+  };
+
+  const renderBread = () => {
+    const divClassAddon = hasBread ? "bread" : "no-bread";
+
+    const divClass = `ingredient-div ${divClassAddon}`;
+    const name = hasBread ? "Bread-On" : "Bread-Off";
+
+    return (
+    <div className={divClass}>
+      <img
+        alt={ts(name)}
+        title={ts(name)}
+        src={`${process.env.PUBLIC_URL}/ingredients/bread.png`}
+        className={`ingredient ${hasBread ? "img-bread" : "img-no-bread"}`}
+        onClick={() => setHasBread(!hasBread)}
+      />
+      <div className="numbering numbering-icon">0</div>
+    </div>);
   };
 
   const renderActive = () => {
     const showClear = activeFillings.length > 0 || activeCondiments.length > 0;
 
     return (
-      <div className='active-ingredients-bkg'>
+      <div className="active-ingredients-bkg">
+        {activeFillings.length + activeCondiments.length > 0 && renderBread()}
         {activeFillings.map((x, i) => renderFilling(x, i, true))}
         {activeCondiments.map((x, i) => renderCondiment(x, i, true))}
-        {showClear && <span className='clear-ingredients' onClick={() => clearIngredients()}>{ts("clear")}</span>}
+        {showClear && <span className="clear-ingredients" onClick={() => clearIngredients()}>{ts("clear")}</span>}
       </div>
-    )
+    );
   };
 
   const renderSandwichBubble = (effect, key) => {
@@ -284,7 +306,8 @@ function App() {
     return (
       <div className="bubble-row" key={key}>
         <div className="bubble chain-a" style={{ backgroundColor: powerColor }}>{`${ts(effect.name)}: `}</div>
-        <div className="bubble chain-b" style={{ backgroundColor: typeColor, display: effect.type === "" ? "none" : "" }}>{`${ts(effect.type)} `}</div>
+        <div className="bubble chain-b"
+          style={{ backgroundColor: typeColor, display: effect.type === "" ? "none" : "" }}>{`${ts(effect.type)} `}</div>
         <div className="bubble chain-c" style={{ backgroundColor: levelColor }}>{`${ts("Lv.")} ${effect.level}`}</div>
       </div>
     );
@@ -298,26 +321,27 @@ function App() {
     if (sandwich.number === "???") {
       display = '⭐'.repeat(sandwich.stars);
       if (sandwich.effects.length === 0) {
-        display += "(failure)"
+        display += "(failure)";
       }
     }
 
     const numberOfPlayers = getNumberOfPlayers({ fillings: activeFillings, condiments: activeCondiments });
 
+    const sandwichSrc = hasBread || sandwich.number !== "???" ? sandwich.imageUrl :
+      `${process.env.PUBLIC_URL}/no-bread-sandwich.png`;
+
     return (
-      <div className='card' style={{ display: "flex" }}>
+      <div className="card" style={{ display: "flex" }}>
         <img alt={ts(sandwich.name)}
-          src={sandwich.imageUrl}
+          src={sandwichSrc}
           style={{ width: "100px" }}
         />
         {megaSandwichMode && <div id="players-icon">{numberOfPlayers}P</div>}
         <div>
-          <div className="bubble bubble-header" onClick={() => {
-            if(window.event.ctrlKey) { runTests(); }
-          }}
+          <div className="bubble bubble-header"
             style={{ backgroundColor: "tan" }}>{display}</div>
           {sandwich.effects.length > 0 && <div>{sandwich.effects.map((x, i) => renderSandwichBubble(x, i))}</div>}
-          {sandwich.effects.length === 0 && <div className='no-effects'>{ts("This sandwich has no effects.")}</div>}
+          {sandwich.effects.length === 0 && <div className="no-effects">{ts("This sandwich has no effects.")}</div>}
         </div>
       </div>
     );
@@ -341,11 +365,12 @@ function App() {
       ...activeFillings.sort((a, b) => a.name.localeCompare(b.name)),
       ...activeCondiments.sort((a, b) => a.name.localeCompare(b.name))
     ];
-    const sums = getIngredientsSums(activeFillings, activeCondiments);
-    activeSums = sums;
+
+    const generatedSandwich = getSandwich({ fillings: activeFillings, condiments: activeCondiments, hasBread });
+    const sums = getIngredientsSums(generatedSandwich.stats);
 
     const foundSandwich = checkPresetSandwich(sums, activeFillings, activeCondiments);
-    const generatedSandwich = craftSandwich(activeFillings, activeCondiments, sums, foundSandwich);
+
     activeSandwich = foundSandwich?.number;
 
     // Sure, we could show results with only condiments, but we can't add only condiments
@@ -356,9 +381,12 @@ function App() {
     const showResults = activeFillings.length > 0 && activeCondiments.length > 0;
 
     return (
-      <div class="results">
+      <div className="results">
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-          {ingredients.map((x, i) => <Card ingredient={x} number={i} fillings={activeFillings}
+          {ingredients.map((x, i) => <Card key={`ing-${i}`} hasBread={hasBread}
+            ingredient={x} stars={generatedSandwich.stars}
+            number={i}
+            fillings={activeFillings}
             simpleMode={simpleMode}
             updatePieces={() => pulse()}
             onClickBubble={key => toggleActiveKey(key)}
@@ -369,13 +397,13 @@ function App() {
               }
             }}
             condiments={activeCondiments} detail={!simpleMode && advancedIngredients} />)}
-          {!advancedIngredients && <br className='page-break' />}
-          {showResults && !simpleMode
-            && <Card sums={sums} activeSandwich={activeSandwich}
-                fillings={activeFillings} condiments={activeCondiments} 
+          {!advancedIngredients && <br className="page-break" />}
+          {showResults && !simpleMode &&
+            <Card sums={sums} mods={generatedSandwich.mods} activeSandwich={activeSandwich} hasBread={hasBread}
+                fillings={activeFillings} condiments={activeCondiments}
                 detail={!simpleMode && advancedIngredients}
                 onClickBubble={key => toggleActiveKey(key)}
-                activeKey={activeKey}
+                activeKey={activeKey} stars={generatedSandwich.stars}
               />}
         </div>
         <div className="bubble-row" style={{ justifyContent: "center" }}>
@@ -387,7 +415,7 @@ function App() {
   };
 
   const renderSearchBubble = (sandwich, key) => {
-    const highlight = activeSandwich && sandwich.number === activeSandwich;
+    const highlight = activeSandwich !== undefined && sandwich.number === activeSandwich;
     const isWeird = oneTwoFirst.filter(x => x === sandwich.number)[0];
     const foodCombo = [...sandwich.fillings, ...sandwich.condiments];
     const hasMultiIngredients = foodCombo.length !== Array.from(new Set(foodCombo)).length;
@@ -397,6 +425,7 @@ function App() {
       <div className={cls} key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
         const condiments = getCondiments(sandwich.condiments);
         const fillings = getFillings(sandwich.fillings);
+        setHasBread(true);
         setActiveCondiments(condiments);
         setActiveFillings(fillings);
       }} style={{
@@ -428,28 +457,27 @@ function App() {
       default:
     }
   };
-  
 
   const renderSearch = () => {
     if (!showSearchPanel) { return null; }
 
     return (
-      <div className='search-panel'>
-        <div className='search-bars-div'>
-          <input type="text" id="nameSearch" placeholder={ts('Search names')} className='search-bar'
+      <div className="search-panel">
+        <div className="search-bars-div">
+          <input type="text" id="nameSearch" placeholder={ts('Search names')} className="search-bar"
             onChange={ev => search(ev, "name")} style={{ width: "250px" }}
           />
-          <input type="text" id="effectSearch" placeholder={ts('Search effects (egg, raid, etc)')} className='search-bar'
+          <input type="text" id="effectSearch" placeholder={ts('Search effects (egg, raid, etc)')} className="search-bar"
             onChange={ev => search(ev, "effect")} style={{ width: "250px" }}
           />
-          <input type="text" id="typeSearch" placeholder={ts('Search types (normal, dark, etc)')} className='search-bar'
+          <input type="text" id="typeSearch" placeholder={ts('Search types (normal, dark, etc)')} className="search-bar"
             onChange={ev => search(ev, "type")} style={{ width: "250px" }}
           />
-          <input type="text" id="ingredientSearch" placeholder={ts('Search ingredients (ham, bacon, etc)')} className='search-bar'
+          <input type="text" id="ingredientSearch" placeholder={ts('Search ingredients (ham, bacon, etc)')} className="search-bar"
             onChange={ev => search(ev, "ingredient")} style={{ width: "250px" }}
           />
         </div>
-        <div className='search-results-div'>
+        <div className="search-results-div">
           <div className="bubble-row" style={{ overflow: "auto", flexWrap: "nowrap" }}>
             {results.map((x, i) => renderSearchBubble(x, i))}
           </div>
@@ -462,7 +490,7 @@ function App() {
     return (
       <div className="complex-search-panel">
         <div className="bubble-row complex-row">
-          {FLAVORS.map((flavor) => (
+          {FLAVORS.map(flavor =>
             <Bubble
               label={flavor}
               key={flavor}
@@ -472,10 +500,10 @@ function App() {
                 activeKey && Object.values(activeKey).indexOf(flavor) !== -1
               }
             />
-          ))}
+          )}
         </div>
         <div className="bubble-row complex-row">
-          {Object.keys(ALIAS_TO_FULL).map((power) => (
+          {Object.keys(ALIAS_TO_FULL).map(power =>
             <Bubble
               label={power}
               key={power}
@@ -484,10 +512,10 @@ function App() {
                 activeKey && Object.values(activeKey).indexOf(power) !== -1
               }
             />
-          ))}
+          )}
         </div>
         <div className="bubble-row complex-row">
-          {TYPES.map((type) => (
+          {TYPES.map(type =>
             <Bubble
               label={type}
               key={type}
@@ -497,20 +525,20 @@ function App() {
                 activeKey && Object.values(activeKey).indexOf(type) !== -1
               }
             />
-          ))}
+          )}
         </div>
       </div>
     );
   };
 
   const saveRecipe = () => {
-    const copyStr = getRecipeFromIngredients({ fillings: activeFillings, condiments: activeCondiments });
+    const copyStr = getRecipeFromIngredients({ fillings: activeFillings, condiments: activeCondiments, hasBread });
     if (!copyStr) { return; }
 
     console.log("Saving recipe", copyStr);
     copyTextToClipboard(copyStr, () => {
     if (!DISABLE_ALERTS) {
-      alert(ts("Copied recipe to clipboard!") + "\n" + copyStr);
+      alert(`${ts("Copied recipe to clipboard!") }\n${ copyStr}`);
     }
     });
   };
@@ -519,37 +547,43 @@ function App() {
     if (!recipe) {
       recipe = window.prompt(ts("Enter/paste recipe:"), "");
     }
-    
+
     const ingredients = getIngredientsFromRecipe(recipe);
     if (ingredients) {
       const fillings = ingredients.fillings;
       const condiments = ingredients.condiments;
+      const tempHasBread = ingredients.hasBread;
 
       if (fillings.length > MAX_FILLINGS || condiments.length > MAX_CONDIMENTS) {
         setMegaSandwichMode(true);
       }
 
+      setHasBread(Boolean(tempHasBread));
       setActiveFillings(fillings);
       setActiveCondiments(condiments);
     }
-  }
+  };
 
   const renderSettings = () => {
     return (
-      <div className='settings-bar'>
-        <button className='button-spacing' onClick={() => setSimpleMode(!simpleMode)}>{ts("Toggle Simple Mode")}: {simpleMode ? ts("On") : ts("Off")}</button>
-        <button className='button-spacing' onClick={() => setShowSearchPanel(!showSearchPanel)}>{ts("Toggle Search Panel")}</button>
-        {!simpleMode && <button className='button-spacing' onClick={() => setShowEffectFilter(!showEffectFilter)}>{ts("Toggle Effect Filter")}</button>}
-        <button className='button-spacing' onClick={() => setMegaSandwichMode(!megaSandwichMode)}>{ts("Toggle Multiplayer Mode")}: {megaSandwichMode ? ts("On") : ts("Off")}</button>
-        <button className='button-spacing' onClick={() => loadRecipe()}>{ts("Load Recipe")}</button>
-        <button className='button-spacing' onClick={() => saveRecipe()}>{ts("Save Recipe")}</button>
+      <div className="settings-bar">
+        <button className="button-spacing"
+          onClick={() => setSimpleMode(!simpleMode)}>{ts("Toggle Simple Mode")}: {simpleMode ? ts("On") : ts("Off")}</button>
+        <button className="button-spacing" onClick={() => setShowSearchPanel(!showSearchPanel)}>{ts("Toggle Search Panel")}</button>
+        {!simpleMode && <button className="button-spacing"
+          onClick={() => setShowEffectFilter(!showEffectFilter)}>{ts("Toggle Effect Filter")}</button>}
+        <button className="button-spacing"
+          onClick={() => setMegaSandwichMode(!megaSandwichMode)}>
+            {ts("Toggle Multiplayer Mode")}: {megaSandwichMode ? ts("On") : ts("Off")}</button>
+        <button className="button-spacing" onClick={() => loadRecipe()}>{ts("Load Recipe")}</button>
+        <button className="button-spacing" onClick={() => saveRecipe()}>{ts("Save Recipe")}</button>
       </div>
     );
   };
 
   const renderLanguage = language => {
     return (
-      <small key={`lang-${language[0]}`} className='language-link' onClick={() => changeLanguage(language[0])}>{language[1]}</small>
+      <small key={`lang-${language[0]}`} className="language-link" onClick={() => changeLanguage(language[0])}>{language[1]}</small>
     );
   };
 
@@ -561,6 +595,8 @@ function App() {
         <small><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">{ts("Source Code")}</a></small>
         <span style={{ paddingLeft: '4px' }}>|</span>
         {languages.map(x => renderLanguage(x))}
+        <span style={{ paddingLeft: '4px', paddingRight: '4px' }}>|</span>
+        <small><a href="https://birbzone.com/sandwich/">{ts("Calculator")}</a></small>
       </div>
     );
   };
@@ -577,7 +613,7 @@ function App() {
         if (fillings.length > MAX_FILLINGS || condiments.length > MAX_CONDIMENTS) {
           setMegaSandwichMode(true);
         }
-  
+
         setActiveFillings(fillings);
         setActiveCondiments(condiments);
       }
@@ -596,6 +632,6 @@ function App() {
       {renderFooter()}
     </div>
   );
-}
+};
 
 export default App;

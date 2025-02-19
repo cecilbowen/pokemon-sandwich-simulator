@@ -1,18 +1,21 @@
 // import { useEffect, useState } from 'react';
 import { calculatePowerAmount } from '../util';
 import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode, ts,
-    copyTextToClipboard, isFilling, isFlavor, isPower, isType, shadeColor
+    isFilling, isFlavor, isPower, isType, shadeColor
 } from '../util';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
 import FILLINGS from '../data/fillings.json';
-import SANDWICHES from '../data/sandwiches.json';
+import PropTypes from "prop-types";
+import DPOINTS from "../helper/deliciousness-poketype-points.json";
 
-const Card = props => {
-    const ingredient = props.ingredient;
-    const isSum = props.sums !== undefined;
-    const sums = props.sums || {};
+const Card = ({
+    ingredient, number, sums, mods, detail, stars,
+    simpleMode, updatePieces, onClickBubble, onClick, activeKey
+}) => {
+    const isSum = sums !== undefined;
+    sums = sums || {};
 
     const tastes = (sums.tastes || ingredient.tastes).sort((a, b) => {
       return b.amount - a.amount || FLAVORS.indexOf(a.flavor) - FLAVORS.indexOf(b.flavor);
@@ -33,20 +36,37 @@ const Card = props => {
     const sumStr = `${tastesSum}\n${powersSum}\n${typesSum}`;
 
     const onSelectBubble = key => {
-        if (props.onClickBubble) {
-            props.onClickBubble(key);
+        if (onClickBubble) {
+            onClickBubble(key);
         }
     };
 
     const renderKeyValue = (kv, id) => {
-        let key = (kv.type || kv.flavor);
+        const key = kv.type || kv.flavor;
         const value = isSum ? kv.amount : calculatePowerAmount(kv.amount, ingredient, kv);
         const backgroundColor = COLORS[key];
         let backgroundImage = "";
         let borderColor = backgroundColor;
         let className = "bubble fake-border";
 
-        if (props.activeKey && Object.values(props.activeKey).indexOf(key) !== -1) {
+        const strValue = val => {
+            const cat = mods?.skills[kv.type] ? "skills" : "types";
+            const accessor = mods?.[cat];
+
+            if (!accessor) {
+                return val;
+            }
+
+            const modVal = accessor[kv.type];
+            const sign = modVal > 0 ? "+" : "-";
+            if (modVal) {
+                return `${val} (${val - modVal} ${sign} ${Math.abs(modVal)})`;
+            }
+
+            return val;
+        };
+
+        if (activeKey && Object.values(activeKey).indexOf(key) !== -1) {
             className = "bubble key-selected";
             borderColor = "black";
         }
@@ -62,7 +82,7 @@ const Card = props => {
         return <div className={className} style={{ backgroundColor, borderColor, backgroundImage }} key={id}
             onClick={() => onSelectBubble(key)}>
             <div>{ts(key)}:</div>
-            <div style={{ marginLeft: "10px" }}>{kv.modded ? `${value} (${value - 100} + 100)` : value}</div>
+            <div style={{ marginLeft: "10px" }}>{strValue(value)}</div>
         </div>;
     };
 
@@ -79,29 +99,14 @@ const Card = props => {
         const backgroundColor = COLORS["All Other Types"];
         const common = mode(types, 'amount', true, true);
         const toRender = types.filter(x => x.amount !== common);
-        
-        return (<div className="bubble-row">
+
+        return <div className="bubble-row">
             {toRender.map((x, i) => renderKeyValue(x, i))}
             <div className="bubble bubble-type" style={{ backgroundColor }}>
                 <div>{ts("All Other Types")}:</div>
                 <div style={{ marginLeft: "10px" }}>{common}</div>
             </div>
-        </div>);
-    };
-
-    const copyValues = (ta, p, ty) => {
-        let sandwichStr = "";
-        if (props.activeSandwich) {
-            const s = SANDWICHES.filter(x => x.number === props.activeSandwich)[0];
-            if (s) {
-                sandwichStr = s.effects.map(x => `${x.name.split(" ")[0]} ${x.level}`).join(", ");
-            }
-        }
-        const tasteStr = tastes.map(x => `${x.flavor} ${x.amount}`).join(", ");
-        const powerStr = powers.map(x => `${x.type} ${x.amount}`).join(", ");
-
-
-        copyTextToClipboard(` - ${tasteStr}\n     ${powerStr}\n     ${sandwichStr}`);
+        </div>;
     };
 
     const shouldRenderAllTypes = types.length === 18 && types.filter(x => x.amount !== types[0].amount).length === 0;
@@ -117,10 +122,10 @@ const Card = props => {
         } else {
             borderColor = "blue";
             backgroundColor = "#0000ff24";
-        }        
+        }
     }
 
-    const showStats = (isSum || props.detail);
+    const showStats = isSum || detail;
 
     const modifyPieces = mod => {
         const maxPieces = FILLINGS.slice(0).filter(x => x.name === ingredient.name)[0].pieces;
@@ -128,45 +133,75 @@ const Card = props => {
         if (tempPieces > maxPieces) { tempPieces = maxPieces; }
         if (tempPieces < 0) { tempPieces = 0; }
         ingredient.pieces = tempPieces;
-        props.updatePieces();
+        updatePieces();
     };
 
-    const flavorComboStr = FLAVOR_TABLE_EZ[props?.activeKey.power];
-    const powerExplain = isPower(props?.activeKey.power) ? `+100 ${ts(props.activeKey.power)}: ${ts(flavorComboStr)}` : "";
+    const flavorComboStr = FLAVOR_TABLE_EZ[activeKey.power];
+    const activeLabel = mods?.skills[activeKey.power] === 100 ? `(${ts("active")})` : "";
+    const powerExplain = isPower(activeKey.power) ? `+100 ${ts(activeKey.power)}: ${ts(flavorComboStr)} ${activeLabel}` : "";
     const powerExplainDisplay = flavorComboStr ? "" : "none";
     const powerExplainTitle = ts("What flavor combo ordering boosts this power");
 
+    const typeBoost = DPOINTS[(stars || 2) - 1];
+    const typeSign = typeBoost > 0 ? "+" : "-";
+    const typeExplain = isType(activeKey.type) ?
+        `${typeSign}${Math.abs(typeBoost)}: ${ts(activeKey.type)} ★` : "";
+    const typeExplainDisplay = activeKey.type ? "" : "none";
+    const typeExplainTitle = ts("Star level type modifier");
+
     return (
       <div
-        key={props.number ? `card-${props.number}` : ""} className='card'
+        key={number ? `card-${number}` : ""} className="card"
         id={isSum ? 'total-stats-card' : ''}
         style={{ borderColor, backgroundColor, alignSelf: "center", position: "relative" }}>
-        {!isSum && <div className='bubble bubble-header' onClick={props?.onClick}>
+        {!isSum && <div className="bubble bubble-header" onClick={onClick}>
             <img alt={ts(ingredient.name)} src={ingredient.imageUrl} />
-            <div>{ts(ingredient.name)}</div>            
+            <div>{ts(ingredient.name)}</div>
         </div>}
-        {isSum && <div className='bubble bubble-header' onClick={() => copyValues(tastes, powers, types)}>
+        {isSum && <div className="bubble bubble-header">
             <img alt={"Total"} src="https://www.serebii.net/itemdex/sprites/sandwich.png" title={sumStr} />
-            <div className='total-stats'>{ts("Total Stats")}</div>
-            <div id='power-flavors-description' title={powerExplainTitle} style={{ display: powerExplainDisplay }}>{powerExplain}</div>
+            <div className="total-stats">{ts("Total Stats")}</div>
+            <div id="desc-container">
+                <div id="power-flavors-description"
+                    title={powerExplainTitle} style={{ display: powerExplainDisplay }}>{powerExplain}</div>
+                <div id="type-flavors-description"
+                    title={typeExplainTitle} style={{ display: typeExplainDisplay }}>{typeExplain}</div>
+            </div>
         </div>}
         {!isSum && ingredient && isFilling(ingredient) && <div className="pieces">
             <div title={ts('How many pieces of this filling to put on sandwich')}>{ts("Pieces")}: {ingredient.pieces}</div>
-            <button className='piece-button' onClick={() => modifyPieces(-1)}>-</button>
-            <button className='piece-button' onClick={() => modifyPieces(1)}>+</button>
+            <button className="piece-button" onClick={() => modifyPieces(-1)}>-</button>
+            <button className="piece-button" onClick={() => modifyPieces(1)}>+</button>
         </div>}
-        {showStats && <div className='bubble-row'>{tastes.map((x, i) => renderKeyValue(x, i))}</div>}
-        {showStats && <div className='bubble-row'>{powers.map((x, i) => renderKeyValue(x, i))}</div>}
-        {showStats && <div className='bubble-row'>
+        {showStats && <div className="bubble-row">{tastes.map((x, i) => renderKeyValue(x, i))}</div>}
+        {showStats && <div className="bubble-row">{powers.map((x, i) => renderKeyValue(x, i))}</div>}
+        {showStats && <div className="bubble-row">
             {shouldRenderAllTypes && renderAllTypes()}
             {shouldRenderAllOtherTypes && renderAllOtherTypes()}
             {defaultRender && types.map((x, i) => renderKeyValue(x, i))}
         </div>}
-        {/*!isSum && <button className='expand-button' onClick={props?.onClick}></button>*/}
-        {props.number !== undefined && <div className='numbering'>{props.number + 1}</div>}
-        {!isSum && !props.simpleMode && <div className='expand-help' onClick={props?.onClick}>{showStats ? ts("Click to minimize") : ts("expand")}</div>}
+        {/* !isSum && <button className='expand-button' onClick={onClick}></button>*/}
+        {number !== undefined && <div className="numbering">{number + 1}</div>}
+        {!isSum && !simpleMode &&
+            <div className="expand-help" onClick={onClick}>{showStats ? ts("Click to minimize") : ts("expand")}</div>}
       </div>
     );
 };
 
+Card.propTypes = {
+  ingredient: PropTypes.object,
+  number: PropTypes.number,
+  sums: PropTypes.object,
+  mods: PropTypes.object,
+  fillings: PropTypes.array,
+  condiments: PropTypes.array,
+  simpleMode: PropTypes.bool,
+  detail: PropTypes.bool,
+  updatePieces: PropTypes.func,
+  onClickBubble: PropTypes.func,
+  onClick: PropTypes.func,
+  activeKey: PropTypes.object,
+  activeSandwich: PropTypes.number,
+  stars: PropTypes.number
+};
 export default Card;

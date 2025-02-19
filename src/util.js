@@ -1,9 +1,16 @@
 import SANDWICHES from './data/sandwiches.json';
 import FILLINGS from './data/fillings.json';
+import FILLINGS_MAP from "./data/fillings-map.json";
+import CONDIMENTS_MAP from "./data/condiments-map.json";
 import CONDIMENTS from './data/condiments.json';
 import FLAVORS from './data/flavors.json';
 import POWERS from './data/powers.json';
 import TYPES from './data/types.json';
+import TASTE_POWERS from "./helper/taste-powers.json";
+import TASTE_MAP from "./helper/taste-map.json";
+import DELICIOUSNESS_POKETYPE_POINTS from "./helper/deliciousness-poketype-points.json";
+import POWERS_SHORT from "./data/powers-short.json";
+
 import ENGLISH from './language/strings.json';
 import SPANISH from './language/strings-es.json';
 import GERMAN from './language/strings-de.json';
@@ -14,6 +21,7 @@ import FRENCH from './language/strings-fr.json';
 import ITALIAN from './language/strings-it.json';
 import KOREAN from './language/strings-ko.json';
 import { LANGUAGE } from './App';
+import { descendingSort, getHerbaCount, indexToPrime } from './helper/helper';
 
 export const oneTwoFirst = [
   "31",
@@ -38,93 +46,60 @@ export const oneTwoFirst = [
 ];
 
 export const FLAVOR_TABLE = {
-  "Sweet": {
-    "Salty": "Egg",
-    "Sour": "Catch",
-    "Bitter": "Egg",
-    "Hot": "Raid",
+  Sweet: {
+    Salty: "Egg",
+    Sour: "Catch",
+    Bitter: "Egg",
+    Hot: "Raid",
   },
-  "Salty": {
-    "Sweet": "Encounter",
-    "Sour": "Encounter",
-    "Bitter": "Exp",
-    "Hot": "Encounter",
+  Salty: {
+    Sweet: "Encounter",
+    Sour: "Encounter",
+    Bitter: "Exp",
+    Hot: "Encounter",
   },
-  "Sour": {
-    "Sweet": "Catch",
-    "Salty": "Teensy",
-    "Bitter": "Teensy",
-    "Hot": "Teensy",
+  Sour: {
+    Sweet: "Catch",
+    Salty: "Teensy",
+    Bitter: "Teensy",
+    Hot: "Teensy",
   },
-  "Bitter": {
-    "Sweet": "Item",
-    "Salty": "Exp",
-    "Sour": "Item",
-    "Hot": "Item",
+  Bitter: {
+    Sweet: "Item",
+    Salty: "Exp",
+    Sour: "Item",
+    Hot: "Item",
   },
-  "Hot": {
-    "Sweet": "Raid",
-    "Salty": "Humungo",
-    "Sour": "Humungo",
-    "Bitter": "Humungo",
+  Hot: {
+    Sweet: "Raid",
+    Salty: "Humungo",
+    Sour: "Humungo",
+    Bitter: "Humungo",
   },
 };
 
 export const FLAVOR_TABLE_EZ = {
-  "Egg": "sweet-salty/bitter",
-  "Catch": "sweet/sour",
-  "Raid": "sweet/hot",
-  "Encounter": "salty-sweet/sour/hot",
-  "Exp": "salty/bitter",
-  "Teensy": "sour-salty/bitter/hot",
-  "Item": "bitter-sweet/sour/hot",
-  "Humungo": "hot-salty/sour/bitter",
-};
-
-export const FLAVOR_PRIORITY_TABLE = {
-  "Sweet": {
-    "Salty": "Sweet",
-    "Sour": "Sweet",
-    "Bitter": "Sweet",
-    "Hot": "Sweet",
-  },
-  "Salty": {
-    "Sweet": "Sweet",
-    "Sour": "Salty",
-    "Bitter": "Salty",
-    "Hot": "Salty",
-  },
-  "Sour": {
-    "Sweet": "Sweet",
-    "Salty": "Salty",
-    "Bitter": "Sour",
-    "Hot": "Sour",
-  },
-  "Bitter": {
-    "Sweet": "Sweet",
-    "Salty": "Salty",
-    "Sour": "Sour",
-    "Hot": "Bitter",
-  },
-  "Hot": {
-    "Sweet": "Sweet",
-    "Salty": "Salty",
-    "Sour": "Sour",
-    "Bitter": "Bitter",
-  },
+  Egg: "sweet-salty/bitter",
+  Catch: "sweet/sour",
+  Raid: "sweet/hot",
+  Encounter: "salty-sweet/sour/hot",
+  Exp: "salty/bitter",
+  Teensy: "sour-salty/bitter/hot",
+  Item: "bitter-sweet/sour/hot",
+  Humungo: "hot-salty/sour/bitter",
 };
 
 export const ALIAS_TO_FULL = { // power alias
-  "Egg": "Egg Power",
-  "Catch": "Catching Power",
-  "Item": "Item Drop Power",
-  "Humungo": "Humungo Power",
-  "Teensy": "Teensy Power",
-  "Raid": "Raid Power",
-  "Encounter": "Encounter Power",
-  "Exp": "Exp. Point Power",
-  "Title": "Title Power",
-  "Sparkling": "Sparkling Power",
+  Egg: "Egg Power",
+  Catch: "Catching Power",
+  Item: "Item Drop Power",
+  Humungo: "Humungo Power",
+  Teensy: "Teensy Power",
+  Raid: "Raid Power",
+  Encounter: "Encounter Power",
+  Exp: "Exp. Point Power",
+  Title: "Title Power",
+  Sparkling: "Sparkling Power",
 };
 
 export const FULL_TO_ALIAS = { // power alias
@@ -160,30 +135,26 @@ export const COLORS = {
   "Shiny": "cyan",
   "Sparkling": "cyan",
   // types (18)
-	"Normal": '#A8A77A',
-	"Fire": '#EE8130',
-	"Water": '#6390F0',
-	"Electric": '#F7D02C',
-	"Grass": '#7AC74C',
-	"Ice": '#96D9D6',
-	"Fighting": 'rgba(194, 46, 40, 0.73)', //'#C22E28',
-	"Poison": 'rgba(163, 62, 161, 0.81)', //'#A33EA1',
-	"Ground": '#E2BF65',
-	"Flying": '#A98FF3',
-	"Psychic": '#F95587',
-	"Bug": '#A6B91A',
-	"Rock": '#B6A136',
-	"Ghost": 'rgba(115, 87, 151, 0.71)', //'#735797',
-	"Dragon": 'rgba(118, 73, 225, 0.83)', //'#6F35FC',
-	"Dark": 'rgba(112, 87, 70, 0.88)', //'#705746',
-	"Steel": '#B7B7CE',
-	"Fairy": '#D685AD',
+  "Normal": '#A8A77A',
+  "Fire": '#EE8130',
+  "Water": '#6390F0',
+  "Electric": '#F7D02C',
+  "Grass": '#7AC74C',
+  "Ice": '#96D9D6',
+  "Fighting": 'rgba(194, 46, 40, 0.73)', // '#C22E28',
+  "Poison": 'rgba(163, 62, 161, 0.81)', // '#A33EA1',
+  "Ground": '#E2BF65',
+  "Flying": '#A98FF3',
+  "Psychic": '#F95587',
+  "Bug": '#A6B91A',
+  "Rock": '#B6A136',
+  "Ghost": 'rgba(115, 87, 151, 0.71)', // '#735797',
+  "Dragon": 'rgba(118, 73, 225, 0.83)', // '#6F35FC',
+  "Dark": 'rgba(112, 87, 70, 0.88)', // '#705746',
+  "Steel": '#B7B7CE',
+  "Fairy": '#D685AD',
   "All Types": 'aquamarine',
   "All Other Types": 'aquamarine',
-};
-
-export const TYPE_EXCEPTIONS = {
-  "39": ["Flying", "Poison", "Fighting"], // I'm convinced this is a game bug and it's only counting the flavors on apple once
 };
 
 export const LANGUAGE_STRINGS = {
@@ -196,8 +167,8 @@ export const LANGUAGE_STRINGS = {
   'fr': FRENCH,
   'it': ITALIAN,
   'ko': KOREAN
-  //'ru': RUSSIAN,
-  //'sv': SWEDISH
+  // 'ru': RUSSIAN,
+  // 'sv': SWEDISH
 };
 
 export const LANGUAGE_NAMES = {
@@ -210,8 +181,8 @@ export const LANGUAGE_NAMES = {
   'fr': 'Français',
   'it': 'Italiano',
   'ko': '한국어'
-  //'ru': 'Pусский',
-  //'sv': 'Svenska'
+  // 'ru': 'Pусский',
+  // 'sv': 'Svenska'
 };
 
 export const ts = text => {
@@ -252,22 +223,171 @@ export const getCondiments = strArr => {
   return ret;
 };
 
+export const getPresetSandwichStatsAndMods = number => {
+  const stats = {
+    tastes: {}, skills: {}, types: {}
+  };
+  const mods = {
+    skills: {}, types: {}
+  };
+
+  const preset = SANDWICHES.filter(x => x.number === number)[0];
+
+  if (!preset) {
+    return { stats, mods };
+  }
+
+  // fillings sums
+  for (const fillingName of preset.fillings) {
+    const filling = FILLINGS_MAP[fillingName];
+    const pieces = filling.pieces;
+    for (const [attr, value] of Object.entries(filling)) {
+      let cat = "tastes";
+      if (isPower(attr)) {
+        cat = "skills";
+      } else if (isType(attr)) {
+        cat = "types";
+      } else if (!isFlavor(attr)) {
+        continue;
+      }
+
+      stats[cat][attr] = (stats[cat][attr] || 0) + value * pieces;
+    }
+  }
+
+  // condiments sums
+  for (const condimentName of preset.condiments) {
+    const condiment = CONDIMENTS_MAP[condimentName];
+    for (const [attr, value] of Object.entries(condiment)) {
+      let cat = "tastes";
+      if (isPower(attr)) {
+        cat = "skills";
+      } else if (isType(attr)) {
+        cat = "types";
+      } else if (!isFlavor(attr)) {
+        continue;
+      }
+
+      stats[cat][attr] = (stats[cat][attr] || 0) + value;
+    }
+  }
+
+  // herba power mods
+  const herbaCount = getHerbaCount(preset.condiments.map(x => {
+    return {
+      name: x
+    };
+  }));
+
+  if (herbaCount >= 1) {
+      stats.skills.Title = (stats.skills.Title || 0) + 10000;
+      mods.skills.Title = (mods.skills.Title || 0) + 10000;
+  }
+  if (herbaCount >= 2) {
+      stats.skills.Sparkling = (stats.skills.Sparkling || 0) + 20000;
+      mods.skills.Title = (mods.skills.Title || 0) + 10000;
+  }
+
+  // flavor matchup power mods
+  const tastes = [];
+  for (const [k, points] of Object.entries(stats.tastes)) {
+      tastes.push({
+          name: k,
+          type: TASTE_MAP[k],
+          point: points
+      });
+  }
+  tastes.sort(descendingSort("point"));
+
+  for (const item of TASTE_POWERS) {
+    let addPowMag = 1, tastePowMag = 1;
+    let isMatch = false;
+
+    for (let j = 0; j < item.tastes.length; j++) {
+        const taste = item.tastes[j];
+        addPowMag *= indexToPrime(taste);
+        tastePowMag *= indexToPrime(tastes[j].type);
+    }
+
+    if (addPowMag === tastePowMag) {
+        isMatch = true;
+    }
+
+    if (isMatch) {
+        const sk = POWERS_SHORT[item.skillType - 1];
+        stats.skills[sk] = (stats.skills[sk] || 0) + item.power;
+        mods.skills[sk] = (mods.skills[sk] || 0) + item.power;
+        break;
+    }
+  }
+
+  // star level boost type mods
+  for (const type of TYPES) {
+    stats.types[type] = (stats.types[type] || 0) + DELICIOUSNESS_POKETYPE_POINTS[2];
+    mods.types[type] = (mods.types[type] || 0) + DELICIOUSNESS_POKETYPE_POINTS[2];
+  }
+
+  const tasteList = [];
+  for (const [k, v] of Object.entries(stats.tastes)) {
+    tasteList.push({
+      name: k,
+      // type
+      point: v
+    });
+  }
+
+  const skillList = [];
+  for (const [k, v] of Object.entries(stats.skills)) {
+    skillList.push({
+      name: k,
+      // type
+      power: v
+    });
+  }
+
+  const typeList = [];
+  for (const [k, v] of Object.entries(stats.types)) {
+    typeList.push({
+      name: k,
+      // type
+      power: v
+    });
+  }
+
+  const newStats = {
+    tastes: tasteList, skills: skillList, types: typeList
+  };
+
+  return {
+    mods,
+    stats: newStats
+  };
+};
+
 export const getIngredientsFromRecipe = recipe => {
   if (recipe && recipe.length > 0) {
     const fillings = [];
     let condiments = [];
     const spl = recipe.split("_");
-    if (spl.length !== 2) { return; } // should probably regex check string but whatever
-    const fillingStr = spl[0];
-    const condimentStr = spl[1];
-    
+    if (spl.length !== 2 && spl.length !== 3) { return; } // should probably regex check string but whatever
+
+    let hasBread = false;
+    let fillingIndex = 0;
+    if (spl.length === 3) {
+      fillingIndex = 1;
+      hasBread = true; // we don't actually check the bread string, it's enough to just have 3 _ sections
+    }
+
+    const fillingStr = spl[fillingIndex];
+    const condimentStr = spl[fillingIndex + 1];
+
     const fNames = fillingStr.split(",");
     const cNames = condimentStr.split(",");
 
     for (const str of fNames) {
       let name = str.split("-")[0];
       let pieces = str.split("-")[1];
-      if (pieces) { pieces = parseInt(pieces); }
+      if (pieces) { pieces = parseInt(pieces, 10); }
 
       // support old egg name saved recipes
       if (name === "Egg") {
@@ -282,7 +402,7 @@ export const getIngredientsFromRecipe = recipe => {
 
     condiments = getCondiments(cNames);
 
-    return { fillings, condiments };
+    return { fillings, condiments, hasBread };
   }
 
   return undefined;
@@ -291,6 +411,7 @@ export const getIngredientsFromRecipe = recipe => {
 export const getRecipeFromIngredients = ingredients => {
   const condiments = ingredients.condiments;
   const fillings = ingredients.fillings;
+  const hasBread = ingredients.hasBread;
   if (condiments.length === 0) { return undefined; }
 
   const fArr = [];
@@ -298,333 +419,30 @@ export const getRecipeFromIngredients = ingredients => {
     fArr.push(`${f.name}-${f.pieces}`);
   }
 
-  return `${fArr.join(",")}_${condiments.map(x => x.name).join(",")}`;
+  return `${hasBread ? "Bread_" : ""}${fArr.join(",")}_${condiments.map(x => x.name).join(",")}`;
 };
 
-// returns max amount of pieces on sandwich if none fall off
-const getMaxTotalPieces = fillings => {
-  let ret = 0;
-
-  for (const f of fillings) {
-    const baseFilling = FILLINGS.filter(x => x.name === f.name)[0];
-    ret += baseFilling.pieces;
-  }
-
-  return ret;
-};
-
-const getPiecesDropped = obj => {
-  if (obj.pieces === undefined) { return 0; } // not a filling
-  const name = obj.name;
-  const basePieces = FILLINGS.filter(x => x.name === name)[0].pieces;
-  return basePieces - obj.pieces;
-};
-
-export const getIngredientsSums = (fillings, condiments) => {
-  const ingredients = [
-    ...fillings.sort((a, b) => a.name.localeCompare(b.name)),
-    ...condiments.sort((a, b) => a.name.localeCompare(b.name))
-  ];
-
-  const sums = {
-    tastes: [],
-    powers: [],
-    types: [],
-    dropped: 0, // how many pieces dropped off sandwich
-    overflow: 0 // how many pieces on sandwich past the single ingredient limit
+export const getIngredientsSums = stats => {
+  return {
+    tastes: stats.tastes.filter(x => x.point !== 0).map(x => {
+      return {
+        flavor: x.name,
+        amount: x.point
+      };
+    }),
+    powers: stats.skills.filter(x => x.power !== 0).map(x => {
+      return {
+        type: x.name,
+        amount: x.power,
+      };
+    }),
+    types: stats.types.filter(x => x.power !== 0).map(x => {
+      return {
+        type: x.name,
+        amount: x.power,
+      };
+    })
   };
-
-  const tempFillingPieces = {};
-
-  for (const food of ingredients) {
-    if (food.pieces) {
-      const existingPieces = tempFillingPieces[food.name] || 0;
-      tempFillingPieces[food.name] = existingPieces + food.pieces;
-    }
-
-    for (const taste of food.tastes) {
-      const hasEntry = sums.tastes.filter(x => x.flavor === taste.flavor)[0];
-      let amount = 0; // existing amount
-      if (hasEntry) {
-        amount = hasEntry.amount;
-        sums.tastes = sums.tastes.filter(x => x.flavor !== taste.flavor);
-      }
-
-      sums.tastes.push({
-        flavor: taste.flavor,
-        amount: amount + calculatePowerAmount(taste.amount, food, taste),
-      });
-    }
-
-    for (const power of food.powers) {
-      const hasEntry = sums.powers.filter(x => x.type === power.type)[0];
-      let amount = 0; // existing amount
-      if (hasEntry) {
-        amount = hasEntry.amount;
-        sums.powers = sums.powers.filter(x => x.type !== power.type);
-      }
-
-      sums.powers.push({
-        type: power.type,
-        amount: amount + calculatePowerAmount(power.amount, food, power),
-      });
-    }
-
-    for (const type of food.types) {
-      const hasEntry = sums.types.filter(x => x.type === type.type)[0];
-      let amount = 0; // existing amount
-      if (hasEntry) {
-        amount = hasEntry.amount;
-        sums.types = sums.types.filter(x => x.type !== type.type);
-      }
-
-      sums.types.push({
-        type: type.type,
-        amount: amount + calculatePowerAmount(type.amount, food, type),
-      });
-    }
-
-    sums.dropped += getPiecesDropped(food);
-  }
-
-  // remove zero types
-  const trimmedTypes = [];
-  for (const tt of sums.types) {
-    if (tt.amount > 0) {
-      trimmedTypes.push(tt);
-    }
-  }
-  sums.types = trimmedTypes;
-
-  const multiplayer = fillings.length > 6 || condiments.length > 4;
-  for (const pieces of Object.values(tempFillingPieces)) {
-    const singleIngredientLimit = multiplayer ? 15 : 12; // todo: make a constants file with all this stuff
-    if (pieces > singleIngredientLimit) {
-      sums.overflow = Math.max(sums.overflow - singleIngredientLimit, pieces - singleIngredientLimit);
-    }
-  }
-
-  sums.tastes.sort((a, b) => {
-    return b.amount - a.amount || FLAVORS.indexOf(a.flavor) - FLAVORS.indexOf(b.flavor);
-  });
-  sums.powers.sort((a, b) => {
-    const aType = ALIAS_TO_FULL[a.type];
-    const bType = ALIAS_TO_FULL[b.type];
-    return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
-  });
-  sums.types.sort((a, b) => {
-    return b.amount - a.amount || TYPES.indexOf(a.type) - TYPES.indexOf(b.type);
-  });
-
-  if (sums.tastes.length === 1) {
-    sums.tastes.push({
-      flavor: FLAVORS.filter(x => x !== sums.tastes[0].flavor)[0],
-      amount: 0,
-    });
-  }
-  if (sums.tastes.length > 1) {
-    // at least 2 flavors exist, so check table..
-    const flavor1 = sums.tastes[0].flavor;
-    const flavor2 = sums.tastes[1].flavor;
-    const statBoost = FLAVOR_TABLE[flavor1][flavor2];
-    const varName = statBoost;
-    const existingStat = sums.powers.filter(x => x.type === varName)[0];
-    if (!existingStat) {
-      sums.powers.push({
-        type: varName,
-        amount: 100,
-        modded: true,
-        boosted: true, // boosted 'from zero' stats don't count in determining level
-      });
-    } else {
-      existingStat.amount += 100;
-      existingStat.modded = true;
-    }
-    sums.powers.sort((a, b) => {
-      const aType = ALIAS_TO_FULL[a.type];
-      const bType = ALIAS_TO_FULL[b.type];
-      return b.amount - a.amount || POWERS.indexOf(aType) - POWERS.indexOf(bType);
-    });
-  }
-
-  return sums;
-};
-
-// returns array of levels
-const calculateLevels = (types, sandwich) => {
-  const defaultType = { type: TYPES[0], amount: 0 };
-  const firstType = types[0] || defaultType;
-  const secondType = types[1] || defaultType;
-  const thirdType = types[2] || defaultType;
-  const stars = sandwich.stars;
-
-  let levels = [1, 1, 1];
-
-  if (stars >= 3) {
-    // regular
-    if (firstType.amount < 180) {
-      levels = [1, 1, 1];
-    } else if (firstType.amount >= 180 && firstType.amount <= 280) {
-      if (secondType.amount >= 180 && thirdType.amount >= 180) {
-        levels = [2, 2, 1];
-      } else {
-        levels = [2, 1, 1];
-      }
-    } else if (firstType.amount > 280 && firstType.amount < 380) {
-      if (thirdType.amount >= 180 ) {
-        levels = [2, 2, 2];
-      } else {
-        levels = [2, 2, 1];
-      }
-    } else if (firstType.amount >= 380 && firstType.amount < 460) {
-      if (secondType.amount >= 380 && thirdType.amount >= 380) {
-        levels = [3, 3, 3];
-      } else {
-        levels = [3, 3, 2];
-      }
-    } else if (firstType.amount >= 460) {
-      levels = [3, 3, 3];
-    }
-  } else if (stars === 2) {
-    // 2-star
-    if (firstType.amount < 180) {
-      levels = [1, 1, 1];
-    } else if (firstType.amount >= 180 && firstType.amount <= 300) {
-      if (secondType.amount >= 180 && thirdType.amount >= 180) {
-        levels = [2, 2, 1];
-      } else {
-        levels = [2, 1, 1];
-      }
-    } else if (firstType.amount > 300 && firstType.amount < 400) {
-      if (secondType.amount >= 250 && thirdType.amount >= 250 ) {
-        levels = [2, 2, 2];
-      } else {
-        levels = [2, 2, 1];
-      }
-    } else if (firstType.amount >= 400 && firstType.amount <= 540) {
-      if (secondType.amount > 400 && thirdType.amount > 400) {
-        levels = [3, 3, 3];
-      } else {
-        levels = [3, 3, 2];
-      }
-    } else if (firstType.amount >= 540) {
-      levels = [3, 3, 3];
-    }
-  } else if (stars === 1) {
-    // 1-star
-    const firstAmount = firstType.amount;
-    const secondAmount = secondType.amount;
-    const thirdAmount = thirdType.amount;
-    if (firstType.amount <= 680) {
-      levels = [1, 1, 1];
-    } else if (firstAmount > 700 && firstAmount < 780) {
-      if (secondAmount > 700 && thirdAmount > 700) {
-        levels = [2, 2, 2];
-      } else {
-        levels = [2, 2, 1];
-      }
-    } else if (firstAmount >= 780 && firstAmount <= 880) {
-      if (thirdAmount < 700 ) {
-        levels = [2, 2, 1];
-      } else {
-        levels = [2, 2, 2];
-      }
-    } else if (firstAmount > 880 && firstAmount < 960) {
-      if (secondAmount > 880 && thirdAmount > 880) {
-        levels = [3, 3, 3];
-      } else {
-        levels = [3, 3, 2];
-      }
-    } else if (firstAmount >= 960) {
-      levels = [3, 3, 3];
-    }
-  }
-
-  return levels;
-};
-
-const calculateTypes = (baseTypes, sandwich) => {
-  const stars = sandwich.stars;
-  const firstType = baseTypes[0] || TYPES[0];
-  const secondType = baseTypes[1] || TYPES[0];
-  const thirdType = baseTypes[2];
-  const mainTypeAmount = firstType.amount;
-  const oneTwoDiff = mainTypeAmount - secondType.amount;
-  // const oneTwoSum = mainTypeAmount + secondType.amount;
-  // const typeSum = sums.types.map(x => x.amount).reduce((partialSum, a) => partialSum + a, 0);
-  const firstPowerAmount = sandwich.effects[0]?.fullPower?.amount || 0;
-  const secondPowerAmount = sandwich.effects[1]?.fullPower?.amount || 0;
-  const thirdPowerAmount = sandwich.effects[2]?.fullPower?.amount || 0;
-
-  let newTypes = [];
-  
-  if (stars >= 3) {
-    // 3-star
-    if (mainTypeAmount > 480) { // mono type
-      newTypes = [firstType, firstType, firstType];
-    } else if (mainTypeAmount > 280) { // dual type
-      newTypes = [firstType, firstType, thirdType];
-    } else {
-      newTypes = [firstType, thirdType, secondType];
-      let split = false;
-
-      // still not 100%, but better
-      if (mainTypeAmount > 105 && oneTwoDiff > 105) {
-          newTypes = [firstType, firstType, thirdType];
-      } else if (mainTypeAmount >= 100 && mainTypeAmount <= 105) {
-        if (oneTwoDiff >= 80 && secondType.amount <= 21) {
-          split = true;
-        }
-      } else if (mainTypeAmount >= 90 && mainTypeAmount < 100) {
-        if (oneTwoDiff >= 78 && secondType.amount <= 16) {
-          split = true;
-          }
-      } else if (mainTypeAmount >= 80 && mainTypeAmount < 90) {
-        if (oneTwoDiff >= 74 && secondType.amount <= 9) {
-          split = true;
-        }
-      } else if (mainTypeAmount >= 74 && mainTypeAmount < 80) {
-        if (oneTwoDiff >= 72 && secondType.amount <= 5) {
-          split = true;
-        }
-      }
-
-      if (split) {
-        newTypes = [firstType, thirdType, firstType];
-      }
-    }
-  } else if (stars === 2) {
-    // 2-star
-    if (mainTypeAmount >= 500) {
-      newTypes = [firstType, firstType, firstType]; // mono type
-    } else if (mainTypeAmount > 300) {
-      newTypes = [firstType, firstType, thirdType]; // dual type
-    } else if (mainTypeAmount <= 300) {
-      if (mainTypeAmount <= 4 && sandwich.totalPieces <= 2) {
-        newTypes = [firstType, secondType, thirdType]; // triple type [1, 2, 3]
-      } else {
-        newTypes = [firstType, thirdType, secondType]; // triple type [1, 3, 2]
-      }
-    }
-  } else {
-    // 1-star
-    newTypes = [firstType, secondType, thirdType];
-  }
-
-  if (stars < 3) {
-    if (!thirdType || (stars === 2 && mainTypeAmount <= 20 && secondType?.amount - thirdType?.amount >= 5)) { // everything past the || is bs
-      newTypes = [firstType, secondType, thirdType];
-    }
-
-    newTypes = newTypes.map(x => {
-      const sub = stars === 1 ? 500 : 0;
-      const amount = (x?.amount || sub) - sub;
-      const type = x?.type;
-      return amount > 0 ? { type, amount } : undefined;
-    });
-  }
-
-  return newTypes;
 };
 
 export const checkPresetSandwich = (sums, fillings, condiments) => {
@@ -667,158 +485,6 @@ export const checkPresetSandwich = (sums, fillings, condiments) => {
   return foundSandwich;
 };
 
-export const craftSandwich = (fillings, condiments, sums, presetSandwich) => {
-  if (sums.tastes.length === 0
-    || sums.powers.length === 0
-    || sums.types.length === 0
-    || fillings.length === 0
-    || condiments.length === 0) {
-    return;
-  }
-
-  // get sandwich star level
-  let stars = 3;
-  const maxTotalPieces = getMaxTotalPieces(fillings);
-  const totalPieces = fillings.map(x => x.pieces).reduce((partialSum, a) => partialSum + a, 0);
-  const piecesDropped = sums.dropped;
-  if (sums.overflow) {
-    stars = 1;
-  } else if (maxTotalPieces > 1 && piecesDropped > totalPieces / 2) {
-    stars = 2;
-  } else {
-    const highTastes = sums.tastes.slice(0).filter(x => x.amount >= 100);
-    if (highTastes.length === 5) {
-      stars = 4;
-    }
-  }
-
-  const formattedTypes = sums.types.slice(0);
-  while (formattedTypes.length < 3 && stars === 3) {
-    formattedTypes.push({
-      type: TYPES.filter(x => formattedTypes.map(y => y.type).indexOf(x) === -1)[0],
-      amount: 0,
-    });
-  }
-  const formattedPowers = sums.powers.slice(0).filter(x => (x.type === "Sparkling" ? x.amount >= 2000 : x));
-  const myTypes = [];
-
-  // default sandwich genset with accurate effects and type[1, 3, 2] as base
-  let generatedSandwich = {
-    number: "???",
-    name: "Custom Sandwich",
-    description: "A Tasty Coolio Original",
-    fillings, condiments,
-    effects: formattedPowers.map((x, i) => {
-      const safeIndex = Math.min(i, formattedTypes.length - 1);
-      let fullType = formattedTypes[safeIndex];
-      let type = fullType.type;
-      if (i === 1) {
-        fullType = formattedTypes[2];
-        type = fullType?.type || TYPES.filter(x => myTypes.indexOf(x) === -1)[0];
-      }
-      if (i === 2) {
-        fullType = formattedTypes[1];
-        type = fullType?.type || TYPES.filter(x => myTypes.indexOf(x) === -1)[0];
-      }
-
-      if (!fullType) {
-        fullType = {
-          type,
-          amount: 0,
-        }
-      }
-
-      const name = ALIAS_TO_FULL[x.type];
-      myTypes.push(type);
-
-      return {
-        name,
-        fullType,
-        fullPower: x,
-        type,
-        level: 1
-      }
-    }).filter((x, i) => i < 3),
-    imageUrl: SANDWICHES[0].imageUrl,
-    piecesDropped,
-    piecesOverflow: sums.overflow,
-    totalPieces,
-    stars
-  };
-
-  // types and levels handling
-  if (!presetSandwich) {
-    const newTypes = calculateTypes(formattedTypes, generatedSandwich);
-
-    // can only have an effect if we have a type
-    // so remove effect lines without a type
-    const revisedEffects = [];
-    for (let i = 0; i < generatedSandwich.effects.length; i++) {
-      if (!newTypes[i]) { continue; }
-      generatedSandwich.effects[i].type = newTypes[i].type;
-      generatedSandwich.effects[i].fullType = newTypes[i];
-      revisedEffects.push(generatedSandwich.effects[i]);
-    }
-    generatedSandwich.effects = revisedEffects;
-
-    // handle levels
-    // levels continue to remain not 100% consistent
-    // so trial-and-error is still going on here
-    const levels = calculateLevels(formattedTypes, generatedSandwich);
-    for (let i = 0; i < generatedSandwich.effects.length; i++) {
-      const effect = generatedSandwich.effects[i];
-      effect.level = levels[i];
-    }
-  } else {
-    // copy over levels if it's a preset sandwich recipe
-    for (let i = 0; i < generatedSandwich.effects.length; i++) {
-      const presetEffect = presetSandwich.effects[i];
-      if (!presetEffect) { continue; }
-      generatedSandwich.effects[i].level = presetEffect.level;
-      generatedSandwich.effects[i].type = presetEffect.type;
-    }
-  }
-
-  // remove types from egg powers
-  for (const effect of generatedSandwich.effects) {
-    if (effect.name === "Egg Power") {
-      effect.type = "";
-    }
-  }
-
-  return generatedSandwich;
-};
-
-export const isOneTwoSandwich = sandwich => {
-  return oneTwoFirst.indexOf(sandwich.number) !== -1;
-};
-
-export const hasOneHerba = condiments => {
-  let count = 0;
-  for (const condiment of condiments) {
-    if (condiment.name.toLowerCase().indexOf("herba") !== -1) {
-      count++;
-    }
-
-    if (count > 1) {
-      return false;
-    }
-  }
-
-  return count === 1;
-};
-
-export const hasTwoHerba = condiments => {
-  let count = 0;
-  for (const condiment of condiments) {
-    if (condiment.name.toLowerCase().indexOf("herba") !== -1) {
-      count++;
-    }
-  }
-
-  return count >= 2;
-};
-
 export const hasRelevance = (ingredient, key) => {
   if (!ingredient) { return false; }
   const flavor = key.flavor;
@@ -830,7 +496,7 @@ export const hasRelevance = (ingredient, key) => {
   const hasType = !type || all.indexOf(type) !== -1;
 
   return hasFlavor && hasPower && hasType;
-}
+};
 
 export const getKeyType = key => {
   if (isFlavor(key)) {
@@ -842,7 +508,7 @@ export const getKeyType = key => {
   }
 
   return undefined;
-}
+};
 
 export const isFilling = obj => {
   if (!obj) { return false; }
@@ -891,14 +557,15 @@ export const getCategory = obj => {
 // check if two arrays contain the same elements
 export const areEqual = (array1, array2) => {
   if (array1.length === array2.length) {
-    const diff = array1.filter(x => !array2.includes(x) || array2.filter(y => y === x).length !== array1.filter(y => y === x).length);
+    const diff = array1.filter(x => !array2.includes(x) || array2.filter(y => y === x)
+      .length !== array1.filter(y => y === x).length);
     return diff.length === 0;
   }
 
   return false;
 };
 
-export const calculatePowerAmount = (base, ingredient, power) => {
+export const calculatePowerAmount = (base, ingredient) => {
   let newAmount = base;
   const isCondiment = !isFilling(ingredient);
 
@@ -919,20 +586,20 @@ export const mode = (array, prop, skipMax = false, useMin = false) => {
     array = array.filter(x => x[prop] === min);
   }
   if (array.length === 0) { return null; }
-  var modeMap = {};
-  var maxEl = array[0][prop], maxCount = 1;
-  for (var i = 0; i < array.length; i++) {
-      var el = array[i][prop];
-      if (modeMap[el] == null) {
-          modeMap[el] = 1;
-      } else {
-          modeMap[el]++;  
-      }
-              
-      if (modeMap[el] > maxCount) {
-          maxEl = el;
-          maxCount = modeMap[el];
-      }
+  const modeMap = {};
+  let maxEl = array[0][prop], maxCount = 1;
+  for (let i = 0; i < array.length; i++) {
+    const el = array[i][prop];
+    if (modeMap[el] === null) {
+      modeMap[el] = 1;
+    } else {
+      modeMap[el]++;
+    }
+
+    if (modeMap[el] > maxCount) {
+      maxEl = el;
+      maxCount = modeMap[el];
+    }
   }
 
   return maxEl;
@@ -953,10 +620,10 @@ export const copyTextToClipboard = (text, postFunc) => {
   });
 };
 
-function fallbackCopyTextToClipboard(text) {
-  var textArea = document.createElement("textarea");
+const fallbackCopyTextToClipboard = text => {
+  const textArea = document.createElement("textarea");
   textArea.value = text;
-  
+
   // Avoid scrolling to bottom
   textArea.style.top = "0";
   textArea.style.left = "0";
@@ -967,42 +634,41 @@ function fallbackCopyTextToClipboard(text) {
   textArea.select();
 
   try {
-    var successful = document.execCommand('copy');
-    var msg = successful ? 'successful' : 'unsuccessful';
-    console.log('Fallback: Copying text command was ' + msg);
+    const successful = document.execCommand('copy');
+    const msg = successful ? 'successful' : 'unsuccessful';
+    console.log(`Fallback: Copying text command was ${msg}`);
   } catch (err) {
     console.error('Fallback: Oops, unable to copy', err);
   }
 
   document.body.removeChild(textArea);
-}
+};
 
 const standardizeColor = str => {
-  var ctx = document.createElement('canvas').getContext('2d');
+  const ctx = document.createElement('canvas').getContext('2d');
   ctx.fillStyle = str;
   return ctx.fillStyle;
 };
 
 // Version 4.0
 export const shadeColor = (color, percent = 30) => {
-
   color = isNaN(color) ? standardizeColor(color) : color;
 
-  var R = parseInt(color.substring(1, 3), 16);
-  var G = parseInt(color.substring(3, 5), 16);
-  var B = parseInt(color.substring(5, 7), 16);
+  let R = parseInt(color.substring(1, 3), 16);
+  let G = parseInt(color.substring(3, 5), 16);
+  let B = parseInt(color.substring(5, 7), 16);
 
-  R = parseInt(R * (100 + percent) / 100);
-  G = parseInt(G * (100 + percent) / 100);
-  B = parseInt(B * (100 + percent) / 100);
+  R = parseInt(R * (100 + percent) / 100, 10);
+  G = parseInt(G * (100 + percent) / 100, 10);
+  B = parseInt(B * (100 + percent) / 100, 10);
 
-  R = (R<255) ? R : 255;  
-  G = (G<255) ? G : 255;  
-  B = (B<255) ? B : 255;  
+  R = R < 255 ? R : 255;
+  G = G < 255 ? G : 255;
+  B = B < 255 ? B : 255;
 
-  var RR = ((R.toString(16).length === 1)?"0"+R.toString(16):R.toString(16));
-  var GG = ((G.toString(16).length === 1)?"0"+G.toString(16):G.toString(16));
-  var BB = ((B.toString(16).length === 1)?"0"+B.toString(16):B.toString(16));
+  const RR = R.toString(16).length === 1 ? `0${R.toString(16)}` : R.toString(16);
+  const GG = G.toString(16).length === 1 ? `0${G.toString(16)}` : G.toString(16);
+  const BB = B.toString(16).length === 1 ? `0${B.toString(16)}` : B.toString(16);
 
-  return "#"+RR+GG+BB;
+  return `#${RR}${GG}${BB}`;
 };

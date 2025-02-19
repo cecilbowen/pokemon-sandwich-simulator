@@ -2,6 +2,28 @@
   text-align: center;
 }
 
+.bread {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+.no-bread {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid darkgray;
+  border-style: dashed;
+  border-radius: 8px;
+}
+.img-bread {
+  opacity: 1;
+}
+.img-no-bread {
+  opacity: 0.5;
+}
+
 .expand-button {
   position: absolute;
   top: 3px;
@@ -268,49 +290,33 @@
   margin-left: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 small {
   font-size: 0.7em;
 }
 
-#power-flavors-description {
+#desc-container {
   position: absolute;
-  width: fit-content;
+  display: flex;
   top: 25px;
   left: 46px;
+  gap: 6px;
+}
+#power-flavors-description {
+  width: fit-content;
   font-style: italic;
   font-weight: initial;
   border: 1px dashed;
   border-radius: 25px;
+  padding: 4px;
+  font-size: 12px;
+}
+#type-flavors-description {
+  width: fit-content;
+
+  font-style: italic;
+  font-weight: initial;
+  border: 1px dashed burlywood;
+  border-radius: 6px;
   padding: 4px;
   font-size: 12px;
 }

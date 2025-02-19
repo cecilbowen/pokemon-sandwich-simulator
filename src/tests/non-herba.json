@@ -1,0 +1,166 @@
+[
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Curry Powder,Curry Powder,Wasabi,Wasabi",
+    "result": "Encounter,Fire,2/Humungo,Grass,2/Raid,Water,1"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1_Curry Powder,Pepper,Wasabi,Wasabi",
+    "result": "Humungo,Fire,2/Encounter,Dragon,1/Exp,Normal,1"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Rice-1,Rice-1_Curry Powder,Curry Powder,Wasabi,Wasabi",
+    "result": "Humungo,Fire,2/Encounter,Bug,1/Exp,Normal,1"
+  },
+  {
+    "recipe": "Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Potato Salad-1,Rice-1_Curry Powder,Curry Powder,Wasabi,Wasabi",
+    "result": "Humungo,Bug,1/Encounter,Dragon,1/Exp,Fire,1"
+  },
+  {
+    "recipe": "Fried Fillet-1,Fried Fillet-1,Fried Fillet-1,Fried Fillet-1,Rice-1,Rice-1_Curry Powder,Curry Powder,Wasabi,Wasabi",
+    "result": "Humungo,Water,1/Catch,Flying,1/Teensy,Normal,1"
+  },
+  {
+    "recipe": "Potato Tortilla-1,Potato Tortilla-1,Rice-1,Rice-1,Rice-1,Rice-1_Curry Powder,Curry Powder,Wasabi,Wasabi",
+    "result": "Raid,Fire,1/Encounter,Fighting,1/Humungo,Grass,1"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Butter",
+    "result": "Humungo,Normal,2/Egg,,2/Encounter,Fighting,1"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Wasabi",
+    "result": "Humungo,Normal,2/Raid,Flying,2/Encounter,Fighting,1"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Salt,Salt,Vinegar,Vinegar",
+    "result": "Humungo,Normal,2/Encounter,Flying,2/Teensy,Fighting,1"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Curry Powder,Curry Powder,Olive Oil,Wasabi",
+    "result": "Humungo,Fire,2/Encounter,Water,2/Raid,Grass,1"
+  },
+  {
+    "recipe": "Egg-3,Egg-3,Egg-3,Jalapeno-3,Jalapeno-3,Potato Salad-1_Whipped Cream",
+    "result": "Raid,Fairy,2/Exp,Grass,1/Encounter,Rock,1"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Chili Sauce,Chili Sauce,Cream Cheese",
+    "result": "Raid,Water,2/Humungo,Normal,2/Encounter,Grass,1"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Chili Sauce,Chili Sauce,Olive Oil",
+    "result": "Raid,Grass,2/Humungo,Water,2/Encounter,Fire,1"
+  },
+  {
+    "recipe": "Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Potato Tortilla-1,Potato Tortilla-1_Salt,Yogurt,Yogurt,Yogurt",
+    "result": "Encounter,Psychic,2/Exp,Ghost,2/Raid,Fighting,1"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Curry Powder,Ketchup,Wasabi",
+    "result": "Raid,Flying,2/Humungo,Water,2/Encounter,Fire,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3_Pepper,Salt,Salt",
+    "result": "Exp,Flying,1/Encounter,Psychic,1/Raid,Electric,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3,Watercress-3,Watercress-3_Pepper,Salt,Salt",
+    "result": "Exp,Flying,1/Encounter,Fighting,1/Raid,Normal,1"
+  },
+  {
+    "recipe": "Hamburger-1,Prosciutto-3,Prosciutto-3,Prosciutto-3,Prosciutto-3_Ketchup",
+    "result": "Encounter,Flying,1/Catch,Poison,1/Exp,Steel,1"
+  },
+  {
+    "recipe": "Cheese-3,Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Tofu-3_Pepper,Whipped Cream",
+    "result": "Humungo,Normal,2/Exp,Poison,1/Encounter,Dragon,1"
+  },
+  {
+    "recipe": "Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Pepper,Whipped Cream",
+    "result": "Humungo,Normal,2/Raid,Fighting,2/Encounter,Flying,1"
+  },
+  {
+    "recipe": "Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-2_Ketchup",
+    "result": "Item,Poison,1/Encounter,Normal,1/Catch,Flying,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-2_Ketchup",
+    "result": "Encounter,Flying,1/Catch,Normal,1/Raid,Poison,1"
+  },
+  {
+    "recipe": "Watercress-2_Ketchup",
+    "result": "Teensy,Flying,1/Raid,Normal,1/Exp,Poison,1"
+  },
+  {
+    "recipe": "Noodles-0_Ketchup",
+    "result": "Encounter,Flying,1/Raid,Normal,1/Exp,Poison,1"
+  },
+  {
+    "recipe": "Noodles-0_Ketchup,Mustard",
+    "result": "Encounter,Flying,1/Raid,Ground,1/Exp,Poison,1"
+  },
+  {
+    "recipe": "Watercress-2_Ketchup",
+    "result": "Teensy,Flying,1/Raid,Normal,1/Exp,Poison,1"
+  },
+  {
+    "recipe": "Egg-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Wasabi,Wasabi,Yogurt,Yogurt",
+    "result": "Raid,Ice,2/Humungo,Electric,1/Encounter,Rock,1"
+  },
+  {
+    "recipe": "Basil-4,Basil-4,Basil-1_Salt",
+    "result": "Exp,Electric,1/Raid,Fire,1/Egg,,1"
+  },
+  {
+    "recipe": "Basil-4,Basil-4,Basil-1,Herbed Sausage-3_Salt",
+    "result": "Exp,Psychic,1/Raid,Dark,1/Egg,,1"
+  },
+  {
+    "recipe": "Basil-4,Basil-4,Basil-1,Herbed Sausage-2_Salt",
+    "result": "Exp,Psychic,1/Raid,Dark,1/Egg,,1"
+  },
+  {
+    "recipe": "Avocado-3,Basil-4,Basil-0,Prosciutto-3,Prosciutto-3_Mustard",
+    "result": "Encounter,Flying,1/Catch,Fire,1/Raid,Dragon,1"
+  },
+  {
+    "recipe": "Apple-3,Basil-2,Cheese-2,Prosciutto-2,Watercress-2_Mustard",
+    "result": "Exp,Flying,1/Raid,Ice,1/Item,Steel,1"
+  },
+  {
+    "recipe": "Red Onion-3,Red Onion-3,Red Onion-3,Red Onion-2_Butter",
+    "result": "Egg,,1/Encounter,Normal,1/Catch,Bug,1"
+  },
+  {
+    "recipe": "Onion-3,Onion-3,Onion-3,Onion-3_Butter",
+    "result": "Raid,Psychic,1/Encounter,Ghost,1/Catch,Bug,1"
+  },
+  {
+    "recipe": "Onion-3,Onion-3,Onion-3,Onion-3,Strawberry-3_Salt",
+    "result": "Raid,Psychic,1/Encounter,Ghost,1/Catch,Fighting,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-3_Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Catch,Fire,1/Exp,Normal,1"
+  },
+  {
+    "recipe": "Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Green Bell Pepper-3,Kiwi-3,Kiwi-3_Chili Sauce",
+    "result": "Item,Poison,1/Encounter,Dragon,1/Catch,Fire,1"
+  },
+  {
+    "recipe": "Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Red Bell Pepper-3_Butter,Peanut Butter,Peanut Butter",
+    "result": "Encounter,Steel,1/Catch,Bug,1/Raid,Fire,1"
+  },
+  {
+    "recipe": "Hamburger-1,Red Bell Pepper-3_Peanut Butter,Peanut Butter",
+    "result": "Egg,,1/Encounter,Fire,1/Raid,Normal,1"
+  },
+  {
+    "recipe": "Prosciutto-3,Prosciutto-3_Mayonnaise",
+    "result": "Encounter,Flying,1/Catch,Fighting,1/Raid,Normal,1"
+  },
+  {
+    "recipe": "Cherry Tomatoes-3,Cherry Tomatoes-3,Hamburger-1,Hamburger-1_Salt",
+    "result": "Encounter,Bug,1/Catch,Steel,1/Exp,Electric,1"
+  }
+]
