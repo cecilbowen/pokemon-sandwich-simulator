@@ -247,6 +247,7 @@
   top: 2px;
   left: 4px;
   font-size: 10px;
+  pointer-events: none;
 }
 
 .numbering-icon {
@@ -338,6 +339,7 @@ small {
   padding-left: 4px;
   cursor: pointer;
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 .dim {

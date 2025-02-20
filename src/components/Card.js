@@ -147,7 +147,8 @@ const Card = ({
     const typeSign = typeBoost > 0 ? "+" : "-";
     const typeExplain = isType(activeKey.type) ?
         `${typeSign}${Math.abs(typeBoost)}: ${ts(activeKey.type)} ★` : "";
-    const typeExplainDisplay = activeKey.type && typeBoost !== 0 ? "" : "none";
+    const typeIsIn = types.map(x => x.type).includes(activeKey.type || "3");
+    const typeExplainDisplay = activeKey.type && typeIsIn && typeBoost !== 0 ? "" : "none";
     const typeExplainTitle = ts("Star level type modifier");
 
     return (

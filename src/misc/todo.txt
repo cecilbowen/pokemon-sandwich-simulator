@@ -6,8 +6,4 @@ add a tutorial guide/video link at bottom
 
 make search panel take search criteria in current language instead of just english
 
-update italian preset sandwich recipe names (can't find them online)
-
-add "dismiss" translations
-
-update rules to new logic 
+add "dismiss" translations (for snackbar)
