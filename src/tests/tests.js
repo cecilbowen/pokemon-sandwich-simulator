@@ -10,6 +10,27 @@ import TWO_STAR_TESTS from "../tests/2-star.json";
 import FOUR_STAR_TESTS from "../tests/4-star.json";
 import BREAD_VS from "../tests/bread-vs.json";
 
+export const TEST_SET_NAMES = [
+	"non-herba",
+	"herba",
+	"multiplayer",
+	"split typing",
+	"2 star",
+	"1 star",
+	"4 star",
+	"bread vs no-bread"
+];
+export const TEST_SETS = [
+	NON_HERBA_TESTS, // generic/recipes without herba mystica
+	HERBA_TESTS, // recipes with herba mystica
+	MULTIPLAYER_TESTS, // multiplayer-only recipes
+	SPLIT_TYPING_TESTS, // split typing, eg. normal/fire/normal
+	TWO_STAR_TESTS, // two star recipes
+	ONE_STAR_TESTS, // one star recipes
+	FOUR_STAR_TESTS, // four star recipes
+	BREAD_VS // recipes with bread on/off as the only ingredient difference that have different results
+];
+
 // generates a sandwich from a 'save recipe' string
 const generateSandwichFromRecipe = recipe => {
     const ingredients = getIngredientsFromRecipe(recipe);
@@ -26,28 +47,45 @@ const getSandwichResult = sandwich => {
 	return ret;
 };
 
+// converts all test sets to sandwiches
+export const testsToSandwiches = () => {
+  const sets = TEST_SETS;
+  const setNames = TEST_SET_NAMES;
+
+  const combined = []; // sets.flatMap(set => [...set]);
+  for (let i = 0; i < sets.length; i++) {
+	const set = sets[i];
+	for (let j = 0; j < set.length; j++) {
+		const test = set[j];
+		combined.push({
+			recipe: test.recipe,
+			result: test.result,
+			setName: setNames[i],
+			setCount: j
+		});
+	}
+  }
+  const ret = [];
+
+  for (let i = 0; i < combined.length; i++) {
+	const test = combined[i];
+	const sandwich = getSandwich(getIngredientsFromRecipe(test.recipe));
+	if (!sandwich) { continue; }
+
+	ret.push({
+		...sandwich,
+		id: i + 1,
+		name: `${test.setName} Sandwich #${test.setCount + 1}`
+	});
+  }
+
+  return ret;
+};
+
 export const runTests = () => {
 	console.info("Starting tests --------------------");
-    const setNames = [
-        "non-herba",
-        "herba",
-        "multiplayer",
-        "split typing",
-        "2 star",
-        "1 star",
-        "4 star",
-		"bread vs no-bread"
-    ];
-	const sets = [
-        NON_HERBA_TESTS, // generic/recipes without herba mystica
-		HERBA_TESTS, // recipes with herba mystica
-		MULTIPLAYER_TESTS, // multiplayer-only recipes
-		SPLIT_TYPING_TESTS, // split typing, eg. normal/fire/normal
-		TWO_STAR_TESTS, // two star recipes
-		ONE_STAR_TESTS, // one star recipes
-		FOUR_STAR_TESTS, // four star recipes
-		BREAD_VS // recipes with bread on/off as the only ingredient difference that have different results
-	];
+	const setNames = TEST_SET_NAMES;
+	const sets = TEST_SETS;
 
     const tempLimitPerSet = 1000;
 

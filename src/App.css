@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.copy-icon {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.copy-icon:hover {
+  background-color: #0087ff30;
+  border-radius: 4px;
+}
+
 .bread {
   display: flex;
   justify-content: center;

@@ -1,5 +1,5 @@
 // import { useEffect, useState } from 'react';
-import { calculatePowerAmount } from '../util';
+import { calculatePowerAmount, getIngredientImage } from '../util';
 import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode, ts,
     isFilling, isFlavor, isPower, isType, shadeColor
 } from '../util';
@@ -9,6 +9,7 @@ import FLAVORS from '../data/flavors.json';
 import FILLINGS from '../data/fillings.json';
 import PropTypes from "prop-types";
 import DPOINTS from "../helper/deliciousness-poketype-points.json";
+import { USE_SEREBII } from '../App';
 
 const Card = ({
     ingredient, number, sums, mods, detail, stars,
@@ -146,7 +147,7 @@ const Card = ({
     const typeSign = typeBoost > 0 ? "+" : "-";
     const typeExplain = isType(activeKey.type) ?
         `${typeSign}${Math.abs(typeBoost)}: ${ts(activeKey.type)} ★` : "";
-    const typeExplainDisplay = activeKey.type ? "" : "none";
+    const typeExplainDisplay = activeKey.type && typeBoost !== 0 ? "" : "none";
     const typeExplainTitle = ts("Star level type modifier");
 
     return (
@@ -155,7 +156,7 @@ const Card = ({
         id={isSum ? 'total-stats-card' : ''}
         style={{ borderColor, backgroundColor, alignSelf: "center", position: "relative" }}>
         {!isSum && <div className="bubble bubble-header" onClick={onClick}>
-            <img alt={ts(ingredient.name)} src={ingredient.imageUrl} />
+            <img alt={ts(ingredient.name)} src={USE_SEREBII ? ingredient.imageUrl : getIngredientImage(ingredient.name)} />
             <div>{ts(ingredient.name)}</div>
         </div>}
         {isSum && <div className="bubble bubble-header">
@@ -201,7 +202,6 @@ Card.propTypes = {
   onClickBubble: PropTypes.func,
   onClick: PropTypes.func,
   activeKey: PropTypes.object,
-  activeSandwich: PropTypes.number,
   stars: PropTypes.number
 };
 export default Card;

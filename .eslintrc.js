@@ -206,7 +206,7 @@ module.exports = {
         'indent': [OFF, 4],
         'jsx-quotes': [WARN, 'prefer-double'],
         'linebreak-style': [OFF, 'windows'],
-        'lines-around-comment': [WARN, {
+        'lines-around-comment': [OFF, {
             beforeBlockComment: true
         }],
         'max-depth': [WARN, 8],

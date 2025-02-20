@@ -6,8 +6,11 @@ import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
 import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES, getNumberOfPlayers,
   ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, checkPresetSandwich,
-  copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe } from './util';
-import { runTests } from './tests/tests';
+  copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe,
+  getIngredientImage,
+  getImage,
+  copySandwich } from './util';
+import { runTests, testsToSandwiches } from './tests/tests';
 import Card from './components/Card';
 import './App.css';
 import Bubble from './components/Bubble';
@@ -21,6 +24,7 @@ let NUM_PLAYERS = 1;
 
 // en, es, ja, de, ru, sv, fr, etc
 export let LANGUAGE = "en";
+export const USE_SEREBII = false;
 
 const App = () => {
   const [advancedIngredients, setAdvancedIngredients] = useState(false);
@@ -30,6 +34,7 @@ const App = () => {
   const [showEffectFilter, setShowEffectFilter] = useState(true);
   const [megaSandwichMode, setMegaSandwichMode] = useState(false);
   const [hasBread, setHasBread] = useState(true);
+  const [includeTestsInSearch, setIncludeTestsInSearch] = useState(false);
 
   const [activeFillings, setActiveFillings] = useState([]);
   const [activeCondiments, setActiveCondiments] = useState([]);
@@ -72,11 +77,12 @@ const App = () => {
   }, [showEffectFilter]);
 
   useEffect(() => {
+    const base = [...SANDWICHES, ...includeTestsInSearch ? testsToSandwiches() : []];
     const tempResults = [];
 
     let sandwichList = [];
     if (searchNameQuery) {
-      for (const s of SANDWICHES) {
+      for (const s of base) {
         for (const rawQuery of searchNameQuery) {
           const query = rawQuery.trim();
           if (s.name.toLowerCase().indexOf(query.toLowerCase()) !== -1) {
@@ -86,7 +92,7 @@ const App = () => {
         }
       }
     } else {
-      sandwichList = SANDWICHES;
+      sandwichList = base;
     }
 
     for (const s of sandwichList) {
@@ -193,7 +199,7 @@ const App = () => {
       <img
         alt={ts(filling.name)}
         title={ts(filling.name)}
-        src={filling.imageUrl}
+        src={USE_SEREBII ? filling.imageUrl : getIngredientImage(filling.name)}
         className={className}
         onClick={() => {
           const tempActiveFillings = activeFillings.slice(0);
@@ -244,7 +250,7 @@ const App = () => {
       <img
         alt={ts(condiment.name)}
         title={ts(condiment.name)}
-        src={condiment.imageUrl}
+        src={USE_SEREBII ? condiment.imageUrl : getIngredientImage(condiment.name)}
         className={className}
         onClick={() => {
           const tempActiveCondiments = activeCondiments.slice(0);
@@ -276,7 +282,7 @@ const App = () => {
       <img
         alt={ts(name)}
         title={ts(name)}
-        src={`${process.env.PUBLIC_URL}/ingredients/bread.png`}
+        src={getIngredientImage("bread")}
         className={`ingredient ${hasBread ? "img-bread" : "img-no-bread"}`}
         onClick={() => setHasBread(!hasBread)}
       />
@@ -321,25 +327,29 @@ const App = () => {
     if (sandwich.number === "???") {
       display = '⭐'.repeat(sandwich.stars);
       if (sandwich.effects.length === 0) {
-        display += "(failure)";
+        display += `(${ts("failure")})`;
       }
     }
 
     const numberOfPlayers = getNumberOfPlayers({ fillings: activeFillings, condiments: activeCondiments });
 
     const sandwichSrc = hasBread || sandwich.number !== "???" ? sandwich.imageUrl :
-      `${process.env.PUBLIC_URL}/no-bread-sandwich.png`;
+      `${process.env.PUBLIC_URL}/images/no-bread-sandwich.png`;
 
     return (
       <div className="card" style={{ display: "flex" }}>
         <img alt={ts(sandwich.name)}
           src={sandwichSrc}
-          style={{ width: "100px" }}
+          style={{ width: "100px", borderRadius: "8px" }}
         />
         {megaSandwichMode && <div id="players-icon">{numberOfPlayers}P</div>}
         <div>
           <div className="bubble bubble-header"
             style={{ backgroundColor: "tan" }}>{display}</div>
+          {sandwich.effects.length > 0 && sandwich.number === "???" && <img className="copy-icon" src={getImage("copy-icon.png")}
+            alt={ts("Copy sandwich effects")}
+            title={ts("Copy sandwich effects")}
+            onClick={() => copySandwich(sandwich, activeFillings, activeCondiments, hasBread)} />}
           {sandwich.effects.length > 0 && <div>{sandwich.effects.map((x, i) => renderSandwichBubble(x, i))}</div>}
           {sandwich.effects.length === 0 && <div className="no-effects">{ts("This sandwich has no effects.")}</div>}
         </div>
@@ -399,7 +409,7 @@ const App = () => {
             condiments={activeCondiments} detail={!simpleMode && advancedIngredients} />)}
           {!advancedIngredients && <br className="page-break" />}
           {showResults && !simpleMode &&
-            <Card sums={sums} mods={generatedSandwich.mods} activeSandwich={activeSandwich} hasBread={hasBread}
+            <Card sums={sums} mods={generatedSandwich.mods} hasBread={hasBread}
                 fillings={activeFillings} condiments={activeCondiments}
                 detail={!simpleMode && advancedIngredients}
                 onClickBubble={key => toggleActiveKey(key)}
@@ -421,18 +431,20 @@ const App = () => {
     const hasMultiIngredients = foodCombo.length !== Array.from(new Set(foodCombo)).length;
     const cls = highlight ? 'bubble highlighted' : 'bubble dim';
 
+    const numStr = `#${sandwich.number} - `;
+
     return (
-      <div className={cls} key={key} id={`sandwich-${sandwich.number}`} onClick={() => {
+      <div className={cls} key={key} id={`sandwich-${sandwich.number}${sandwich.id ?? ""}`} onClick={() => {
         const condiments = getCondiments(sandwich.condiments);
         const fillings = getFillings(sandwich.fillings);
-        setHasBread(true);
+        setHasBread(sandwich.hasBread ?? true);
         setActiveCondiments(condiments);
         setActiveFillings(fillings);
       }} style={{
         fontWeight: isWeird ? "bold" : "",
         color: hasMultiIngredients ? "" : ""
       }}>
-        {`#${sandwich.number} - ${ts(sandwich.name)}`}
+        {`${sandwich.id ? "" : numStr}${sandwich.id ? sandwich.name : ts(sandwich.name)}`}
       </div>
     );
   };
@@ -538,7 +550,25 @@ const App = () => {
     console.log("Saving recipe", copyStr);
     copyTextToClipboard(copyStr, () => {
     if (!DISABLE_ALERTS) {
-      alert(`${ts("Copied recipe to clipboard!") }\n${ copyStr}`);
+      window.snackbar.createSnackbar(ts("Copied recipe to clipboard!"), {
+        timeout: 3000
+      });
+    }
+    });
+  };
+
+  const getShareUrl = () => {
+    const recipeStr = getRecipeFromIngredients({ fillings: activeFillings, condiments: activeCondiments, hasBread }, true);
+    if (!recipeStr) { return; }
+
+    const copyStr = `${window.location.href.split(/[?#]/)[0]}?recipe=${recipeStr}`;
+
+    console.log("Sharing recipe url", copyStr);
+    copyTextToClipboard(copyStr, () => {
+    if (!DISABLE_ALERTS) {
+      window.snackbar.createSnackbar(ts("Copied recipe URL to clipboard!"), {
+        timeout: 3000
+      });
     }
     });
   };
@@ -575,8 +605,9 @@ const App = () => {
         <button className="button-spacing"
           onClick={() => setMegaSandwichMode(!megaSandwichMode)}>
             {ts("Toggle Multiplayer Mode")}: {megaSandwichMode ? ts("On") : ts("Off")}</button>
-        <button className="button-spacing" onClick={() => loadRecipe()}>{ts("Load Recipe")}</button>
-        <button className="button-spacing" onClick={() => saveRecipe()}>{ts("Save Recipe")}</button>
+        {/* {<button className="button-spacing" onClick={() => loadRecipe()}>{ts("Load Recipe")}</button>} */}
+        {activeFillings.length > 0 && activeCondiments.length > 0 &&
+          <button className="button-spacing" onClick={() => getShareUrl()}>{ts("Share Recipe")}</button>}
       </div>
     );
   };
@@ -591,7 +622,7 @@ const App = () => {
     const languages = Object.entries(LANGUAGE_NAMES).map(x => x).filter(x => x[0] !== LANGUAGE);
 
     return (
-      <div>
+      <div style={{ marginBottom: "1em" }}>
         <small><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">{ts("Source Code")}</a></small>
         <span style={{ paddingLeft: '4px' }}>|</span>
         {languages.map(x => renderLanguage(x))}
@@ -604,19 +635,9 @@ const App = () => {
   const windowUrl = window.location.search;
   const params = new URLSearchParams(windowUrl);
   useEffect(() => {
-    if (params.get('recipe')) {
-      const ingredients = getIngredientsFromRecipe(params.get('recipe'));
-      if (ingredients) {
-        const fillings = ingredients.fillings;
-        const condiments = ingredients.condiments;
-
-        if (fillings.length > MAX_FILLINGS || condiments.length > MAX_CONDIMENTS) {
-          setMegaSandwichMode(true);
-        }
-
-        setActiveFillings(fillings);
-        setActiveCondiments(condiments);
-      }
+    const urlRecipe = params.get('recipe');
+    if (urlRecipe) {
+      loadRecipe(urlRecipe);
     }
   }, []);
 

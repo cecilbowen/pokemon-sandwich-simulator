@@ -10,6 +10,7 @@ import TASTE_POWERS from "./helper/taste-powers.json";
 import TASTE_MAP from "./helper/taste-map.json";
 import DELICIOUSNESS_POKETYPE_POINTS from "./helper/deliciousness-poketype-points.json";
 import POWERS_SHORT from "./data/powers-short.json";
+import INGREDIENT_TO_ID from "./data/ingredient-to-id.json";
 
 import ENGLISH from './language/strings.json';
 import SPANISH from './language/strings-es.json';
@@ -199,6 +200,14 @@ export const getNumberOfPlayers = ingredients => {
   return Math.max(1, Math.ceil(ingredients.fillings.length / 6), Math.ceil(ingredients.condiments.length / 4));
 };
 
+export const getImage = name => {
+  return `${process.env.PUBLIC_URL}/images/${name}`;
+};
+
+export const getIngredientImage = name => {
+  return `${process.env.PUBLIC_URL}/images/ingredients/${name.toLowerCase().replaceAll(" ", "")}.png`;
+};
+
 export const getFillings = strArr => {
   const ret = [];
   for (const str of strArr) {
@@ -381,11 +390,20 @@ export const getIngredientsFromRecipe = recipe => {
     const fillingStr = spl[fillingIndex];
     const condimentStr = spl[fillingIndex + 1];
 
+    const idToIngredient = Object.fromEntries(
+        Object.entries(INGREDIENT_TO_ID).map(([key, value]) => [value, key])
+    );
+
     const fNames = fillingStr.split(",");
-    const cNames = condimentStr.split(",");
+    const isNumFormat = !isNaN(parseInt(fNames[0], 10));
+    const cNames = isNumFormat ? condimentStr.split(",").map(x => idToIngredient[x]) : condimentStr.split(",");
 
     for (const str of fNames) {
       let name = str.split("-")[0];
+      if (isNumFormat) {
+        name = idToIngredient[name];
+      }
+
       let pieces = str.split("-")[1];
       if (pieces) { pieces = parseInt(pieces, 10); }
 
@@ -408,7 +426,7 @@ export const getIngredientsFromRecipe = recipe => {
   return undefined;
 };
 
-export const getRecipeFromIngredients = ingredients => {
+export const getRecipeFromIngredients = (ingredients, numFormat = false) => {
   const condiments = ingredients.condiments;
   const fillings = ingredients.fillings;
   const hasBread = ingredients.hasBread;
@@ -416,10 +434,15 @@ export const getRecipeFromIngredients = ingredients => {
 
   const fArr = [];
   for (const f of fillings) {
-    fArr.push(`${f.name}-${f.pieces}`);
+    const identifier = numFormat ? INGREDIENT_TO_ID[f.name] : f.name;
+    fArr.push(`${identifier}-${f.pieces}`);
   }
 
-  return `${hasBread ? "Bread_" : ""}${fArr.join(",")}_${condiments.map(x => x.name).join(",")}`;
+  return `${hasBread ? "Bread_" : ""}${fArr.join(",")}_${
+    condiments.map(x => {
+      return numFormat ? INGREDIENT_TO_ID[x.name] : x.name;
+    }).join(",")
+  }`;
 };
 
 export const getIngredientsSums = stats => {
@@ -603,6 +626,62 @@ export const mode = (array, prop, skipMax = false, useMin = false) => {
   }
 
   return maxEl;
+};
+
+export const copySandwich = (sandwich, fillings, condiments, hasBread) => {
+  /*
+  Custom Sandwich ⭐⭐⭐
+  Ingredients:
+  Top baguette is on the sandwich
+  2x chorizo, 2x rice (drop 2), 1x ketchup, 2x mustard
+
+  Effects:
+  Encounter Power: Poison - Level 1
+  Exp. Point Power: Bug - Level 1
+  Raid Power: Normal - Level 1
+  */
+
+  const piecesMap = {};
+  for (const ing of [...fillings, ...condiments]) {
+    const baseIng = FILLINGS_MAP[ing.name] || CONDIMENTS_MAP[ing.name];
+    const basePieces = baseIng.pieces ?? 1;
+    const ingPieces = ing.pieces ?? 1;
+
+    piecesMap[ing.name] = piecesMap[ing.name] || {
+      pieces: 0, number: 0, dropped: 0
+    };
+
+    piecesMap[ing.name].pieces += ingPieces;
+    piecesMap[ing.name].number++;
+    piecesMap[ing.name].dropped = piecesMap[ing.name].number * basePieces - piecesMap[ing.name].pieces;
+  }
+
+  let number = sandwich.number;
+  const isCustomSandwich = number === "???";
+  number = isCustomSandwich ? "" : `#${number} `;
+
+  const name = `${isCustomSandwich ? ts("Custom Sandwich") : sandwich.name}`;
+  const nameLine = `${number}${name} ${'⭐'.repeat(sandwich.stars)}`;
+
+  const ings = [];
+  for (const [ing, data] of Object.entries(piecesMap)) {
+    const dropStr = data.dropped > 0 ? ` (${ts("drop")} ${data.dropped})` : "";
+    ings.push(`${data.number}x ${ts(ing)}${dropStr}`);
+  }
+  const ingLine = `Ingredients:\n${hasBread ? ts("Bread-On") : ts("Bread-Off")}\n${ings.join(", ")}`;
+  const effects = [];
+  for (const effect of sandwich.effects) {
+    const typeStr = effect.name === "Egg Power" ? "" : `${ts(effect.type)} - `;
+    effects.push(`${ts(effect.name)}: ${typeStr}${ts("Lv.")} ${effect.level}`);
+  }
+  const effectLines = effects.join("\n");
+
+  const results = `${nameLine}\n\n${ingLine}\n\n${ts("Effects")}:\n${effectLines}`;
+  copyTextToClipboard(results, () => {
+    window.snackbar.createSnackbar(ts("Copied sandwich to clipboard!"), {
+      timeout: 3000
+    });
+  });
 };
 
 export const copyTextToClipboard = (text, postFunc) => {
