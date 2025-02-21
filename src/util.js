@@ -668,7 +668,7 @@ export const copySandwich = (sandwich, fillings, condiments, hasBread) => {
     const dropStr = data.dropped > 0 ? ` (${ts("drop")} ${data.dropped})` : "";
     ings.push(`${data.number}x ${ts(ing)}${dropStr}`);
   }
-  const ingLine = `Ingredients:\n${hasBread ? ts("Bread-On") : ts("Bread-Off")}\n${ings.join(", ")}`;
+  const ingLine = `${ts("Ingredients")}:\n${hasBread ? ts("Bread-On") : ts("Bread-Off")}\n${ings.join(", ")}`;
   const effects = [];
   for (const effect of sandwich.effects) {
     const typeStr = effect.name === "Egg Power" ? "" : `${ts(effect.type)} - `;
