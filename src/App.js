@@ -546,11 +546,15 @@ const App = () => {
 
     return (
       <div style={{ marginBottom: "1em" }}>
-        <small><a href="https://github.com/cecilbowen/pokemon-sandwich-simulator">{ts("Source Code")}</a></small>
+        <small>
+          <a href="https://github.com/cecilbowen/pokemon-sandwich-simulator" target="_blank" rel="noreferrer">
+            {ts("Source Code")}
+          </a>
+        </small>
         <span style={{ paddingLeft: '4px' }}>|</span>
         {languages.map(x => renderLanguage(x))}
         <span style={{ paddingLeft: '4px', paddingRight: '4px' }}>|</span>
-        <small><a href="https://birbzone.com/sandwich/">{ts("Calculator")}</a></small>
+        <small><a href="https://birbzone.com/sandwich/" target="_blank" rel="noreferrer">{ts("Calculator")}</a></small>
       </div>
     );
   };
