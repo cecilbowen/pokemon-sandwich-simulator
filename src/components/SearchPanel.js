@@ -78,8 +78,8 @@ const SearchPanel = ({ enabled, activeSandwichId, loadSandwich, pulse }) => {
             return mySandwiches;
         }
 
-        console.error("Failed to pull saved sandwiches!");
-        return undefined;
+        console.warn("Failed to pull saved sandwiches!");
+        return [];
     };
 
     const prepareSandwiches = () => {
