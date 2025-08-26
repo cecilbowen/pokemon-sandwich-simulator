@@ -61,7 +61,7 @@ check how many herba mysticas are on the sandwich
 now sum up all the skill powers from the ingredients 
 	again, make sure for the fillings, you're adding up the powers PER piece 
 	i use a map again 
-so this next part is a little difficult to understand (lines 341 - 362 of helper.js)
+so this next part is a little difficult to understand (lines 340 - 361 of helper.js)
 	it uses the order and flavor indexing (mentioned in step 1) to choose one of the first five prime numbers
 		it uses one of the chosen primes to multiply an incrementer (that started as 1)
 		and the other prime to do the same to an incrementer chosen by the flavor index
@@ -84,7 +84,7 @@ now, depending on deliciousness (star level), we modify all the types
 go ahead and sort your type list by power in descending order
 i'm going to be referring to "final types" here 
 	these are the "final" types you end up with (no more than 3)
-	if i don't specify "final", then i'm referring to you gathered type list up until now 
+	if i don't specify "final", then i'm referring to your gathered type list up until now 
 at this point, if you have a 1 star sandwich, just push the top 3 types as your final types 
 	this will likely fail your sandwich, since it will likely drop all your types below 0
 		this can be circumvented with minimum 2 herba mysticas, since they give 250 to all types 

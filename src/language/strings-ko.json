@@ -309,5 +309,27 @@
     "Sushi Sandwich": "스시 스타일 샌드위치",
     "Great Sushi Sandwich": "슈퍼 스시 스타일 샌드위치",
     "Ultra Sushi Sandwich": "하이퍼 스시 스타일 샌드위치",
-    "Master Sushi Sandwich": "마스터 스시 스타일 샌드위치"
+    "Master Sushi Sandwich": "마스터 스시 스타일 샌드위치",
+
+    "Advanced Mode": "고급 모드",
+    "Recipe Search Panel": "레시피 검색 패널",
+    "Effect Filter": "효과 필터",
+    "Multiplayer Mode": "멀티플레이어 모드",
+    "Search effect": "효과 검색",
+    "Dismiss": "닫기",
+    "No results found": "결과를 찾을 수 없습니다",
+    "Generate random sandwich": "랜덤 샌드위치 생성",
+    "Default Sandwiches": "기본 샌드위치",
+    "Saved Sandwiches": "저장된 샌드위치",
+    "Recipe saved!": "레시피가 저장되었습니다!",
+    "Remove": "제거",
+    "Search existing, custom and community-provided sandwich recipes.": "기존, 사용자 정의 및 커뮤니티 제공 샌드위치 레시피를 검색하세요.",
+    "Multi-Type": "멀티타입",
+    "My Recipes": "내 레시피",
+    "Drop a piece off the sandwich": "샌드위치에서 재료를 빼기",
+    "Place a piece on the sandwich": "샌드위치에 재료 올리기",
+    "Save sandwich": "샌드위치 저장",
+    "Delete sandwich": "샌드위치 삭제",
+    "No": "빼고",
+    "herba": "스파이스"
 }

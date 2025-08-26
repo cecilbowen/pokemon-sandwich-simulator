@@ -1,12 +1,11 @@
 // import { useEffect, useState } from 'react';
-import { calculatePowerAmount, getIngredientImage } from '../util';
+import { calculatePowerAmount, getDefaultPieces, getIngredientImage } from '../util';
 import { ALIAS_TO_FULL, COLORS, FLAVOR_TABLE_EZ, mode, ts,
     isFilling, isFlavor, isPower, isType, shadeColor
 } from '../util';
 import TYPES from '../data/types.json';
 import POWERS from '../data/powers.json';
 import FLAVORS from '../data/flavors.json';
-import FILLINGS from '../data/fillings.json';
 import PropTypes from "prop-types";
 import DPOINTS from "../helper/deliciousness-poketype-points.json";
 import { USE_SEREBII } from '../App';
@@ -15,6 +14,7 @@ const Card = ({
     ingredient, number, sums, mods, detail, stars,
     simpleMode, updatePieces, onClickBubble, onClick, activeKey
 }) => {
+    const defaultPieces = getDefaultPieces(ingredient?.name);
     const isSum = sums !== undefined;
     sums = sums || {};
 
@@ -118,10 +118,10 @@ const Card = ({
     let backgroundColor = "";
     if (ingredient) {
         if (isFilling(ingredient)) {
-            borderColor = "red";
+            borderColor = "#b94242";
             backgroundColor = "#ff000021";
         } else {
-            borderColor = "blue";
+            borderColor = "#5353fd";
             backgroundColor = "#0000ff24";
         }
     }
@@ -129,12 +129,14 @@ const Card = ({
     const showStats = isSum || detail;
 
     const modifyPieces = mod => {
-        const maxPieces = FILLINGS.slice(0).filter(x => x.name === ingredient.name)[0].pieces;
+        const maxPieces = defaultPieces;
         let tempPieces = ingredient.pieces + mod;
         if (tempPieces > maxPieces) { tempPieces = maxPieces; }
         if (tempPieces < 0) { tempPieces = 0; }
+        const changed = ingredient.pieces !== tempPieces;
         ingredient.pieces = tempPieces;
-        updatePieces();
+
+        if (changed) { updatePieces(); }
     };
 
     const flavorComboStr = FLAVOR_TABLE_EZ[activeKey.power];
@@ -150,6 +152,9 @@ const Card = ({
     const typeIsIn = types.map(x => x.type).includes(activeKey.type || "3");
     const typeExplainDisplay = activeKey.type && typeIsIn && typeBoost !== 0 ? "" : "none";
     const typeExplainTitle = ts("Star level type modifier");
+
+    const dropText = ts("Drop a piece off the sandwich");
+    const placeText = ts("Place a piece on the sandwich");
 
     return (
       <div
@@ -171,9 +176,14 @@ const Card = ({
             </div>
         </div>}
         {!isSum && ingredient && isFilling(ingredient) && <div className="pieces">
-            <div title={ts('How many pieces of this filling to put on sandwich')}>{ts("Pieces")}: {ingredient.pieces}</div>
-            <button className="piece-button" onClick={() => modifyPieces(-1)}>-</button>
-            <button className="piece-button" onClick={() => modifyPieces(1)}>+</button>
+            <div title={ts('How many pieces of this filling to put on sandwich')}
+                className={ ingredient.pieces !== defaultPieces ? 'pieces-changed' : ''}>
+                {ts("Pieces")}: {ingredient.pieces}
+            </div>
+            <button disabled={ingredient.pieces === 0} className="piece-button" title={dropText}
+                onClick={() => modifyPieces(-1)}>−</button>
+            <button disabled={ingredient.pieces === defaultPieces} title={placeText}
+                className="piece-button" onClick={() => modifyPieces(1)}>+</button>
         </div>}
         {showStats && <div className="bubble-row">{tastes.map((x, i) => renderKeyValue(x, i))}</div>}
         {showStats && <div className="bubble-row">{powers.map((x, i) => renderKeyValue(x, i))}</div>}

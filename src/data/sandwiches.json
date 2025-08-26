@@ -1,6 +1,6 @@
 [
   {
-    "number": -1,
+    "number": -2,
     "name": "Hidden Recipe 1",
     "description": "A recipe that produces no effects.  It is hidden from the user, but can still be made in-game.",
     "fillings": [
@@ -19,7 +19,7 @@
     }
   },
   {
-    "number": 0,
+    "number": -1,
     "name": "Hidden Recipe 2",
     "description": "A recipe that produces no effects.  It is hidden from the user, and cannot be made in-game.",
     "fillings": [
@@ -49,17 +49,17 @@
       {
         "name": "Encounter Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/1.jpg",
@@ -92,17 +92,17 @@
       {
         "name": "Title Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/2.jpg",
@@ -135,17 +135,17 @@
       {
         "name": "Title Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/3.jpg",
@@ -178,17 +178,17 @@
       {
         "name": "Title Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/4.jpg",
@@ -221,17 +221,17 @@
       {
         "name": "Title Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Teensy Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/5.jpg",
@@ -264,17 +264,17 @@
       {
         "name": "Title Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/6.jpg",
@@ -308,17 +308,17 @@
       {
         "name": "Title Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/7.jpg",
@@ -352,17 +352,17 @@
       {
         "name": "Title Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/8.jpg",
@@ -396,17 +396,17 @@
       {
         "name": "Title Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/9.jpg",
@@ -440,17 +440,17 @@
       {
         "name": "Title Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Teensy Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/10.jpg",
@@ -484,17 +484,17 @@
       {
         "name": "Title Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/11.jpg",
@@ -526,17 +526,17 @@
       {
         "name": "Catching Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/12.jpg",
@@ -569,17 +569,17 @@
       {
         "name": "Catching Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/13.jpg",
@@ -613,17 +613,17 @@
       {
         "name": "Catching Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/14.jpg",
@@ -658,17 +658,17 @@
       {
         "name": "Title Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/15.jpg",
@@ -700,17 +700,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Electric",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/16.jpg",
@@ -743,17 +743,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Electric",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/17.jpg",
@@ -787,17 +787,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/18.jpg",
@@ -832,17 +832,17 @@
       {
         "name": "Title Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/19.jpg",
@@ -874,17 +874,17 @@
       {
         "name": "Teensy Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/20.jpg",
@@ -917,17 +917,17 @@
       {
         "name": "Item Drop Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/21.jpg",
@@ -961,17 +961,17 @@
       {
         "name": "Item Drop Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/22.jpg",
@@ -1006,17 +1006,17 @@
       {
         "name": "Title Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Teensy Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/23.jpg",
@@ -1048,17 +1048,17 @@
       {
         "name": "Item Drop Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/24.jpg",
@@ -1091,17 +1091,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/25.jpg",
@@ -1135,17 +1135,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/26.jpg",
@@ -1180,17 +1180,17 @@
       {
         "name": "Title Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/27.jpg",
@@ -1222,17 +1222,17 @@
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/28.jpg",
@@ -1265,17 +1265,17 @@
       {
         "name": "Encounter Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/29.jpg",
@@ -1309,17 +1309,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/30.jpg",
@@ -1354,17 +1354,17 @@
       {
         "name": "Title Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/31.jpg",
@@ -1397,17 +1397,17 @@
       {
         "name": "Humungo Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/32.jpg",
@@ -1441,17 +1441,17 @@
       {
         "name": "Humungo Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/33.jpg",
@@ -1486,17 +1486,17 @@
       {
         "name": "Humungo Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/34.jpg",
@@ -1532,17 +1532,17 @@
       {
         "name": "Title Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Fairy",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/35.jpg",
@@ -1576,17 +1576,17 @@
       {
         "name": "Catching Power",
         "type": "Flying",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Ice",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/36.jpg",
@@ -1621,17 +1621,17 @@
       {
         "name": "Catching Power",
         "type": "Flying",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Ice",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/37.jpg",
@@ -1667,17 +1667,17 @@
       {
         "name": "Item Drop Power",
         "type": "Flying",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/38.jpg",
@@ -1714,17 +1714,17 @@
       {
         "name": "Title Power",
         "type": "Flying",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/39.jpg",
@@ -1757,17 +1757,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/40.jpg",
@@ -1801,17 +1801,17 @@
       {
         "name": "Catching Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Water",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/41.jpg",
@@ -1846,17 +1846,17 @@
       {
         "name": "Catching Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Water",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/42.jpg",
@@ -1892,17 +1892,17 @@
       {
         "name": "Title Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Water",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/43.jpg",
@@ -1935,17 +1935,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Electric",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/44.jpg",
@@ -1979,17 +1979,17 @@
       {
         "name": "Encounter Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/45.jpg",
@@ -2024,17 +2024,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/46.jpg",
@@ -2070,17 +2070,17 @@
       {
         "name": "Title Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/47.jpg",
@@ -2113,17 +2113,17 @@
       {
         "name": "Encounter Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Humungo Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/48.jpg",
@@ -2157,17 +2157,17 @@
       {
         "name": "Encounter Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/49.jpg",
@@ -2202,17 +2202,17 @@
       {
         "name": "Encounter Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Fire",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Electric",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/50.jpg",
@@ -2248,17 +2248,17 @@
       {
         "name": "Title Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/51.jpg",
@@ -2292,17 +2292,17 @@
       {
         "name": "Teensy Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/52.jpg",
@@ -2337,17 +2337,17 @@
       {
         "name": "Catching Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Humungo Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/53.jpg",
@@ -2383,17 +2383,17 @@
       {
         "name": "Catching Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/54.jpg",
@@ -2430,17 +2430,17 @@
       {
         "name": "Title Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/55.jpg",
@@ -2474,17 +2474,17 @@
       {
         "name": "Humungo Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Water",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/56.jpg",
@@ -2519,17 +2519,17 @@
       {
         "name": "Humungo Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Water",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/57.jpg",
@@ -2565,17 +2565,17 @@
       {
         "name": "Humungo Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/58.jpg",
@@ -2612,17 +2612,17 @@
       {
         "name": "Title Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Teensy Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/59.jpg",
@@ -2656,17 +2656,17 @@
       {
         "name": "Encounter Power",
         "type": "Flying",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/60.jpg",
@@ -2701,17 +2701,17 @@
       {
         "name": "Encounter Power",
         "type": "Flying",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/61.jpg",
@@ -2747,17 +2747,17 @@
       {
         "name": "Encounter Power",
         "type": "Flying",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Steel",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/62.jpg",
@@ -2794,17 +2794,17 @@
       {
         "name": "Title Power",
         "type": "Flying",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/63.jpg",
@@ -2838,17 +2838,17 @@
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Grass",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/64.jpg",
@@ -2883,17 +2883,17 @@
       {
         "name": "Humungo Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Grass",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/65.jpg",
@@ -2929,17 +2929,17 @@
       {
         "name": "Humungo Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fire",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/66.jpg",
@@ -2976,17 +2976,17 @@
       {
         "name": "Title Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/67.jpg",
@@ -3020,17 +3020,17 @@
       {
         "name": "Catching Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/68.jpg",
@@ -3065,17 +3065,17 @@
       {
         "name": "Catching Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/69.jpg",
@@ -3111,17 +3111,17 @@
       {
         "name": "Catching Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/70.jpg",
@@ -3158,17 +3158,17 @@
       {
         "name": "Title Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/71.jpg",
@@ -3203,17 +3203,17 @@
       {
         "name": "Teensy Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Grass",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/72.jpg",
@@ -3249,17 +3249,17 @@
       {
         "name": "Teensy Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/73.jpg",
@@ -3296,17 +3296,17 @@
       {
         "name": "Teensy Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/74.jpg",
@@ -3344,17 +3344,17 @@
       {
         "name": "Title Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fairy",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/75.jpg",
@@ -3388,17 +3388,17 @@
       {
         "name": "Teensy Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/76.jpg",
@@ -3433,17 +3433,17 @@
       {
         "name": "Teensy Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/77.jpg",
@@ -3479,17 +3479,17 @@
       {
         "name": "Teensy Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/78.jpg",
@@ -3526,17 +3526,17 @@
       {
         "name": "Title Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Steel",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/79.jpg",
@@ -3570,17 +3570,17 @@
       {
         "name": "Teensy Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/80.jpg",
@@ -3615,17 +3615,17 @@
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Flying",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/81.jpg",
@@ -3661,17 +3661,17 @@
       {
         "name": "Teensy Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fairy",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Grass",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/82.jpg",
@@ -3708,17 +3708,17 @@
       {
         "name": "Title Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fairy",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/83.jpg",
@@ -3752,17 +3752,17 @@
       {
         "name": "Encounter Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Water",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/84.jpg",
@@ -3797,17 +3797,17 @@
       {
         "name": "Encounter Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/85.jpg",
@@ -3843,17 +3843,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Water",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/86.jpg",
@@ -3890,17 +3890,17 @@
       {
         "name": "Title Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Water",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/87.jpg",
@@ -3934,17 +3934,17 @@
       {
         "name": "Humungo Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/88.jpg",
@@ -3979,17 +3979,17 @@
       {
         "name": "Humungo Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/89.jpg",
@@ -4025,17 +4025,17 @@
       {
         "name": "Humungo Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/90.jpg",
@@ -4072,17 +4072,17 @@
       {
         "name": "Title Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Steel",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/91.jpg",
@@ -4117,17 +4117,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/92.jpg",
@@ -4163,17 +4163,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/93.jpg",
@@ -4210,17 +4210,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/94.jpg",
@@ -4258,17 +4258,17 @@
       {
         "name": "Title Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/95.jpg",
@@ -4303,17 +4303,17 @@
       {
         "name": "Item Drop Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/96.jpg",
@@ -4349,17 +4349,17 @@
       {
         "name": "Item Drop Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/97.jpg",
@@ -4396,17 +4396,17 @@
       {
         "name": "Item Drop Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/98.jpg",
@@ -4444,17 +4444,17 @@
       {
         "name": "Title Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Flying",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/99.jpg",
@@ -4489,17 +4489,17 @@
       {
         "name": "Teensy Power",
         "type": "Flying",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/100.jpg",
@@ -4535,17 +4535,17 @@
       {
         "name": "Teensy Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/101.jpg",
@@ -4582,17 +4582,17 @@
       {
         "name": "Encounter Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/102.jpg",
@@ -4630,17 +4630,17 @@
       {
         "name": "Title Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Steel",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/103.jpg",
@@ -4675,17 +4675,17 @@
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Ice",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/104.jpg",
@@ -4721,17 +4721,17 @@
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Ice",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/105.jpg",
@@ -4768,17 +4768,17 @@
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Electric",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/106.jpg",
@@ -4816,17 +4816,17 @@
       {
         "name": "Title Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/107.jpg",
@@ -4861,17 +4861,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Flying",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/108.jpg",
@@ -4907,17 +4907,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Flying",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/109.jpg",
@@ -4954,17 +4954,17 @@
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Flying",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/110.jpg",
@@ -5002,17 +5002,17 @@
       {
         "name": "Title Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/111.jpg",
@@ -5048,17 +5048,17 @@
       {
         "name": "Teensy Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Water",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/112.jpg",
@@ -5095,17 +5095,17 @@
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Teensy Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/113.jpg",
@@ -5143,17 +5143,17 @@
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Teensy Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/114.jpg",
@@ -5192,17 +5192,17 @@
       {
         "name": "Title Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Bug",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/115.jpg",
@@ -5238,17 +5238,17 @@
       {
         "name": "Encounter Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Bug",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/116.jpg",
@@ -5285,17 +5285,17 @@
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/117.jpg",
@@ -5333,17 +5333,17 @@
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Steel",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/118.jpg",
@@ -5382,17 +5382,17 @@
       {
         "name": "Title Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Teensy Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/119.jpg",
@@ -5428,17 +5428,17 @@
       {
         "name": "Humungo Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/120.jpg",
@@ -5475,17 +5475,17 @@
       {
         "name": "Humungo Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Exp. Point Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/121.jpg",
@@ -5523,17 +5523,17 @@
       {
         "name": "Humungo Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Fire",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Dragon",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/122.jpg",
@@ -5572,17 +5572,17 @@
       {
         "name": "Title Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/123.jpg",
@@ -5618,17 +5618,17 @@
       {
         "name": "Item Drop Power",
         "type": "Electric",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/124.jpg",
@@ -5665,17 +5665,17 @@
       {
         "name": "Item Drop Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fairy",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/125.jpg",
@@ -5713,17 +5713,17 @@
       {
         "name": "Teensy Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fairy",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/126.jpg",
@@ -5762,17 +5762,17 @@
       {
         "name": "Title Power",
         "type": "Electric",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fairy",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Psychic",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/127.jpg",
@@ -5808,17 +5808,17 @@
       {
         "name": "Catching Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/128.jpg",
@@ -5855,17 +5855,17 @@
       {
         "name": "Catching Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ground",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/129.jpg",
@@ -5903,17 +5903,17 @@
       {
         "name": "Catching Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ground",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/130.jpg",
@@ -5952,17 +5952,17 @@
       {
         "name": "Title Power",
         "type": "Dragon",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Item Drop Power",
         "type": "Poison",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/131.jpg",
@@ -5999,17 +5999,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Ice",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Raid Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/132.jpg",
@@ -6047,17 +6047,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/133.jpg",
@@ -6096,17 +6096,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Ice",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/134.jpg",
@@ -6146,17 +6146,17 @@
       {
         "name": "Title Power",
         "type": "Ghost",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/135.jpg",
@@ -6193,17 +6193,17 @@
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Grass",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/136.jpg",
@@ -6241,17 +6241,17 @@
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Raid Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Grass",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/137.jpg",
@@ -6290,17 +6290,17 @@
       {
         "name": "Raid Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Grass",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/138.jpg",
@@ -6340,17 +6340,17 @@
       {
         "name": "Title Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/139.jpg",
@@ -6387,17 +6387,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Electric",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Rock",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/140.jpg",
@@ -6435,17 +6435,17 @@
       {
         "name": "Item Drop Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Psychic",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Electric",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/141.jpg",
@@ -6484,17 +6484,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Grass",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Ice",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/142.jpg",
@@ -6534,17 +6534,17 @@
       {
         "name": "Title Power",
         "type": "Rock",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Egg Power",
         "type": "",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/143.jpg",
@@ -6581,17 +6581,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Steel",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Encounter Power",
         "type": "Fire",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Humungo Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/144.jpg",
@@ -6629,17 +6629,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Steel",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Ghost",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Humungo Power",
         "type": "Ice",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/145.jpg",
@@ -6678,17 +6678,17 @@
       {
         "name": "Encounter Power",
         "type": "Steel",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/146.jpg",
@@ -6728,17 +6728,17 @@
       {
         "name": "Title Power",
         "type": "Steel",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Exp. Point Power",
         "type": "Fighting",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/147.jpg",
@@ -6775,17 +6775,17 @@
       {
         "name": "Encounter Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Humungo Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/148.jpg",
@@ -6823,17 +6823,17 @@
       {
         "name": "Exp. Point Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Fighting",
-        "level": "1"
+        "level": 1
       },
       {
         "name": "Catching Power",
         "type": "Normal",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/149.jpg",
@@ -6872,17 +6872,17 @@
       {
         "name": "Encounter Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Catching Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Humungo Power",
         "type": "Dark",
-        "level": "1"
+        "level": 1
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/150.jpg",
@@ -6922,17 +6922,17 @@
       {
         "name": "Title Power",
         "type": "Ice",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Teensy Power",
         "type": "Dark",
-        "level": "2"
+        "level": 2
       },
       {
         "name": "Encounter Power",
         "type": "Normal",
-        "level": "2"
+        "level": 2
       }
     ],
     "imageUrl": "https://www.serebii.net/scarletviolet/sandwich/151.jpg",

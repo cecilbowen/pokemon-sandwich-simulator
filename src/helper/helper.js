@@ -516,8 +516,10 @@ export const getSandwich = ingredients => {
     const condiments = ingredients.condiments;
 
     const sandwich = {
-        number: "???",
-        name: "Custom Sandwich",
+        id: ingredients?.id,
+        // number: "???",
+        name: ingredients?.name ?? "Custom Sandwich",
+        mine: ingredients?.mine,
         description: "A Tasty Coolio Original",
         fillings, condiments,
         hasBread,
@@ -551,6 +553,6 @@ export const getSandwich = ingredients => {
         skills: skillMods,
         types: typeMods
     };
-
+    // console.log("getSandwich", sandwich);
     return sandwich;
 };

@@ -1,20 +1,25 @@
-import SANDWICHES from './data/sandwiches.json';
 import FILLINGS from './data/fillings.json';
 import CONDIMENTS from './data/condiments.json';
 import TYPES from './data/types.json';
 import FLAVORS from './data/flavors.json';
 import { useEffect, useState } from 'react';
-import { getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES, getNumberOfPlayers,
-  ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, oneTwoFirst, getIngredientsSums, checkPresetSandwich,
+import {
+  getCondiments, getFillings, getRecipeFromIngredients, ts, LANGUAGE_NAMES, getNumberOfPlayers,
+  ALIAS_TO_FULL, FULL_TO_ALIAS, COLORS, getIngredientsSums, checkPresetSandwich,
   copyTextToClipboard, hasRelevance, getCategory, getIngredientsFromRecipe,
   getIngredientImage,
   getImage,
-  copySandwich } from './util';
-import { runTests, testsToSandwiches } from './tests/tests';
+  copySandwich,
+  generateRandomName,
+  sandwichToRecipeResult
+} from './util';
+import { runTests } from './tests/tests';
 import Card from './components/Card';
 import './App.css';
 import Bubble from './components/Bubble';
 import { getSandwich } from './helper/helper';
+import SearchPanel from './components/SearchPanel';
+import { findMissingSandwiches, generateRandomSandwich, generateSandwiches } from './tests/generate';
 
 // per player
 const MAX_FILLINGS = 6;
@@ -25,6 +30,15 @@ let NUM_PLAYERS = 1;
 // en, es, ja, de, ru, sv, fr, etc
 export let LANGUAGE = "en";
 export const USE_SEREBII = false;
+export const snackActionsTL = text => [{
+  text: ts(text),
+  style: {
+    // color: 'pink',
+    textTransform: "capitalize"
+  }
+}];
+
+const DEBUG = false;
 
 const App = () => {
   const [advancedIngredients, setAdvancedIngredients] = useState(false);
@@ -34,21 +48,21 @@ const App = () => {
   const [showEffectFilter, setShowEffectFilter] = useState(true);
   const [megaSandwichMode, setMegaSandwichMode] = useState(false);
   const [hasBread, setHasBread] = useState(true);
-  const [includeTestsInSearch, setIncludeTestsInSearch] = useState(false);
 
   const [activeFillings, setActiveFillings] = useState([]);
   const [activeCondiments, setActiveCondiments] = useState([]);
   const [activeKey, setActiveKey] = useState({});
-  const [searchNameQuery, setSearchNameQuery] = useState();
-  const [searchEffectQuery, setSearchEffectQuery] = useState();
-  const [searchTypeQuery, setSearchTypeQuery] = useState();
-  const [searchIngredientQuery, setSearchIngredientQuery] = useState();
-  const [results, setResults] = useState([]);
   const [heartbeat, setHeartbeat] = useState(0);
-  let activeSandwich = undefined;
+  const [activeSandwichId, setActiveSandwichId] = useState();
 
   useEffect(() => {
     window.runTests = runTests;
+
+    if (DEBUG) {
+      window.generate = generateSandwiches;
+      window.lazy = [];
+      window.findMissing = findMissingSandwiches;
+    }
   }, []);
 
   useEffect(() => {
@@ -75,72 +89,6 @@ const App = () => {
       setActiveKey({});
     }
   }, [showEffectFilter]);
-
-  useEffect(() => {
-    const base = [...SANDWICHES, ...includeTestsInSearch ? testsToSandwiches() : []];
-    const tempResults = [];
-
-    let sandwichList = [];
-    if (searchNameQuery) {
-      for (const s of base) {
-        for (const rawQuery of searchNameQuery) {
-          const query = rawQuery.trim();
-          if (s.name.toLowerCase().indexOf(query.toLowerCase()) !== -1) {
-            sandwichList.push(s);
-            continue;
-          }
-        }
-      }
-    } else {
-      sandwichList = base;
-    }
-
-    for (const s of sandwichList) {
-      let hasAllQueries = true;
-      if (searchEffectQuery) {
-        for (const rawQuery of searchEffectQuery) {
-          const query = rawQuery.trim();
-          if (!s.effects.filter(x => x.name.toLowerCase().indexOf(query.toLowerCase()) !== -1)[0]) {
-            hasAllQueries = false;
-          }
-        }
-      }
-
-      if (searchTypeQuery) {
-        for (const rawQuery of searchTypeQuery) {
-          const query = rawQuery.trim();
-          if (!s.effects.filter(x => x.type.toLowerCase().indexOf(query.toLowerCase()) !== -1)[0]) {
-            hasAllQueries = false;
-          }
-        }
-      }
-
-      if (searchIngredientQuery) {
-        for (const rawQuery of searchIngredientQuery) {
-          const query = rawQuery.trim();
-          const ingredients = [...s.fillings, ...s.condiments];
-          if (!ingredients.filter(x => x.toLowerCase().indexOf(query.toLowerCase()) !== -1)[0]) {
-            hasAllQueries = false;
-          }
-        }
-      }
-
-      if (hasAllQueries) {
-        tempResults.push(s);
-      }
-    }
-
-    setResults(tempResults);
-  }, [searchNameQuery, searchEffectQuery, searchTypeQuery, searchIngredientQuery]);
-
-  useEffect(() => {
-    if (activeSandwich !== undefined) {
-      const activeSandwichElement = document.getElementById(`sandwich-${activeSandwich}`);
-      if (activeSandwichElement) {
-        activeSandwichElement.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-      }
-    }
-  }, [results]);
 
   const pulse = () => {
     setHeartbeat(heartbeat + 1);
@@ -180,6 +128,15 @@ const App = () => {
     return retClass;
   };
 
+  const storeSandwich = () => {
+    if (!DEBUG) { return; }
+    const generatedSandwich = getSandwich({ fillings: activeFillings, condiments: activeCondiments, hasBread });
+    const recipe = getRecipeFromIngredients(generatedSandwich);
+    const res = sandwichToRecipeResult(generatedSandwich);
+    window.lazy.push({ recipe, result: res });
+    console.log("lazy", window.lazy);
+  };
+
   const renderFilling = (filling, index, active) => {
     let className = "ingredient";
     if (active) {
@@ -194,33 +151,33 @@ const App = () => {
     const ingredientPowerClass = checkAmountOfPower(filling, activeKey.power);
 
     return (
-    <div className={divClass} key={`filling-${index}-${active ? 'active' : 'dormant'}`}>
-      <div className={ingredientPowerClass}></div>
-      <img
-        alt={ts(filling.name)}
-        title={ts(filling.name)}
-        src={USE_SEREBII ? filling.imageUrl : getIngredientImage(filling.name)}
-        className={className}
-        onClick={() => {
-          const tempActiveFillings = activeFillings.slice(0);
+      <div className={divClass} key={`filling-${index}-${active ? 'active' : 'dormant'}`}>
+        <div className={ingredientPowerClass}></div>
+        <img
+          alt={ts(filling.name)}
+          title={ts(filling.name)}
+          src={USE_SEREBII ? filling.imageUrl : getIngredientImage(filling.name)}
+          className={className}
+          onClick={() => {
+            const tempActiveFillings = activeFillings.slice(0);
 
-          if (active) {
-            const indexToRemove = tempActiveFillings.indexOf(filling);
-            if (indexToRemove !== -1) {
-              tempActiveFillings.splice(indexToRemove, 1);
+            if (active) {
+              const indexToRemove = tempActiveFillings.indexOf(filling);
+              if (indexToRemove !== -1) {
+                tempActiveFillings.splice(indexToRemove, 1);
+              }
+            } else {
+              if (tempActiveFillings.length >= MAX_FILLINGS * NUM_PLAYERS) { return; }
+              tempActiveFillings.push({ // done this way to avoid modifying base array
+                ...filling
+              });
             }
-          } else {
-            if (tempActiveFillings.length >= MAX_FILLINGS * NUM_PLAYERS) { return; }
-            tempActiveFillings.push({ // done this way to avoid modifying base array
-              ...filling
-            });
-          }
 
-          setActiveFillings(tempActiveFillings);
-        }}
-      />
-      {active && <div className="numbering numbering-icon">{index + 1}</div>}
-    </div>);
+            setActiveFillings(tempActiveFillings);
+          }}
+        />
+        {active && <div className="numbering numbering-icon">{index + 1}</div>}
+      </div>);
   };
 
   const renderCondiments = () => {
@@ -245,29 +202,29 @@ const App = () => {
     const ingredientPowerClass = checkAmountOfPower(condiment, activeKey.power);
 
     return (
-    <div className={divClass} key={`condiment-${index}-${active ? 'active' : 'dormant'}`}>
-      <div className={ingredientPowerClass}></div>
-      <img
-        alt={ts(condiment.name)}
-        title={ts(condiment.name)}
-        src={USE_SEREBII ? condiment.imageUrl : getIngredientImage(condiment.name)}
-        className={className}
-        onClick={() => {
-          const tempActiveCondiments = activeCondiments.slice(0);
-          if (active) {
-            const indexToRemove = tempActiveCondiments.indexOf(condiment);
-            if (indexToRemove !== -1) {
-              tempActiveCondiments.splice(indexToRemove, 1);
+      <div className={divClass} key={`condiment-${index}-${active ? 'active' : 'dormant'}`}>
+        <div className={ingredientPowerClass}></div>
+        <img
+          alt={ts(condiment.name)}
+          title={ts(condiment.name)}
+          src={USE_SEREBII ? condiment.imageUrl : getIngredientImage(condiment.name)}
+          className={className}
+          onClick={() => {
+            const tempActiveCondiments = activeCondiments.slice(0);
+            if (active) {
+              const indexToRemove = tempActiveCondiments.indexOf(condiment);
+              if (indexToRemove !== -1) {
+                tempActiveCondiments.splice(indexToRemove, 1);
+              }
+            } else {
+              if (tempActiveCondiments.length >= MAX_CONDIMENTS * NUM_PLAYERS) { return; }
+              tempActiveCondiments.push(condiment);
             }
-          } else {
-            if (tempActiveCondiments.length >= MAX_CONDIMENTS * NUM_PLAYERS) { return; }
-            tempActiveCondiments.push(condiment);
-          }
-          setActiveCondiments(tempActiveCondiments);
-        }}
-      />
-      {active && <div className="numbering numbering-icon">{index + activeFillings.length + 1}</div>}
-    </div>
+            setActiveCondiments(tempActiveCondiments);
+          }}
+        />
+        {active && <div className="numbering numbering-icon">{index + activeFillings.length + 1}</div>}
+      </div>
     );
   };
 
@@ -278,16 +235,16 @@ const App = () => {
     const name = hasBread ? "Bread-On" : "Bread-Off";
 
     return (
-    <div className={divClass}>
-      <img
-        alt={ts(name)}
-        title={ts(name)}
-        src={getIngredientImage("bread")}
-        className={`ingredient ${hasBread ? "img-bread" : "img-no-bread"}`}
-        onClick={() => setHasBread(!hasBread)}
-      />
-      <div className="numbering numbering-icon">0</div>
-    </div>);
+      <div className={divClass}>
+        <img
+          alt={ts(name)}
+          title={ts(name)}
+          src={getIngredientImage("bread")}
+          className={`ingredient ${hasBread ? "img-bread" : "img-no-bread"}`}
+          onClick={() => setHasBread(!hasBread)}
+        />
+        <div className="numbering numbering-icon">0</div>
+      </div>);
   };
 
   const renderActive = () => {
@@ -295,6 +252,7 @@ const App = () => {
 
     return (
       <div className="active-ingredients-bkg">
+        {DEBUG && <button onClick={() => storeSandwich()}>cache</button>}
         {activeFillings.length + activeCondiments.length > 0 && renderBread()}
         {activeFillings.map((x, i) => renderFilling(x, i, true))}
         {activeCondiments.map((x, i) => renderCondiment(x, i, true))}
@@ -324,7 +282,7 @@ const App = () => {
 
     let display = `#${sandwich.number} - ${ts(sandwich.name)}`;
 
-    if (sandwich.number === "???") {
+    if (!sandwich.number) {
       display = '⭐'.repeat(sandwich.stars);
       if (sandwich.effects.length === 0) {
         display += `(${ts("failure")})`;
@@ -333,20 +291,23 @@ const App = () => {
 
     const numberOfPlayers = getNumberOfPlayers({ fillings: activeFillings, condiments: activeCondiments });
 
-    const sandwichSrc = hasBread || sandwich.number !== "???" ? sandwich.imageUrl :
+    const sandwichSrc = hasBread || sandwich.number ? sandwich.imageUrl :
       `${process.env.PUBLIC_URL}/images/no-bread-sandwich.png`;
 
     return (
       <div className="card" style={{ display: "flex" }}>
         <img alt={ts(sandwich.name)}
           src={sandwichSrc}
-          style={{ width: "100px", borderRadius: "8px" }}
+          style={{ width: "100px", borderRadius: "8px", pointerEvents: "none" }}
         />
         {megaSandwichMode && <div id="players-icon">{numberOfPlayers}P</div>}
+        {!sandwich.number && <input type="image" className="save-icon" src={getImage("save.png")}
+          alt={ts("Save sandwich")} title={ts("Save sandwich")}
+          onClick={() => saveRecipe()} />}
         <div>
           <div className="bubble bubble-header"
             style={{ backgroundColor: "tan" }}>{display}</div>
-          {sandwich.effects.length > 0 && sandwich.number === "???" && <img className="copy-icon" src={getImage("copy-icon.png")}
+          {sandwich.effects.length > 0 && !sandwich.number && <img className="copy-icon" src={getImage("copy-icon.png")}
             alt={ts("Copy sandwich effects")}
             title={ts("Copy sandwich effects")}
             onClick={() => copySandwich(sandwich, activeFillings, activeCondiments, hasBread)} />}
@@ -381,7 +342,7 @@ const App = () => {
 
     const foundSandwich = checkPresetSandwich(sums, activeFillings, activeCondiments);
 
-    activeSandwich = foundSandwich?.number;
+    // activeSandwich = foundSandwich?.number;
 
     // Sure, we could show results with only condiments, but we can't add only condiments
     // to a sandwich in-game.  We have to add at least one filling, which we would then
@@ -410,89 +371,15 @@ const App = () => {
           {!advancedIngredients && <br className="page-break" />}
           {showResults && !simpleMode &&
             <Card sums={sums} mods={generatedSandwich.mods} hasBread={hasBread}
-                fillings={activeFillings} condiments={activeCondiments}
-                detail={!simpleMode && advancedIngredients}
-                onClickBubble={key => toggleActiveKey(key)}
-                activeKey={activeKey} stars={generatedSandwich.stars}
-              />}
+              fillings={activeFillings} condiments={activeCondiments}
+              detail={!simpleMode && advancedIngredients}
+              onClickBubble={key => toggleActiveKey(key)}
+              activeKey={activeKey} stars={generatedSandwich.stars}
+            />}
         </div>
         <div className="bubble-row" style={{ justifyContent: "center" }}>
           {renderSandwich(foundSandwich)}
           {showResults && (alwaysShowCustomSandwich || !foundSandwich) && renderSandwich(generatedSandwich)}
-        </div>
-      </div>
-    );
-  };
-
-  const renderSearchBubble = (sandwich, key) => {
-    const highlight = activeSandwich !== undefined && sandwich.number === activeSandwich;
-    const isWeird = oneTwoFirst.filter(x => x === sandwich.number)[0];
-    const foodCombo = [...sandwich.fillings, ...sandwich.condiments];
-    const hasMultiIngredients = foodCombo.length !== Array.from(new Set(foodCombo)).length;
-    const cls = highlight ? 'bubble highlighted' : 'bubble dim';
-
-    const numStr = `#${sandwich.number} - `;
-
-    return (
-      <div className={cls} key={key} id={`sandwich-${sandwich.number}${sandwich.id ?? ""}`} onClick={() => {
-        const condiments = getCondiments(sandwich.condiments);
-        const fillings = getFillings(sandwich.fillings);
-        setHasBread(sandwich.hasBread ?? true);
-        setActiveCondiments(condiments);
-        setActiveFillings(fillings);
-      }} style={{
-        fontWeight: isWeird ? "bold" : "",
-        color: hasMultiIngredients ? "" : ""
-      }}>
-        {`${sandwich.id ? "" : numStr}${sandwich.id ? sandwich.name : ts(sandwich.name)}`}
-      </div>
-    );
-  };
-
-  const search = (ev, criteria) => {
-    const text = ev.target.value;
-    const queries = text.split(",");
-
-    switch (criteria) {
-      case "name":
-        setSearchNameQuery(queries);
-        break;
-      case "effect":
-        setSearchEffectQuery(queries);
-        break;
-      case "type":
-        setSearchTypeQuery(queries);
-        break;
-      case "ingredient":
-        setSearchIngredientQuery(queries);
-        break;
-      default:
-    }
-  };
-
-  const renderSearch = () => {
-    if (!showSearchPanel) { return null; }
-
-    return (
-      <div className="search-panel">
-        <div className="search-bars-div">
-          <input type="text" id="nameSearch" placeholder={ts('Search names')} className="search-bar"
-            onChange={ev => search(ev, "name")} style={{ width: "250px" }}
-          />
-          <input type="text" id="effectSearch" placeholder={ts('Search effects (egg, raid, etc)')} className="search-bar"
-            onChange={ev => search(ev, "effect")} style={{ width: "250px" }}
-          />
-          <input type="text" id="typeSearch" placeholder={ts('Search types (normal, dark, etc)')} className="search-bar"
-            onChange={ev => search(ev, "type")} style={{ width: "250px" }}
-          />
-          <input type="text" id="ingredientSearch" placeholder={ts('Search ingredients (ham, bacon, etc)')} className="search-bar"
-            onChange={ev => search(ev, "ingredient")} style={{ width: "250px" }}
-          />
-        </div>
-        <div className="search-results-div">
-          <div className="bubble-row" style={{ overflow: "auto", flexWrap: "nowrap" }}>
-            {results.map((x, i) => renderSearchBubble(x, i))}
-          </div>
         </div>
       </div>
     );
@@ -544,17 +431,31 @@ const App = () => {
   };
 
   const saveRecipe = () => {
-    const copyStr = getRecipeFromIngredients({ fillings: activeFillings, condiments: activeCondiments, hasBread });
-    if (!copyStr) { return; }
+    const generatedSandwich = getSandwich({ fillings: activeFillings, condiments: activeCondiments, hasBread });
+    const recipe = getRecipeFromIngredients({ fillings: activeFillings, condiments: activeCondiments, hasBread });
+    const result = sandwichToRecipeResult(generatedSandwich);
+    if (!recipe) { return; }
 
-    console.log("Saving recipe", copyStr);
-    copyTextToClipboard(copyStr, () => {
+    const name = generateRandomName();
+    const saves = localStorage.getItem("bank-sandwiches");
+    let bank = [];
+    if (saves) {
+      bank = JSON.parse(saves);
+    }
+
+    bank.sort((a, b) => b.id - a.id);
+    const id = (bank[0]?.id ?? 0) + 1;
+
+    bank.push({ id, name, recipe, result });
+    bank.sort((a, b) => a.id - b.id);
+    localStorage.setItem("bank-sandwiches", JSON.stringify(bank));
+
     if (!DISABLE_ALERTS) {
-      window.snackbar.createSnackbar(ts("Copied recipe to clipboard!"), {
-        timeout: 3000
+      window.snackbar.createSnackbar(`${ts("Recipe saved!")} (${name})`, {
+        timeout: 3000, actions: snackActionsTL("Dismiss")
       });
     }
-    });
+    pulse();
   };
 
   const getShareUrl = () => {
@@ -565,11 +466,12 @@ const App = () => {
 
     console.log("Sharing recipe url", copyStr);
     copyTextToClipboard(copyStr, () => {
-    if (!DISABLE_ALERTS) {
-      window.snackbar.createSnackbar(ts("Copied recipe URL to clipboard!"), {
-        timeout: 3000
-      });
-    }
+      if (!DISABLE_ALERTS) {
+        window.snackbar.createSnackbar(ts("Copied recipe URL to clipboard!"), {
+          timeout: 3000,
+          actions: snackActionsTL("Dismiss")
+        });
+      }
     });
   };
 
@@ -594,20 +496,41 @@ const App = () => {
     }
   };
 
+  const loadSandwich = sandwich => {
+    // console.log("loadSandwich()", sandwich);
+    const condiments = getCondiments(sandwich.condiments);
+    const fillings = getFillings(sandwich.fillings);
+
+    if (fillings.length > 6 || condiments.length > 4) { setMegaSandwichMode(true); }
+
+    setHasBread(sandwich.hasBread ?? true);
+    setActiveCondiments(condiments);
+    setActiveFillings(fillings);
+    setActiveSandwichId(isNaN(sandwich.number) ? sandwich.id : sandwich.number);
+  };
+
+  const renderLabelCheckbox = (label, value, onChange) => {
+    return <div className="label-checkbox button-spacing">
+      <input type="checkbox" id={label} name={label} checked={value} onChange={onChange} />
+      <label style={{ cursor: 'pointer' }} htmlFor={label}>{label}</label>
+    </div>;
+  };
+
   const renderSettings = () => {
     return (
       <div className="settings-bar">
-        <button className="button-spacing"
-          onClick={() => setSimpleMode(!simpleMode)}>{ts("Toggle Simple Mode")}: {simpleMode ? ts("On") : ts("Off")}</button>
-        <button className="button-spacing" onClick={() => setShowSearchPanel(!showSearchPanel)}>{ts("Toggle Search Panel")}</button>
-        {!simpleMode && <button className="button-spacing"
-          onClick={() => setShowEffectFilter(!showEffectFilter)}>{ts("Toggle Effect Filter")}</button>}
-        <button className="button-spacing"
-          onClick={() => setMegaSandwichMode(!megaSandwichMode)}>
-            {ts("Toggle Multiplayer Mode")}: {megaSandwichMode ? ts("On") : ts("Off")}</button>
+        {renderLabelCheckbox(ts("Advanced Mode"), !simpleMode, () => setSimpleMode(!simpleMode))}
+        {renderLabelCheckbox(ts("Recipe Search Panel"), showSearchPanel, () => setShowSearchPanel(!showSearchPanel))}
+        {!simpleMode &&
+          renderLabelCheckbox(ts("Effect Filter"), showEffectFilter, () => setShowEffectFilter(!showEffectFilter))}
+        {renderLabelCheckbox(ts("Multiplayer Mode"), megaSandwichMode, () => setMegaSandwichMode(!megaSandwichMode))}
         {/* {<button className="button-spacing" onClick={() => loadRecipe()}>{ts("Load Recipe")}</button>} */}
         {activeFillings.length > 0 && activeCondiments.length > 0 &&
           <button className="button-spacing" onClick={() => getShareUrl()}>{ts("Share Recipe")}</button>}
+        <img className="random-icon button-spacing" src={getImage("dice.png")}
+          alt={"⚅"}
+          title={ts("Generate random sandwich")}
+          onClick={() => loadSandwich(generateRandomSandwich())} />
       </div>
     );
   };
@@ -648,7 +571,9 @@ const App = () => {
       {renderCondiments()}
       {renderActive()}
       {renderMath()}
-      {renderSearch()}
+      {<SearchPanel
+        enabled={showSearchPanel} pulse={heartbeat}
+        activeSandwichId={activeSandwichId} loadSandwich={loadSandwich} />}
       {renderSettings()}
       {renderFooter()}
     </div>

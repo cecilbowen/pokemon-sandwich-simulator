@@ -1,0 +1,50 @@
+[
+  {
+    "recipe": "Bread_Banana-3,Banana-3,Chorizo-3,Chorizo-3,Potato Salad-1,Potato Salad-1_Cream Cheese,Curry Powder,Jam",
+    "result": "Raid,Bug,2/Item,Electric,1/Encounter,Dragon,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Herbed Sausage-3,Rice-1,Rice-1,Strawberry-3,Strawberry-3_Horseradish,Horseradish,Marmalade,Wasabi",
+    "result": "Raid,Fighting,2/Encounter,Psychic,1/Item,Water,1"
+  },
+  {
+    "recipe": "Bread_Avocado-3,Chorizo-3,Chorizo-3,Chorizo-3,Kiwi-3,Potato Salad-1_Jam,Pepper,Pepper,Whipped Cream",
+    "result": "Raid,Dragon,2/Exp,Poison,1/Encounter,Bug,1"
+  },
+  {
+    "recipe": "Bread_Jalapeno-3,Jalapeno-3,Potato Salad-1,Potato Salad-1,Sliced Egg-3,Sliced Egg-3_Vinegar,Wasabi,Whipped Cream,Whipped Cream",
+    "result": "Raid,Fairy,2/Item,Rock,1/Encounter,Steel,1"
+  },
+  {
+    "recipe": "Bread_Apple-3,Apple-3,Rice-1,Rice-1,Sliced Egg-3,Sliced Egg-3_Horseradish,Horseradish,Horseradish",
+    "result": "Raid,Flying,2/Encounter,Steel,1/Teensy,Grass,1"
+  },
+  {
+    "recipe": "Bread_Jalapeno-3,Jalapeno-3,Rice-1,Rice-1,Sliced Egg-3,Sliced Egg-3_Butter,Curry Powder,Olive Oil",
+    "result": "Raid,Grass,2/Encounter,Rock,1/Exp,Flying,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Herbed Sausage-3,Noodles-1,Noodles-1,Pineapple-3,Pineapple-3_Horseradish,Horseradish,Mustard,Whipped Cream",
+    "result": "Raid,Ground,2/Encounter,Water,1/Exp,Psychic,1"
+  },
+  {
+    "recipe": "Bread_Apple-3,Apple-3,Noodles-1,Noodles-1,Sliced Egg-3,Sliced Egg-3_Jam,Pepper,Wasabi",
+    "result": "Raid,Ice,2/Encounter,Flying,1/Exp,Rock,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Green Bell Pepper-3,Noodles-1,Noodles-1_Pepper,Whipped Cream,Whipped Cream,Whipped Cream",
+    "result": "Raid,Poison,2/Encounter,Normal,1/Exp,Electric,1"
+  },
+  {
+    "recipe": "Bread_Jalapeno-3,Jalapeno-3,Noodles-1,Noodles-1,Sliced Egg-3,Sliced Egg-3_Horseradish,Marmalade,Whipped Cream",
+    "result": "Raid,Rock,2/Item,Grass,1/Encounter,Ice,1"
+  },
+  {
+    "recipe": "Bread_Apple-3,Apple-3,Potato Salad-1,Potato Salad-1,Sliced Egg-3,Sliced Egg-3_Cream Cheese,Curry Powder,Curry Powder",
+    "result": "Raid,Steel,2/Encounter,Flying,1/Item,Fairy,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Herbed Sausage-3,Pineapple-3,Pineapple-3,Rice-1,Rice-1_Chili Sauce,Curry Powder,Curry Powder,Whipped Cream",
+    "result": "Raid,Water,2/Encounter,Ground,1/Exp,Fighting,1"
+  }
+]

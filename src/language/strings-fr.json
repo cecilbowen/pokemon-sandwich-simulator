@@ -309,5 +309,27 @@
     "Sushi Sandwich": "Sandwich façon sushi",
     "Great Sushi Sandwich": "Sandwich façon sushi savoureux",
     "Ultra Sushi Sandwich": "Sandwich façon sushi gourmand",
-    "Master Sushi Sandwich": "Sandwich façon exquis"
+    "Master Sushi Sandwich": "Sandwich façon exquis",
+
+    "Advanced Mode": "Mode Avancé",
+    "Recipe Search Panel": "Panneau de Recherche de Recettes",
+    "Effect Filter": "Filtre d'Effets",
+    "Multiplayer Mode": "Mode Multijoueur",
+    "Search effect": "Rechercher effet",
+    "Dismiss": "Fermer",
+    "No results found": "Aucun résultat trouvé",
+    "Generate random sandwich": "Générer un sandwich aléatoire",
+    "Default Sandwiches": "Sandwichs par défaut",
+    "Saved Sandwiches": "Sandwichs enregistrés",
+    "Recipe saved!": "Recette enregistrée !",
+    "Remove": "Retirer",
+    "Search existing, custom and community-provided sandwich recipes.": "Recherchez des recettes de sandwich existantes, personnalisées et fournies par la communauté.",
+    "Multi-Type": "Multi-type",
+    "My Recipes": "Mes Recettes",
+    "Drop a piece off the sandwich": "Retirer un ingrédient du sandwich",
+    "Place a piece on the sandwich": "Placer un ingrédient sur le sandwich",
+    "Save sandwich": "Enregistrer le sandwich",
+    "Delete sandwich": "Supprimer le sandwich",
+    "No": "Sans",
+    "herba": "Épice"
 }

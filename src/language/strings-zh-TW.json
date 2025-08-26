@@ -309,5 +309,27 @@
     "Sushi Sandwich": "壽司風味三明治",
     "Great Sushi Sandwich": "超級壽司風味三明治",
     "Ultra Sushi Sandwich": "高級壽司風味三明治",
-    "Master Sushi Sandwich": "大師壽司風味三明治"
+    "Master Sushi Sandwich": "大師壽司風味三明治",
+
+    "Advanced Mode": "進階模式",
+    "Recipe Search Panel": "食譜搜尋面板",
+    "Effect Filter": "效果篩選器",
+    "Multiplayer Mode": "多人遊戲模式",
+    "Search effect": "搜尋效果",
+    "Dismiss": "關閉",
+    "No results found": "未找到結果",
+    "Generate random sandwich": "生成隨機三明治",
+    "Default Sandwiches": "預設三明治",
+    "Saved Sandwiches": "已保存的三明治",
+    "Recipe saved!": "食譜已保存！",
+    "Remove": "移除",
+    "Search existing, custom and community-provided sandwich recipes.": "搜尋現有、自訂和社群提供的三明治食譜。",
+    "Multi-Type": "多類型",
+    "My Recipes": "我的食譜",
+    "Drop a piece off the sandwich": "從三明治中移除一塊",
+    "Place a piece on the sandwich": "在三明治上放置一塊",
+    "Save sandwich": "保存三明治",
+    "Delete sandwich": "刪除三明治",
+    "No": "不要",
+    "herba": "味料"
 }

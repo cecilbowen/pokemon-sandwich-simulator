@@ -309,5 +309,27 @@
     "Sushi Sandwich": "Bocadillo estilo sushi",
     "Great Sushi Sandwich": "Superbocadillo estilo sushi",
     "Ultra Sushi Sandwich": "Ultrabocadillo estilo sushi",
-    "Master Sushi Sandwich": "Bocadillo maestro estilo sushi"
+    "Master Sushi Sandwich": "Bocadillo maestro estilo sushi",
+
+    "Advanced Mode": "Modo Avanzado",
+    "Recipe Search Panel": "Panel de Búsqueda de Recetas",
+    "Effect Filter": "Filtro de Efectos",
+    "Multiplayer Mode": "Modo Multijugador",
+    "Search effect": "Buscar efecto",
+    "Dismiss": "Descartar",
+    "No results found": "No se encontraron resultados",
+    "Generate random sandwich": "Generar sándwich aleatorio",
+    "Default Sandwiches": "Sándwiches predeterminados",
+    "Saved Sandwiches": "Sándwiches guardados",
+    "Recipe saved!": "¡Receta guardada!",
+    "Remove": "Eliminar",
+    "Search existing, custom and community-provided sandwich recipes.": "Busca recetas de sándwich existentes, personalizadas y proporcionadas por la comunidad.",
+    "Multi-Type": "Multitipo",
+    "My Recipes": "Mis Recetas",
+    "Drop a piece off the sandwich": "Quitar una pieza del sándwich",
+    "Place a piece on the sandwich": "Colocar una pieza en el sándwich",
+    "Save sandwich": "Guardar sándwich",
+    "Delete sandwich": "Eliminar sándwich",
+    "No": "Sin",
+    "herba": "especia"
 }

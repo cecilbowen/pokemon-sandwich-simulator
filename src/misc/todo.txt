@@ -4,6 +4,4 @@ add option for labels on ingredients (off by default)
 
 add a tutorial guide/video link at bottom
 
-make search panel take search criteria in current language instead of just english
-
-add "dismiss" translations (for snackbar)
+add a generator page to let users generate sandwiches in bulk

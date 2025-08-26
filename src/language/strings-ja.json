@@ -310,5 +310,27 @@
     "Sushi Sandwich": "すしふうサンド",
     "Great Sushi Sandwich": "スーパーすしふうサンド",
     "Ultra Sushi Sandwich": "ハイパーすしふうサンド",
-    "Master Sushi Sandwich": "マスターすしふうサンド"
+    "Master Sushi Sandwich": "マスターすしふうサンド",
+
+    "Advanced Mode": "上級モード",
+    "Recipe Search Panel": "レシピ検索パネル",
+    "Effect Filter": "効果フィルター",
+    "Multiplayer Mode": "マルチプレイヤーモード",
+    "Search effect": "効果を検索",
+    "Dismiss": "閉じる",
+    "No results found": "結果が見つかりません",
+    "Generate random sandwich": "ランダムサンドイッチを生成",
+    "Default Sandwiches": "デフォルトサンドイッチ",
+    "Saved Sandwiches": "保存されたサンドイッチ",
+    "Recipe saved!": "レシピを保存しました！",
+    "Remove": "削除",
+    "Search existing, custom and community-provided sandwich recipes.": "既存の、カスタム、およびコミュニティ提供のサンドイッチレシピを検索します。",
+    "Multi-Type": "マルチタイプ",
+    "My Recipes": "マイレシピ",
+    "Drop a piece off the sandwich": "サンドイッチから具材を落とす",
+    "Place a piece on the sandwich": "サンドイッチに具材を置く",
+    "Save sandwich": "サンドイッチを保存",
+    "Delete sandwich": "サンドイッチを削除",
+    "No": "なし",
+    "herba": "スパイス"
 }

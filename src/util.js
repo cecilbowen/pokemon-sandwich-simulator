@@ -21,8 +21,9 @@ import TRADITIONAL_CHINESE from './language/strings-zh-TW.json';
 import FRENCH from './language/strings-fr.json';
 import ITALIAN from './language/strings-it.json';
 import KOREAN from './language/strings-ko.json';
-import { LANGUAGE } from './App';
+import { LANGUAGE, snackActionsTL } from './App';
 import { descendingSort, getHerbaCount, indexToPrime } from './helper/helper';
+import { range } from './tests/generate';
 
 export const oneTwoFirst = [
   "31",
@@ -135,6 +136,7 @@ export const COLORS = {
   "Title": "sandybrown",
   "Shiny": "cyan",
   "Sparkling": "cyan",
+  "None": "transparent",
   // types (18)
   "Normal": '#A8A77A',
   "Fire": '#EE8130',
@@ -186,6 +188,10 @@ export const LANGUAGE_NAMES = {
   // 'sv': 'Svenska'
 };
 
+export const fillToThree = start => Array.from({ length: 3 - start + 1 }, (_, i) => start + i);
+
+export const getLoopedElement = (arr, num) => arr[num % arr.length];
+
 export const ts = text => {
   text = (text || "dammerung").toLowerCase();
   const preStrings = LANGUAGE_STRINGS[LANGUAGE] || {};
@@ -208,12 +214,18 @@ export const getIngredientImage = name => {
   return `${process.env.PUBLIC_URL}/images/ingredients/${name.toLowerCase().replaceAll(" ", "")}.png`;
 };
 
+export const getPowerImage = shortName => {
+  return `${process.env.PUBLIC_URL}/images/powers/${shortName.toLowerCase()}.png`;
+};
+
 export const getFillings = strArr => {
   const ret = [];
   for (const str of strArr) {
-    const filling = FILLINGS.filter(x => x.name === str)[0];
+    const filli = str?.name ?? str;
+    const filling = [...FILLINGS].filter(x => x.name === filli)[0];
     if (filling) {
-      ret.push({ ...filling });
+      const newPieces = str?.pieces ?? filling.pieces;
+      ret.push({ ...filling, pieces: newPieces });
     }
   }
 
@@ -223,7 +235,8 @@ export const getFillings = strArr => {
 export const getCondiments = strArr => {
   const ret = [];
   for (const str of strArr) {
-    const condiment = CONDIMENTS.filter(x => x.name === str)[0];
+    const condi = str?.name ?? str;
+    const condiment = [...CONDIMENTS].filter(x => x.name === condi)[0];
     if (condiment) {
       ret.push({ ...condiment });
     }
@@ -289,22 +302,22 @@ export const getPresetSandwichStatsAndMods = number => {
   }));
 
   if (herbaCount >= 1) {
-      stats.skills.Title = (stats.skills.Title || 0) + 10000;
-      mods.skills.Title = (mods.skills.Title || 0) + 10000;
+    stats.skills.Title = (stats.skills.Title || 0) + 10000;
+    mods.skills.Title = (mods.skills.Title || 0) + 10000;
   }
   if (herbaCount >= 2) {
-      stats.skills.Sparkling = (stats.skills.Sparkling || 0) + 20000;
-      mods.skills.Title = (mods.skills.Title || 0) + 10000;
+    stats.skills.Sparkling = (stats.skills.Sparkling || 0) + 20000;
+    mods.skills.Title = (mods.skills.Title || 0) + 10000;
   }
 
   // flavor matchup power mods
   const tastes = [];
   for (const [k, points] of Object.entries(stats.tastes)) {
-      tastes.push({
-          name: k,
-          type: TASTE_MAP[k],
-          point: points
-      });
+    tastes.push({
+      name: k,
+      type: TASTE_MAP[k],
+      point: points
+    });
   }
   tastes.sort(descendingSort("point"));
 
@@ -313,20 +326,20 @@ export const getPresetSandwichStatsAndMods = number => {
     let isMatch = false;
 
     for (let j = 0; j < item.tastes.length; j++) {
-        const taste = item.tastes[j];
-        addPowMag *= indexToPrime(taste);
-        tastePowMag *= indexToPrime(tastes[j].type);
+      const taste = item.tastes[j];
+      addPowMag *= indexToPrime(taste);
+      tastePowMag *= indexToPrime(tastes[j].type);
     }
 
     if (addPowMag === tastePowMag) {
-        isMatch = true;
+      isMatch = true;
     }
 
     if (isMatch) {
-        const sk = POWERS_SHORT[item.skillType - 1];
-        stats.skills[sk] = (stats.skills[sk] || 0) + item.power;
-        mods.skills[sk] = (mods.skills[sk] || 0) + item.power;
-        break;
+      const sk = POWERS_SHORT[item.skillType - 1];
+      stats.skills[sk] = (stats.skills[sk] || 0) + item.power;
+      mods.skills[sk] = (mods.skills[sk] || 0) + item.power;
+      break;
     }
   }
 
@@ -391,7 +404,7 @@ export const getIngredientsFromRecipe = recipe => {
     const condimentStr = spl[fillingIndex + 1];
 
     const idToIngredient = Object.fromEntries(
-        Object.entries(INGREDIENT_TO_ID).map(([key, value]) => [value, key])
+      Object.entries(INGREDIENT_TO_ID).map(([key, value]) => [value, key])
     );
 
     const fNames = fillingStr.split(",");
@@ -438,11 +451,43 @@ export const getRecipeFromIngredients = (ingredients, numFormat = false) => {
     fArr.push(`${identifier}-${f.pieces}`);
   }
 
-  return `${hasBread ? "Bread_" : ""}${fArr.join(",")}_${
-    condiments.map(x => {
-      return numFormat ? INGREDIENT_TO_ID[x.name] : x.name;
-    }).join(",")
-  }`;
+  return `${hasBread ? "Bread_" : ""}${fArr.join(",")}_${condiments.map(x => {
+    return numFormat ? INGREDIENT_TO_ID[x.name] : x.name;
+  }).join(",")
+    }`;
+};
+
+export const sandwichToRecipeResult = sandwich => {
+  if (!sandwich?.effects) { return ""; }
+
+  // sandwich has { effects: { name, type, level} }
+  return sandwich.effects.map(x => {
+    const longPower = x.name;
+    const longPowerIndex = POWERS.indexOf(longPower);
+    const shortPower = POWERS_SHORT[longPowerIndex];
+    let type = x.type;
+    if (shortPower === "Egg") { type = ""; }
+
+    return `${shortPower},${type},${x.level}`;
+  }).join("/");
+};
+
+export const sandwichRecipeResultToEffects = result => {
+  const lines = result.split("/");
+  const effects = [];
+  for (const line of lines) {
+    const lineSplit = line.split(",");
+    const powerShort = lineSplit[0];
+    const type = lineSplit[1];
+    const level = parseInt(lineSplit[2], 10);
+    const powerShortIndex = POWERS_SHORT.indexOf(powerShort);
+    const powerLong = POWERS[powerShortIndex];
+    effects.push({
+      name: powerLong, type, level
+    });
+  }
+
+  return effects;
 };
 
 export const getIngredientsSums = stats => {
@@ -628,6 +673,11 @@ export const mode = (array, prop, skipMax = false, useMin = false) => {
   return maxEl;
 };
 
+export const getDefaultPieces = ingredientName => {
+  const baseIng = FILLINGS_MAP[ingredientName];
+  return baseIng?.pieces ?? 1;
+};
+
 export const copySandwich = (sandwich, fillings, condiments, hasBread) => {
   /*
   Custom Sandwich ⭐⭐⭐
@@ -657,7 +707,7 @@ export const copySandwich = (sandwich, fillings, condiments, hasBread) => {
   }
 
   let number = sandwich.number;
-  const isCustomSandwich = number === "???";
+  const isCustomSandwich = number === undefined;
   number = isCustomSandwich ? "" : `#${number} `;
 
   const name = `${isCustomSandwich ? ts("Custom Sandwich") : sandwich.name}`;
@@ -679,7 +729,7 @@ export const copySandwich = (sandwich, fillings, condiments, hasBread) => {
   const results = `${nameLine}\n\n${ingLine}\n\n${ts("Effects")}:\n${effectLines}`;
   copyTextToClipboard(results, () => {
     window.snackbar.createSnackbar(ts("Copied sandwich to clipboard!"), {
-      timeout: 3000
+      timeout: 3000, actions: snackActionsTL("Dismiss")
     });
   });
 };
@@ -750,4 +800,37 @@ export const shadeColor = (color, percent = 30) => {
   const BB = B.toString(16).length === 1 ? `0${B.toString(16)}` : B.toString(16);
 
   return `#${RR}${GG}${BB}`;
+};
+
+export const generateRandomName = () => {
+  // cvc(x..x)c
+  const min = 5;
+  const max = 8;
+  let name = "";
+  const vowels = "aeiou";
+  const consonants = "bcdfghjklmnpqrstvwxyz";
+
+  let add = 0;
+  const length = range(min, max);
+
+  for (let i = 0; i < length; i++) {
+    let v = true; // true for vowel, false for consonant
+    if (i === 0 || i === 2 || i === length - 1) {
+      v = false;
+    }
+
+    if (v) {
+      add = vowels[range(0, vowels.length - 1)];
+    } else {
+      add = consonants[range(0, consonants.length - 1)];
+    }
+
+    if (i === 0) {
+      add = add.toUpperCase();
+    }
+
+    name += add;
+  }
+
+  return name;
 };

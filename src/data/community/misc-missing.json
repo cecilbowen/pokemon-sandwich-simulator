@@ -1,0 +1,258 @@
+[
+  {
+    "recipe": "Bread_Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Cream Cheese,Whipped Cream",
+    "result": "Humungo,Normal,2/Catch,Water,2/Encounter,Flying,1"
+  },
+  {
+    "recipe": "Bread_Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Marmalade,Olive Oil",
+    "result": "Humungo,Fighting,2/Catch,Grass,2/Encounter,Fire,1"
+  },
+  {
+    "recipe": "Bread_Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Marmalade,Olive Oil,Pepper",
+    "result": "Humungo,Fighting,2/Item,Grass,2/Encounter,Fire,1"
+  },
+  {
+    "recipe": "Bread_Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Mustard,Mustard",
+    "result": "Raid,Normal,2/Humungo,Flying,2/Encounter,Fighting,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Rice-1,Rice-1_Ketchup,Whipped Cream",
+    "result": "Exp,Fighting,2/Encounter,Ground,1/Humungo,Water,1"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Fried Fillet-1,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3_Wasabi,Whipped Cream,Whipped Cream",
+    "result": "Egg,,2/Exp,Water,2/Encounter,Dark,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Potato Tortilla-1,Potato Tortilla-1_Chili Sauce,Vinegar",
+    "result": "Exp,Psychic,2/Raid,Ghost,2/Catch,Fighting,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Herbed Sausage-3,Potato Tortilla-1,Potato Tortilla-1_Vinegar,Vinegar,Vinegar",
+    "result": "Item,Psychic,2/Exp,Ghost,2/Catch,Fighting,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Fried Fillet-1,Fried Fillet-1_Wasabi",
+    "result": "Humungo,Electric,2/Exp,Bug,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Fried Fillet-1,Fried Fillet-1_Vinegar,Whipped Cream",
+    "result": "Encounter,Normal,2/Exp,Electric,2/Catch,Bug,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Fried Fillet-1,Fried Fillet-1_Chili Sauce,Curry Powder",
+    "result": "Humungo,Bug,2/Exp,Electric,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Fried Fillet-1,Fried Fillet-1_Marmalade,Peanut Butter",
+    "result": "Exp,Normal,2/Raid,Electric,2/Catch,Bug,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Fried Fillet-1,Fried Fillet-1_Marmalade,Marmalade,Marmalade",
+    "result": "Exp,Normal,2/Catch,Electric,2/Encounter,Bug,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Fried Fillet-1,Fried Fillet-1_Jam,Jam,Marmalade",
+    "result": "Exp,Electric,2/Catch,Bug,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Potato Tortilla-1,Potato Tortilla-1_Curry Powder,Wasabi",
+    "result": "Humungo,Fire,2/Exp,Poison,2/Encounter,Dragon,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Kiwi-3,Kiwi-3_Olive Oil,Olive Oil,Vinegar,Whipped Cream",
+    "result": "Item,Fire,2/Exp,Poison,2/Encounter,Dragon,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Kiwi-3,Kiwi-3_Cream Cheese,Vinegar,Vinegar,Whipped Cream",
+    "result": "Item,Dragon,2/Exp,Fire,2/Encounter,Poison,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Kiwi-3,Kiwi-3_Cream Cheese,Horseradish,Vinegar,Vinegar",
+    "result": "Teensy,Dragon,2/Exp,Fire,2/Item,Poison,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Chorizo-3,Chorizo-3,Chorizo-3,Kiwi-3,Kiwi-3_Mayonnaise,Vinegar,Vinegar",
+    "result": "Exp,Dragon,2/Teensy,Fire,2/Item,Poison,1"
+  },
+  {
+    "recipe": "Bread_Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Chili Sauce,Wasabi,Wasabi,Whipped Cream",
+    "result": "Encounter,Steel,1/Catch,Flying,1/Teensy,Steel,1"
+  },
+  {
+    "recipe": "Bread_Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1,Hamburger-1_Butter,Whipped Cream",
+    "result": "Encounter,Steel,1/Catch,Flying,1/Item,Steel,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Wasabi",
+    "result": "Humungo,Dragon,2/Teensy,Fairy,2/Encounter,Dark,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Wasabi,Whipped Cream",
+    "result": "Humungo,Dragon,2/Catch,Fairy,2/Encounter,Dark,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Peanut Butter,Whipped Cream",
+    "result": "Humungo,Steel,2/Egg,,2/Encounter,Bug,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Jam,Peanut Butter,Yogurt",
+    "result": "Humungo,Dark,2/Catch,Fairy,2/Encounter,Steel,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Horseradish",
+    "result": "Humungo,Bug,2/Teensy,Steel,2/Encounter,Ghost,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Vinegar,Yogurt",
+    "result": "Humungo,Fairy,2/Catch,Dark,2/Encounter,Dragon,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Mayonnaise,Wasabi",
+    "result": "Humungo,Dragon,2/Teensy,Fairy,2/Encounter,Dark,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Chili Sauce,Mayonnaise,Wasabi,Wasabi",
+    "result": "Humungo,Dragon,2/Encounter,Fairy,2/Raid,Dark,1"
+  },
+  {
+    "recipe": "Bread_Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Whipped Cream",
+    "result": "Encounter,Ground,2/Humungo,Rock,2/Item,Poison,1"
+  },
+  {
+    "recipe": "Bread_Cheese-3,Sliced Egg-3_Vinegar",
+    "result": "Teensy,Fairy,1/Exp,Rock,1/Item,Flying,1"
+  },
+  {
+    "recipe": "Bread_Cheese-3,Cheese-3_Jam,Salt",
+    "result": "Encounter,Electric,1/Item,Dark,1/Exp,Ice,1"
+  },
+  {
+    "recipe": "Bread_Lettuce-3,Pineapple-3,Red Onion-3,Sliced Egg-3,Watercress-3,Yellow Bell Pepper-3_Peanut Butter,Vinegar,Wasabi",
+    "result": "Catch,Grass,1/Encounter,Steel,1/Exp,Fairy,1"
+  },
+  {
+    "recipe": "Bread_Strawberry-3_Mustard,Vinegar,Wasabi",
+    "result": "Teensy,Psychic,1/Item,Ghost,1/Raid,Fighting,1"
+  },
+  {
+    "recipe": "Bread_Kiwi-3_Chili Sauce,Cream Cheese",
+    "result": "Catch,Poison,1/Item,Dragon,1/Raid,Fire,1"
+  },
+  {
+    "recipe": "Bread_Pickle-3_Chili Sauce,Cream Cheese,Wasabi",
+    "result": "Humungo,Fighting,1/Encounter,Bug,1/Raid,Water,1"
+  },
+  {
+    "recipe": "Bread_Prosciutto-3_Mustard,Wasabi",
+    "result": "Humungo,Flying,1/Encounter,Rock,1/Teensy,Ground,1"
+  },
+  {
+    "recipe": "Bread_Cheese-3,Tomato-3_Curry Powder,Pepper,Salt",
+    "result": "Humungo,Fairy,1/Raid,Ghost,1/Exp,Bug,1"
+  },
+  {
+    "recipe": "Bread_Red Bell Pepper-3,Watercress-3_Curry Powder,Pepper,Wasabi",
+    "result": "Humungo,Fire,1/Teensy,Ghost,1/Encounter,Bug,1"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Hamburger-1,Prosciutto-3_Horseradish",
+    "result": "Encounter,Flying,1/Catch,Normal,1/Teensy,Steel,1"
+  },
+  {
+    "recipe": "Bread_Basil-4_Mayonnaise",
+    "result": "Teensy,Fire,1/Raid,Grass,1/Exp,Water,1"
+  },
+  {
+    "recipe": "Bread_Pineapple-3_Chili Sauce,Vinegar,Wasabi,Wasabi",
+    "result": "Humungo,Dark,1/Item,Ground,1/Teensy,Water,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Tomato-3_Jam,Vinegar,Wasabi",
+    "result": "Teensy,Electric,1/Encounter,Normal,1/Item,Dragon,1"
+  },
+  {
+    "recipe": "Bread_Cheese-3_Wasabi",
+    "result": "Humungo,Electric,1/Teensy,Ice,1/Catch,Psychic,1"
+  },
+  {
+    "recipe": "Bread_Basil-4,Pineapple-3_Jam,Ketchup,Salt",
+    "result": "Teensy,Dark,1/Raid,Ground,1/Item,Water,1"
+  },
+  {
+    "recipe": "Bread_Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Chili Sauce,Curry Powder,Mayonnaise,Vinegar",
+    "result": "Humungo,Water,2/Teensy,Normal,2/Encounter,Grass,1"
+  },
+  {
+    "recipe": "Bread_Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Horseradish,Ketchup,Salt,Vinegar",
+    "result": "Humungo,Flying,2/Teensy,Fighting,2/Encounter,Normal,1"
+  },
+  {
+    "recipe": "Bread_Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Chili Sauce,Ketchup,Mayonnaise",
+    "result": "Humungo,Normal,2/Teensy,Flying,2/Encounter,Fighting,1"
+  },
+  {
+    "recipe": "Bread_Rice-1,Rice-1,Rice-1,Rice-1,Rice-1,Rice-1_Chili Sauce,Mayonnaise,Vinegar,Wasabi",
+    "result": "Humungo,Normal,2/Teensy,Water,2/Encounter,Fighting,1"
+  },
+  {
+    "recipe": "Bread_Noodles-1,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Potato Tortilla-1_Vinegar,Vinegar,Vinegar,Whipped Cream",
+    "result": "Catch,Psychic,2/Humungo,Rock,1/Encounter,Poison,1"
+  },
+  {
+    "recipe": "Bread_Banana-3,Chorizo-3,Chorizo-3,Potato Salad-1,Potato Salad-1,Potato Salad-1_Marmalade,Marmalade",
+    "result": "Item,Bug,2/Encounter,Normal,1/Humungo,Dragon,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Curry Powder,Marmalade,Pepper",
+    "result": "Humungo,Bug,2/Item,Steel,2/Encounter,Ghost,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Mayonnaise,Mustard,Pepper",
+    "result": "Humungo,Dragon,2/Teensy,Ghost,2/Encounter,Bug,1"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1,Potato Salad-1_Olive Oil,Wasabi",
+    "result": "Humungo,Ghost,2/Teensy,Dark,2/Encounter,Dragon,1"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Kiwi-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Jam,Ketchup,Ketchup,Mayonnaise",
+    "result": "Teensy,Poison,2/Humungo,Ice,1/Raid,Electric,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Pineapple-3_Horseradish,Mustard,Vinegar",
+    "result": "Teensy,Ground,2/Encounter,Rock,1/Humungo,Psychic,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1,Strawberry-3_Curry Powder,Vinegar",
+    "result": "Teensy,Psychic,2/Encounter,Poison,1/Humungo,Ground,1"
+  },
+  {
+    "recipe": "Bread_Banana-3,Chorizo-3,Noodles-1,Noodles-1,Noodles-1,Noodles-1_Jam,Mayonnaise,Mayonnaise,Pepper",
+    "result": "Teensy,Electric,2/Humungo,Ice,1/Raid,Poison,1"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Noodles-1,Noodles-1,Sliced Egg-3,Sliced Egg-3,Sliced Egg-3_Horseradish,Marmalade,Mustard,Vinegar",
+    "result": "Teensy,Ice,2/Exp,Flying,1/Encounter,Rock,1"
+  },
+  {
+    "recipe": "Bread_Apple-3,Apple-3,Apple-3,Sliced Egg-3,Sliced Egg-3,Sliced Egg-3_Jam,Jam,Jam,Vinegar",
+    "result": "Item,Ice,2/Catch,Steel,1/Egg,,1"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Herbed Sausage-3,Potato Salad-1,Potato Salad-1,Potato Salad-1,Smoked Fillet-3_Olive Oil,Olive Oil,Olive Oil,Yogurt",
+    "result": "Item,Dark,2/Encounter,Fairy,1/Humungo,Ghost,1"
+  },
+  {
+    "recipe": "Bread_Sliced Egg-3,Sliced Egg-3,Sliced Egg-3,Sliced Egg-3,Tomato-3,Tomato-3_Curry Powder,Marmalade,Marmalade,Pepper",
+    "result": "Item,Fairy,2/Encounter,Steel,1/Exp,Rock,1"
+  },
+  {
+    "recipe": "Bread_Cheese-3,Cheese-3,Sliced Egg-3,Sliced Egg-3,Sliced Egg-3,Sliced Egg-3_Ketchup,Ketchup,Ketchup,Peanut Butter",
+    "result": "Exp,Flying,2/Encounter,Rock,1/Raid,Steel,1"
+  },
+  {
+    "recipe": "Bread_Cheese-3,Cheese-3,Sliced Egg-3,Sliced Egg-3,Sliced Egg-3,Sliced Egg-3_Yogurt,Yogurt,Yogurt",
+    "result": "Exp,Fairy,2/Catch,Rock,1/Raid,Flying,1"
+  }
+]

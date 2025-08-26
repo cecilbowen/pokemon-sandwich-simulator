@@ -1,4 +1,4 @@
-import { getIngredientsFromRecipe, FULL_TO_ALIAS } from '../util';
+import { getIngredientsFromRecipe, FULL_TO_ALIAS, sandwichRecipeResultToEffects } from '../util';
 import { getSandwich } from '../helper/helper';
 
 import NON_HERBA_TESTS from "../tests/non-herba.json";
@@ -31,6 +31,9 @@ export const TEST_SETS = [
 	BREAD_VS // recipes with bread on/off as the only ingredient difference that have different results
 ];
 
+const COUNT_TEST = 100000;
+const COUNT_COMMUNITY = 10000;
+
 // generates a sandwich from a 'save recipe' string
 const generateSandwichFromRecipe = recipe => {
     const ingredients = getIngredientsFromRecipe(recipe);
@@ -45,6 +48,73 @@ const getSandwichResult = sandwich => {
 	}
 
 	return ret;
+};
+
+export const recipesToSandwichesLite = recipes => {
+  const ret = [];
+
+  for (let i = 0; i < recipes.length; i++) {
+	const recipe = recipes[i];
+	const ingredients = getIngredientsFromRecipe(recipe.recipe);
+
+	if (!ingredients) { continue; }
+	const sandwich = {
+		...ingredients,
+		effects: sandwichRecipeResultToEffects(recipe.result),
+		lite: true
+	};
+
+	ret.push({
+		...sandwich,
+		id: i + COUNT_COMMUNITY + 1,
+		// number: "???",
+		name: `Community Sandwich #${i + 1}`
+	});
+  }
+
+  return ret;
+};
+
+// takes the result at face value, no actual generation yet
+export const testsToSandwichesLite = (additionalSets = []) => {
+  const sets = [...TEST_SETS, ...additionalSets.map(x => x.set)];
+  const setNames = [...TEST_SET_NAMES, ...additionalSets.map(x => x.name)];
+
+  const combined = []; // sets.flatMap(set => [...set]);
+  for (let i = 0; i < sets.length; i++) {
+	const set = sets[i];
+	for (let j = 0; j < set.length; j++) {
+		const test = set[j];
+		combined.push({
+			recipe: test.recipe,
+			result: test.result,
+			setName: setNames[i],
+			setCount: j
+		});
+	}
+  }
+  const ret = [];
+
+  for (let i = 0; i < combined.length; i++) {
+	const test = combined[i];
+	const ingredients = getIngredientsFromRecipe(test.recipe);
+
+	if (!ingredients) { continue; }
+	const sandwich = {
+		...ingredients,
+		effects: sandwichRecipeResultToEffects(test.result),
+		lite: true
+	};
+
+	ret.push({
+		...sandwich,
+		id: i + COUNT_TEST + 1,
+		// number: "???",
+		name: `${test.setName} Sandwich #${test.setCount + 1}`
+	});
+  }
+
+  return ret;
 };
 
 // converts all test sets to sandwiches
@@ -74,7 +144,7 @@ export const testsToSandwiches = () => {
 
 	ret.push({
 		...sandwich,
-		id: i + 1,
+		id: i + COUNT_TEST + 1,
 		name: `${test.setName} Sandwich #${test.setCount + 1}`
 	});
   }

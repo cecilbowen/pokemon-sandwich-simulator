@@ -1,0 +1,374 @@
+[
+  {
+    "recipe": "Bread_Bacon-3,Bacon-3,Chorizo-3,Lettuce-3,Red Onion-3_Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Normal,3/Title,Normal,3/Catch,Normal,3"
+  },
+  {
+    "recipe": "Bread_Cherry Tomatoes-3,Strawberry-3_Pepper,Sour Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Fighting,3/Title,Fighting,3/Catch,Fighting,3"
+  },
+  {
+    "recipe": "Bread_Cucumber-3,Green Bell Pepper-3_Peanut Butter,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Poison,3/Title,Poison,3/Catch,Poison,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Ham-3,Onion-3,Smoked Fillet-3_Horseradish,Mustard,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Ground,3/Title,Ground,3/Catch,Ground,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Klawf Stick-3,Potato Tortilla-1,Red Bell Pepper-3,Watercress-3_Sour Herba Mystica,Sour Herba Mystica,Whipped Cream",
+    "result": "Sparkling,Rock,3/Title,Rock,3/Catch,Rock,3"
+  },
+  {
+    "recipe": "Bread_Cherry Tomatoes-3,Fried Fillet-1,Hamburger-1,Kiwi-3,Klawf Stick-3,Yellow Bell Pepper-3_Sour Herba Mystica,Sweet Herba Mystica,Vinegar",
+    "result": "Sparkling,Bug,3/Title,Bug,3/Catch,Bug,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Onion-3,Red Onion-3,Red Onion-3_Mayonnaise,Sour Herba Mystica,Sour Herba Mystica,Yogurt",
+    "result": "Sparkling,Ghost,3/Title,Ghost,3/Catch,Ghost,3"
+  },
+  {
+    "recipe": "Bread_Apple-3_Cream Cheese,Sour Herba Mystica,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Steel,3/Title,Steel,3/Catch,Steel,3"
+  },
+  {
+    "recipe": "Bread_Red Bell Pepper-3_Mayonnaise,Sour Herba Mystica,Sweet Herba Mystica,Wasabi",
+    "result": "Sparkling,Fire,3/Title,Fire,3/Catch,Fire,3"
+  },
+  {
+    "recipe": "Bread_Basil-4,Fried Fillet-1,Fried Fillet-1,Herbed Sausage-3,Kiwi-3,Rice-1_Ketchup,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Water,3/Title,Water,3/Catch,Water,3"
+  },
+  {
+    "recipe": "Bread_Ham-3,Lettuce-3_Curry Powder,Sour Herba Mystica,Sweet Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Grass,3/Title,Grass,3/Catch,Grass,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Chorizo-3,Chorizo-3,Jalapeno-3,Klawf Stick-3,Watercress-3_Jam,Jam,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Electric,3/Title,Electric,3/Catch,Electric,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Onion-3,Strawberry-3,Tomato-3_Marmalade,Peanut Butter,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Psychic,3/Title,Psychic,3/Catch,Psychic,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Basil-4,Pickle-3_Peanut Butter,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Ice,3/Title,Ice,3/Catch,Ice,3"
+  },
+  {
+    "recipe": "Bread_Avocado-3,Cheese-3,Pineapple-3,Potato Tortilla-1,Prosciutto-3,Yellow Bell Pepper-3_Sour Herba Mystica,Sweet Herba Mystica,Yogurt",
+    "result": "Sparkling,Dragon,3/Title,Dragon,3/Catch,Dragon,3"
+  },
+  {
+    "recipe": "Bread_Banana-3,Basil-4,Pickle-3,Pineapple-3,Potato Salad-1,Smoked Fillet-3_Mustard,Mustard,Sour Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Dark,3/Title,Dark,3/Catch,Dark,3"
+  },
+  {
+    "recipe": "Bread_Klawf Stick-3,Potato Tortilla-1,Tomato-3_Olive Oil,Sour Herba Mystica,Sour Herba Mystica,Yogurt",
+    "result": "Sparkling,Fairy,3/Title,Fairy,3/Catch,Fairy,3"
+  },
+  {
+    "recipe": "Bread_Hamburger-1,Herbed Sausage-3,Herbed Sausage-3,Kiwi-3_Bitter Herba Mystica,Bitter Herba Mystica,Ketchup,Peanut Butter",
+    "result": "Sparkling,Fighting,3/Title,Fighting,3/Exp,Fighting,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Prosciutto-3_Bitter Herba Mystica,Bitter Herba Mystica,Butter,Salt",
+    "result": "Sparkling,Flying,3/Title,Flying,3/Exp,Flying,3"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Kiwi-3_Bitter Herba Mystica,Curry Powder,Mustard,Salty Herba Mystica",
+    "result": "Sparkling,Ground,3/Title,Ground,3/Exp,Ground,3"
+  },
+  {
+    "recipe": "Bread_Green Bell Pepper-3,Jalapeno-3,Smoked Fillet-3,Watercress-3_Bitter Herba Mystica,Chili Sauce,Jam,Salty Herba Mystica",
+    "result": "Sparkling,Rock,3/Title,Rock,3/Exp,Rock,3"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Herbed Sausage-3_Bitter Herba Mystica,Curry Powder,Salty Herba Mystica",
+    "result": "Sparkling,Ghost,3/Title,Ghost,3/Exp,Ghost,3"
+  },
+  {
+    "recipe": "Bread_Potato Salad-1,Tofu-3_Bitter Herba Mystica,Peanut Butter,Salty Herba Mystica",
+    "result": "Sparkling,Steel,3/Title,Steel,3/Exp,Steel,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Cheese-3,Red Bell Pepper-3,Rice-1_Bitter Herba Mystica,Salt,Salty Herba Mystica",
+    "result": "Sparkling,Fire,3/Title,Fire,3/Exp,Fire,3"
+  },
+  {
+    "recipe": "Bread_Basil-4,Fried Fillet-1_Bitter Herba Mystica,Mustard,Salty Herba Mystica",
+    "result": "Sparkling,Water,3/Title,Water,3/Exp,Water,3"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Lettuce-3,Potato Tortilla-1,Rice-1,Yellow Bell Pepper-3_Bitter Herba Mystica,Olive Oil,Salty Herba Mystica,Yogurt",
+    "result": "Sparkling,Grass,3/Title,Grass,3/Exp,Grass,3"
+  },
+  {
+    "recipe": "Bread_Basil-4,Herbed Sausage-3,Jalapeno-3,Jalapeno-3,Strawberry-3_Bitter Herba Mystica,Salty Herba Mystica,Vinegar",
+    "result": "Sparkling,Psychic,3/Title,Psychic,3/Exp,Psychic,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Klawf Stick-3,Lettuce-3,Noodles-1,Prosciutto-3,Tofu-3_Bitter Herba Mystica,Salty Herba Mystica",
+    "result": "Sparkling,Ice,3/Title,Ice,3/Exp,Ice,3"
+  },
+  {
+    "recipe": "Bread_Ham-3,Potato Salad-1_Bitter Herba Mystica,Horseradish,Salty Herba Mystica,Wasabi",
+    "result": "Sparkling,Dragon,3/Title,Dragon,3/Exp,Dragon,3"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Green Bell Pepper-3,Lettuce-3,Onion-3,Potato Salad-1,Watercress-3_Bitter Herba Mystica,Chili Sauce,Jam,Salty Herba Mystica",
+    "result": "Sparkling,Dark,3/Title,Dark,3/Exp,Dark,3"
+  },
+  {
+    "recipe": "Bread_Ham-3,Klawf Stick-3,Pickle-3,Sliced Egg-3,Tomato-3_Bitter Herba Mystica,Salty Herba Mystica,Vinegar,Yogurt",
+    "result": "Sparkling,Fairy,3/Title,Fairy,3/Exp,Fairy,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Strawberry-3_Bitter Herba Mystica,Bitter Herba Mystica,Mayonnaise",
+    "result": "Sparkling,Fighting,3/Title,Fighting,3/Item,Fighting,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Chorizo-3,Green Bell Pepper-3,Potato Tortilla-1,Strawberry-3,Tofu-3_Bitter Herba Mystica,Bitter Herba Mystica,Mayonnaise,Yogurt",
+    "result": "Sparkling,Poison,3/Title,Poison,3/Item,Poison,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Chorizo-3,Herbed Sausage-3,Pineapple-3,Red Bell Pepper-3,Yellow Bell Pepper-3_Bitter Herba Mystica,Mustard,Sweet Herba Mystica",
+    "result": "Sparkling,Ground,3/Title,Ground,3/Item,Ground,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Cherry Tomatoes-3,Hamburger-1,Sliced Egg-3,Yellow Bell Pepper-3_Bitter Herba Mystica,Ketchup,Salt,Sweet Herba Mystica",
+    "result": "Sparkling,Rock,3/Title,Rock,3/Item,Rock,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Cherry Tomatoes-3,Chorizo-3_Bitter Herba Mystica,Bitter Herba Mystica,Pepper,Yogurt",
+    "result": "Sparkling,Bug,3/Title,Bug,3/Item,Bug,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Herbed Sausage-3,Jalapeno-3,Strawberry-3,Yellow Bell Pepper-3_Curry Powder,Pepper,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Ghost,3/Title,Ghost,3/Item,Ghost,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Pickle-3,Red Onion-3_Bitter Herba Mystica,Bitter Herba Mystica,Chili Sauce,Peanut Butter",
+    "result": "Sparkling,Steel,3/Title,Steel,3/Item,Steel,3"
+  },
+  {
+    "recipe": "Bread_Red Bell Pepper-3,Smoked Fillet-3_Bitter Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Fire,3/Title,Fire,3/Item,Fire,3"
+  },
+  {
+    "recipe": "Bread_Basil-4,Cucumber-3,Fried Fillet-1,Pickle-3_Bitter Herba Mystica,Olive Oil,Sour Herba Mystica",
+    "result": "Sparkling,Water,3/Title,Water,3/Item,Water,3"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Fried Fillet-1,Pickle-3,Red Bell Pepper-3,Yellow Bell Pepper-3_Bitter Herba Mystica,Mayonnaise,Sweet Herba Mystica,Whipped Cream",
+    "result": "Sparkling,Electric,3/Title,Electric,3/Item,Electric,3"
+  },
+  {
+    "recipe": "Bread_Onion-3_Bitter Herba Mystica,Mustard,Sweet Herba Mystica",
+    "result": "Sparkling,Psychic,3/Title,Psychic,3/Item,Psychic,3"
+  },
+  {
+    "recipe": "Bread_Klawf Stick-3_Bitter Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Ice,3/Title,Ice,3/Item,Ice,3"
+  },
+  {
+    "recipe": "Bread_Avocado-3_Bitter Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Dragon,3/Title,Dragon,3/Item,Dragon,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Cucumber-3,Herbed Sausage-3,Smoked Fillet-3_Bitter Herba Mystica,Jam,Marmalade,Sweet Herba Mystica",
+    "result": "Sparkling,Dark,3/Title,Dark,3/Item,Dark,3"
+  },
+  {
+    "recipe": "Bread_Basil-4,Green Bell Pepper-3,Red Onion-3,Tomato-3_Bitter Herba Mystica,Butter,Salty Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Fairy,3/Title,Fairy,3/Item,Fairy,3"
+  },
+  {
+    "recipe": "Bread_Cucumber-3,Onion-3,Pickle-3,Strawberry-3,Tofu-3,Watercress-3_Spicy Herba Mystica,Sweet Herba Mystica,Wasabi",
+    "result": "Sparkling,Fighting,3/Title,Fighting,3/Raid,Fighting,3"
+  },
+  {
+    "recipe": "Bread_Prosciutto-3_Jam,Peanut Butter,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Flying,3/Title,Flying,3/Raid,Flying,3"
+  },
+  {
+    "recipe": "Bread_Ham-3,Kiwi-3,Onion-3,Prosciutto-3,Yellow Bell Pepper-3_Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Poison,3/Title,Poison,3/Raid,Poison,3"
+  },
+  {
+    "recipe": "Bread_Ham-3,Pineapple-3_Butter,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Ground,3/Title,Ground,3/Raid,Ground,3"
+  },
+  {
+    "recipe": "Bread_Jalapeno-3,Noodles-1,Strawberry-3,Tofu-3_Mayonnaise,Spicy Herba Mystica,Sweet Herba Mystica,Yogurt",
+    "result": "Sparkling,Rock,3/Title,Rock,3/Raid,Rock,3"
+  },
+  {
+    "recipe": "Bread_Klawf Stick-3,Potato Salad-1_Butter,Marmalade,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Bug,3/Title,Bug,3/Raid,Bug,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Cherry Tomatoes-3,Potato Salad-1,Strawberry-3,Tofu-3,Tomato-3_Ketchup,Spicy Herba Mystica,Sweet Herba Mystica,Yogurt",
+    "result": "Sparkling,Ghost,3/Title,Ghost,3/Raid,Ghost,3"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Hamburger-1,Hamburger-1,Red Onion-3_Mayonnaise,Spicy Herba Mystica,Spicy Herba Mystica,Yogurt",
+    "result": "Sparkling,Steel,3/Title,Steel,3/Raid,Steel,3"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Ham-3,Hamburger-1,Red Bell Pepper-3_Pepper,Spicy Herba Mystica,Sweet Herba Mystica,Yogurt",
+    "result": "Sparkling,Fire,3/Title,Fire,3/Raid,Fire,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Cucumber-3,Cucumber-3,Herbed Sausage-3,Pickle-3_Pepper,Salt,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Water,3/Title,Water,3/Raid,Water,3"
+  },
+  {
+    "recipe": "Bread_Jalapeno-3_Chili Sauce,Sweet Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Grass,3/Title,Grass,3/Raid,Grass,3"
+  },
+  {
+    "recipe": "Bread_Noodles-1_Olive Oil,Salt,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Electric,3/Title,Electric,3/Raid,Electric,3"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1_Olive Oil,Pepper,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Ice,3/Title,Ice,3/Raid,Ice,3"
+  },
+  {
+    "recipe": "Bread_Chorizo-3,Kiwi-3,Smoked Fillet-3,Strawberry-3,Strawberry-3,Yellow Bell Pepper-3_Salty Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica,Wasabi",
+    "result": "Sparkling,Dragon,3/Title,Dragon,3/Raid,Dragon,3"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1_Jam,Spicy Herba Mystica,Sweet Herba Mystica,Yogurt",
+    "result": "Sparkling,Dark,3/Title,Dark,3/Raid,Dark,3"
+  },
+  {
+    "recipe": "Bread_Jalapeno-3,Onion-3,Potato Tortilla-1,Tomato-3_Spicy Herba Mystica,Spicy Herba Mystica,Sweet Herba Mystica",
+    "result": "Sparkling,Fairy,3/Title,Fairy,3/Raid,Fairy,3"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Jalapeno-3,Potato Salad-1,Red Bell Pepper-3_Chili Sauce,Mayonnaise,Mustard,Sour Herba Mystica",
+    "result": "Title,Fairy,2/Teensy,Fairy,2/Raid,Steel,2"
+  },
+  {
+    "recipe": "Bread_Cherry Tomatoes-3,Cucumber-3,Kiwi-3,Noodles-1,Prosciutto-3_Curry Powder,Olive Oil,Salty Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Poison,3/Title,Poison,3/Humungo,Poison,3"
+  },
+  {
+    "recipe": "Bread_Bacon-3,Basil-4,Ham-3,Klawf Stick-3,Pineapple-3,Prosciutto-3_Cream Cheese,Jam,Spicy Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Ground,3/Title,Ground,3/Humungo,Ground,3"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Jalapeno-3,Onion-3_Sour Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Rock,3/Title,Rock,3/Humungo,Rock,3"
+  },
+  {
+    "recipe": "Bread_Green Bell Pepper-3,Potato Salad-1_Curry Powder,Ketchup,Salty Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Bug,3/Title,Bug,3/Humungo,Bug,3"
+  },
+  {
+    "recipe": "Bread_Herbed Sausage-3,Kiwi-3_Curry Powder,Salty Herba Mystica,Spicy Herba Mystica,Yogurt",
+    "result": "Sparkling,Ghost,3/Title,Ghost,3/Humungo,Ghost,3"
+  },
+  {
+    "recipe": "Bread_Fried Fillet-1,Fried Fillet-1,Hamburger-1,Tomato-3_Spicy Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Steel,3/Title,Steel,3/Humungo,Steel,3"
+  },
+  {
+    "recipe": "Bread_Red Bell Pepper-3_Mustard,Salty Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Fire,3/Title,Fire,3/Humungo,Fire,3"
+  },
+  {
+    "recipe": "Bread_Cucumber-3_Chili Sauce,Sour Herba Mystica,Spicy Herba Mystica,Whipped Cream",
+    "result": "Sparkling,Water,3/Title,Water,3/Humungo,Water,3"
+  },
+  {
+    "recipe": "Bread_Jalapeno-3_Chili Sauce,Salty Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Grass,3/Title,Grass,3/Humungo,Grass,3"
+  },
+  {
+    "recipe": "Bread_Noodles-1,Onion-3_Bitter Herba Mystica,Butter,Spicy Herba Mystica",
+    "result": "Sparkling,Psychic,3/Title,Psychic,3/Humungo,Psychic,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Basil-4,Lettuce-3_Bitter Herba Mystica,Salty Herba Mystica,Spicy Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Ice,3/Title,Ice,3/Humungo,Ice,3"
+  },
+  {
+    "recipe": "Bread_Avocado-3,Basil-4_Marmalade,Pepper,Salty Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Dragon,3/Title,Dragon,3/Humungo,Dragon,3"
+  },
+  {
+    "recipe": "Bread_Smoked Fillet-3_Spicy Herba Mystica,Spicy Herba Mystica,Vinegar",
+    "result": "Sparkling,Dark,3/Title,Dark,3/Humungo,Dark,3"
+  },
+  {
+    "recipe": "Bread_Pickle-3_Salty Herba Mystica,Sour Herba Mystica,Yogurt",
+    "result": "Sparkling,Fighting,3/Title,Fighting,3/Teensy,Fighting,3"
+  },
+  {
+    "recipe": "Bread_Apple-3_Bitter Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Flying,3/Title,Flying,3/Teensy,Flying,3"
+  },
+  {
+    "recipe": "Bread_Kiwi-3,Red Onion-3_Salt,Salt,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Poison,3/Title,Poison,3/Teensy,Poison,3"
+  },
+  {
+    "recipe": "Bread_Cherry Tomatoes-3,Pineapple-3_Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Ground,3/Title,Ground,3/Teensy,Ground,3"
+  },
+  {
+    "recipe": "Bread_Avocado-3,Cherry Tomatoes-3,Jalapeno-3,Klawf Stick-3,Red Bell Pepper-3_Chili Sauce,Horseradish,Salty Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Rock,3/Title,Rock,3/Teensy,Rock,3"
+  },
+  {
+    "recipe": "Bread_Banana-3,Fried Fillet-1,Jalapeno-3,Pineapple-3,Potato Salad-1_Ketchup,Sour Herba Mystica,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Bug,3/Title,Bug,3/Teensy,Bug,3"
+  },
+  {
+    "recipe": "Bread_Potato Tortilla-1,Red Onion-3_Bitter Herba Mystica,Chili Sauce,Mayonnaise,Sour Herba Mystica",
+    "result": "Sparkling,Ghost,3/Title,Ghost,3/Teensy,Ghost,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Avocado-3,Cherry Tomatoes-3,Hamburger-1,Lettuce-3_Olive Oil,Salty Herba Mystica,Sour Herba Mystica,Yogurt",
+    "result": "Sparkling,Steel,3/Title,Steel,3/Teensy,Steel,3"
+  },
+  {
+    "recipe": "Bread_Cheese-3,Chorizo-3,Klawf Stick-3,Red Bell Pepper-3,Watercress-3_Jam,Olive Oil,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Fire,3/Title,Fire,3/Teensy,Fire,3"
+  },
+  {
+    "recipe": "Bread_Basil-4,Cucumber-3,Red Onion-3,Watercress-3_Chili Sauce,Horseradish,Sour Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Water,3/Title,Water,3/Teensy,Water,3"
+  },
+  {
+    "recipe": "Bread_Avocado-3,Lettuce-3,Rice-1_Horseradish,Salty Herba Mystica,Sour Herba Mystica",
+    "result": "Sparkling,Grass,3/Title,Grass,3/Teensy,Grass,3"
+  },
+  {
+    "recipe": "Bread_Basil-4,Jalapeno-3,Noodles-1,Yellow Bell Pepper-3,Yellow Bell Pepper-3_Jam,Pepper,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Electric,3/Title,Electric,3/Teensy,Electric,3"
+  },
+  {
+    "recipe": "Bread_Basil-4,Strawberry-3_Butter,Mayonnaise,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Psychic,3/Title,Psychic,3/Teensy,Psychic,3"
+  },
+  {
+    "recipe": "Bread_Apple-3,Lettuce-3_Jam,Olive Oil,Sour Herba Mystica,Spicy Herba Mystica",
+    "result": "Sparkling,Ice,3/Title,Ice,3/Teensy,Ice,3"
+  },
+  {
+    "recipe": "Bread_Avocado-3,Smoked Fillet-3_Bitter Herba Mystica,Sour Herba Mystica,Vinegar",
+    "result": "Sparkling,Dragon,3/Title,Dragon,3/Teensy,Dragon,3"
+  },
+  {
+    "recipe": "Bread_Pineapple-3,Red Bell Pepper-3_Bitter Herba Mystica,Sour Herba Mystica,Yogurt",
+    "result": "Sparkling,Dark,3/Title,Dark,3/Teensy,Dark,3"
+  },
+  {
+    "recipe": "Bread_Sliced Egg-3_Bitter Herba Mystica,Mayonnaise,Sour Herba Mystica,Vinegar",
+    "result": "Sparkling,Fairy,3/Title,Fairy,3/Teensy,Fairy,3"
+  }
+]
